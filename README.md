@@ -4,10 +4,12 @@ I love cats I love photography, and I love data. This portfolio is a compilation
 
 ## Table of Contents
 
-- Machine Learning
-- Python Development
-- Statistical Analytics
-- Other Projects
+- [Machine Learning](#machine_learning)
+- [Python Development](#python_dev)
+- [Statistical Analytics](#statistical_analysis)
+- [Other Projects](#others)
+
+<a name="machine_learning"></a>
 
 ## Machine Learning
 
@@ -15,7 +17,7 @@ I love cats I love photography, and I love data. This portfolio is a compilation
 
 GitHub Repo | Slides
 
-<table border="0" style="width:80%;">
+<table border="0" style="width:100%;">
 	<tr>
     <td style="width:50%;">Algorithms</td>
 		<td style="width:50%;">Tech Stack</td>
@@ -44,16 +46,21 @@ GitHub Repo | Slides
     </td>
   </tr>
 </table>
-
 SIIM-ISIC Melanoma Classification ([competition homepage](https://www.kaggle.com/c/siim-isic-melanoma-classification)) is an annual Kaggle competition on identifying the deadly skin cancer, Melanoma, based on images of skin lesions and patient metadata. The dataset consists of 33,126 full-color, high-resolution images with only 584 positive examples. Three models (CNN, SVM, and LR) were built, and an in-depth exploratory study on visualizing the learning process of Google's EfficientNet B0  was conducted.
+
+<a name="python_dev"></a>
 
 ## Python Development
 
 ### AweseomBabyName
 
-## Statistical Analytics
+<a name="statistical_analysis"></a>
+
+## Statistical Analysis
 
 Predicting YouTube Viewership
+
+<a name="others"></a>
 
 ## Other Projects
 
