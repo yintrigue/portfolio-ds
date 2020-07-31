@@ -17,13 +17,13 @@ I love cats I love photography, and I love data. This portfolio is a compilation
 
 GitHub Repo | Slides
 
-<table border="0" style="width:100%;">
+<table border="0" style="width:80%;">
 	<tr>
-    <td style="width:50%;">Algorithms</td>
-		<td style="width:50%;">Tech Stack</td>
+    <td>Algorithms</td>
+		<td>Tech Stack</td>
   </tr>
   <tr>
-    <td style="width:50%;">
+    <td>
       <ul>
         <li>Convolutional Neural Network</li>
         <ul>
@@ -35,7 +35,7 @@ GitHub Repo | Slides
         <li>PCA Dimensionality Reduction</li>
       </ul>
     </td>
-		<td style="width:50%;">
+		<td>
       <ul>
         <li>TensorFlow</li>
         <li>Keras</li>
@@ -46,6 +46,8 @@ GitHub Repo | Slides
     </td>
   </tr>
 </table>
+
+
 SIIM-ISIC Melanoma Classification ([competition homepage](https://www.kaggle.com/c/siim-isic-melanoma-classification)) is an annual Kaggle competition on identifying the deadly skin cancer, Melanoma, based on images of skin lesions and patient metadata. The dataset consists of 33,126 full-color, high-resolution images with only 584 positive examples. Three models (CNN, SVM, and LR) were built, and an in-depth exploratory study on visualizing the learning process of Google's EfficientNet B0  was conducted.
 
 <a name="python_dev"></a>
