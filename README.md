@@ -17,35 +17,14 @@ I love cats I love photography, and I love data. This portfolio is a compilation
 
 GitHub Repo | Slides
 
-<table border="0" style="width:80%;">
-	<tr>
-    <td>Algorithms</td>
-		<td>Tech Stack</td>
-  </tr>
-  <tr>
-    <td>
-      <ul>
-        <li>Convolutional Neural Network</li>
-        <ul>
-        	<li>EfficientNet</li>
-	        <li>Focal Loss</li>
-        </ul>
-        <li>Support Vector Machine</li>
-        <li>Logistic Regression</li>
-        <li>PCA Dimensionality Reduction</li>
-      </ul>
-    </td>
-		<td>
-      <ul>
-        <li>TensorFlow</li>
-        <li>Keras</li>
-        <li>Scikitlearn</li>
-        <li>Python</li>
-        <li>TPU & Google Cloud Storage</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+|            |      |
+| ---------- | ---- |
+| Algorithms | as   |
+| Tech Stack |      |
+
+: Convolutional Neural Network, Support Vector Machine, Logistic Regression, PCA
+
+Tech Stack: TensorFlow, Keras, Scikit-learn, Python, TPU, GCS
 
 
 SIIM-ISIC Melanoma Classification ([competition homepage](https://www.kaggle.com/c/siim-isic-melanoma-classification)) is an annual Kaggle competition on identifying the deadly skin cancer, Melanoma, based on images of skin lesions and patient metadata. The dataset consists of 33,126 full-color, high-resolution images with only 584 positive examples. Three models (CNN, SVM, and LR) were built, and an in-depth exploratory study on visualizing the learning process of Google's EfficientNet B0  was conducted.
