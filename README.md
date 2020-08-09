@@ -1,6 +1,6 @@
 # Data Science Portfolio by Ying Chen
 
-I love cats I love photography, and I love data. This portfolio is a compilation of select projects I have worked on in the field of data science.
+I love data, I love photography, and I love cats. This portfolio is a compilation of select projects I have worked on in the field of data science.
 
 ## Table of Contents
 
@@ -13,11 +13,11 @@ I love cats I love photography, and I love data. This portfolio is a compilation
 
 ## Machine Learning
 
-### SIIM-ISIC Melanoma Classification 
+### Melanoma Classification 
 
-GitHub Repo | Slides
+[GitHub Repo](https://github.com/yintrigue/portfolio-ds/tree/master/melanoma) | Slides
 
-[SIIM-ISIC Melanoma Classification](https://www.kaggle.com/c/siim-isic-melanoma-classification) is an annual Kaggle competition on identifying the deadly skin cancer, Melanoma, based on images of skin lesions and patient metadata. The dataset consists of 33,126 full-color, high-resolution images with only 584 positive examples. Three models (CNN, SVM, and LR) were built, and an in-depth exploratory study on visualizing the learning process of Google's EfficientNet B0  was conducted.
+[SIIM-ISIC Melanoma Classification](https://www.kaggle.com/c/siim-isic-melanoma-classification) is an annual Kaggle competition on identifying the deadly skin cancer, Melanoma, based on images of skin lesions and patient metadata. The dataset consists of a total of 33,126 full-color, high-resolution images but with only 584 positive examples. Three models (CNN, SVM, and LR) were built, and an exploratory study on visualizing the learning process of EfficientNet B0  was conducted.
 
 Algorithms:  
 Convolutional Neural Network, Support Vector Machine, Logistic Regression, PCA
