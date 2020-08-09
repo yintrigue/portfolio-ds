@@ -12,6 +12,10 @@ Repository structure:
 - `./src` stores all source codes.
 - `./assets` stores all sprites and font used for the game.
 
+Here is a simplified UML:
+
+![](./_img/uml.png)
+
 ## Screenshots
 ![](./_img/screenshot_01.png)
 ![](./_img/screenshot_02.png)
