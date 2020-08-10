@@ -29,12 +29,46 @@ Five datasets are included in the Himalayan Database:
 
 A copy of the exported raw data and documentation can be found in the repository at `./data`.
 
-## Key Findings
+## Select Findings
+### Homes of the Daredevils
+
 Europe is the origin of mountaineering. Our research, however, shows that in addition to Europe, a large number of eight-thousander climbers come from developed countries including Japan, Korea, and the US, lilkely reflecting the high costs associated with the expeditions.
 
 Figure: Eight-Thousander Climbers’ Home Countries (1905-2019)
 
 ![](./img/climber_homes.png)
+
+### Rise of Girl Power
+
+Mountaineering has historically been dominated by men: Only 1 out of 10 climbers were female between 1905 and 2019. However, there has been a rapid growth of female climbers since 1980.
+
+Figure: Male vs. Female Climbers (1905-2019)
+
+![](./img/gender.png)
+
+Figure: Number of Female Climbers by Year
+
+![](./img/gender_female_rise.png)
+
+### Experience Matters
+
+One surprising finding is that even though CHOY is generally believed to be the easiest peak to ascend among the 16 peaks studied in the research, it actually comes with failure and death rates on par with Mount Everest. One explanation can be attributed to the lack of experience because CHOY is mostly climbed by relatively inexperienced climbers. The finding echoes the importance of skills and experience when climbing into the death zone.
+
+![](./img/choy.png)
+
+### The Real Death Zone on Mount Everest
+
+While the death rate peaks in the death zone on Mount Everest above 8,000 meters, there is an unexpected surge of death incidents between 5,000m and 6,000m. Further investigation reveals that Khumbu Icefall, one of the most deadly stages of the South Col route to Everest's summit, is located at 5,486 metres.
+
+![](./img/real_death_zone.png)
+
+### Too Tired to Climb Down?
+
+If you admire for those who venture into the death zone, you might be in awe of those who choose not to “walk” down from the summit. Will you be the next daredevil?
+
+Figure: When Climbing Down Is Way Too Much Work... (1905-2019)
+
+![](./img/fly.png)
 
 ## Repository 
 
