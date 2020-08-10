@@ -1,5 +1,5 @@
 # Snaky  
-Tech Stack: PyGame, Python
+**Tech Stack:** PyGame, Python
 
 ## Description
 Snaky a PyGame implementation of the classic Snake game. The goal is not to develop a fully playable game, but rather a basic implementation for training in neural network. Key features include:
