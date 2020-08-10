@@ -87,5 +87,5 @@ Figure: When Climbing Down Is Way Too Much Work... (1905-2019)
   - `expeditions.ipynb` includes the analysis of the eight-thousander expeditions between 1905 and 2019
 - `./lib` includes additional Python modules used for the analysis.
 - `./data` includes the exported raw data and documentation from the Himalayan Database.
-- `./docs/research_report_eight-thousanders.pdf` is the final write-up for the research.  
+- [`./docs/research_report_eight-thousanders.pdf`](./docs/research_report_eight-thousanders.pdf) is the final write-up for the research.  
 
