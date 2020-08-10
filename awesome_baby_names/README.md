@@ -2,7 +2,7 @@
 
 **v1.0.3**
 
-Tech Stack: Python, SQLite, MVC
+**Tech Stack:** Python, SQLite, MVC
 
 ## Description
 
