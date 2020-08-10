@@ -45,6 +45,7 @@ Figure: Male vs. Female Climbers (1905-2019)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="./img/gender.png">
 </div>
   
+  
 <div align="center">
 Figure: Number of Female Climbers by Year
 <img src="./img/girl_power.png">
