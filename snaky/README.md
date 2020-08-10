@@ -1,6 +1,4 @@
-# Snaky
-**v0.1.0**
-
+# Snaky  
 Tech Stack: PyGame, Python
 
 ## Description
