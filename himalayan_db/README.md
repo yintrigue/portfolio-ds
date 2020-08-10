@@ -35,7 +35,6 @@ A copy of the exported raw data and documentation can be found in the repository
 Europe is the origin of mountaineering. Our research, however, shows that in addition to Europe, a large number of eight-thousander climbers come from developed countries including Japan, Korea, and the US, lilkely reflecting the high costs associated with the expeditions.
 
 Figure: Eight-Thousander Climbers’ Home Countries (1905-2019)
-
 ![](./img/climber_homes.png)
 
 ### Rise of Girl Power
@@ -43,11 +42,9 @@ Figure: Eight-Thousander Climbers’ Home Countries (1905-2019)
 Mountaineering has historically been dominated by men: Only 1 out of 10 climbers were female between 1905 and 2019. However, there has been a rapid growth of female climbers since 1980.
 
 Figure: Male vs. Female Climbers (1905-2019)
-
 ![](./img/gender.png)
 
 Figure: Number of Female Climbers by Year
-
 ![](./img/girl_power.png)
 
 ### Experience Matters
@@ -69,7 +66,6 @@ Figure: Deathby Altitude Distributions (1905-2019)
 If you admire for those who venture into the death zone, you might be in awe of those who choose not to “walk” down from the summit. Will you be the next daredevil?
 
 Figure: When Climbing Down Is Way Too Much Work... (1905-2019)
-
 ![](./img/fly.png)
 
 ## Repository 
