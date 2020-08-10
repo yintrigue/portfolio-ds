@@ -35,7 +35,7 @@ Europe is the origin of mountaineering. Our research, however, shows that in add
 
 <div align="center">
 Figure: Eight-Thousander Climbers’ Home Countries (1905-2019)
-<img src="./img/climber_homes.png">
+<img src="./img/climber_homes.png"/>
 </div>
   
 ### Rise of Girl Power
@@ -43,13 +43,13 @@ Figure: Eight-Thousander Climbers’ Home Countries (1905-2019)
 Mountaineering has historically been dominated by men: Only 1 out of 10 climbers were female between 1905 and 2019. 
 <div align="center">
 Figure: Male vs. Female Climbers (1905-2019)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-<img src="./img/gender.png">
+<img src="./img/gender.png"/>
 </div>
 <br/>
 However, there has been a rapid growth of female climbers since 1980. In fact, the youngest climber to ascend Mount Everest is Malavath Pooma, a 13 year-old female climber!
 <div align="center">
 Figure: Number of Female Climbers by Year
-<img src="./img/girl_power.png">
+<img src="./img/girl_power.png"/>
 </div>
 
 ### Experience Matters
@@ -58,7 +58,7 @@ One surprising finding is that even though CHOY is generally believed to be the 
 
 <div align="center">
 Figure: Failure Rate vs. Death Rate (1905-2019)
-<img src="./img/choy.png">
+<img src="./img/choy.png"/>
 </div>
 
 ### The Real Death Zone on Mount Everest
@@ -67,7 +67,7 @@ While the death rate peaks in the death zone on Mount Everest above 8,000 meters
 
 <div align="center">
 Figure: Deathby Altitude Distributions (1905-2019)
-<img src="./img/real_death_zone.png">
+<img src="./img/real_death_zone.png"/>
 </div>
 
 ### Too Tired to Climb Down?
@@ -76,7 +76,7 @@ If you admire for those who venture into the death zone, you might be in awe of 
 
 <div align="center">
 Figure: When Climbing Down Is Way Too Much Work... (1905-2019)
-<img src="./img/fly.png">
+<img src="./img/fly.png"/>
 </div>
 
 ## Repository 
