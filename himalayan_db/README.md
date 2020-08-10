@@ -44,11 +44,11 @@ Mountaineering has historically been dominated by men: Only 1 out of 10 climbers
 Figure: Male vs. Female Climbers (1905-2019)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
 <img src="./img/gender.png">
 </div>
-
-
-
+  
+<div align="center">
 Figure: Number of Female Climbers by Year
 ![](./img/girl_power.png)
+</div>
 
 ### Experience Matters
 
