@@ -1,0 +1,16 @@
+﻿header,expid,year,season,host,route1,route2,route3,route4,nation,leaders,success1,success2,success3,success4,totmembers,abcmembers,smtmembers,mdeaths,mabcdeaths,tothired,smthired,hdeaths,habcdeaths
+Expeditions to Annapurna I East (8026m),,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+1900 to 2020,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+21/03/2020,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+The Himalayan Database,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+,ANNE00301,2000,3,1,Eastern end of S Face (up); North Ridge (down),,,,France,"Yannick Graziani, Christian Trommsdorf, Patrick Wagnon",FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,ANNE04101,2004,1,1,N Face,,,,Germany,Ralf Dujmovits,TRUE,FALSE,FALSE,FALSE,2,1,1,0,0,0,0,0,0
+,ANNE06101,2006,1,1,S Face of Glacier Dome-E Ridge,,,,Poland,Piotr Pustelnik,TRUE,FALSE,FALSE,FALSE,4,3,3,0,0,0,0,0,0
+,ANNE06102,2006,1,1,S Face of Glacier Dome-E Ridge,,,,China,Lodue (Lhotse),TRUE,FALSE,FALSE,FALSE,2,2,1,0,0,1,0,0,0
+,ANNE07301,2007,3,1,Eastern end of S Face,,,,Slovenia,Tomaz Humar,TRUE,FALSE,FALSE,FALSE,2,1,1,0,0,1,0,0,0
+,ANNE08101,2008,1,1,S Face-E Ridge,,,,Russia,Sergei Bogomolov,TRUE,FALSE,FALSE,FALSE,2,2,1,0,0,0,0,0,0
+,ANNE09101,2009,1,1,S Face-E Ridge via Roc Noir (up); NE Face Dome (down),,,,Czech Republic,Martin Minarik,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,0,0,0,0
+,ANNE74101,1974,1,1,N Ridge,,,,Spain,Jose Manuel Anglada Nieto,TRUE,FALSE,FALSE,FALSE,9,6,3,0,0,8,0,0,0
+,ANNE84301,1984,3,1,Glacier Dome-E Ridge up; N Face (Dutch Rib) down,,,,Switzerland,Frank Tschirky,TRUE,FALSE,FALSE,FALSE,6,6,2,0,0,0,0,0,0
+,ANNE88301,1988,3,1,E Rib of S Face up; E Ridge-Glacier Dome down,Glacier Dome-E Ridge,,,Poland,Jerzy Kukuczka,TRUE,TRUE,FALSE,FALSE,11,11,3,1,1,2,0,0,0

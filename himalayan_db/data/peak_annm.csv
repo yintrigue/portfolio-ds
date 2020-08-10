@@ -1,0 +1,13 @@
+﻿header,expid,year,season,host,route1,route2,route3,route4,nation,leaders,success1,success2,success3,success4,totmembers,abcmembers,smtmembers,mdeaths,mabcdeaths,tothired,smthired,hdeaths,habcdeaths
+Expeditions to Annapurna I Middle (8051m),,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+1900 to 2020,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+21/03/2020,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+The Himalayan Database,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+,ANNM04101,2004,1,1,N Face,,,,Germany,Ralf Dujmovits,TRUE,FALSE,FALSE,FALSE,2,1,1,0,0,0,0,0,0
+,ANNM06101,2006,1,1,S Face of Glacier Dome-E Ridge,,,,Poland,Piotr Pustelnik,TRUE,FALSE,FALSE,FALSE,4,3,1,0,0,0,0,0,0
+,ANNM80301,1980,3,1,N Face (E of Dutch Rib)-Middle Smt,,,,W Germany,Ludwig Greissl,TRUE,FALSE,FALSE,FALSE,7,7,3,1,1,8,0,0,0
+,ANNM81101,1981,1,1,S Face (E of Bonington rte),,,,Poland,Ryszard Szafirski,TRUE,FALSE,FALSE,FALSE,11,8,2,0,0,0,0,0,0
+,ANNM84301,1984,3,1,S Face,,,,Spain,Nil Bohigas Martorell,TRUE,FALSE,FALSE,FALSE,4,2,2,0,0,0,0,0,0
+,ANNM84302,1984,3,1,Glacier Dome-E Ridge up; N Face (Dutch Rib) down,,,,Switzerland,Frank Tschirky,TRUE,FALSE,FALSE,FALSE,6,6,2,0,0,0,0,0,0
+,ANNM84401,1984,4,1,N Face (Dutch Rib),,,,S Korea,Ahn Chang-Yeul,TRUE,FALSE,FALSE,FALSE,2,2,1,0,0,4,4,2,2

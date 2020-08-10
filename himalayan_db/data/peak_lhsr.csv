@@ -1,0 +1,40 @@
+﻿header,expid,year,season,host,route1,route2,route3,route4,nation,leaders,success1,success2,success3,success4,totmembers,abcmembers,smtmembers,mdeaths,mabcdeaths,tothired,smthired,hdeaths,habcdeaths
+Expeditions to Lhotse Shar (8382m),,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+1900 to 2020,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+21/03/2020,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+The Himalayan Database,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+,LSHR01101,2001,1,1,S Col-SE Ridge,,,,S Korea,Um Hong-Gil,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,5,0,0,0
+,LSHR03301,2003,3,1,SE Ridge-E Ridge,,,,S Korea,Um Hong-Gil,FALSE,FALSE,FALSE,FALSE,9,9,0,2,2,5,0,0,0
+,LSHR06101,2006,1,1,S Ridge-SE Ridge,,,,S Korea,Um Hong-Gil,FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,9,0,0,0
+,LSHR07101,2007,1,1,S Face,,,,S Korea,Um Hong-Gil,TRUE,FALSE,FALSE,FALSE,15,15,3,0,0,11,1,0,0
+,LSHR08301,2008,3,1,SE Ridge,,,,Italy,Diego Fregona,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,LSHR10301,2010,3,1,SE Ridge,,,,Spain,Jordi Tosas,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,LSHR19101,2019,1,1,S Face,,,,Spain,Jordi Tosas,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,LSHR60301,1960,3,1,SE Ridge (recon),,,,New Zealand,Edmund Hillary,FALSE,FALSE,FALSE,FALSE,4,3,0,0,0,0,0,0,0
+,LSHR65101,1965,1,1,SE Ridge,,,,Japan,Hisao Yoshikawa,FALSE,FALSE,FALSE,FALSE,11,11,0,0,0,14,0,0,0
+,LSHR70101,1970,1,1,SE Ridge,,,,Austria,Siegfried Aeberli,TRUE,FALSE,FALSE,FALSE,7,7,2,0,0,7,0,0,0
+,LSHR71101,1971,1,1,SE Ridge,,,,S Korea,Park Chul-Am,FALSE,FALSE,FALSE,FALSE,3,2,0,0,0,1,0,0,0
+,LSHR78301,1978,3,1,SE Face,,,,Switzerland,Josef Fauchere,FALSE,FALSE,FALSE,FALSE,9,2,0,0,0,4,0,0,0
+,LSHR81101,1981,1,1,S Ridge-SE Face,,,,Spain,Xabier Erro Jauregui,FALSE,FALSE,FALSE,FALSE,4,3,0,0,0,3,0,0,0
+,LSHR81301,1981,3,1,SE Ridge,,,,Switzerland,Joseph Fauchere,TRUE,FALSE,FALSE,FALSE,15,14,2,3,2,5,0,0,0
+,LSHR82101,1982,1,1,SE Ridge,,,,Switzerland,Hans Berger,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,2,0,0,0
+,LSHR83101,1983,1,1,SE Ridge,,,,Italy,Giancarlo Riva,FALSE,FALSE,FALSE,FALSE,16,16,0,0,0,0,0,0,0
+,LSHR83301,1983,3,1,SE Ridge,,,,Canada,Roger Marshall,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,LSHR84101,1984,1,1,S Face,,,,Czechoslovakia,Ivan Galfy,TRUE,FALSE,FALSE,FALSE,18,18,4,0,0,3,0,0,0
+,LSHR84102,1984,1,1,S Face-SE Ridge,,,,Spain,Antoni Sors Ferrer,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,0,0,0,0
+,LSHR84301,1984,3,1,S Ridge (to 6810m),SE Ridge (to 6250m),,,UK,Adrian Burgess,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,1,0,0,0
+,LSHR85101,1985,1,1,SE Ridge,,,,S Korea,Heo Young-Ho,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,4,0,0,0
+,LSHR86101,1986,1,1,SE Ridge for acclimatization (to 7000m),New route on S Pillar (Face) (no attempt),,,UK,"Sandy Allan, Malcolm Duff",FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,LSHR86301,1986,3,1,S Face-SE Face,,,,Spain,Manuel Casas,FALSE,FALSE,FALSE,FALSE,10,10,0,1,1,1,0,0,0
+,LSHR86302,1986,3,1,SE Ridge-SE Face,,,,Switzerland,Anton (Toni) Spirig,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,LSHR87101,1987,1,1,SE Ridge,,,,Yugoslavia,Vincenc Griljc,FALSE,FALSE,FALSE,FALSE,13,13,0,0,0,4,0,0,0
+,LSHR87102,1987,1,1,SE Ridge (from Pt 5700m on Col),,,,France,Alain Esteve,TRUE,FALSE,FALSE,FALSE,13,13,1,0,0,6,0,0,0
+,LSHR87301,1987,3,1,S Ridge-SE Ridge,,,,Spain,Antoni Sors Ferrer,FALSE,FALSE,FALSE,FALSE,8,8,0,4,4,0,0,0,0
+,LSHR87302,1987,3,1,SE Ridge,,,,UK,Adrian Burgess,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,0,0,0,0
+,LSHR88101,1988,1,1,S Ridge-SE Ridge,,,,Spain,Mari Abrego Santesteban,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,1,0,0,0
+,LSHR88301,1988,3,1,SE Face,,,,Switzerland,Bruno Jelk,TRUE,FALSE,FALSE,FALSE,16,16,2,0,0,8,0,0,0
+,LSHR88302,1988,3,1,SE Ridge,,,,W Germany,Werner Hof,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,LSHR89301,1989,3,1,SE Ridge,,,,S Korea,Han Gwang-Geol,TRUE,FALSE,FALSE,FALSE,11,11,1,0,0,12,2,0,0
+,LSHR90301,1990,3,1,S Ridge-SE Ridge,,,,Spain,Merce Macia,TRUE,FALSE,FALSE,FALSE,9,9,2,0,0,0,0,0,0
+,LSHR98301,1998,3,1,SE Ridge-SE Face-E Ridge,,,,Russia,Vladimir Savkov,TRUE,FALSE,FALSE,FALSE,17,16,4,0,0,2,0,0,0

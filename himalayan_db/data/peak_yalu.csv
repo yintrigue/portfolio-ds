@@ -1,0 +1,25 @@
+﻿header,expid,year,season,host,route1,route2,route3,route4,nation,leaders,success1,success2,success3,success4,totmembers,abcmembers,smtmembers,mdeaths,mabcdeaths,tothired,smthired,hdeaths,habcdeaths
+Expeditions to Yalung Kang (8505m),,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+1900 to 2020,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+21/03/2020,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+The Himalayan Database,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+,YALU04101,2004,1,1,SE Ridge,,,,S Korea,Um Hong-Gil,TRUE,FALSE,FALSE,FALSE,11,9,1,0,0,7,2,0,0
+,YALU14101,2014,1,1,SW Face of KANG-SE Face of YALU,,,,India,Chhanda Gayen,FALSE,FALSE,FALSE,FALSE,1,1,0,1,1,3,0,2,2
+,YALU73101,1973,1,1,SW Ridge,,,,Japan,Haruo Higuchi,TRUE,FALSE,FALSE,FALSE,15,13,2,1,1,10,0,0,0
+,YALU74101,1974,1,1,SE Ridge,,,,Japan,Shojiro Toriumi,FALSE,FALSE,FALSE,FALSE,12,11,0,0,0,16,0,0,0
+,YALU75101,1975,1,1,S Face,,,,Austria,Siegfried Aeberli,TRUE,FALSE,FALSE,FALSE,11,10,9,0,0,13,0,0,0
+,YALU78101,1978,1,1,S Face,,,,Spain,Josep Piera Queralt,FALSE,FALSE,FALSE,FALSE,13,13,0,0,0,6,0,0,0
+,YALU80101,1980,1,1,SE Face,,,,Mexico,Jose Manuel Casanova,TRUE,FALSE,FALSE,FALSE,10,10,1,2,2,6,0,0,0
+,YALU81101,1981,1,1,N Face-N Ridge of Kangchenjunga,,,,USA,Chris Chandler,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,1,0,0,0
+,YALU81102,1981,1,1,SE Face,,,,Japan,Kinichi Yamamori,TRUE,FALSE,FALSE,FALSE,22,19,5,0,0,15,0,0,0
+,YALU84301,1984,3,1,S Face direct,,,,Poland,Tadeusz Karolczak,TRUE,FALSE,FALSE,FALSE,10,10,4,0,0,0,0,0,0
+,YALU84302,1984,3,1,SE Couloir,,,,France,Bernard Muller,TRUE,FALSE,FALSE,FALSE,6,6,4,0,0,0,0,0,0
+,YALU85101,1985,1,1,N Face-E Ridge,,,,Yugoslavia,Tone Skarja,TRUE,FALSE,FALSE,FALSE,15,14,2,1,1,7,0,0,0
+,YALU87301,1987,3,1,S Face,,,,USA,Magda King Nos Loppe,FALSE,FALSE,FALSE,FALSE,5,4,0,0,0,2,0,0,0
+,YALU88301,1988,3,1,SE Couloir (French 1984 Autumn rte),,,,Spain,Jesus Mari Bereziartua Extaniz,TRUE,FALSE,FALSE,FALSE,8,7,1,0,0,2,0,0,0
+,YALU88401,1988,4,1,SE Face,,,,Poland,Jozef Stepien,FALSE,FALSE,FALSE,FALSE,7,7,0,0,0,0,0,0,0
+,YALU89101,1989,1,1,SE Ridge,SE Ridge up; N Ridge-Cntrl/Main/South Smts down,South/Main/Cntrl Smts-N Ridge up; SE Ridge down,,USSR,Eduard Myslovsky,TRUE,TRUE,TRUE,FALSE,17,17,16,0,0,3,0,0,0
+,YALU89301,1989,3,1,SE Ridge,,,,S Korea,Park Soon-Jo,TRUE,FALSE,FALSE,FALSE,8,8,1,0,0,2,2,0,0
+,YALU89401,1989,4,1,SE Face,,,,S Korea,Kim Teuk-Hee,TRUE,FALSE,FALSE,FALSE,5,4,1,1,1,8,2,2,2
+,YALU91301,1991,3,1,SE Face,,,,Czechoslovakia,Jiri Novak,FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,0,0,0,0

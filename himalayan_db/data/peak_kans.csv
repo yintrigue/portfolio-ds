@@ -1,0 +1,12 @@
+﻿header,expid,year,season,host,route1,route2,route3,route4,nation,leaders,success1,success2,success3,success4,totmembers,abcmembers,smtmembers,mdeaths,mabcdeaths,tothired,smthired,hdeaths,habcdeaths
+Expeditions to Kangchenjunga South (8476m),,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+1900 to 2020,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+21/03/2020,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+The Himalayan Database,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+,KANS11401,2011,4,1,SW Face,,,,Germany,Philipp Kunz,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,4,4,0,0
+,KANS78101,1978,1,1,SW Face-S Summit,,,,Poland,Piotr Mlotecki,TRUE,FALSE,FALSE,FALSE,27,22,2,0,0,5,0,0,0
+,KANS84101,1984,1,1,W Face-S Smt,,,,Japan,Katsuhiko Kano,TRUE,FALSE,FALSE,FALSE,5,4,4,0,0,4,0,0,0
+,KANS87301,1987,3,1,SW Face (to right of main peak),,,,Belgium,Alain Hubert,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,KANS89101,1989,1,1,SW Rib-W Face,SW Rib-W Face up; N Ridge-Central/Main/YK down,YK/Main/Central-N Ridge up; W Face-SW Rib down,,USSR,Eduard Myslovsky,TRUE,TRUE,TRUE,FALSE,15,15,14,0,0,3,0,0,0
+,KANS91101,1991,1,1,S Ridge up; SW Face down,,,,Yugoslavia,Tone Skarja,TRUE,FALSE,FALSE,FALSE,3,3,2,0,0,0,0,0,0

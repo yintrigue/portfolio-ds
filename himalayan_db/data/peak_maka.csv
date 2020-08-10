@@ -1,0 +1,355 @@
+﻿header,expid,year,season,host,route1,route2,route3,route4,nation,leaders,success1,success2,success3,success4,totmembers,abcmembers,smtmembers,mdeaths,mabcdeaths,tothired,smthired,hdeaths,habcdeaths
+Expeditions to Makalu (8485m),,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+1900 to 2020,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+21/03/2020,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+The Himalayan Database,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+,MAKA00101,2000,1,1,Makalu La-NW Ridge,,,,S Korea,Park Young-Seok,TRUE,FALSE,FALSE,FALSE,5,5,2,0,0,5,1,0,0
+,MAKA00102,2000,1,1,Makalu La-NW Ridge,,,,Germany,Goetz Wiegand,TRUE,FALSE,FALSE,FALSE,8,5,5,1,1,0,0,0,0
+,MAKA00103,2000,1,1,Makalu La-NW Ridge,,,,Italy,Christian Kuntner,TRUE,FALSE,FALSE,FALSE,5,5,3,0,0,0,0,0,0
+,MAKA00104,2000,1,1,Makalu La-NW Ridge,,,,Germany,Peter Guggemos,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,1,0,0,0
+,MAKA00401,2000,4,1,W Pillar (to 5800m),S Pillar-S Col (to 6400m),NW side (to 7100m),,Poland,Krysztof Wielicki,FALSE,FALSE,FALSE,FALSE,11,11,0,0,0,0,0,0,0
+,MAKA01101,2001,1,1,Makalu La-NW Ridge,,,,Austria,Helmut Ortner,TRUE,FALSE,FALSE,FALSE,8,8,4,0,0,2,0,0,0
+,MAKA01102,2001,1,1,Makalu La-NW Ridge,,,,Austria,Erich Resch,FALSE,FALSE,FALSE,FALSE,1,1,0,1,1,0,0,0,0
+,MAKA01103,2001,1,1,SE Pillar,,,,USA,Brendan Cusik,FALSE,FALSE,FALSE,FALSE,7,6,0,0,0,0,0,0,0
+,MAKA01104,2001,1,1,Makalu La-NW Ridge,,,,Spain,Eloy Sanchez,FALSE,FALSE,FALSE,FALSE,8,8,0,0,0,3,0,0,0
+,MAKA01105,2001,1,1,Makalu La-NW Ridge,,,,New Zealand,Guy Cotter,TRUE,FALSE,FALSE,FALSE,9,9,2,0,0,4,1,0,0
+,MAKA01106,2001,1,1,Makalu La-NW Ridge,,,,Austria,Hermann Trippacher,TRUE,FALSE,FALSE,FALSE,11,11,3,0,0,2,0,0,0
+,MAKA01107,2001,1,1,Makalu La-NW Ridge,,,,Italy,Renzo Corona,TRUE,FALSE,FALSE,FALSE,10,7,1,0,0,2,0,0,0
+,MAKA01108,2001,1,1,Makalu La-NW Ridge,,,,Chile,Carlos Bascou,TRUE,FALSE,FALSE,FALSE,7,6,3,0,0,0,0,0,0
+,MAKA01109,2001,1,1,Makalu La-NW Ridge,,,,Iran,Sadegh Aghajani,FALSE,FALSE,FALSE,FALSE,15,13,0,0,0,4,0,0,0
+,MAKA01110,2001,1,1,Makalu La-NW Ridge,,,,S Korea,Han Wang-Yong,TRUE,FALSE,FALSE,FALSE,6,6,2,0,0,2,2,0,0
+,MAKA01301,2001,3,1,Makalu La-NW Ridge,,,,Switzerland,Norbert Joos,FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,1,0,0,0
+,MAKA02101,2002,1,1,Makalu La-NW Ridge,,,,Switzerland,Norbert Joos,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,0,0,0,0
+,MAKA02102,2002,1,1,Makalu La-NW Ridge,,,,Poland,Piotr Pustelnik,TRUE,FALSE,FALSE,FALSE,12,12,3,1,1,1,0,0,0
+,MAKA02103,2002,1,1,Makalu La-NW Ridge,,,,Spain,Edurne Pasaban,TRUE,FALSE,FALSE,FALSE,6,6,4,0,0,3,1,0,0
+,MAKA02104,2002,1,1,W Pillar,,,,Spain,Juanito Oiarzabal,FALSE,FALSE,FALSE,FALSE,8,6,0,0,0,3,0,6,0
+,MAKA03101,2003,1,1,Makalu La-NW Ridge,,,,China,Samdrup,TRUE,FALSE,FALSE,FALSE,9,6,5,0,0,4,0,0,0
+,MAKA03301,2003,3,1,Makalu La-NW Ridge,,,,Switzerland,Daniel Schliefsteiner,FALSE,FALSE,FALSE,FALSE,5,4,0,0,0,0,0,0,0
+,MAKA04101,2004,1,1,W Pillar,,,,Kazakhstan,Maxut Zhumayev,TRUE,FALSE,FALSE,FALSE,9,8,4,2,2,0,0,0,0
+,MAKA04102,2004,1,1,SE Ridge,,,,UK,Colin Scott,FALSE,FALSE,FALSE,FALSE,14,14,0,0,0,4,0,0,0
+,MAKA04103,2004,1,1,Makalu La-NW Ridge,,,,UK,Keith Kerr,TRUE,FALSE,FALSE,FALSE,2,2,1,0,0,3,3,0,0
+,MAKA04104,2004,1,1,Makalu La-NW Ridge,,,,Norway,Sven Gangdal,TRUE,FALSE,FALSE,FALSE,5,5,1,0,0,3,1,0,0
+,MAKA04105,2004,1,1,Makalu La-NW Ridge,,,,Mexico,Mauricio Lopez,TRUE,FALSE,FALSE,FALSE,4,4,2,0,0,4,1,0,0
+,MAKA04106,2004,1,1,Makalu La-NW Ridge (variation),,,,Spain,Peter Guggemos,TRUE,FALSE,FALSE,FALSE,6,6,5,0,0,0,0,0,0
+,MAKA04107,2004,1,2,E Ridge (to 6100m),SE Ridge,,,France,Christian Trommsdorff,FALSE,TRUE,FALSE,FALSE,3,3,1,0,0,0,0,0,0
+,MAKA04108,2004,1,2,NW Ridge-N Face of Kangchungtse-Makalu La-NW Ridge,,,,France,Jean-Christophe Lafaille,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,MAKA05101,2005,1,1,W Pillar,,,,Spain,Alberto Ayora,FALSE,FALSE,FALSE,FALSE,10,9,0,0,0,3,0,1,0
+,MAKA05102,2005,1,1,Makalu La-NW Ridge,,,,Spain,Angel Villan,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,1,0,0,0
+,MAKA05401,2005,4,1,Makalu La-NW Ridge,,,,France,Jean-Christophe Lafaille,FALSE,FALSE,FALSE,FALSE,1,1,0,1,1,0,0,0,0
+,MAKA06101,2006,1,1,Makalu La-NW Ridge,,,,Poland,Anna Czerwinska,TRUE,FALSE,FALSE,FALSE,2,2,1,0,0,1,0,0,0
+,MAKA06102,2006,1,1,Makalu La-NW Ridge,,,,Italy,Daniele Nardi,TRUE,FALSE,FALSE,FALSE,3,3,2,0,0,0,0,0,0
+,MAKA06103,2006,1,1,Makalu La-NW Ridge,,,,Italy,Renzo Benedetti,TRUE,FALSE,FALSE,FALSE,4,4,2,0,0,1,1,0,0
+,MAKA06104,2006,1,1,Makalu La-NW Ridge,,,,Italy,Mario Vielmo,TRUE,FALSE,FALSE,FALSE,6,4,1,0,0,3,0,0,0
+,MAKA07101,2007,1,1,Makalu La-NW Ridge,,,,Brazil,Waldemar Niclevicz,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,1,0,0,0
+,MAKA07301,2007,3,1,Makalu La-NW Ridge,,,,Italy,Romano Benet,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,MAKA07401,2007,4,1,Makalu La-NW Ridge,,,,Italy,Romano Benet,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,MAKA07402,2007,4,1,Makalu La-NW Ridge,,,,Kazakhstan,Denis Urubko,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,0,0,0,0
+,MAKA08101,2008,1,1,Makalu La-NW Ridge,,,,Spain,Manuel Gonzalez,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,1,0
+,MAKA08102,2008,1,1,Makalu La-NW Ridge,,,,Spain,Carlos Soria,TRUE,FALSE,FALSE,FALSE,2,1,1,0,0,2,2,0,0
+,MAKA08103,2008,1,1,Makalu La-NW Ridge,,,,S Korea,Kim Hong-Bin,TRUE,FALSE,FALSE,FALSE,3,3,1,0,0,2,2,0,0
+,MAKA08104,2008,1,1,Makalu La-NW Ridge,,,,Romania,Alex Gavan,TRUE,FALSE,FALSE,FALSE,2,2,1,0,0,0,0,0,0
+,MAKA08105,2008,1,1,Makalu La-NW Ridge,,,,Brazil,Waldemar Niclevicz,TRUE,FALSE,FALSE,FALSE,5,5,4,0,0,1,1,0,0
+,MAKA08106,2008,1,1,Makalu La-NW Ridge,,,,Italy,Giampaola Casarotto,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,0,0,0,0
+,MAKA08107,2008,1,1,Makalu La-NW Ridge,,,,Czech Republic,Zdenek Hruby,TRUE,FALSE,FALSE,FALSE,2,2,1,0,0,0,0,0,0
+,MAKA08108,2008,1,1,Makalu La-NW Ridge,,,,Australia,Andrew Lock,TRUE,FALSE,FALSE,FALSE,3,3,1,0,0,0,0,0,0
+,MAKA08109,2008,1,1,Makalu La-NW Ridge,,,,Portugal,Joao Garcia,TRUE,FALSE,FALSE,FALSE,2,2,1,0,0,0,0,0,0
+,MAKA08110,2008,1,1,Makalu La-NW Ridge,,,,Kazakhstan,Denis Urubko,TRUE,FALSE,FALSE,FALSE,4,4,4,0,0,0,0,0,0
+,MAKA08111,2008,1,1,Makalu La-NW Ridge,,,,Germany,Ralf Dujmovits,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,0,0,0,0
+,MAKA08112,2008,1,1,SE Ridge,,,,UK,Colin Scott,FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,4,0,0,0
+,MAKA08113,2008,1,1,Makalu La-NW Ridge,,,,UK,David Tait,TRUE,FALSE,FALSE,FALSE,11,10,3,0,0,4,3,0,0
+,MAKA08114,2008,1,1,Makalu La-NW Ridge,,,,Japan,Kazuyoshi Kondo,TRUE,FALSE,FALSE,FALSE,7,7,2,0,0,6,3,0,0
+,MAKA08115,2008,1,1,Makalu La-NW Ridge,,,,Hungary,Laszlo Mecs,TRUE,FALSE,FALSE,FALSE,4,3,1,0,0,0,0,0,0
+,MAKA08116,2008,1,1,Makalu La-NW Ridge,,,,Australia,Blair Falahey,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA08117,2008,1,1,Makalu La-NW Ridge,,,,India,Shekhar Babu Bachinepally,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA08118,2008,1,1,Makalu La-NW Ridge,,,,S Korea,Oh Eun-Sun,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,2,1,0,0
+,MAKA08119,2008,1,1,Makalu La-NW Ridge,,,,S Korea,Hong Bo-Seong,TRUE,FALSE,FALSE,FALSE,6,6,3,0,0,3,3,0,0
+,MAKA08120,2008,1,1,Makalu La-NW Ridge,,,,Latvia,Atis Plakans,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,0,0,0,0
+,MAKA08121,2008,1,1,Makalu La-NW Ridge,,,,France,Francois Marsigny,TRUE,FALSE,FALSE,FALSE,2,2,1,0,0,1,1,0,0
+,MAKA08122,2008,1,1,Makalu La-NW Ridge,,,,UK,Ted Atkins,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,1,0,0,0
+,MAKA08123,2008,1,1,Makalu La-NW Ridge,,,,France,Ludovic Challeat,TRUE,FALSE,FALSE,FALSE,10,10,4,0,0,6,5,1,1
+,MAKA08124,2008,1,1,Makalu La-NW Ridge,,,,Spain,Roberto Rojo,TRUE,FALSE,FALSE,FALSE,9,9,5,0,0,1,1,0,0
+,MAKA08125,2008,1,1,Makalu La-NW Ridge,,,,Switzerland,Peter Gschwendtner,TRUE,FALSE,FALSE,FALSE,7,5,2,0,0,3,2,0,0
+,MAKA08126,2008,1,1,Makalu La-NW Ridge,,,,Spain,Roberto Rodrigo,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,0,0,0,0
+,MAKA08301,2008,3,1,Makalu La-NW Ridge,,,,Spain,Juan Corro,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,4,0,0,0
+,MAKA08303,2008,3,1,Makalu La-NW Ridge,,,,Greece,Michael Styllas,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA08304,2008,3,1,Makalu La-NW Ridge,,,,Spain,Jesus Calleja,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,5,0,0,0
+,MAKA08305,2008,3,1,Makalu La (to 7400m),W Face (to 6300m),W Face (to 6550m),,USA,Steve House,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,2,0,0,0
+,MAKA08306,2008,3,1,Makalu La-NW Ridge,,,,India,Shekhar Babu Bachinepally,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,2,0,0,0
+,MAKA08401,2008,4,1,Makalu La-NW Ridge,,,,Italy,Simone Moro,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,0,0,0,0
+,MAKA09101,2009,1,1,Makalu La-NW Ridge,,,,Australia,Mick Parker,TRUE,FALSE,FALSE,FALSE,3,3,2,0,0,0,0,0,0
+,MAKA09102,2009,1,1,W Pillar (to 6500m),Makalu La-NW Ridge (to 7500m),,,USA,Steve House,FALSE,FALSE,FALSE,FALSE,3,2,0,0,0,0,0,0,0
+,MAKA09103,2009,1,1,Makalu La-NW Ridge,,,,India,Shekhar Babu Bachinepally,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA09104,2009,1,1,Makalu La-NW Ridge,,,,Sweden,Fredrik Strang,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,3,3,0,0
+,MAKA09105,2009,1,1,W Face-Makalu La (to 7400m),W Pillar (to 6700m),,,Spain,Juan Vallejo,FALSE,FALSE,FALSE,FALSE,4,3,0,0,0,0,0,0,0
+,MAKA09106,2009,1,1,Makalu La-NW Ridge,,,,India,Neeraj Rana,TRUE,FALSE,FALSE,FALSE,15,15,4,1,1,8,6,0,0
+,MAKA09107,2009,1,1,Makalu La-NW Ridge,,,,Mexico,Jorge Salazar,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,2,0,0,0
+,MAKA09108,2009,1,1,Makalu La-NW Ridge,,,,S Korea,Lee Sang-Ho,TRUE,FALSE,FALSE,FALSE,9,9,2,0,0,1,1,0,0
+,MAKA09109,2009,1,1,Makalu La-NW Ridge,,,,S Korea,Kim Jae-Soo,TRUE,FALSE,FALSE,FALSE,3,3,2,0,0,2,2,0,0
+,MAKA09301,2009,3,1,W Pillar,NW Ridge,,,Switzerland,Ueli Steck,FALSE,TRUE,FALSE,FALSE,3,3,1,0,0,0,0,0,0
+,MAKA10101,2010,1,1,Makalu La-NW Ridge,,,,USA,John Gray,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,1,0,0,0
+,MAKA10102,2010,1,1,Makalu La-NW Ridge,,,,Australia,Blair Falahey,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA10103,2010,1,1,Makalu La-NW Ridge,,,,France,Alexia Zuberer,TRUE,FALSE,FALSE,FALSE,6,6,3,0,0,2,2,0,0
+,MAKA10104,2010,1,1,Makalu La-NW Ridge,,,,Germany,Luis Stitzinger,TRUE,FALSE,FALSE,FALSE,11,11,1,0,0,2,0,0,0
+,MAKA10105,2010,1,1,SE Ridge,,,,UK,Colin Scott,FALSE,FALSE,FALSE,FALSE,9,9,0,0,0,4,0,0,0
+,MAKA10106,2010,1,1,Makalu La-NW Ridge,,,,Netherlands,Arnold Coster,TRUE,FALSE,FALSE,FALSE,7,7,4,1,1,5,2,0,0
+,MAKA10107,2010,1,1,Makalu La-NW Ridge,,,,USA,Will Cross,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,MAKA10108,2010,1,1,Makalu La-NW Ridge,,,,USA,Chris Klinke,TRUE,FALSE,FALSE,FALSE,4,4,1,0,0,1,0,0,0
+,MAKA10109,2010,1,1,Makalu La-NW Ridge,,,,USA,Fabrizio Zangrilli,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,1,0,0,0
+,MAKA10110,2010,1,1,SE Ridge (to 7100m),Makalu La-NW Ridge,,,USA,Marty Schmidt,FALSE,TRUE,FALSE,FALSE,5,2,1,0,0,0,0,0,0
+,MAKA10111,2010,1,1,SW Face-W Pillar-SW Ridge,,,,Ukraine,Mstislav Gorbenko,TRUE,FALSE,FALSE,FALSE,14,13,3,0,0,0,0,0,0
+,MAKA11101,2011,1,1,Makalu La-NW Ridge,,,,Russia,Oxana Morneva,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA11102,2011,1,1,Makalu La-NW Ridge,,,,UK,Robert Anderson,TRUE,FALSE,FALSE,FALSE,7,7,3,0,0,6,4,0,0
+,MAKA11103,2011,1,1,Makalu La-NW Ridge,,,,USA,Dave Morton,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,MAKA11104,2011,1,1,Makalu La-NW Ridge,,,,USA,Fabrizio Zangrilli,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,MAKA11105,2011,1,1,Makalu La-NW Ridge,,,,Spain,Jorge Egocheaga,TRUE,FALSE,FALSE,FALSE,3,3,2,0,0,0,0,0,0
+,MAKA11106,2011,1,1,Makalu La-NW Ridge,,,,S Korea,Cha Jin-Chol,TRUE,FALSE,FALSE,FALSE,8,6,3,0,0,3,3,0,0
+,MAKA11107,2011,1,1,Makalu La-NW Ridge (to 8200m),W Face-W Ridge (to 7000m),,,Slovenia,Marko Prezelj,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,0,0,0,0
+,MAKA11108,2011,1,1,Makalu La-NW Ridge,,,,Switzerland,Joelle Brupbacher,FALSE,FALSE,FALSE,FALSE,1,1,0,1,1,1,0,0,0
+,MAKA11109,2011,1,1,Makalu La-NW Ridge,,,,Slovakia,Peter Hamor,TRUE,FALSE,FALSE,FALSE,4,2,2,0,0,0,0,0,0
+,MAKA11301,2011,3,1,Makalu La-NW Ridge,,,,Poland,Artur Hajzer,TRUE,FALSE,FALSE,FALSE,8,8,3,0,0,0,0,0,0
+,MAKA12101,2012,1,1,Makalu La-NW Ridge,,,,China,Wang Jing,TRUE,FALSE,FALSE,FALSE,3,3,3,0,0,3,3,0,0
+,MAKA12102,2012,1,1,Makalu La-NW Ridge,,,,Iran,Mahmoud Shoaei,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA12103,2012,1,1,Makalu La-NW Ridge,,,,Iran,Alireza Behpour,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,2,0,0,0
+,MAKA12104,2012,1,1,Makalu La-NW Ridge,,,,China,Rao Jian-Feng,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,2,2,0,0
+,MAKA12105,2012,1,1,Makalu La-NW Ridge,,,,China,Luo Jing,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,1,1,0,0
+,MAKA12301,2012,3,1,Makalu La-NW Ridge,,,,Switzerland,Suzanne Huesser,FALSE,FALSE,FALSE,FALSE,8,8,0,0,0,4,0,0,0
+,MAKA12302,2012,3,1,Makalu La-NW Ridge,,,,UK,Adrian Ballinger,FALSE,FALSE,FALSE,FALSE,7,6,0,0,0,5,0,0,0
+,MAKA12303,2012,3,1,Makalu La-NW Ridge,,,,Australia,Anthony Dignan,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA12304,2012,3,1,Makalu La-NW Ridge,,,,USA,Cleo Weidlich,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA12305,2012,3,1,Makalu La-NW Ridge,,,,Japan,Kazuyoshi Kondo,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA13101,2013,1,1,W Pillar (to 6300m),W Face-Makalu La (to 7400m),Makalu La-NW Ridge,,Germany,David Goettler,FALSE,FALSE,TRUE,FALSE,5,5,3,0,0,0,0,0,0
+,MAKA13102,2013,1,1,Makalu La-NW Ridge,,,,Switzerland,Christof Aschwanden,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA13103,2013,1,1,Makalu La-NW Ridge,,,,USA,David Abramczyk (Abramski),TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,1,1,0,0
+,MAKA13104,2013,1,1,Makalu La-NW Ridge,,,,Australia,Gavin Vickers,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,MAKA13105,2013,1,1,Makalu La-NW Ridge,,,,USA,Don Bowie,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,MAKA13106,2013,1,1,Makalu La-NW Ridge,,,,Serbia,Dragan Celikovic,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA13107,2013,1,1,Makalu La-NW Ridge,,,,Iran,Azim Gheichisaz,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,0,0,0,0
+,MAKA13108,2013,1,1,Makalu La-NW Ridge,,,,Finland,Samuli Mansikka,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,0,0,0,0
+,MAKA13109,2013,1,1,Makalu La-NW Ridge,,,,Japan,Tatsuo Matsumoto,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA13110,2013,1,1,Makalu La-NW Ridge,,,,India,Dipankar Ghosh,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA13111,2013,1,1,Makalu La-NW Ridge,,,,Poland,Kinga Baranowska,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,1,0,0,0
+,MAKA13112,2013,1,1,Makalu La-NW Ridge,,,,Georgia,"Gia Tortladze, Asian Trekking Staff",FALSE,FALSE,FALSE,FALSE,7,7,0,0,0,7,0,0,0
+,MAKA13113,2013,1,1,Makalu La-NW Ridge,,,,China,Yang Chun-Feng,TRUE,FALSE,FALSE,FALSE,2,2,1,1,1,2,1,0,0
+,MAKA13301,2013,3,1,Makalu La-NW Ridge,,,,USA,Jacob Schmitz,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,0,0,0,0
+,MAKA14101,2014,1,1,Makalu-La-NW Ridge,,,,USA,Willi Benegas,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,4,2,0,0
+,MAKA14102,2014,1,1,Makalu La-NW Ridge,,,,Russia,Denis Savelyev,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,4,0,0,0
+,MAKA14103,2014,1,1,Makalu La-NW Ridge,,,,Peru,Richard Hidalgo,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,MAKA14104,2014,1,1,Makalu La-NW Ridge,,,,USA,Chris Warner,TRUE,FALSE,FALSE,FALSE,4,4,1,0,0,4,1,0,0
+,MAKA14105,2014,1,1,Makalu La-NW Ridge,,,,Canada,Al Hancock,TRUE,FALSE,FALSE,FALSE,3,3,3,0,0,3,3,0,0
+,MAKA14106,2014,1,1,Makalu La-NW Ridge,,,,USA,Will Cross,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA14107,2014,1,1,Makalu La-NW Ridge,,,,France,Philippe Gatta,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,1,1,0,0
+,MAKA14108,2014,1,1,Makalu La-NW Ridge,,,,Australia,Chris Burke,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,3,3,0,0
+,MAKA14109,2014,1,1,Makalu La-NW Ridge,,,,China,Dong Hong-Juan,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA14110,2014,1,1,Makalu La-NW Ridge,,,,Israel,Danny Gordin,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,MAKA14111,2014,1,1,Makalu La-NW Ridge,,,,Germany,Markus Seelos,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA14112,2014,1,1,Makalu La-NW Ridge,,,,India,Debasish Biswas,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,4,2,0,0
+,MAKA14113,2014,1,1,Makalu La-NW Ridge,,,,Greece,Alexandros Aravidis,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,2,1,0,0
+,MAKA14114,2014,1,1,Makalu La-NW Ridge,,,,India,Arjun Vajpai,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,2,0,0,0
+,MAKA14115,2014,1,1,Makalu La-NW Ridge,,,,India,Anand Mali,TRUE,FALSE,FALSE,FALSE,2,2,1,0,0,3,2,0,0
+,MAKA14116,2014,1,1,Makalu La-NW Ridge,,,,France,Yannick Gagneret,FALSE,FALSE,FALSE,FALSE,1,1,0,1,1,0,0,0,0
+,MAKA14117,2014,1,1,Makalu La-NW Ridge,,,,Japan,Naoko Watanabe,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,1,1,0,0
+,MAKA14118,2014,1,1,Makalu La-NW Ridge,,,,S Korea,Chung Ei-Chul,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA14119,2014,1,1,Makalu La-NW Ridge,,,,Singapore,Swee Chiow Khoo,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,2,2,0,0
+,MAKA14120,2014,1,1,Makalu La-NW Ridge,,,,Serbia,Dragan Celikovic,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,2,0,0,0
+,MAKA14121,2014,1,1,Makalu La-NW Ridge,,,,Spain,Javier Camacho,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,0,0,0,0
+,MAKA14122,2014,1,1,Makalu La-NW Ridge,,,,New Zealand,"Russell Brice, Suzanne Huesser",TRUE,FALSE,FALSE,FALSE,11,9,7,0,0,7,6,0,0
+,MAKA14123,2014,1,1,Makalu La-NW Ridge,,,,Germany,Luis Stitzinger,TRUE,FALSE,FALSE,FALSE,3,3,1,0,0,0,0,0,0
+,MAKA14124,2014,1,1,Makalu La-NW Ridge,,,,Spain,Inigo Castineyra,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,MAKA14125,2014,1,1,Makalu La-NW Ridge,,,,Spain,Ferran Latorre,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,MAKA14126,2014,1,1,Makalu La-NW Ridge,,,,Switzerland,Frederic Roux,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,0,0,0,0
+,MAKA14127,2014,1,1,Makalu La-NW Ridge,,,,Australia,Ralph Schweizer,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,MAKA14301,2014,3,1,SE Ridge,,,,UK,Colin Scott,FALSE,FALSE,FALSE,FALSE,8,6,0,0,0,6,0,0,0
+,MAKA14302,2014,3,1,SE Ridge,Makalu La-NW Ridge,,,USA,Garrett Madison,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,1,0,0,0
+,MAKA14303,2014,3,1,Makalu La-NW Ridge,,,,Slovenia,Irena Mrak,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,MAKA15101,2015,1,1,Makalu La-NW Ridge,,,,Iran,Parvaneh Kazemi,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA15102,2015,1,1,Makalu La-NW Ridge,,,,Germany,Michael Wirth,FALSE,FALSE,FALSE,FALSE,7,7,0,0,0,8,0,0,0
+,MAKA15103,2015,1,1,Makalu La-NW Ridge,,,,Austria,Martina Bauer,FALSE,FALSE,FALSE,FALSE,9,9,0,0,0,0,0,0,0
+,MAKA15104,2015,1,1,Makalu La-NW Ridge,,,,UK,Victor Saunders,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,4,0,0,0
+,MAKA15105,2015,1,1,Makalu La-NW Ridge,,,,Canada,Joie Seagram,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA15106,2015,1,1,Makalu La-NW Ridge,,,,New Zealand,"Russell Brice, Bruce Hasler",FALSE,FALSE,FALSE,FALSE,4,3,0,0,0,5,0,0,0
+,MAKA15107,2015,1,0,Makalu La-NW Ridge,,,,Belgium,Jean-Luc Fohal,FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,0,0,0,0
+,MAKA15108,2015,1,1,Makalu-La-NW Ridge,,,,USA,Brad Johnson,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,MAKA15109,2015,1,1,Makalu La-NW Ridge,,,,Slovakia,Tibor Hromadka,FALSE,FALSE,FALSE,FALSE,9,2,0,0,0,0,0,0,0
+,MAKA15110,2015,1,1,Makalu La-NW Ridge,,,,Japan,Kenichi Kubo,FALSE,FALSE,FALSE,FALSE,6,0,0,0,0,0,0,0,0
+,MAKA15301,2015,3,1,Makalu La-NW Ridge,,,,UK,Adrian Ballinger,FALSE,FALSE,FALSE,FALSE,5,4,0,0,0,4,0,0,0
+,MAKA16101,2016,1,1,Makalu La-NW Ridge,,,,Spain,Ferran Latorre,TRUE,FALSE,FALSE,FALSE,21,19,8,0,0,8,5,0,0
+,MAKA16102,2016,1,1,Makalu La-NW Ridge,,,,Germany,Juergen Greher,TRUE,FALSE,FALSE,FALSE,11,9,1,0,0,4,1,2,2
+,MAKA16103,2016,1,1,Makalu La-NW Ridge,,,,Germany,Steffen Hirzel,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA16104,2016,1,1,Makalu La-NW Ridge,,,,Iran,Parvaneh Kazemi,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,2,2,0,0
+,MAKA16105,2016,1,1,Makalu La-NW Ridge,,,,Switzerland,Andreas Neuschmid,TRUE,FALSE,FALSE,FALSE,5,5,5,0,0,5,4,0,0
+,MAKA16106,2016,1,1,Makalu La-NW Ridge,,,,Italy,Nives Meroi,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,0,0,0,0
+,MAKA16107,2016,1,1,Makalu La-NW Ridge,,,,Canada,Joie Seagram,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA16108,2016,1,1,Makalu La-NW Ridge,,,,France,Serge Bazin,TRUE,FALSE,FALSE,FALSE,6,6,1,0,0,2,1,0,0
+,MAKA16109,2016,1,1,Makalu La-NW Ridge,,,,Italy,Marco Confortola,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,0,0,0,0
+,MAKA16110,2016,1,1,NW side,,,,Romania,Justin Ionescu,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,MAKA17101,2017,1,1,Makalu La-NW Ridge,,,,UK,Phil Crampton,FALSE,FALSE,FALSE,FALSE,7,5,0,0,0,6,0,0,0
+,MAKA17102,2017,1,1,Makalu La-NW Ridge,,,,Nepal,Mingma Gyalje Sherpa,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,1,1,0,0
+,MAKA17103,2017,1,1,Makalu La-NW Ridge,,,,Russia,Dmitri Sinev,TRUE,FALSE,FALSE,FALSE,9,9,1,0,0,4,0,0,0
+,MAKA17104,2017,1,1,Makalu La-NW Ridge,,,,Japan,Shinha Nobuo,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,2,0,0,0
+,MAKA17105,2017,1,1,NW Ridge,,,,Spain,"Nuria Picas, Eva Zarzuelo",FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,0,0,0,0
+,MAKA17106,2017,1,1,Makalu La-NW Ridge,,,,Italy,Simone La Terra,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,MAKA17107,2017,1,1,Makalu La-NW Ridge,,,,S Korea,Lee Chang-Baek,FALSE,FALSE,FALSE,FALSE,6,5,0,0,0,4,0,0,0
+,MAKA17108,2017,1,1,Makalu La-NW Ridge,,,,USA,Richard Morse,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,4,0,0,0
+,MAKA17109,2017,1,1,Makalu La-NW Ridge,,,,France,Elisabeth Revol,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA17110,2017,1,1,Makalu La-NW Ridge,,,,Canada,Jocelyn Seagram,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA17111,2017,1,1,Makalu La-NW Ridge,,,,Japan,Tatsuo Matsumoto,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,2,0,0,0
+,MAKA17112,2017,1,1,Makalu La-NW Ridge,,,,Nepal,Nirmal Purja,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,4,3,0,0
+,MAKA17301,2017,3,1,NW Ridge,,,,France,Francois Solignac,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,4,0,0,0
+,MAKA17302,2017,3,1,NW Ridge,,,,Singapore,Kumaran Rasappan,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,2,0,0,0
+,MAKA17303,2017,3,1,NW Ridge,,,,China,Gao Xiao-Dan,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA18101,2018,1,1,Makalu La-NW Ridge,,,,Spain,Jesus Morales Manzanares,TRUE,FALSE,FALSE,FALSE,11,11,3,0,0,4,1,0,0
+,MAKA18102,2018,1,1,Makalu La-NW Ridge,,,,China,Zhang Jing-Chuan,TRUE,FALSE,FALSE,FALSE,8,8,5,0,0,8,7,0,0
+,MAKA18103,2018,1,1,Makalu La-NW Ridge,,,,Sweden,Carina Ahlqvist,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA18104,2018,1,1,Makalu La-NW Ridge,,,,Switzerland,Josette Valloton,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,MAKA18105,2018,1,1,Makalu La-NW Ridge,,,,China,Gao Xiao-Dan,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,3,3,1,1
+,MAKA19101,2019,1,1,Makalu La-NW Ridge,,,,Nepal,Sherpa Rope-Fixing,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,5,5,0,0
+,MAKA19102,2019,1,1,Makalu La-NW Ridge,,,,Ukraine,Taras Pozdnii,TRUE,FALSE,FALSE,FALSE,22,21,13,2,2,20,13,1,1
+,MAKA19103,2019,1,1,Makalu La-NW Ridge,,,,India,Manoj Joshi,TRUE,FALSE,FALSE,FALSE,18,16,16,1,1,15,13,0,0
+,MAKA19104,2019,1,1,Makalu La-NW Ridge,,,,Nepal,"Lakpa Sherpa, Chris Warner",TRUE,FALSE,FALSE,FALSE,4,4,3,0,0,3,1,0,0
+,MAKA19105,2019,1,1,Makalu La-NW Ridge,,,,India,Priyanka Mohite,TRUE,FALSE,FALSE,FALSE,5,5,4,0,0,5,4,0,0
+,MAKA19106,2019,1,1,Makalu La-NW Ridge,,,,UK,Phil Crampton,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,2,2,0,0
+,MAKA19107,2019,1,1,Makalu La-NW Ridge,,,,Nepal,Dawa Yangzum Sherpa,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,1,1,0,0
+,MAKA19108,2019,1,1,Makalu La-NW Ridge,,,,Greece,Antonios Sykaris,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,2,0,0,0
+,MAKA19109,2019,1,1,Makalu La-NW Ridge,,,,Nepal,Nirmal Purja,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,1,1,0,0
+,MAKA19110,2019,1,1,Makalu La-NW Ridge,,,,China,Li Gao,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,1,1,0,0
+,MAKA54101,1954,1,1,S Face-SE Ridge,,,,USA,William Siri,FALSE,FALSE,FALSE,FALSE,10,7,0,0,0,12,0,0,0
+,MAKA54102,1954,1,1,Makalu La-NW Ridge (recon),,,,New Zealand,Edmund Hillary,FALSE,FALSE,FALSE,FALSE,10,10,0,0,0,15,0,0,0
+,MAKA54301,1954,3,1,Makalu La-NW Ridge,,,,France,Jean Franco,FALSE,FALSE,FALSE,FALSE,8,7,0,0,0,11,0,1,0
+,MAKA55101,1955,1,1,Makalu La-NW Face,,,,France,Jean Franco,TRUE,FALSE,FALSE,FALSE,11,8,8,0,0,25,1,0,0
+,MAKA61101,1961,1,1,Makalu La-N Face,,,,New Zealand,Edmund Hillary,FALSE,FALSE,FALSE,FALSE,17,10,0,0,0,50,0,0,0
+,MAKA70101,1970,1,1,SE Ridge,,,,Japan,"Masao Kumazawa, Yohei Ito",TRUE,FALSE,FALSE,FALSE,20,18,2,0,0,25,0,0,0
+,MAKA71101,1971,1,1,W Pillar,,,,France,Robert Paragot,TRUE,FALSE,FALSE,FALSE,14,14,2,0,0,18,0,0,0
+,MAKA72301,1972,3,1,S Face,,,,Yugoslavia,Ales Kunaver,FALSE,FALSE,FALSE,FALSE,14,10,0,0,0,10,0,0,0
+,MAKA73101,1973,1,1,SE Buttress,,,,Czechoslovakia,Ivan Galfy,FALSE,FALSE,FALSE,FALSE,19,18,0,1,1,9,0,0,0
+,MAKA74101,1974,1,1,S Face,,,,Austria,Wolfgang Nairz,FALSE,FALSE,FALSE,FALSE,10,10,0,0,0,10,0,0,0
+,MAKA74301,1974,3,1,S Face,,,,W Germany,Fritz Stammberger,FALSE,FALSE,FALSE,FALSE,9,9,0,0,0,4,0,0,0
+,MAKA75301,1975,3,1,S Face,,,,Yugoslavia,Ales Kunaver,TRUE,FALSE,FALSE,FALSE,21,21,7,0,0,11,0,0,0
+,MAKA76101,1976,1,1,SE Buttress up; SE Ridge down,,,,Czechoslovakia,Ivan Galfy,TRUE,FALSE,FALSE,FALSE,18,17,2,1,1,10,0,0,0
+,MAKA76102,1976,1,1,SE Ridge,,,,Spain,Josep Montfort,TRUE,FALSE,FALSE,FALSE,13,13,1,0,0,9,0,0,0
+,MAKA77101,1977,1,1,W Face,,,,USA,"Jeff Long, John Roskelley",FALSE,FALSE,FALSE,FALSE,21,11,0,0,0,0,0,0,0
+,MAKA78101,1978,1,1,Makalu La-NW Ridge,,,,W Germany,Hermann Warth,TRUE,FALSE,FALSE,FALSE,8,7,7,0,0,0,0,0,0
+,MAKA78301,1978,3,1,Makalu La-NW Ridge,,,,Poland,Janusz Kurczab,FALSE,FALSE,FALSE,FALSE,20,20,0,1,1,0,0,0,0
+,MAKA80101,1980,1,1,W Pillar (Ridge),,,,USA,John Roskelley,TRUE,FALSE,FALSE,FALSE,4,4,1,0,0,0,0,0,0
+,MAKA80301,1980,3,1,SE Ridge (to 8075m),NW side (to 7550m),,,UK,Doug Scott,FALSE,FALSE,FALSE,FALSE,5,4,0,0,0,0,0,0,0
+,MAKA80401,1980,4,1,SE Ridge,,,,Italy,Renato Casarotto,FALSE,FALSE,FALSE,FALSE,6,3,0,0,0,4,0,0,0
+,MAKA81101,1981,1,1,Makalu La-NW Ridge (to 7800m),W Face (to 6800m),,,Poland,"Voytek Kurtyka, Alex MacIntyre",FALSE,FALSE,FALSE,FALSE,6,4,0,0,0,0,0,0,0
+,MAKA81102,1981,1,1,Makalu La-NW Ridge,,,,Austria,Hanns Schell,TRUE,FALSE,FALSE,FALSE,4,4,1,0,0,3,0,0,0
+,MAKA81301,1981,3,1,NW side (acclim to 8000m),W Face (to 7900m),W Face-N Ridge,,Poland,Voytek Kurtyka,FALSE,FALSE,TRUE,FALSE,3,3,1,0,0,0,0,0,0
+,MAKA81302,1981,3,1,Makalu La-NW Ridge,,,,Austria,Arthur Haid,FALSE,FALSE,FALSE,FALSE,9,9,0,0,0,6,0,0,0
+,MAKA81401,1981,4,1,Makalu La-NW Ridge,,,,UK,Ron Rutland,FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,0,0,0,0
+,MAKA81402,1981,4,1,W Pillar (to 7000m),NW side (to 6900m+),,,France,Ivan Ghirardini,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,MAKA82101,1982,1,1,SE Ridge-E Face,,,,S Korea,Hahm Tak-Young,TRUE,FALSE,FALSE,FALSE,16,16,1,0,0,14,2,0,0
+,MAKA82301,1982,3,1,W Face-NW Ridge,,,,Poland,Adam Bilczewski,TRUE,FALSE,FALSE,FALSE,20,19,1,1,1,1,0,0,0
+,MAKA82302,1982,3,1,Makalu La-NW Ridge,,,,Japan,Kazuo Yuda,TRUE,FALSE,FALSE,FALSE,5,5,3,0,0,3,0,0,0
+,MAKA82303,1982,3,1,W Pillar (to 7400m),W Face-NW Ridge (to 8200m),,,Switzerland,Romolo Nottaris,FALSE,FALSE,FALSE,FALSE,9,3,0,0,0,0,0,0,0
+,MAKA83101,1983,1,1,SE Ridge (S Korean 1982 rte),,,,USA,Ronald Matous,FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,0,0,0,0
+,MAKA83102,1983,1,1,Makalu La-NW Ridge,,,,Belgium,Wounter Panis,FALSE,FALSE,FALSE,FALSE,9,9,0,0,0,3,0,1,0
+,MAKA83301,1983,3,1,W Pillar,,,,New Zealand,Peter Hillary,FALSE,FALSE,FALSE,FALSE,4,4,0,2,2,1,0,0,0
+,MAKA83302,1983,3,1,Makalu La-NW Ridge,,,,Japan,Masaaki Fukushima,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,0,0,0,0
+,MAKA84101,1984,1,1,W Pillar,,,,USA,Carlos Buhler,FALSE,FALSE,FALSE,FALSE,6,5,0,0,0,1,0,0,0
+,MAKA84102,1984,1,1,Makalu La-NW Ridge,,,,Spain,Mari Abrego Santesteban,TRUE,FALSE,FALSE,FALSE,4,4,2,0,0,0,0,0,0
+,MAKA84103,1984,1,1,SE Ridge (to 8370m),NW Ridge (to 7400m),,,UK,Doug Scott,FALSE,FALSE,FALSE,FALSE,12,7,0,0,0,0,0,0,0
+,MAKA84301,1984,3,1,SE Buttress (to 6800m),NW side-N Ridge (to 7900m),,,Italy,Almo Giambisi,FALSE,FALSE,FALSE,FALSE,11,11,0,0,0,5,0,0,0
+,MAKA84302,1984,3,1,W Face-NW Ridge up; variation down,,,,Switzerland,Romolo Nottaris,TRUE,FALSE,FALSE,FALSE,3,3,1,0,0,2,0,1,0
+,MAKA84303,1984,3,1,Makalu La-NW Ridge,,,,Spain,Antonio Luna Rodriguez,FALSE,FALSE,FALSE,FALSE,6,4,0,0,0,0,0,0,0
+,MAKA85101,1985,1,1,Makalu La-NW Ridge-N Face,,,,France,Maurice Barrard,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,0,0,0,0
+,MAKA85301,1985,3,1,Makalu La-NW Ridge,,,,Italy,Sergio Martini,TRUE,FALSE,FALSE,FALSE,6,5,5,0,0,1,0,0,0
+,MAKA85401,1985,4,1,Makalu La-NW Ridge,,,,Japan,Hiroyuki Baba,FALSE,FALSE,FALSE,FALSE,7,5,0,0,0,3,0,0,0
+,MAKA85402,1985,4,1,Makalu La-NW Ridge,,,,Italy,Reinhold Messner,FALSE,FALSE,FALSE,FALSE,6,5,0,0,0,4,0,0,0
+,MAKA86101,1986,1,1,Makalu La-NW Ridge,,,,USA,Ned Gillette,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,4,0,0,0
+,MAKA86301,1986,3,1,Makalu La-NW Ridge,,,,Italy,Reinhold Messner,TRUE,FALSE,FALSE,FALSE,9,8,3,0,0,8,0,0,0
+,MAKA86302,1986,3,1,Makalu La-NW Ridge,W Pillar (to 6700m),,,Poland,Krysztof Pankiewicz,TRUE,FALSE,FALSE,FALSE,15,14,2,1,1,1,0,0,0
+,MAKA86303,1986,3,1,Makalu La-NW Ridge,,,,Italy,Cesare Cesa Bianchi,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,2,0,0,0
+,MAKA86304,1986,3,1,Makalu La-NW Ridge-N Face,,,,France,Raymond Renaud,FALSE,FALSE,FALSE,FALSE,10,9,0,0,0,8,0,1,0
+,MAKA86401,1986,4,1,SE Ridge,,,,Japan,Noboru Yamada,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,MAKA87101,1987,1,1,S Face (Yugoslav 1975 rte),,,,Netherlands,Edwin van Nieuwkerk,FALSE,FALSE,FALSE,FALSE,5,4,0,0,0,2,0,0,0
+,MAKA87102,1987,1,1,Makalu La-NW Ridge,,,,USA,Glenn Porzak,TRUE,FALSE,FALSE,FALSE,9,9,3,0,0,4,3,0,0
+,MAKA87301,1987,3,1,Makalu La-NW Ridge,,,,France,Michel Fauquet,FALSE,FALSE,FALSE,FALSE,13,12,0,0,0,3,0,0,0
+,MAKA87302,1987,3,1,SE Ridge,,,,Switzerland,Daniel Anker,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,MAKA87303,1987,3,1,NW Ridge (acclimatization rte) (to 6500m),"W Pillar (permit route, did not attempt)",,,Austria,Wilfried Studer,FALSE,FALSE,FALSE,FALSE,5,4,0,0,0,1,0,0,0
+,MAKA87401,1987,4,1,Makalu La-NW Ridge,,,,Poland,Andrzej Machnik,FALSE,FALSE,FALSE,FALSE,9,8,0,0,0,0,0,0,0
+,MAKA88101,1988,1,1,W Pillar up; NW Ridge down,,,,France,Marc Batard,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,2,0,0,0
+,MAKA88102,1988,1,1,Makalu La-NW Ridge,,,,Italy,Savio Giacomelli,FALSE,FALSE,FALSE,FALSE,9,8,0,0,0,1,0,0,0
+,MAKA88103,1988,1,1,Makalu La-NW Ridge,,,,W Germany,Sigi Hupfauer,FALSE,FALSE,FALSE,FALSE,9,8,0,0,0,2,0,0,0
+,MAKA88301,1988,3,1,Left side of W Face-N Face,,,,UK,Doug Scott,FALSE,FALSE,FALSE,FALSE,11,10,0,0,0,1,0,0,0
+,MAKA88302,1988,3,1,Makalu La-NW Ridge,,,,Spain,Josep Aced,FALSE,FALSE,FALSE,FALSE,11,11,0,0,0,4,0,0,0
+,MAKA88303,1988,3,1,Makalu La-NW Ridge,,,,Poland,Anna Czerwinska,TRUE,FALSE,FALSE,FALSE,11,10,2,1,1,0,0,0,0
+,MAKA88304,1988,3,1,SE Ridge,,,,Spain,Miguel Gomez,FALSE,FALSE,FALSE,FALSE,9,9,0,0,0,4,0,0,0
+,MAKA88305,1988,3,1,Makalu La-NW Ridge,W Pillar (to 7200m),W Face (to 6800m),,W Germany,Hans Eitel,TRUE,FALSE,FALSE,FALSE,10,8,1,0,0,0,0,0,0
+,MAKA89101,1989,1,1,Makalu La-NW Ridge,,,,Belgium,Jos Dewint,FALSE,FALSE,FALSE,FALSE,13,10,0,0,0,1,0,0,0
+,MAKA89102,1989,1,1,W Pillar,,,,Spain,Jose Luis Zuloaga,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,1,0,0,0
+,MAKA89301,1989,3,1,Makalu La-NW Ridge,,,,Spain,Pere Giro Beltran,FALSE,FALSE,FALSE,FALSE,7,7,0,0,0,3,0,0,0
+,MAKA89302,1989,3,1,Makalu La-NW Ridge,SE Ridge (to 6200m),,,UK,"Michael Woolridge, Andy Fanshawe",FALSE,FALSE,FALSE,FALSE,13,12,0,0,0,0,0,0,0
+,MAKA89303,1989,3,1,Makalu La-NW Ridge,,,,Spain,Ana Sese Lanau,FALSE,FALSE,FALSE,FALSE,7,7,0,0,0,0,0,0,0
+,MAKA89304,1989,3,1,S Face up; NW Ridge down,,,,France,Pierre Beghin,TRUE,FALSE,FALSE,FALSE,5,4,1,0,0,0,0,0,0
+,MAKA89305,1989,3,1,Makalu La-NW Ridge,,,,Austria,Bruno Roth Zaugg,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,0,0,0,0
+,MAKA89306,1989,3,1,Makalu La-NW Ridge,,,,USA,Joe Frank,FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,0,0,0,0
+,MAKA90101,1990,1,1,W Pillar,,,,USA,Catherine (Kitty) Calhoun,TRUE,FALSE,FALSE,FALSE,6,6,2,0,0,0,0,0,0
+,MAKA90102,1990,1,1,Makalu La-NW Ridge,,,,Japan,Makoto Hara,TRUE,FALSE,FALSE,FALSE,4,4,1,0,0,3,1,0,0
+,MAKA90103,1990,1,1,Makalu La-NW Ridge,,,,Indonesia,Taufiz Afriansyah,FALSE,FALSE,FALSE,FALSE,9,7,0,0,0,4,0,0,0
+,MAKA90301,1990,3,1,Makalu La-NW Ridge,,,,Japan,Kazufumi Watanabe,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,MAKA90302,1990,3,1,Kukuczka Rib direct to NW Ridge,,,,Spain,Joaquim Prunes,TRUE,FALSE,FALSE,FALSE,14,13,2,0,0,4,1,0,0
+,MAKA90303,1990,3,1,SE Ridge,,,,S Korea,Kim Kwan-Jun,FALSE,FALSE,FALSE,FALSE,8,6,0,0,0,6,0,0,0
+,MAKA90304,1990,3,1,SE Buttress,,,,Japan,Kenzi Shimakata,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,3,0,0,0
+,MAKA90305,1990,3,1,Makalu La-NW Ridge,,,,France,"Yvan Estienne, Remi Roux",FALSE,FALSE,FALSE,FALSE,9,9,0,0,0,4,0,0,0
+,MAKA90306,1990,3,1,Makalu La-NW Ridge,,,,USA,Bela Vadasz,FALSE,FALSE,FALSE,FALSE,11,11,0,0,0,3,0,0,0
+,MAKA90401,1990,4,1,Makalu La-NW Ridge (to 7400m),W Pillar (to 7300m),,,Poland,Krzysztof Wielicki,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,0,0,0,0
+,MAKA91101,1991,1,1,Makalu La-NW Ridge,,,,USA,Todd Burleson,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,2,0,0,0
+,MAKA91102,1991,1,1,W Face (new rte),,,,Italy,Casimiro Ferrari,FALSE,FALSE,FALSE,FALSE,7,7,0,0,0,6,0,0,0
+,MAKA91103,1991,1,1,Makalu La-NW Ridge,,,,Netherlands,Rene de Bos,FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,3,0,0,0
+,MAKA91301,1991,3,1,W Pillar,,,,Spain,Carles Valles,TRUE,FALSE,FALSE,FALSE,5,5,2,1,1,1,0,0,0
+,MAKA91302,1991,3,1,Makalu La-Kukuzcka Rib,,,,Spain,Alberto Inurrategi,TRUE,FALSE,FALSE,FALSE,6,6,3,0,0,0,0,0,0
+,MAKA91303,1991,3,1,Makalu La-Kukuczka Rib,,,,Spain,Jordi Bosch,TRUE,FALSE,FALSE,FALSE,12,12,3,0,0,0,0,0,0
+,MAKA91304,1991,3,1,W Face (to 7800m),W Pillar,,,Switzerland,Erhard Loretan,FALSE,TRUE,FALSE,FALSE,2,2,2,0,0,0,0,0,0
+,MAKA91305,1991,3,1,Makalu La-NW Ridge,,,,Japan,Hirotaka Imamura,TRUE,FALSE,FALSE,FALSE,6,6,5,1,1,2,1,0,0
+,MAKA92101,1992,1,1,W Face (to 7000m),NW side (to 8250m),,,UK,Nick Mason,FALSE,FALSE,FALSE,FALSE,18,9,0,0,0,11,0,0,0
+,MAKA92102,1992,1,1,Makalu La-NW Ridge,,,,USA,James McEachern,FALSE,FALSE,FALSE,FALSE,8,8,0,0,0,0,0,0,0
+,MAKA92301,1992,3,1,Makalu La-NW Ridge,,,,Japan,Sadao Okada,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,4,0,0,0
+,MAKA92302,1992,3,1,Makalu La-NW Ridge,,,,France,Annie Beghin,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,2,0,0,0
+,MAKA92303,1992,3,1,Makalu La-NW Ridge,,,,Switzerland,Karl Kobler,FALSE,FALSE,FALSE,FALSE,12,12,0,0,0,5,0,0,0
+,MAKA92304,1992,3,1,Makalu La-NW Ridge,,,,Spain,Juan Jose Rodriguez,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,2,0,0,0
+,MAKA93101,1993,1,1,W Face (to 7600m),NW side,,,Italy,Oreste Forno,FALSE,TRUE,FALSE,FALSE,13,13,4,0,0,4,2,0,0
+,MAKA93102,1993,1,1,W Pillar (to 7650m),W Face (to 7000m),,,USA,Jeff Lowe,FALSE,FALSE,FALSE,FALSE,5,4,0,0,0,1,0,0,0
+,MAKA93301,1993,3,1,W Pillar,,,,Germany,Juergen Knappe,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,0,0,0,0
+,MAKA93302,1993,3,1,W Pillar (to 6800m),Left side of W Face to Makalu La,,,Australia,Ian Collins,FALSE,FALSE,FALSE,FALSE,7,7,0,0,0,0,0,0,0
+,MAKA93303,1993,3,1,Makalu La-NW Ridge,,,,France,Jean Coudray,FALSE,FALSE,FALSE,FALSE,11,11,0,0,0,4,0,0,0
+,MAKA93304,1993,3,1,Left point of W Face-NW Ridge,,,,Czechoslovakia,Jiri Novak,FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,1,0,0,0
+,MAKA94101,1994,1,1,Makalu La-NW Ridge,,,,USA,Thor Kieser,TRUE,FALSE,FALSE,FALSE,13,13,2,0,0,2,0,0,0
+,MAKA95101,1995,1,2,E Ridge to plateau E of Makalu La-NW Ridge,,,,Japan,Tsuneo Shigehiro,TRUE,FALSE,FALSE,FALSE,16,12,8,0,0,12,0,0,0
+,MAKA95102,1995,1,1,Makalu La-NW Ridge,,,,Spain,Juanito Oiarzabal,TRUE,FALSE,FALSE,FALSE,5,5,5,0,0,0,0,0,0
+,MAKA95103,1995,1,1,Makalu La-NW Ridge,,,,Australia,David Hume,TRUE,FALSE,FALSE,FALSE,7,7,2,1,1,7,0,0,0
+,MAKA95104,1995,1,1,Makalu La-NW Ridge,,,,France,Benoit Chamoux,TRUE,FALSE,FALSE,FALSE,3,2,2,0,0,4,0,0,0
+,MAKA95105,1995,1,1,Makalu La-NW Ridge,,,,New Zealand,Rob Hall,TRUE,FALSE,FALSE,FALSE,3,3,3,0,0,0,0,0,0
+,MAKA95301,1995,3,1,SE Ridge,,,,USA,Daniel Mazur,TRUE,FALSE,FALSE,FALSE,17,15,4,0,0,0,0,0,0
+,MAKA95302,1995,3,1,Makalu La-NW Ridge,,,,Netherlands,Eltjo Reint Jon (Reiner) Zuidhoff,FALSE,FALSE,FALSE,FALSE,7,6,0,0,0,2,0,0,0
+,MAKA96101,1996,1,1,Makalu La-NW Ridge,,,,Russia,Vladimir Bachkirov,TRUE,FALSE,FALSE,FALSE,21,21,10,1,1,0,0,0,0
+,MAKA96301,1996,3,1,NE Ridge (to 6420m),NE Ridge (Japanese 1986 rte) (to 7000m),,,China,Samdrup,FALSE,FALSE,FALSE,FALSE,11,10,0,0,0,4,0,0,0
+,MAKA96302,1996,3,1,Makalu La-NW Ridge,,,,Belgium,Daniel Van Doorsselaere,FALSE,FALSE,FALSE,FALSE,7,7,0,0,0,2,0,0,0
+,MAKA96303,1996,3,1,NW Ridge,,,,Spain,Joseba Manterola,FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,0,0,0,0
+,MAKA96304,1996,3,1,Makalu La-NW Ridge,,,,Switzerland,Andre Georges,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,3,0,0,0
+,MAKA96305,1996,3,1,NW Ridge route (to 6800m),W Face (Swiss rte) (to 7400m),,,Japan,Yasushi Yamanoi,FALSE,FALSE,FALSE,FALSE,7,7,0,0,0,2,0,0,0
+,MAKA96306,1996,3,1,NW Ridge,,,,Italy,Rudy Bucella,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,MAKA96401,1996,4,1,Makalu La-NW Ridge,,,,Spain,Manuel Gonzalez Diaz,FALSE,FALSE,FALSE,FALSE,8,7,0,0,0,0,0,0,0
+,MAKA97101,1997,1,1,W Face-W Pillar-S Ridge,,,,Russia,Sergei Efimov,TRUE,FALSE,FALSE,FALSE,9,8,5,2,2,0,0,0,0
+,MAKA97102,1997,1,1,Makalu La-NW Ridge,,,,Switzerland,"Claude Bitz, Serge Bonvin",FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,MAKA97103,1997,1,1,Makalu La-NW Ridge,,,,UK,Alan Hinkes,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,MAKA97104,1997,1,1,Makalu La-NW Ridge,,,,Denmark,Michael Strynoe,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,MAKA97301,1997,3,1,Makalu La-NW side,,,,USA,David Custer,FALSE,FALSE,FALSE,FALSE,8,6,0,0,0,0,0,0,0
+,MAKA97302,1997,3,1,Makalu La-NW Ridge (slight variation),,,,Switzerland,Christophe Berclaz,FALSE,FALSE,FALSE,FALSE,7,7,0,0,0,0,0,0,0
+,MAKA97303,1997,3,1,Makalu La-NW Ridge,,,,Denmark,Per Bager,FALSE,FALSE,FALSE,FALSE,6,6,0,1,1,3,0,0,0
+,MAKA98101,1998,1,1,Makalu La-NW Ridge,,,,Germany,Goetz Wiegand,FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,1,0,0,0
+,MAKA98102,1998,1,1,Makalu La-NW Ridge,,,,Austria,Roland Mattle,FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,0,0,0,0
+,MAKA98103,1998,1,1,Makalu La-NW Ridge,,,,Czech Republic,Josef Simunek,TRUE,FALSE,FALSE,FALSE,8,7,2,0,0,3,1,0,0
+,MAKA98104,1998,1,1,Makalu La-NW Ridge,,,,Russia,Doychin Vassilev,TRUE,FALSE,FALSE,FALSE,19,17,7,0,0,0,0,0,0
+,MAKA98105,1998,1,1,Makalu La-NW Ridge,,,,Spain,Oscar Cadiach,TRUE,FALSE,FALSE,FALSE,5,5,2,0,0,0,0,0,0
+,MAKA98301,1998,3,1,Makalu La-NW Ridge,,,,Japan,Hisashi Hashimoto,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,1,0,0,0
+,MAKA98302,1998,3,1,Makalu La-NW Ridge,,,,S Korea,Park Young-Seok,FALSE,FALSE,FALSE,FALSE,7,7,0,0,0,3,0,0,0
+,MAKA98303,1998,3,1,Makalu La-NW Ridge,,,,Poland,Piotr Pustelnik,FALSE,FALSE,FALSE,FALSE,10,9,0,0,0,0,0,0,0
+,MAKA98304,1998,3,1,Makalu La-NW Ridge,,,,Japan,Yasushi Fukuda,FALSE,FALSE,FALSE,FALSE,7,7,0,0,0,4,0,0,0
+,MAKA99101,1999,1,1,Makalu La-NW Ridge,,,,Australia,Matthew Rolfe,TRUE,FALSE,FALSE,FALSE,8,8,2,0,0,2,0,0,0
+,MAKA99102,1999,1,1,Makalu La-NW Ridge,,,,UK,Alan Hinkes,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,1,1,0,0
+,MAKA99103,1999,1,1,Makalu La-NW Ridge,,,,Switzerland,Andre Georges,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,1,0,0,0
+,MAKA99104,1999,1,1,Makalu La-NW Ridge,,,,USA,Gary Pfisterer,TRUE,FALSE,FALSE,FALSE,13,13,4,0,0,1,0,0,0
+,MAKA99105,1999,1,1,Makalu La-NW Ridge,,,,Denmark,Michael Knakkergaard-Jorgensen,TRUE,FALSE,FALSE,FALSE,2,2,1,1,1,0,0,0,0
+,MAKA99301,1999,3,1,Makalu La-NW Ridge,,,,S Korea,Park Young-Seok,FALSE,FALSE,FALSE,FALSE,10,10,0,0,0,5,0,1,1

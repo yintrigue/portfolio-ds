@@ -1,0 +1,243 @@
+﻿header,expid,year,season,host,route1,route2,route3,route4,nation,leaders,success1,success2,success3,success4,totmembers,abcmembers,smtmembers,mdeaths,mabcdeaths,tothired,smthired,hdeaths,habcdeaths
+Expeditions to Annapurna I (8091m),,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+1900 to 2020,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+21/03/2020,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+The Himalayan Database,,,0,0,,,,,,,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0
+,ANN100101,2000,1,1,N Face,,,,Spain,Felix Inurrategi,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,0,0,0,0
+,ANN100102,2000,1,1,N Face,,,,Spain,Josep Pujante,FALSE,FALSE,FALSE,FALSE,7,6,0,0,0,3,0,0,0
+,ANN100103,2000,1,1,N Face,,,,France,Thierry Bolo,FALSE,FALSE,FALSE,FALSE,8,8,0,0,0,3,0,0,0
+,ANN100104,2000,1,1,N Face,,,,USA,Edmund Viesturs,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,0,0,0,0
+,ANN100301,2000,3,1,N Face-E Peak (for traverse of summits),,,,France,Nicolas Terray,FALSE,FALSE,FALSE,FALSE,8,8,0,0,0,3,0,0,0
+,ANN100302,2000,3,1,N Face,,,,Japan,Tomiyasu Ishikawa,FALSE,FALSE,FALSE,FALSE,10,10,0,0,0,6,0,0,0
+,ANN100303,2000,3,1,Eastern end of S Face (up); North Ridge (down),,,,France,"Yannick Graziani, Christian Trommsdorf, Patrick Wagnon",FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,ANN102101,2002,1,1,N Face (starting with 74 Span route),,,,UK,Alan Hinkes,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,1,1,0,0
+,ANN102102,2002,1,1,N Face,,,,S Korea,Oh Hee-Joon,TRUE,FALSE,FALSE,FALSE,6,6,1,0,0,3,2,0,0
+,ANN102103,2002,1,1,N Face via ridge E of Dutch Rib (74 Span rte),,,,India,Col S. C. Sharma,TRUE,FALSE,FALSE,FALSE,19,17,4,0,0,13,3,0,0
+,ANN102104,2002,1,1,E Ridge via S Face of Glacier Dome,,,,Spain,"Alberto Inurrategi, Ed Viesturs",TRUE,FALSE,FALSE,FALSE,6,6,2,0,0,0,0,0,0
+,ANN102301,2002,3,1,E Ridge from S,,,,Italy,Christian Kuntner,FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,0,0,0,0
+,ANN103101,2003,1,1,S Face (Bonington route),,,,Japan,Atsushi Yamamoto,TRUE,FALSE,FALSE,FALSE,10,9,6,0,0,5,2,0,0
+,ANN103301,2003,3,1,S Face,,,,Italy,Adriano Favre,FALSE,FALSE,FALSE,FALSE,7,7,0,0,0,2,0,0,0
+,ANN104101,2004,1,1,S Face (left of Bonington route),,,,Poland,Piotr Pustelnik,FALSE,FALSE,FALSE,FALSE,8,8,0,0,0,2,0,0,0
+,ANN104102,2004,1,1,N Face (French route),,,,Germany,Ralf Dujmovits,TRUE,FALSE,FALSE,FALSE,7,6,4,0,0,0,0,0,0
+,ANN104301,2004,3,1,N Face (French route),,,,Japan,Michio Sato,FALSE,FALSE,FALSE,FALSE,4,4,0,2,2,6,0,0,0
+,ANN105101,2005,1,1,N Face,,,,Italy,Mario Merelli,TRUE,FALSE,FALSE,FALSE,5,5,3,0,0,0,0,0,0
+,ANN105102,2005,1,1,N Face (French route),,,,USA,Ed Viesturs,TRUE,FALSE,FALSE,FALSE,3,3,2,0,0,0,0,0,0
+,ANN105103,2005,1,1,N Face,,,,USA,Charles Mace,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,ANN105104,2005,1,1,N Face,,,,Australia,Andrew Lock,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,ANN105105,2005,1,1,S Face (Bonington route mostly),,,,Poland,Piotr Pustelnik,FALSE,FALSE,FALSE,FALSE,5,4,0,0,0,2,0,0,0
+,ANN105106,2005,1,1,N Face (French route),,,,Italy,Abele Blanc,FALSE,FALSE,FALSE,FALSE,5,5,0,1,1,0,0,0,0
+,ANN105301,2005,3,1,N Face,,,,Slovakia,Jan Matlak,FALSE,FALSE,FALSE,FALSE,10,10,0,0,0,2,0,0,0
+,ANN106101,2006,1,1,N Face,,,,Italy,Romano Benet,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,ANN106102,2006,1,1,N Face,,,,Kazakhstan,Maxut Zhumayev,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,0,0,0,0
+,ANN106103,2006,1,1,S Face of Glacier Dome-E Ridge,,,,Poland,Piotr Pustelnik,TRUE,FALSE,FALSE,FALSE,4,3,1,0,0,0,0,0,0
+,ANN106104,2006,1,1,S Face of Glacier Dome-E Ridge,,,,China,Lodue (Lhotse),TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,1,1,0,0
+,ANN106301,2006,3,1,N Face,,,,Italy,Marco Camandona,TRUE,FALSE,FALSE,FALSE,5,5,3,0,0,2,1,0,0
+,ANN106302,2006,3,1,S Face (Bonington route),,,,Japan,Yoshichika Yamada,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,5,0,1,1
+,ANN107101,2007,1,1,S Face,,,,Switzerland,Ueli Steck,FALSE,FALSE,FALSE,FALSE,6,2,0,0,0,2,0,0,0
+,ANN107102,2007,1,1,N Face,,,,Australia,Andrew Lock,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,0,0,0,0
+,ANN107103,2007,1,1,N Face,,,,Georgia,"Gia Tortladze, Sergei Bogomolov",FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,ANN107104,2007,1,1,N Face,,,,Spain,Inaki Ochoa,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,ANN107105,2007,1,1,N Face,,,,Spain,Edurne Pasaban,TRUE,FALSE,FALSE,FALSE,5,5,2,0,0,0,0,1,0
+,ANN108101,2008,1,1,NW Face-SW Ridge,,,,Poland,Piotr Morawski,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,0,0,0,0
+,ANN108102,2008,1,1,N Face,,,,Slovakia,Jan Matlak,FALSE,FALSE,FALSE,FALSE,8,7,0,0,0,2,0,0,0
+,ANN108103,2008,1,1,N Face,,,,Czech Republic,Roman Langr,FALSE,FALSE,FALSE,FALSE,2,1,0,0,0,0,0,0,0
+,ANN108104,2008,1,1,S Face,,,,Switzerland,Ueli Steck,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,ANN108105,2008,1,1,S Face-E Ridge,,,,Spain,Inaki Ochoa,FALSE,FALSE,FALSE,FALSE,5,4,0,1,1,0,0,0,0
+,ANN108106,2008,1,1,S Face-E Ridge,,,,Russia,Sergei Bogomolov,TRUE,FALSE,FALSE,FALSE,8,8,1,0,0,0,0,0,0
+,ANN108301,2008,3,1,S Face,,,,Switzerland,Jean Troillet,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,0,0,0,0
+,ANN108302,2008,3,1,NW Face,,,,Czech Republic,Martin Minarik,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,ANN108303,2008,3,1,N Face,,,,USA,Tonya Riggs,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,ANN109101,2009,1,1,S Face-E Ridge,,,,Czech Republic,Libor Uher,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,0,0,0,0
+,ANN109102,2009,1,1,S Face (near Humar 2007 rte),,,,Italy,Romano Benet,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,ANN109103,2009,1,1,S Face (Bonington rte) (to 6400m),S Face-E Ridge via Roc Noir (up); NE Face Dome (down),,,Czech Republic,Martin Minarik,FALSE,FALSE,FALSE,FALSE,3,3,0,1,1,0,0,0,0
+,ANN109104,2009,1,1,N Face (to 5600m),NW Face (to 4900m),,,Russia,Valeri Babanov,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,ANN109105,2009,1,1,N Buttress-N Face,,,,S Korea,Park Tea-Won,TRUE,FALSE,FALSE,FALSE,8,7,1,0,0,3,2,0,0
+,ANN109301,2009,3,1,N Face (Dutch Rib),,,,S Korea,Hong Bo-Seong,FALSE,FALSE,FALSE,FALSE,3,2,0,0,0,0,0,0,0
+,ANN109302,2009,3,1,N Face (Dutch Rib),,,,S Korea,Kim Hong-Bin,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,2,0,0,0
+,ANN109303,2009,3,1,N Face,,,,S Korea,Kim Jae-Soo,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,3,0,0,0
+,ANN109304,2009,3,1,N Face (Dutch Rib),,,,S Korea,Oh Eun-Sun,FALSE,FALSE,FALSE,FALSE,7,7,0,0,0,4,0,0,0
+,ANN110101,2010,1,1,N Face,,,,Italy,Frank Gasser,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,ANN110102,2010,1,1,N Face,,,,Spain,Edurne Pasaban,TRUE,FALSE,FALSE,FALSE,6,5,4,0,0,4,3,0,0
+,ANN110103,2010,1,1,N Face,,,,USA,Nick Rice,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,ANN110104,2010,1,1,N Face (east of Dutch Rib),,,,Spain,Carlos Pauner,TRUE,FALSE,FALSE,FALSE,6,6,3,1,1,2,2,0,0
+,ANN110105,2010,1,1,N Face,,,,S Korea,Oh Eun-Sun,TRUE,FALSE,FALSE,FALSE,7,7,3,0,0,7,3,0,0
+,ANN110106,2010,1,1,S Face,,,,S Korea,Park Young-Seok,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,0,0,0,0
+,ANN110107,2010,1,1,N Face,,,,Iran,Amir Hossein Partovinia,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,ANN110108,2010,1,1,N Face via different lines above C4,,,,Poland,Piotr Pustelnik,TRUE,FALSE,FALSE,FALSE,9,9,7,0,0,0,0,0,0
+,ANN110109,2010,1,1,N Face (German route),,,,Ecuador,Santiago Quintero,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,ANN110110,2010,1,1,N Face,,,,Japan,Nobukazu Kuriki,FALSE,FALSE,FALSE,FALSE,5,3,0,0,0,0,0,0,0
+,ANN110111,2010,1,1,N Face,,,,Nepal,Mingma Sherpa,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,0,0,0,0
+,ANN110301,2010,3,1,S Face,,,,France,Stephane Benoist,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,ANN111101,2011,1,1,"N Face (1980 German rte, left of the rib)",,,,Chile,Adolfo Dell'Orto,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,ANN111102,2011,1,1,NE Buttress (to 6300m),N Face,,,S Korea,Hong Bo-Seong,FALSE,TRUE,FALSE,FALSE,3,3,2,0,0,0,0,0,0
+,ANN111103,2011,1,1,N Face,,,,Italy,Abele Blanc,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,2,2,0,0
+,ANN111104,2011,1,1,N Face,,,,S Korea,Kim Jae-Soo,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,2,1,0,0
+,ANN111301,2011,3,1,NW Face (Messner Spr 1985 rte),,,,Switzerland,Jean Troillet,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,ANN111302,2011,3,1,S Face,,,,S Korea,Park Young-Seok,FALSE,FALSE,FALSE,FALSE,7,5,0,3,3,0,0,0,0
+,ANN111303,2011,3,1,N Face,,,,Japan,Masamike Takine,FALSE,FALSE,FALSE,FALSE,4,2,0,0,0,2,0,0,0
+,ANN112101,2012,1,1,N Face,,,,Spain,Rosa Fernandez,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,ANN112102,2012,1,1,N Face,,,,India,Basanta Kumar Singha Roy,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,1,1,0,0
+,ANN112103,2012,1,1,N Face,,,,Hungary,Laszlo Mecs,FALSE,FALSE,FALSE,FALSE,3,3,0,1,1,0,0,0,0
+,ANN112104,2012,1,1,N Face,,,,China,Yang Chun-Feng,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,2,2,0,0
+,ANN112105,2012,1,1,N Face,,,,Iran,Farkondeh Sadegh,TRUE,FALSE,FALSE,FALSE,2,2,1,0,0,1,1,0,0
+,ANN112106,2012,1,1,NW Ridge,,,,Mexico,Maurizio Lopez,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,2,0,0,0
+,ANN112107,2012,1,1,N Face,,,,Peru,Richard Hidalgo,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,0,0,0,0
+,ANN112108,2012,1,1,N Face,,,,Spain,Oscar Cadiach,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,0,0,0,0
+,ANN112109,2012,1,1,N Face,,,,Spain,Sergio (Sechu) Lopez,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,0,0,0,0
+,ANN112110,2012,1,1,N Face,,,,Spain,Carlos Soria,FALSE,FALSE,FALSE,FALSE,7,7,0,0,0,5,0,0,0
+,ANN112111,2012,1,1,N Face (1980 German rte),,,,Turkey,Tunc Findik,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,ANN112112,2012,1,1,N Face,,,,USA,Cleo Weidlich,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,1,1,0,0
+,ANN112113,2012,1,1,N Face,,,,Nepal,Chhang Dawa Sherpa,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,1,1,0,0
+,ANN112114,2012,1,1,N Face,,,,Czech Republic,Radek Jaros,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,0,0,0,0
+,ANN112115,2012,1,1,N Face,,,,Switzerland,Guntis Brands,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,ANN112116,2012,1,1,N Face,,,,USA,Don Bowie,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,ANN112301,2012,3,1,N Face,,,,Russia,Gleb Sokolov,FALSE,FALSE,FALSE,FALSE,13,12,0,2,2,0,0,0,0
+,ANN113301,2013,3,1,S Face,,,,Switzerland,Ueli Steck,TRUE,FALSE,FALSE,FALSE,2,2,1,0,0,0,0,0,0
+,ANN113302,2013,3,1,S Face,,,,France,Yannick Graziani,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,0,0,0,0
+,ANN114101,2014,1,1,N Face (French rte),,,,China,Zhang Liang,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,6,0,0,0
+,ANN114102,2014,1,1,N Face,,,,Romania,Zsolt Torok,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,0,0,0,0
+,ANN115101,2015,1,1,N Face,,,,Iran,Reza Shahlaee,TRUE,FALSE,FALSE,FALSE,7,7,7,1,1,6,6,1,1
+,ANN115102,2015,1,1,N Face,,,,Canada,Al Hancock,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,6,0,0,0
+,ANN115103,2015,1,1,N Face,,,,Australia,Christine Burke,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,ANN115104,2015,1,1,N Face,,,,USA,Alexander Barber,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,ANN115105,2015,1,1,N Face,,,,Norway,Tore Sunde-Rasmussen,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,1,0,0,0
+,ANN115106,2015,1,1,N Face,,,,Spain,Carlos Soria,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,7,0,0,0
+,ANN115107,2015,1,1,N Face,,,,USA,Don Bowie,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,0,0,0,0
+,ANN115108,2015,1,1,N Face,,,,S Korea,Kim Mi-Gon,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,4,0,0,0
+,ANN115301,2015,3,1,E Ridge of Annapurna South,,,,France,Jean-Yves Igonenc,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,0,0,0,0
+,ANN115401,2015,4,1,N Face,,,,Norway,Tore Sunde-Rasmussen,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,6,0,0,0
+,ANN115402,2015,4,1,N Face,,,,Sweden,Fredrik Strang,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,3,0,0,0
+,ANN116101,2016,1,1,N Face,,,,Nepal,Lakpa Sherpa,TRUE,FALSE,FALSE,FALSE,3,3,3,0,0,1,1,0,0
+,ANN116102,2016,1,1,N Face,,,,Spain,Carlos Soria,TRUE,FALSE,FALSE,FALSE,5,4,3,0,0,6,6,0,0
+,ANN116103,2016,1,1,N Face,,,,Italy,Mario Vielmo,TRUE,FALSE,FALSE,FALSE,14,14,7,0,0,8,7,0,0
+,ANN116104,2016,1,1,N Face,,,,S Korea,Kim Mi-Gon,TRUE,FALSE,FALSE,FALSE,5,1,1,0,0,3,2,0,0
+,ANN116105,2016,1,1,S Face,,,,Japan,Nobukazu Kuriki,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,2,0,0,0
+,ANN117101,2017,1,1,N Face,,,,Italy,Nives Meroi,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,0,0,0,0
+,ANN117102,2017,1,1,N Face,,,,Russia,Oxana Morneva,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,6,0,0,0
+,ANN117103,2017,1,1,N Face,,,,Chile,Juan Mohr Prieto,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,0,0,0,0
+,ANN117104,2017,1,1,N Face,,,,Spain,Alberto Zerain,TRUE,FALSE,FALSE,FALSE,2,2,2,0,0,0,0,0,0
+,ANN117105,2017,1,1,NW Face,,,,Germany,Felix Berg,FALSE,FALSE,FALSE,FALSE,4,3,0,0,0,0,0,0,0
+,ANN117106,2017,1,1,N Face,,,,Norway,Haakon Aasvang,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,2,0,0,0
+,ANN117301,2017,3,1,W Face,,,,Slovenia,Luka Strazar,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,ANN118101,2018,1,1,N Face,,,,S Korea,Kim Hong-Bin,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,4,4,0,0
+,ANN118301,2018,3,1,NW Face,,,,Russia,Vitali Lazo,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,ANN119101,2019,1,1,N Face (Dutch Rib),,,,France,Michel Baronian,TRUE,FALSE,FALSE,FALSE,19,19,14,1,1,25,16,0,0
+,ANN119102,2019,1,1,N Face,,,,India,Arjun Vajpai,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,1,0,0,0
+,ANN119103,2019,1,1,N Face,,,,Nepal,Nirmal Purja,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,1,1,0,0
+,ANN150101,1950,1,1,NW Spur (to 6000m),N Face,,,France,Maurice Herzog,FALSE,TRUE,FALSE,FALSE,8,6,2,0,0,8,0,0,0
+,ANN161101,1961,1,1,W side,,,,W Germany,Fritz Stammberger,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,0,0,0,0
+,ANN169101,1969,1,1,E Ridge,,,,W Germany,Ludwig Greissl,FALSE,FALSE,FALSE,FALSE,9,9,0,0,0,5,0,0,0
+,ANN170101,1970,1,1,S Face,,,,UK,Chris Bonington,TRUE,FALSE,FALSE,FALSE,17,13,2,1,1,12,0,0,0
+,ANN170102,1970,1,1,N Face,,,,UK,Bruce Niven,TRUE,FALSE,FALSE,FALSE,12,11,2,0,0,6,0,0,0
+,ANN173101,1973,1,1,NE Buttress (to 6500m),N side (to 8040m),,,Japan,Shigeki Tsukamoto,FALSE,FALSE,FALSE,FALSE,11,11,0,4,4,10,0,1,1
+,ANN173301,1973,3,1,NW Buttress,,,,Italy,Guido Machetto,FALSE,FALSE,FALSE,FALSE,11,10,0,2,2,12,0,0,0
+,ANN175101,1975,1,1,SE Ridge,,,,Austria,Gerd Gantner,FALSE,FALSE,FALSE,FALSE,9,9,0,1,1,7,0,0,0
+,ANN177301,1977,3,1,N Face (Dutch Rib),,,,Netherlands,Alexander Verrijn Stuart,TRUE,FALSE,FALSE,FALSE,11,11,1,0,0,6,1,0,0
+,ANN178101,1978,1,1,N Face,,,,Austria,Ernst Gritzner,FALSE,FALSE,FALSE,FALSE,8,8,0,0,0,5,0,0,0
+,ANN178301,1978,3,1,N Face (Dutch Rib),,,,USA,Arlene Blum,TRUE,FALSE,FALSE,FALSE,13,12,2,2,2,6,2,0,0
+,ANN179101,1979,1,1,N Face (Dutch Rib),,,,Japan,Hironobu Yagi,TRUE,FALSE,FALSE,FALSE,12,10,1,0,0,6,1,0,0
+,ANN179102,1979,1,1,N Face,,,,France,Jean-Louis Georges,TRUE,FALSE,FALSE,FALSE,7,7,2,1,1,3,0,1,0
+,ANN179301,1979,3,1,N Face (Dutch Rib),,,,USA,Robert A. (Bob) Wilson,FALSE,FALSE,FALSE,FALSE,8,8,0,3,3,0,0,0,0
+,ANN180101,1980,1,1,N Face (Dutch Rib),,,,W Germany,Gustav Harder,TRUE,FALSE,FALSE,FALSE,8,8,4,0,0,5,3,0,0
+,ANN180301,1980,3,1,N Face (Dutch Rib) (to 6500m),,,,W Germany,Erich Walch,FALSE,FALSE,FALSE,FALSE,15,15,0,0,0,8,0,0,0
+,ANN180401,1980,4,1,N Face,,,,Japan,Naoe Sakashita,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,2,0,0,0
+,ANN181101,1981,1,1,E Ridge,,,,Sweden,Tommy Sandberg,FALSE,FALSE,FALSE,FALSE,10,10,0,0,0,4,0,0,0
+,ANN181301,1981,3,1,S Face (pillar E of Brit 70 route & W of,Polish rte Spr 81 to central summit),,,Japan,Hiroshi Yoshino,TRUE,FALSE,FALSE,FALSE,12,12,2,1,1,6,0,0,0
+,ANN181302,1981,3,1,NW Buttress,,,,France,Jean-Paul Vion,FALSE,FALSE,FALSE,FALSE,9,8,0,2,2,4,0,2,2
+,ANN182101,1982,1,1,N Face,,,,Austria,Hanns Schell,TRUE,FALSE,FALSE,FALSE,18,18,3,1,1,4,1,1,1
+,ANN182102,1982,1,1,N Face,,,,W Germany,Siegfried Siebauer,FALSE,FALSE,FALSE,FALSE,16,16,0,0,0,0,0,0,0
+,ANN182301,1982,3,1,S Face,,,,UK,Alexander (Alex) MacIntyre,FALSE,FALSE,FALSE,FALSE,3,3,0,1,1,0,0,0,0
+,ANN182302,1982,3,1,N Face (Dutch Rib),,,,Japan,Susumu Akamatsu,FALSE,FALSE,FALSE,FALSE,3,3,0,2,2,1,0,0,0
+,ANN183301,1983,3,1,N Face (Dutch Rib),,,,S Korea,Ahn Chang-Yeul,FALSE,FALSE,FALSE,FALSE,9,9,0,1,1,4,0,2,2
+,ANN183302,1983,3,1,NW Buttress,,,,Italy,Giuseppe Lafranconi,FALSE,FALSE,FALSE,FALSE,13,13,0,0,0,4,0,0,0
+,ANN183303,1983,3,1,S Face,,,,Yugoslavia,Andrej Stremfelj,FALSE,FALSE,FALSE,FALSE,7,7,0,0,0,3,0,0,0
+,ANN183401,1983,4,1,N Face,,,,Japan,Tadao Sugimoto,FALSE,FALSE,FALSE,FALSE,4,3,0,0,0,3,0,0,0
+,ANN184101,1984,1,1,NW Spur-W Ridge,,,,France,Henri Sigayret,FALSE,FALSE,FALSE,FALSE,10,9,0,2,2,2,0,0,0
+,ANN184301,1984,3,1,W Face up; N Face down,,,,Switzerland,Jean Troillet,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,ANN184302,1984,3,1,Glacier Dome-E Ridge up; N Face (Dutch Rib) down,,,,Switzerland,Frank Tschirky,TRUE,FALSE,FALSE,FALSE,6,6,2,0,0,0,0,0,0
+,ANN184303,1984,3,1,N Face,,,,Japan,Shunji Takegawa,FALSE,FALSE,FALSE,FALSE,10,10,0,0,0,0,0,0,0
+,ANN184304,1984,3,1,S Face,,,,Spain,Nil Bohigas Martorell,FALSE,FALSE,FALSE,FALSE,4,2,0,0,0,0,0,0,0
+,ANN184401,1984,4,1,S Face (Bonington rte),,,,Japan,Kuniaki Yagihara,FALSE,FALSE,FALSE,FALSE,15,15,0,0,0,8,0,0,0
+,ANN184402,1984,4,1,N Face (French 1950 rte),,,,France,Bernard Muller,FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,1,0,0,0
+,ANN184403,1984,4,1,N Face (Dutch Rib),,,,S Korea,Ahn Chang-Yeul,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,8,0,0,0
+,ANN185101,1985,1,1,NW Face,,,,Italy,Reinhold Messner,TRUE,FALSE,FALSE,FALSE,5,5,2,0,0,3,0,0,0
+,ANN185301,1985,3,1,N Face (Dutch Rib),,,,Japan,Jun Yasumura,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,6,0,0,0
+,ANN185302,1985,3,1,NW Face,,,,Switzerland,Jean Troillet,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,ANN185401,1985,4,1,S Face (Polish rte),,,,Bulgaria,Boyan Atanassov,FALSE,FALSE,FALSE,FALSE,16,13,0,0,0,4,0,0,0
+,ANN186101,1986,1,1,S Face (Polish rte),,,,Bulgaria,Boyan Atanassov,FALSE,FALSE,FALSE,FALSE,9,7,0,0,0,3,0,0,0
+,ANN186102,1986,1,1,N Face (French rte),,,,Italy,Giacomo Stefani,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,0,0,0,0
+,ANN186301,1986,3,1,N Face (French rte),,,,Italy,Sergio Martini,TRUE,FALSE,FALSE,FALSE,3,3,3,0,0,1,0,0,0
+,ANN186302,1986,3,1,NW Ridge-NW Buttress,,,,France,Jerome Greggory,FALSE,FALSE,FALSE,FALSE,10,9,0,1,1,3,0,0,0
+,ANN186303,1986,3,1,"NW Face/Ridge to ""Nameless Peak""",,,,France,Henri Sigayret,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,2,0,0,0
+,ANN186304,1986,3,1,"E Ridge (via Fluted Peak, Tarke Kang, Roc Noir)",,,,France,Marc Batard,FALSE,FALSE,FALSE,FALSE,10,10,0,0,0,4,0,0,0
+,ANN186401,1986,4,1,S Face (Spanish rte),,,,Switzerland,Daniel Anker,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,0,0,0,0
+,ANN186402,1986,4,1,N Face (French rte),,,,Poland,Jerzy Kukuczka,TRUE,FALSE,FALSE,FALSE,7,7,2,0,0,0,0,0,0
+,ANN187101,1987,1,1,N Face (French rte),,,,New Zealand,Rob Hall,FALSE,FALSE,FALSE,FALSE,5,4,0,0,0,0,0,0,0
+,ANN187102,1987,1,1,N Face (French rte),,,,Spain,Juan Maldonado,FALSE,FALSE,FALSE,FALSE,10,10,0,1,1,1,0,0,0
+,ANN187301,1987,3,1,N Face,,,,Spain,Josep Maria Maixe,TRUE,FALSE,FALSE,FALSE,7,7,2,0,0,3,0,0,0
+,ANN187302,1987,3,1,N Face (E of Dutch Rib),,,,Spain,Juan Carlos Gomez Ramos,TRUE,FALSE,FALSE,FALSE,3,3,3,0,0,1,0,0,0
+,ANN187401,1987,4,1,E Buttress of S Face,,,,Canada,Stephen Adamson,FALSE,FALSE,FALSE,FALSE,9,9,0,0,0,1,0,0,0
+,ANN187402,1987,4,1,N Face (French rte),,,,Japan,Yoshitomi Okura,FALSE,FALSE,FALSE,FALSE,4,2,0,0,0,0,0,0,0
+,ANN187403,1987,4,1,S Face,,,,Japan,Kuniaki Yagihara,TRUE,FALSE,FALSE,FALSE,14,13,4,2,2,12,0,0,0
+,ANN188101,1988,1,1,S Face,,,,France,Benoit Chamoux,TRUE,FALSE,FALSE,FALSE,7,7,5,0,0,4,0,0,0
+,ANN188301,1988,3,1,N Face,,,,Spain,Manuel Gonzalez Diaz,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,0,0,0,0
+,ANN188302,1988,3,1,N Face (Dutch Rib),,,,Spain,Joaquin Colorado Sierra,TRUE,FALSE,FALSE,FALSE,7,7,2,0,0,0,0,0,0
+,ANN188303,1988,3,1,Rib of NW Face,,,,Czechoslovakia,"Jozef Nezerka, Zdislav Drlik",TRUE,FALSE,FALSE,FALSE,14,13,2,1,1,0,0,0,0
+,ANN188304,1988,3,1,NW Ridge/Face,,,,Japan,Akihiko Mori,FALSE,FALSE,FALSE,FALSE,8,8,0,1,1,2,0,1,1
+,ANN188401,1988,4,1,S Face,,,,Bulgaria,Metodi Stefanov Savov,FALSE,FALSE,FALSE,FALSE,8,8,0,0,0,2,0,0,0
+,ANN189101,1989,1,1,S Face,,,,France,Marc Batard,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,ANN189102,1989,1,1,NW Face,,,,Italy,Reinhard Patscheider,FALSE,FALSE,FALSE,FALSE,2,1,0,0,0,0,0,0,0
+,ANN189103,1989,1,1,N Face,,,,Austria,Peter Woergotter,FALSE,FALSE,FALSE,FALSE,4,3,0,0,0,2,0,0,0
+,ANN189301,1989,3,1,N Face,,,,Bulgaria,Toder Grigorov,TRUE,FALSE,FALSE,FALSE,20,20,3,2,2,3,0,0,0
+,ANN189401,1989,4,1,S Face,,,,Bulgaria,Metodi Stefanov Savov,FALSE,FALSE,FALSE,FALSE,7,5,0,0,0,2,0,0,0
+,ANN189402,1989,4,1,N Face,,,,S Korea,Jang Bong-Wan,FALSE,FALSE,FALSE,FALSE,14,14,0,0,0,5,0,0,0
+,ANN190101,1990,1,1,N Face (Dutch Rib),,,,UK,Malcolm Duff,FALSE,FALSE,FALSE,FALSE,8,8,0,0,0,2,0,0,0
+,ANN190301,1990,3,1,S Face (Bonington rte),,,,S Korea,Chun Doo-Sung,FALSE,FALSE,FALSE,FALSE,12,11,0,0,0,4,0,0,0
+,ANN190302,1990,3,1,N Face,,,,Spain,Javier Bermejo Garde,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,0,0,0,0
+,ANN190303,1990,3,1,N Face,,,,Italy,Giancarlo Gazzola,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,2,0,0,0
+,ANN190401,1990,4,1,S Face,,,,USA,Kenneth Reville,FALSE,FALSE,FALSE,FALSE,9,6,0,0,0,2,0,0,0
+,ANN190402,1990,4,1,N Face,,,,Yugoslavia,Darko Berljak,FALSE,FALSE,FALSE,FALSE,13,13,0,0,0,3,0,0,0
+,ANN191101,1991,1,1,N Face,,,,Austria,Arthur Haid,FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,4,0,0,0
+,ANN191102,1991,1,1,N Face,,,,Germany,Ralf Dujmovits,FALSE,FALSE,FALSE,FALSE,15,15,0,0,0,3,0,0,0
+,ANN191301,1991,3,1,N Face (Dutch Rib),,,,S Korea,Ko Yong-Chul,FALSE,FALSE,FALSE,FALSE,14,10,0,2,2,12,0,4,4
+,ANN191302,1991,3,1,N Face (Dutch Rib),,,,USA,Matthew Culberson,FALSE,FALSE,FALSE,FALSE,10,10,0,0,0,0,0,0,0
+,ANN191303,1991,3,1,N Face,,,,Spain,Albino Quinteiro,FALSE,FALSE,FALSE,FALSE,14,14,0,0,0,0,0,0,0
+,ANN191304,1991,3,1,N Face (Dutch Rib),,,,Japan,Masaru Otani,FALSE,FALSE,FALSE,FALSE,11,11,0,0,0,6,0,0,0
+,ANN191305,1991,3,1,S Face,,,,Poland,Krzysztof Wielicki,TRUE,FALSE,FALSE,FALSE,10,10,8,0,0,0,0,0,0
+,ANN191306,1991,3,1,S Face (Bonington rte),,,,Poland,Mieczyslaw Jarosz,TRUE,FALSE,FALSE,FALSE,17,15,1,1,1,0,0,0,0
+,ANN191307,1991,3,1,S Face (Japanese rte) (to 7350m),S Face (Bonington rte),,,USSR,Vasili Senatorov,FALSE,TRUE,FALSE,FALSE,12,10,4,0,0,0,0,0,0
+,ANN191308,1991,3,1,NW Buttress,,,,Austria,Hubert Fritzenwallner,FALSE,FALSE,FALSE,FALSE,6,6,0,0,0,0,0,0,0
+,ANN191309,1991,3,1,N Face (Dutch Rib),,,,USSR,Alexander Glushkovski,TRUE,FALSE,FALSE,FALSE,4,4,2,0,0,0,0,0,0
+,ANN191310,1991,3,1,W Face up (to 7900m); N Face down,,,,Yugoslavia,Slavko Sveticic,FALSE,FALSE,FALSE,FALSE,1,1,0,0,0,1,0,0,0
+,ANN192301,1992,3,1,S Face (new line),,,,France,Pierre Beghin,FALSE,FALSE,FALSE,FALSE,5,2,0,1,1,2,0,0,0
+,ANN192302,1992,3,1,S Face (Bonington rte),Eastern end of S Face (to 5500m),,,Slovenia,Tone Skarja,FALSE,FALSE,FALSE,FALSE,14,13,0,0,0,2,0,0,0
+,ANN193101,1993,1,1,N Face,,,,China,Samdrup,TRUE,FALSE,FALSE,FALSE,12,10,4,0,0,4,0,0,0
+,ANN193301,1993,3,1,S Face,,,,Slovenia,Matjaz Pecovnik,FALSE,FALSE,FALSE,FALSE,4,2,0,0,0,0,0,0,0
+,ANN193302,1993,3,1,N Face (German rte E),,,,Spain,Oleguer Sune,FALSE,FALSE,FALSE,FALSE,9,9,0,0,0,0,0,0,0
+,ANN193303,1993,3,1,N Face (Dutch Rib),,,,Spain,Sebastia Massague,FALSE,FALSE,FALSE,FALSE,9,9,0,0,0,0,0,0,0
+,ANN194201,1994,2,1,N Face (Dutch Rib),,,,Japan,Ichiro Hosoda,FALSE,FALSE,FALSE,FALSE,5,5,0,0,0,2,0,0,0
+,ANN194301,1994,3,1,S Face (new line),,,,S Korea,Park Ju-Hwan,TRUE,FALSE,FALSE,FALSE,12,12,1,0,0,7,3,0,0
+,ANN194302,1994,3,1,S Face (Korean rte),,,,France,Erik Decamp,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,2,0,0,0
+,ANN194401,1994,4,1,N Face (French rte),,,,S Korea,Kim Teuk-Hee,FALSE,FALSE,FALSE,FALSE,9,8,0,1,0,9,0,0,0
+,ANN195101,1995,1,1,N Face (French rte),,,,Slovenia,Tone Skarja,TRUE,FALSE,FALSE,FALSE,9,7,4,0,0,4,0,0,0
+,ANN195301,1995,3,1,S Face (Bonington rte),,,,France,Jean-Christophe Lafaille,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,1,0,0,0
+,ANN196101,1996,1,1,S Face (from 6800m to right of Bonington rte),,,,Russia,Sergei Efimov,FALSE,FALSE,FALSE,FALSE,9,8,0,0,0,0,0,0,0
+,ANN196102,1996,1,1,N Face (E of Dutch Rib),,,,S Korea,Sung Soon-Je,TRUE,FALSE,FALSE,FALSE,5,4,2,0,0,4,2,0,0
+,ANN196103,1996,1,1,N Face,,,,Switzerland,Andre Georges,TRUE,FALSE,FALSE,FALSE,1,1,1,0,0,1,0,0,0
+,ANN196301,1996,3,1,S Face (Bonington rte),,,,Ukraine,Mstislav Gorbenko,TRUE,FALSE,FALSE,FALSE,12,11,3,0,0,0,0,0,0
+,ANN196302,1996,3,1,N Face (Dutch Rib) (to 6150m),N Face (French rte) (to 6400m),NW Ridge (to 7200m),,Belgium,Pascal Debrouwer,FALSE,FALSE,FALSE,FALSE,8,6,0,0,0,2,0,0,0
+,ANN196303,1996,3,1,S Face (Bonington rte),,,,France,Chantal Mauduit,FALSE,FALSE,FALSE,FALSE,2,2,0,0,0,1,0,0,0
+,ANN196304,1996,3,1,NW Ridge,,,,Poland,Michal Kochanczyk,TRUE,FALSE,FALSE,FALSE,13,10,2,0,0,0,0,0,0
+,ANN196401,1996,4,1,NE Buttress (to 6100m),N Face (Dutch Rib) (to 6850m),,,S Korea,Um Hong-Gil,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,5,0,0,0
+,ANN197101,1997,1,1,NE Buttress-N Face,,,,S Korea,Kang Tae-Sun,FALSE,FALSE,FALSE,FALSE,7,6,0,0,0,8,0,1,1
+,ANN197301,1997,3,1,N Face,,,,Italy,Marco Bianchi,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,0,0,0,0
+,ANN197302,1997,3,1,N Face (French rte),,,,Spain,Jesus Martinez,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,ANN197401,1997,4,1,N Face (UK 1970 rte),,,,Japan,Atsushi Yamamoto,FALSE,FALSE,FALSE,FALSE,3,3,0,0,0,0,0,0,0
+,ANN197402,1997,4,1,E Face of Fang to Annapurna's SW Ridge,,,,Italy,Simone Moro,FALSE,FALSE,FALSE,FALSE,3,3,0,2,2,0,0,0,0
+,ANN198101,1998,1,1,S Face (Bonington rte),,,,Italy,Mario Panzeri,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,4,0,1,1
+,ANN198102,1998,1,1,N Face (E of Dutch Rib),,,,S Korea,Go In-Gyung,TRUE,FALSE,FALSE,FALSE,4,3,1,0,0,4,4,0,0
+,ANN198103,1998,1,1,N Face (left of Dutch Rib),,,,Spain,Juan Jose Garra,FALSE,FALSE,FALSE,FALSE,4,4,0,0,0,1,0,0,0
+,ANN198301,1998,3,1,S Face,,,,USA,Thomas McMillan,FALSE,FALSE,FALSE,FALSE,11,10,0,0,0,9,0,0,0
+,ANN199101,1999,1,1,N Face (1984 Spanish rte to 6700m),,,,Spain,Juanito Oiarzabal,TRUE,FALSE,FALSE,FALSE,11,11,6,1,1,3,2,1,1
+,ANN199102,1999,1,1,N Face,,,,Spain,Ferran Garcia,FALSE,FALSE,FALSE,FALSE,18,16,0,0,0,6,0,0,0
