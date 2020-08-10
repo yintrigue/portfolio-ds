@@ -29,6 +29,15 @@ Five datasets are included in the Himalayan Database:
 A copy of the exported raw data and documentation can be found in the repository at `./data`.
 
 ## Select Findings
+### First Ascents
+
+A timeline for the first ascents of the 16 eight-thousander peaks is shown below. Mount Everest was first ascended by Edmund Hillary and Tenzing Norgay on May 29, 1953. It was considered one of the greatest accomplishments in mountaineering given the lack of modern climbing equipment and logistics operations available at the time. 
+
+<div align="center">
+Figure: First Ascent by Peak Timeline
+<img src="./img/first_asscends.png"/>
+</div>
+
 ### Homes of the Daredevils
 
 Europe is the origin of mountaineering. Our research, however, shows that in addition to Europe, a large number of eight-thousander climbers come from developed countries including Japan, Korea, and the US, lilkely reflecting the high costs associated with the expeditions.
@@ -37,7 +46,7 @@ Europe is the origin of mountaineering. Our research, however, shows that in add
 Figure: Eight-Thousander Climbers’ Home Countries (1905-2019)
 <img src="./img/climber_homes.png"/>
 </div>
-  
+
 ### Rise of Girl Power
 
 Mountaineering has historically been dominated by men: Only 1 out of 10 climbers were female between 1905 and 2019. 
