@@ -1,0 +1,14 @@
+# Two third-party packages are required for AwesomeBabyNames:
+#    - pandas, used to parse data loaded from the sqlite3 database.
+#    - termplotlib, used to plot diagrams in terminal.
+#
+# The package, termplotlib, however, requires gnuplot, a command-line 
+# program that can generate two- and three-dimensional plots. Installation 
+# instructions of gunplot can be found at its official website:
+# http://www.gnuplot.info/
+#
+# Gunplot can also be installed with Homebrew:
+# brew install gnuplot
+
+pandas=1.0.0
+termplotlib=0.2.4
