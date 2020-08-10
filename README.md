@@ -1,6 +1,6 @@
-# Data Science Portfolio by Ying Chen
+# Ying's DS Portfolio
 
-I love data, I love photography, and I love cats. This portfolio is a compilation of select projects I have worked on in the field of data science.
+I love data and I love cats. This is a portfolio of select data science projects I have worked on.
 
 ## Table of Contents
 
