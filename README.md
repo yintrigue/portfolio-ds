@@ -1,6 +1,6 @@
 # Ying's DS Portfolio
 
-I love data and I love photography. This is a GitHub portfolio of select data science projects I have worked on. For my works on art and travel photography, plese visit [Yintrigue.com](https://yintrigue.com/) 
+I love data and I love photography. This is a GitHub portfolio of my select data science projects. Plese visit [Yintrigue.com](https://yintrigue.com/) for my works on photography.
 
 ## Table of Contents
 
