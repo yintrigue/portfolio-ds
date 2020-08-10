@@ -2,10 +2,10 @@
 **Tech Stack:** PyGame, Python
 
 ## Description
-Snaky a PyGame implementation of the classic Snake game. The goal is not to develop a fully playable game, but rather a basic implementation for training in neural network. Key features include:
+Snaky is a PyGame implementation of the classic game, Snake. The goal is not to develop a fully playable game, but rather an implementation specifically for training in neural network. Key features include:
 - Option to save and replay history stored in CSV
-- Game board dimension and resolution are adjustable for ease of experiments; default is a 10x10 grid with a resolution of 50x50 pixels per block
-- Customizable sprites & full OOP for ease of future extension
+- Dimension and resolution of the game board are adjustable, which enables experiments in neural network
+- Customizable sprites & OOP for ease of future extension
 
 Here is a simplified UML with select key properties and methods:
 

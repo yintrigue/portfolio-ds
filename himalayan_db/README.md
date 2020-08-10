@@ -3,21 +3,19 @@
 **Analysis Write-up:** [`./docs/research_report_eight-thousanders.pdf`](./docs/research_report_eight-thousanders.pdf)
 
 ## Description
-In mountaineering, the death zone refers to altitudes above 8,000 m (26,000 ft) where the amount of oxygen is insufficient to sustain human life for an extended time span. There are a total of 14 mountains in the death zone (als known as the eight-thousanders) located in the Himalaya and Karakoram mountain ranges. Each year, climbers from all over the world are drawn to the beauty of eight-thousanders and venture into the death zone in attempts to summit the peaks. While many succeed and celebrate the triumph on the top of the world, some unfortunately never return and many more are injured or become ill during the expeditions.  
-
-The project is an analytics research designed to explores the 14 eight-thousanders (with a total of 16 peaks) that are publicly open to climbers with permits in the Himalayas mountain range. The three primary research questions are:
+*Death-Zone Mountaineering* is an analytics research the explores the expeditions to 16 eight-thousander peaks (i.e. peaks with altitudes above 8,000m where the amount of oxygen is insufficient to sustain human life for an extended time span) in the Himalayas mountain range. The three primary research questions are:
 
 - Who are the people willing to risk their life venturing into the death zone?
 - How do mountaineers’ eight-thousander peak preferences change over time?
-- What makes climbing eight-thousanders risky?
+- What makes climbing eight-thousanders risky?  
 
 ## Data
 
 The research is primarily based on the [Himalayan Database](https://www.himalayandatabase.com/), which can be best described by the creator’s own words:
 
-*“The Himalayan Database is a compilation of records for all expeditions that have climbed in the Nepal Himalaya. The database is based on the expedition archives of Elizabeth Hawley, a longtime journalist based in Kathmandu, and it is supplemented by information gathered from books, alpine journals and correspondence with Himalayan climbers.”*
+> The Himalayan Database is a compilation of records for all expeditions [from 1905 through Spring 2019] that have climbed in the Nepal Himalaya. The database is based on the expedition archives of Elizabeth Hawley, a longtime journalist based in Kathmandu, and it is supplemented by information gathered from books, alpine journals and correspondence with Himalayan climbers.
 
-Five datasets are included in the Himalayan Database:
+A total of five datasets are included in the Himalayan Database:
 | Dataset              | Description                                                  |
 | -------------------- | ------------------------------------------------------------ |
 | Peaks                | Data of all peaks in the Himalayas                           |
@@ -26,12 +24,12 @@ Five datasets are included in the Himalayan Database:
 | Expeditions Analysis | Calculated expedition analytics based on the Expeditions dataset |
 | References           | References used for constructing the Himalayan Database      |
 
-A copy of the exported raw data and documentation can be found in the repository at `./data`.
+A copy of the exported raw data and documentation is included in the repository at `./data`.
 
 ## Select Findings
 ### First Ascents
 
-A timeline for the first ascents of the 16 eight-thousander peaks is shown below. Mount Everest was first ascended by Edmund Hillary and Tenzing Norgay on May 29, 1953. It was considered one of the greatest accomplishments in mountaineering given the lack of modern climbing equipment and logistics operations available at the time. 
+All eight-thousander peaks opened to public with permits have been climbed over the past 70 years. In particular, Mount Everest was first ascended by Edmund Hillary and Tenzing Norgay on May 29, 1953, which was considered one of the greatest accomplishments in mountaineering given the lack of modern climbing equipment and logistics operations available at the time. 
 
 <div align="center">
 Figure: First Ascent by Peak Timeline

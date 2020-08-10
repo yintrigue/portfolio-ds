@@ -15,7 +15,7 @@ I love data and I love photography. This is a GitHub portfolio of my select data
 
 ### Melanoma Classification 
 
-[GitHub Repo](https://github.com/yintrigue/portfolio-ds/tree/master/melanoma) | Slides
+[GitHub Repo](./melanoma) | Slides
 
 [SIIM-ISIC Melanoma Classification](https://www.kaggle.com/c/siim-isic-melanoma-classification) is an annual Kaggle competition on identifying the deadly skin cancer, Melanoma, based on images of skin lesions and patient metadata. The dataset consists of a total of 33,126 full-color, high-resolution images but with only 584 positive examples. Three models (CNN, SVM, and LR) were built, and an exploratory study on visualizing the learning process of EfficientNet B0  was conducted.
 
@@ -29,7 +29,23 @@ TensorFlow, Keras, Scikit-learn, Python, TPU, GCS
 
 ## Python Development
 
-### AweseomBabyName
+#### [AweseomBabyNames](./awesome_baby_names)
+
+An awesome baby starts with an awesome name! *AwesomeBabyName* is a python terminal app that helps you come up with a great name for your baby by visualizing **100+ years of census data** collected by the US government.
+
+**Tech Stack**: MVC, SQLite, Python
+
+#### [Snaky](.snaky/)
+
+*Snaky* is a PyGame implementation of the classic game, Snake, but with twists specifically designed for training in neural network. 
+
+**Tech Stack:** PyGame, Python
+
+### Death-Zone Mountaineering
+
+*Death-Zone Mountaineering* is an analytics research the explores the expeditions to the 16 eight-thousander peaks with altitudes above 8,000m in the Himalayas mountain range. The research is primarily based on the *Himalayan Database*, covering all expeditions from 1905 through Spring 2019.
+
+**Tech Stack:** Plotly, Seaborn, PyWaffle, GeoPy, Pandas, NumPy  
 
 <a name="statistical_analysis"></a>
 

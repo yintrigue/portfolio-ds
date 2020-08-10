@@ -2,13 +2,13 @@
 
 **v1.0.3**
 
-**Tech Stack:** Python, SQLite, MVC
+**Tech Stack:** MVC, SQLite, MVC, Python
 
 ## Description
 
 An awesome baby starts with an awesome name!  
 
-Coming up with a great name for the cute little one is tough. Internet is full of suggestions based on “expert opinions,” but we can now do better with the power of data. Do you have a newborn coming without a name? Fear not, for *AwesomeBabyName* is here to help, with **over 100 years of real census data** collected by the US government.
+Coming up with a great name for the cute little one is tough. Internet is full of suggestions based on “expert opinions,” but we can now do better with the power of data. Do you have a newborn coming without a name? Fear not, for *AwesomeBabyName* is here to help, with **over 100 years of census data** collected by the US government.
 
 *AwesomeBabyNames* is a Python terminal program built using a number of design patterns including **Service Locator** and **MVC** (Model-View-Controller). The code base for the MVC framework can be found in the  mvc module at `/src/abn/utils/mvc.py`.
 
