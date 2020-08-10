@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "directory": {
+      "small": "img/photos/small/",
+      "large": "img/photos/large/"
+    },
+    "files": [
+        ["DSC_3827-select.jpg", 0.25],
+        ["IMG_1223.jpg", 1],
+        ["IMG_1224-select.jpg", 1],
+        ["IMG_1225.jpg", 1],
+        ["IMG_1226-select.jpg", 1],
+        ["IMG_1227.jpg", 1],
+        ["IMG_1228-select.jpg", 1],
+        ["IMG_1235.jpg", 1]
+      ]
+  }
+}

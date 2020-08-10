@@ -1,0 +1,60 @@
+<svg id="up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="212.654" height="220.249" viewBox="0 0 84 87">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #ff0254;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        opacity: 0;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+    <filter id="filter" x="0" y="3" width="84" height="84" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="2" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="1.732"/>
+      <feFlood result="flood" flood-opacity="0.5"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle id="Ellipse_1074_copy_3" data-name="Ellipse 1074 copy 3" class="cls-1" cx="41.5" cy="42.5" r="39.5"/>
+  <circle id="Ellipse_1074_copy_5" data-name="Ellipse 1074 copy 5" class="cls-2" cx="41.5" cy="39.5" r="39.5"/>
+  <path class="cls-3" d="M1229,1231.45a1.753,1.753,0,0,0,.49,1.21l4.75,4.84a1.654,1.654,0,0,0,2.37,0l9.89-10.08,9.89,10.08a1.654,1.654,0,0,0,2.37,0l4.75-4.84a1.753,1.753,0,0,0,.49-1.21,1.735,1.735,0,0,0-.49-1.21l-15.82-16.13a1.643,1.643,0,0,0-2.38,0l-15.82,16.13a1.735,1.735,0,0,0-.49,1.21h0Zm0-17.61a1.735,1.735,0,0,0,.49,1.21l4.75,4.85a1.654,1.654,0,0,0,2.37,0l9.89-10.09,9.89,10.09a1.719,1.719,0,0,0,1.21.5,1.688,1.688,0,0,0,1.16-.5l4.75-4.85a1.735,1.735,0,0,0,.49-1.21,1.771,1.771,0,0,0-.49-1.21l-15.82-16.13a1.666,1.666,0,0,0-2.38,0l-15.82,16.13a1.771,1.771,0,0,0-.49,1.21h0Zm0,0" transform="translate(-1205 -1175)"/>
+</svg>

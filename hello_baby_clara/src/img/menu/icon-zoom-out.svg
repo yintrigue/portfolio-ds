@@ -1,0 +1,55 @@
+<svg id="Down_copy_2" data-name="Down copy 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="303.61" height="303.61" viewBox="0 0 84 84">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #bababa;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="84" height="84" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="2" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="1.732"/>
+      <feFlood result="flood" flood-opacity="0.5"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle id="Ellipse_1074_copy_4" data-name="Ellipse 1074 copy 4" class="cls-1" cx="41.5" cy="39.5" r="39.5"/>
+  <g>
+    <path id="Rounded_Rectangle_1229_copy" data-name="Rounded Rectangle 1229 copy" class="cls-2" d="M222.834,597.555h8.88a1.736,1.736,0,1,1,0,3.471h-8.88A1.736,1.736,0,1,1,222.834,597.555Z" transform="translate(-189 -566)"/>
+    <path id="Shape_1238_copy" data-name="Shape 1238 copy" class="cls-2" d="M250.513,616.959l-7.5-7.607a0.7,0.7,0,0,0-.12-0.092,18.48,18.48,0,0,1-2.393,2.977,17.918,17.918,0,0,1-2.943,2.433c0.037,0.037.066,0.083,0.1,0.12l7.487,7.624a3.764,3.764,0,0,0,5.369,0,3.91,3.91,0,0,0,0-5.455h0Zm0,0M227.19,616.9A17.485,17.485,0,1,1,244.4,599.421,17.367,17.367,0,0,1,227.19,616.9Zm0-30.7a13.214,13.214,0,1,0,13,13.212A13.124,13.124,0,0,0,227.19,586.209Z" transform="translate(-189 -566)"/>
+  </g>
+</svg>

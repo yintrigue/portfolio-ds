@@ -1,0 +1,619 @@
+/* 
+	Dev Note:  
+        Layout is changed to two column only when padding left & right of #content_block are set to 0
+        https://www.transparenttextures.com/
+*/
+@charset "UTF-8";
+@font-face {
+	font-family: "7 hours";
+	src: url(../font/7_hours_installable.ttf) format("truetype");
+}
+html {
+}
+body {
+	margin: 100vh; /* body margin will be set to 100% only after preloader is fully covering the page; otherwise, users might see a flash of cached bg  */
+    padding: 0;
+	min-height: 100vh;
+    
+    background: white no-repeat; /* URL is defined in js */
+	background-size: 100%; 
+	background-position: center bottom;
+	background-image: url("../img/hello-baby-clara-sleeping-background.jpg");
+    position: relative;
+    
+    min-width:375px;
+    width: auto !important;
+    
+	user-select: none !important;
+	text-rendering: optimizeLegibility !important;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+}
+img {
+    user-select: none !important;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	text-decoration: none;
+	color: #ff0254;
+}
+div:focus {
+    outline: none !important;
+    user-select: none !important;
+}
+#template {
+	visibility: hidden;
+	position: absolute;
+	top: -1000px;
+	left: -1000px;
+}
+.photo {
+    background-image: url("img/climpek.png");
+    border-radius: 10px;
+}
+/* menu ---------------------------------------------------------------- */
+#menu_container {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+    z-index: 10000;
+    top:0;
+    pointer-events: none;
+    visibility: hidden;
+}
+#menu_container #menu_container_bg_overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    top: 0;
+    pointer-events: none;
+    background-color: black;
+    opacity: 0;
+    background-image: url('../img/menu/bg-swirl.png');
+    /*
+    background-image: url('../img/menu/bg-swirl.png');
+    background-image: url('../img/menu/bg-binding-light.png');
+    background-image: url('../img/menu/bg-flowers.png');
+    background-image: url('../img/menu/bg-black-paper.png');
+    */
+}
+#menu_container #logo, #menu_container #items_container {
+    position: relative;
+    width: 30%; /* Key config... */
+    min-width: 400px; /* Key config... */
+    pointer-events: none;
+}
+#menu_container #menu_top_empty_space {
+    position: relative;
+    height: 9.5vw;
+    min-height: 130px;
+}
+#menu_container #logo {
+}
+#logo #logo_hitbox {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    left: 5%;
+	pointer-events: all;
+    z-index: 10000;
+}
+#menu_container #logo img {
+	position: absolute;
+	display: block;
+	pointer-events: none;
+}
+#logo #tag {
+	position: relative !important;
+    width: 100%;
+	height: auto;
+}
+#logo #tag:hover {
+    cursor: pointer;
+}
+#logo #logo_text {
+	width: 39%;
+	left: 43.6%;
+	top: 22%;
+	opacity: 0;
+}
+#logo #claw {
+	width: 9%;
+	top: -2%;
+	left: 35%;
+	transform: rotate(5deg);
+}
+#logo #bear {
+	width: 45%;
+	left: 31%;
+	top: -14%;
+}
+#menu_container #items_container {
+}
+#items_container img {
+    display: block;
+    position: absolute;
+    width: 17%;
+    visibility: hidden;
+    pointer-events: all;
+    filter: brightness(1);
+    transition: brightness 0.3s;
+}
+#items_container img:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+#menu_up:hover, #items_container img:first-child:hover, #items_container img:last-child:hover {
+    filter: none;
+    cursor: pointer;
+}
+#items_container img:nth-child(1) {
+    margin: 2% 0 0 20%;
+}
+#items_container img:nth-child(2) {
+    margin: 11% 0 0 36%;
+}
+#items_container img:nth-child(3) {
+    margin: 20% 0 0 20%;
+}
+#items_container img:nth-child(4) {
+    margin: 29% 0 0 36%;
+}
+#items_container img:nth-child(5) {
+    margin: 38% 0 0 20%;
+}
+#items_container img:nth-child(6) {
+    margin: 47% 0 0 36%;
+}
+#items_container img:nth-child(7) {
+    margin: 56% 0 0 20%;
+}
+#items_container img:nth-child(8) {
+    margin: 65% 0 0 36%;
+}
+#menu_up {
+    position: absolute;
+    bottom: 3vw;
+    right: 2vw;
+    width: 6.5%; /* Key config... */
+    min-width: 85px;
+    max-width: 150px;
+    pointer-events: all;
+}
+/* phto grid ---------------------------------------------------------------- */
+#content_block {
+	margin-top: 0;
+}
+#content_block #photos_container {
+	position: relative;
+	margin: 0 auto 0 auto; /* key layout config */
+	width: 100%;
+}
+#content_block #photos_container .photo {
+	/* width: 200px; /* photo width is defined in js */ 
+	float: left;
+	overflow: visible;
+}
+#content_block #photos_container .photo img {
+	width: 100%;
+	display: block;
+	border-radius: 10px;
+    transition: all 1s ease;
+}
+#content_block #photos_container .photo:hover {
+	cursor: pointer;
+    animation: imgHover 0.5s;
+}
+.photos_container:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+/* about/contact/awards/overlays ---------------------------------------------------------------- */
+#about, #contact {
+	padding: auto;
+	margin: auto;
+	pointer-events: none;
+    color: white;
+    line-height: 0.9em;
+}
+#about #about_info, #contact #contact_info {
+    font-family: 'Gloria Hallelujah', cursive;
+	margin: auto;
+	text-align: center;
+	visibility: hidden;
+    line-height: 1.6em;
+}
+#about .about_comment, #contact .contact_comment {
+	font-size: 0.6em;
+    opacity: 0.95;
+    word-spacing: 0em;
+}
+#about #about_info {
+    font-size: 1.5em;
+    word-spacing: -0.2em;
+}
+#contact #contact_info {
+	pointer-events: all;
+    font-size: 1.5em;
+}
+#contact #contact_info a {
+	color: white;
+}
+#contact #contact_info a:hover {
+    color: #dcf5fe;
+}
+#awards {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 0.8em;
+	text-align: center;
+	user-select: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	pointer-events: none;
+	visibility: hidden;
+	position: relative;
+	overflow: hidden;
+    color: white;
+    white-space: nowrap;
+}
+#awards .award_item {
+	margin-bottom: 1em;
+	line-height: 1.2em;
+    color: white;
+    opacity: 0.85;
+}
+#awards .award_item:nth-last-child(2) {
+	margin-bottom: 0;
+}
+#awards #awards_contents {
+	margin: auto;
+	padding: 5% 0 5% 0;
+	text-align: center;
+	visibility: hidden;
+}
+#awards .award_title {
+	text-transform: uppercase;
+    opacity: 0.8;
+}
+#awards .dot {
+	font-size: 1.5em;
+	line-height: 0.1em;
+	margin: 1em auto 1em auto;
+}
+#awards #award_ending {
+    opacity: 0.8;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+#photo_overlay  {
+	width: 100%;
+	visibility: hidden;
+	pointer-events: none;
+	text-align: center;
+	user-select: none;
+	color: #eee;
+	margin: auto;
+    padding: 0 0 20vh 0;
+    position: fixed;
+}
+#photo_overlay #photo_container {
+	max-width: 100vw; /* place holder; this is set by JS through HBCConfig */
+	margin: 0 auto 0 auto;
+	display: block;
+    border-radius: 15px; /* key layout config */
+    overflow: hidden;
+	position: relative;
+	pointer-events: all;
+	cursor: zoom-in;
+}
+#photo_overlay #photo_preloader {
+	position: fixed;
+	margin: auto;
+	top: 0; left: 0; bottom: 0; right: 0;
+	z-index: 10000;
+	pointer-events: none;
+}
+#photo_load_error .sm_text, #photo_load_error .sm_text_light {
+    font-size: 0.3em;
+    bottom: 0.5em;
+    position: relative;
+    font-weight: 600;
+    word-spacing: -0.5em;
+}
+#photo_load_error .sm_text_light {
+    font-weight: 200;
+    opacity: 0.8;
+}
+#photo_overlay #photo_load_error {
+    position: fixed;
+	margin: auto;
+	top: auto; left: auto; bottom: auto; right: auto;
+	z-index: 10000;
+	pointer-events: none;
+    margin-left: -0.1em;
+    
+    font-family: "7 hours";
+    font-size: 6em;
+    text-align: center;
+    width: 100%;
+    word-spacing: -0.5em;
+    line-height: 0.2em;
+}
+#photo_overlay #close_overlay {
+	height: 100%;
+	width: 100%;
+	background-color: green;
+	float: left;
+	top: 0; left: 0; bottom: 0; right: 0;
+	z-index: -1;
+	position: absolute;
+	pointer-events: all; 
+}
+#photo_overlay #hidden_photo_info {
+	z-index: 10000;
+	pointer-events: all;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	white-space: pre-line;
+}
+#photo_overlay #hidden_photo_info::after {
+	content: "";
+	opacity: 0.9;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	position: fixed;
+	background-color: black;	
+	background-image: url("../img/black-mamba.png");
+	background-repeat: repeat;
+}
+#photo_overlay #hidden_photo_info span {
+	margin: auto;
+	position: fixed;
+	font-family: 'Gloria Hallelujah', cursive;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 0.8em;
+    line-height: 1.5em;
+}
+#photo_overlay #hidden_button {
+	position: fixed;
+	border-style: solid;
+	width: 50px;
+	height: 50px;
+	background-color: black;
+	top: 0; left: 0; bottom: 0; right: 0;
+	pointer-events: all;
+	opacity: 0;
+	-webkit-opacity: 0;
+}
+#photo_overlay #title_block {
+	width: 100%;
+}
+#title_block .line {
+	width: 100%;
+	text-align: center;
+	font-family: "7 hours", cursive;
+    line-height: 1.3em;
+}
+#title_block .line:nth-child(1) {
+	font-size: 1.9em;
+    word-spacing: -0.5em;
+	margin-top: 20vh;
+}
+#title_block .line:nth-child(2) {
+	font-size: 0.9em;
+	letter-spacing: 0.6em;
+    margin-top: -0.4em;
+}
+#title_block .line:nth-child(3) {
+	font-size: 1.5em;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	word-spacing: -0.35em;
+}
+#title_block .line:nth-child(4) {
+	font-size: 0.9em;
+	letter-spacing: 0.3em;
+    word-spacing: -0.5em;
+    margin-top: 0.05em;
+}
+#title_block .line:nth-child(5) {
+	font-size: 2.8em;
+	word-spacing: -0.4em;
+    letter-spacing: -0.01em;
+    line-height: 1em;
+    margin: 1.1em 0 0.2em 0;
+}
+#photo_overlay #notes_block {
+	width: 100%;
+	text-align: center;
+}
+#notes_block #notes_icon {
+	width: 130px;
+	display: block;
+	margin: 3.98em auto 0% auto;
+}
+#notes_block #notes {
+    font-family: 'Reenie Beanie', cursive;
+	margin: 0.8em auto 0 auto;
+	width: 40%;
+    height: auto;
+	font-size: 1.5em;
+    line-height: 1em;
+	white-space: pre-line;
+}
+.long_notes {
+	width: 60% !important;
+    height: auto !impoertant;
+	white-space: pre-line !important;
+	text-align: left !important;
+	letter-spacing: 0em !important;
+	line-height: 1.5em !important;
+}
+#share_container {
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+    height: auto;
+    margin-top: 1em;
+}
+#share_container img {
+    margin: 0 3px 0 3px;
+    width: 60px;
+    filter: brightness(0.85);
+    pointer-events: all;
+    transition: all 0.3s ease;
+}
+#share_container img:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+#page_preload_overlay  {
+	width: 100%;
+	position: absolute;
+	visibility: hidden;
+	pointer-events: none;
+	text-align: center;
+	user-select: none;
+	color: #eee;
+}
+#page_preload_overlay #page_preloader {
+	position: fixed;
+	margin: auto;
+	top: 0; left: 0; bottom: 0; right: 0;
+	z-index: 10000;
+	pointer-events: none; 
+}
+/* styles for JavsCript (better performance than using css) ---------------------------------------------------------------- */
+.show {
+	visibility: visible !important;
+}
+.hide {
+	visibility: hidden !important;
+}
+/* media queries ---------------------------------------------------------------- */
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media screen and (min-width: 1600px) {
+    #awards {
+	   font-size: 1em;
+    }
+    #about #about_info, #contact #contact_info {
+        font-size: 2em;
+    }
+    #menu_container #logo, #menu_container #items_container {
+        width: 27%; /* Key config... */
+    }
+}
+@media screen and (max-width: 1100px) {
+    body {
+        background-size: 120%;
+        background-position: 33.5% 100%;
+	}
+}
+@media screen and (max-width: 950px) {
+	.long_notes {
+		width: 86% !important;
+	}
+	#notes_block #notes {
+		width: 86%;
+	}
+    #title_block .line:nth-child(1) {
+        margin-top: 10vh;
+    }
+}
+@media screen and (max-width: 750px) {
+    body {
+        background-size: 180%;
+        background-position: 33% 100%;
+	}
+}
+@media only screen and (max-device-width: 600px) {
+	body {
+		min-width: 100px; /* Just a random small number to overwrite the original min-width for desktop... */
+	}
+	#content_block {
+		padding: 20px 5px 0 5px;  /* key layout config; there is this shitty logic that compact layout will render only if the padding here is equal to HBCConfig.COMPACT_LAYOUT_SIDE_PADDING */
+	}
+	#about #about_info {
+        /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+        font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1600 - 300)));
+	}
+	#awards  {
+		/* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+        font-size: calc(9px + (11 - 9) * ((100vw - 300px) / (1600 - 300)));
+	}
+    #title_block .line:nth-child(1) {
+        font-size: 1.5em;
+    }
+    #title_block .line:nth-child(3) {
+        font-size: 1.1em;
+    }
+    #title_block .line:nth-child(5) {
+        font-size: 1.8em;
+    }
+    #notes_block #notes_icon {
+        width: 100px;
+        margin: 3.38em auto 0% auto;
+    }
+    #title_block .line:nth-child(1) {
+        margin-top: 0;
+    }
+    #photo_overlay {
+        padding-bottom: 0;
+    }
+    #menu_container #menu_top_empty_space {
+        height: 16vh;
+        min-height: 10px;
+    }
+    #menu_container #logo, #menu_container #items_container {
+        width: 50vh; /* Key config... */
+        min-width: 10px; /* Key config... */
+    }
+    #photo_overlay #photo_load_error {
+        font-size: 3.3em;
+    }
+    #items_container img {
+        filter: none;
+        transition-property: none;
+    }
+    #items_container img:hover {
+        filter: none;
+    }
+    #share_container img {
+        filter: none;
+        transition-property: none;
+        width: 55px;
+        margin: 0 1px 0 1px;
+    }
+    #share_container img:hover {
+        filter: none;;
+    }
+}
+@media only screen 
+  and (max-device-width: 600px)
+  and (orientation: landscape) {
+    #menu_container {
+        visibility: hidden !important;
+    }
+    #menu_container div img {
+        visibility: hidden !important;
+    }
+    #photo_overlay {
+        margin: 100px 0 100px 0;
+    }
+}
