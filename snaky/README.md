@@ -9,7 +9,7 @@ Snaky a PyGame implementation of the classic Snake game. The goal is not to deve
 
 Here is a simplified UML with select key properties and methods:
 
-![](./img/uml.png)
+<img src="./img/uml.png" />
 
 ## Screenshots
 ![](./img/screenshot_01.png)
