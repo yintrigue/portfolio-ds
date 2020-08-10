@@ -14,7 +14,7 @@ Coming up with a great name for the cute little one is tough. Internet is full o
 
 Here's a simplified UML with select key classes, methods, and properties:
 
-![](./img/uml.png)
+<img src="./img/uml.png" width="750"/>
 
 ## Demo
 
