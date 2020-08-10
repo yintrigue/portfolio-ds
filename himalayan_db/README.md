@@ -17,7 +17,6 @@ The research is primarily based on the [Himalayan Database](https://www.himalaya
 *“The Himalayan Database is a compilation of records for all expeditions that have climbed in the Nepal Himalaya. The database is based on the expedition archives of Elizabeth Hawley, a longtime journalist based in Kathmandu, and it is supplemented by information gathered from books, alpine journals and correspondence with Himalayan climbers.”*
 
 Five datasets are included in the Himalayan Database:
-<div align="center">
 | Dataset              | Description                                                  |
 | -------------------- | ------------------------------------------------------------ |
 | Peaks                | Data of all peaks in the Himalayas                           |
@@ -25,7 +24,7 @@ Five datasets are included in the Himalayan Database:
 | Members              | Data of members of each expedition between 1905 and 2019     |
 | Expeditions Analysis | Calculated expedition analytics based on the Expeditions dataset |
 | References           | References used for constructing the Himalayan Database      |
-</div>
+
 A copy of the exported raw data and documentation can be found in the repository at `./data`.
 
 ## Select Findings
@@ -40,12 +39,12 @@ Figure: Eight-Thousander Climbers’ Home Countries (1905-2019)
   
 ### Rise of Girl Power
 
-Mountaineering has historically been dominated by men: Only 1 out of 10 climbers were female between 1905 and 2019. However, there has been a rapid growth of female climbers since 1980.
+Mountaineering has historically been dominated by men: Only 1 out of 10 climbers were female between 1905 and 2019. 
 <div align="center">
 Figure: Male vs. Female Climbers (1905-2019)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
 <img src="./img/gender.png">
 </div>
-<br/>
+However, there has been a rapid growth of female climbers since 1980. In fact, the youngest climber to ascend Mount Everest is Malavath Pooma, a 13 year-old female climber!
 <div align="center">
 Figure: Number of Female Climbers by Year
 <img src="./img/girl_power.png">
