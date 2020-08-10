@@ -7,7 +7,6 @@ In mountaineering, the death zone refers to altitudes above 8,000 m (26,000 ft) 
 The project is an analytics research designed to explores the 14 eight-thousanders (with a total of 16 peaks) that are publicly open to climbers with permits in the Himalayas mountain range. The three primary research questions are:
 
 - Who are the people willing to risk their life venturing into the death zone?
-
 - How do mountaineers’ eight-thousander peak preferences change over time?
 - What makes climbing eight-thousanders risky?
 
@@ -18,7 +17,7 @@ The research is primarily based on the [Himalayan Database](https://www.himalaya
 *“The Himalayan Database is a compilation of records for all expeditions that have climbed in the Nepal Himalaya. The database is based on the expedition archives of Elizabeth Hawley, a longtime journalist based in Kathmandu, and it is supplemented by information gathered from books, alpine journals and correspondence with Himalayan climbers.”*
 
 Five datasets are included in the Himalayan Database:
-
+<div align="center">
 | Dataset              | Description                                                  |
 | -------------------- | ------------------------------------------------------------ |
 | Peaks                | Data of all peaks in the Himalayas                           |
@@ -26,7 +25,7 @@ Five datasets are included in the Himalayan Database:
 | Members              | Data of members of each expedition between 1905 and 2019     |
 | Expeditions Analysis | Calculated expedition analytics based on the Expeditions dataset |
 | References           | References used for constructing the Himalayan Database      |
-
+</div>
 A copy of the exported raw data and documentation can be found in the repository at `./data`.
 
 ## Select Findings
