@@ -40,9 +40,12 @@ Figure: Eight-Thousander Climbers’ Home Countries (1905-2019)
 ### Rise of Girl Power
 
 Mountaineering has historically been dominated by men: Only 1 out of 10 climbers were female between 1905 and 2019. However, there has been a rapid growth of female climbers since 1980.
-
+<div align="center">
 Figure: Male vs. Female Climbers (1905-2019)
+</div>
 ![](./img/gender.png)
+
+
 
 Figure: Number of Female Climbers by Year
 ![](./img/girl_power.png)
