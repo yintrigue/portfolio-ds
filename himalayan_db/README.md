@@ -54,12 +54,14 @@ Figure: Number of Female Climbers by Year
 
 One surprising finding is that even though CHOY is generally believed to be the easiest peak to ascend among the 16 peaks studied in the research, it actually comes with failure and death rates on par with Mount Everest. One explanation can be attributed to the lack of experience because CHOY is mostly climbed by relatively inexperienced climbers. The finding echoes the importance of skills and experience when climbing into the death zone.
 
+Figure: Failure Rate vs. Death Rate (1905-2019)
 ![](./img/choy.png)
 
 ### The Real Death Zone on Mount Everest
 
 While the death rate peaks in the death zone on Mount Everest above 8,000 meters, there is an unexpected surge of death incidents between 5,000m and 6,000m. Further investigation reveals that Khumbu Icefall, one of the most deadly stages of the South Col route to Everest's summit, is located at 5,486 metres.
 
+Figure: Deathby Altitude Distributions (1905-2019)  
 ![](./img/real_death_zone.png)
 
 ### Too Tired to Climb Down?
