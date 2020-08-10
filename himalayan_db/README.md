@@ -1,6 +1,6 @@
 # Death-Zone Mountaineering  
 Tech Stack: Plotly, Seaborn, PyWaffle, GeoPy, Pandas, NumPy  
-Report Writeup: [`./docs/research_report_eight-thousanders.pdf`](./docs/research_report_eight-thousanders.pdf)
+Report Write-up: [`./docs/research_report_eight-thousanders.pdf`](./docs/research_report_eight-thousanders.pdf)
 
 ## Description
 In mountaineering, the death zone refers to altitudes above 8,000 m (26,000 ft) where the amount of oxygen is insufficient to sustain human life for an extended time span. There are a total of 14 mountains in the death zone (als known as the eight-thousanders) located in the Himalaya and Karakoram mountain ranges. Each year, climbers from all over the world are drawn to the beauty of eight-thousanders and venture into the death zone in attempts to summit the peaks. While many succeed and celebrate the triumph on the top of the world, some unfortunately never return and many more are injured or become ill during the expeditions.  
@@ -87,5 +87,5 @@ Figure: When Climbing Down Is Way Too Much Work... (1905-2019)
   - `expeditions.ipynb` includes the analysis of the eight-thousander expeditions between 1905 and 2019
 - `./lib` includes additional Python modules used for the analysis.
 - `./data` includes the exported raw data and documentation from the Himalayan Database.
-- `./docs/research_report_eight-thousanders.pdf` is the final writeup for the research.  
+- `./docs/research_report_eight-thousanders.pdf` is the final write-up for the research.  
 
