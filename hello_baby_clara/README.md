@@ -8,7 +8,7 @@ Before data science I was a software engineer. To this date, I continue to enjoy
 
 https://yintrigue.com/hellobabyclara/
 
-Technically speaking, *Hello Baby Clara!* is a single-page web application designed for storytelling using photos and text diaries. Key features include:
+*Hello Baby Clara!* is a single-page web application designed for storytelling using photos and text diaries. Key features include:
 
 - Layout is dynamically generated and fully responsive.
 - Layout can be zoomed in/out for an optimal browsing experience.
