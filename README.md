@@ -15,14 +15,12 @@ I love data and I love photography. This is a GitHub portfolio of my select data
 
 ### [Classifying Melanoma](./melanoma)  
 **Tech Stack**: TensorFlow, Keras, Scikit-learn, TPU, GCS, Python  
-**Algorithms**:  Neural Network, Support Vector Machine, Logistic Regression, PCA
-
+**Algorithms**: Neural Network, EfficientNet, Focal Loss, SVM, Logistic Regression, PCA  
 *SIIM-ISIC Melanoma Classification* is an annual Kaggle competition on identifying the deadly skin cancer, Melanoma, based on images of skin lesions and patient metadata. The dataset consists of a total of **33,126** full-color, high-resolution images but with only **584** positive examples. Three neural network models and two baseline models (Logistic Regression and SVM) were built with an exploratory study on visualizing the learning process of EfficientNet B0.
 
 ### [Visualizing EfficientNet-B0](./visualizing_neural_net)  
 **Tech Stack:** TensorFlow, Keras, TPU, GCS, Python  
-**Algorithms:** Convolutional Neural Network, PCA
-
+**Algorithms:** PCA, Convolutional Neural Network, EfficientNet-B0, Focal Loss  
 The project explores ways to visualize the learning progress of EfficientNet B0 (a convolutional neural network introduced by Google) by extracting its embedding and projecting the extracted features onto a 2D plane using PCA .
 
 <a name="python_dev"></a>
