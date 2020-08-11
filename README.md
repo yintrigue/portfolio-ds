@@ -4,14 +4,7 @@
   
 I love data and I love photography. This is a GitHub portfolio of my select data science projects. Please visit [Yintrigue.com](https://yintrigue.com/) for my works on photography.
 
-Index:  
-[Machine Learning](#machine_learning)  
-[Python Development](#python_dev)  
-[Statistical Analysis](#statistical_analysis)  
-[Other Projects](#others)
-
 <a name="machine_learning"></a>
-
 ## Machine Learning
 
 ### [Classifying Melanoma](./melanoma)  
@@ -27,7 +20,6 @@ Index:
 The project explores ways to visualize the learning progress of EfficientNet B0 (a convolutional neural network introduced by Google) by extracting its embedding and projecting the extracted features onto a 2D plane using PCA .
 
 <a name="python_dev"></a>
-
 ## Python Development  
 ### [Death-Zone Mountaineering](./himalayan_db)  
 **Tech Stack:** Plotly, Seaborn, PyWaffle, GeoPy, Pandas, NumPy, Python  
@@ -42,13 +34,11 @@ An awesome baby starts with an awesome name! AwesomeBabyName is a python termina
 Snaky is a PyGame implementation of the classic game, Snake, but with twists specifically designed for training in neural network. 
 
 <a name="statistical_analysis"></a>
-
 ## Statistical Analysis
 
   Coming soon...
 
 <a name="others"></a>
-
 ## Other Projects
 
 ### [Hello Baby Clara!](./hello_baby_clara)  
