@@ -5,20 +5,6 @@
 ## Description
 The project is an attempt to compete in the [Kaggle competition](https://www.kaggle.com/c/siim-isic-melanoma-classification) using machine learning techniques to identify melanoma in images of skin lesions. 
 
-## Data
-
-The training dataset consists of a total of **33,126 images** and multiple metadata (including age, gender, and anatomy site), of which there are only **584 positive examples**. Three major challenges are presented by the dataset:
-
-- Extreme class imbalance
-- Missing meta entries
-- Image inconsistency (e.g. hair, crop, zoom, aspect ratio, unexpected objects, etc. ), as demonstrated by the sample below.
-
-![sample](./_img/sample.png)
-
-A more detailed description on the issues and relative measures to address them in the project are described in the notebook, [`model_nn_v3_efn_meta.ipynb`](./model_nn_v3_efn_meta.ipynb). 
-
-## Models
-
 Three neural networks and two baseline models are built:
 
 - **Neural Networks**
@@ -31,9 +17,34 @@ Three neural networks and two baseline models are built:
 
 Lastly, an EDA (documented in a different [repository](https://github.com/yintrigue/portfolio-ds/tree/master/neural_net_visualization).) that explores ways to visualize EfficientNet B0 learns is performed. 
 
-## Final Model
+## Data
 
-Model v3 combines the outputs from Model v2 (i.e. EfficientNet) with a second neural network specifically for metadata to produce the final predictions. 
+The training dataset consists of a total of **33,126 images (40+ GB)** and multiple metadata (including age, gender, and anatomy site), of which there are only **584 positive examples**. Three major challenges are presented by the dataset:
+
+- Extreme class imbalance
+- Missing meta entries
+- Image inconsistency (e.g. hair, crop, zoom, aspect ratio, unexpected objects, etc. ), as demonstrated by the sample below.
+
+![sample](./_img/sample.png)
+
+A more detailed description on the issues and relative measures to address them in the project are described in the notebook, [`model_nn_v3_efn_meta.ipynb`](./model_nn_v3_efn_meta.ipynb). 
+
+## Models
+
+**Model v1** is a simple CNN with two hidden layers and dropouts. Minimal feature engineering and model fine-tuning was performed. The goal is to see how well a basic CNN can handle the Melanoma dataset. 
+
+**Model v2** is built on EfficientNet with a number of key improvements:
+
+- Model is built for training on **TPU**.
+- **EfficientNet** B0 to B7 with transferred learning are experimented for fine-tuning the performance.
+- **Focal Loss** is applied to address the issue of class imbalance in the dataset.
+- A stronger **feature engineering** (including cropping, compression, and duplicate removal) is performed based on **EDA**.
+- **K-Fold CV** is applied to test out different models and hyperparameters. 
+- Two additional **baseline models** (Logistic Regression and SVM) are built as comparisons.  
+
+![alt text](https://yintrigue.com/ds_port/melanoma/_img/mv2.png?refresh=1)
+
+**Model v3** combines the outputs from Model v2 (i.e. EfficientNet) with a second neural network specifically for metadata to produce the final predictions. 
 
 ![alt text](https://yintrigue.com/ds_port/melanoma/_img/mv3.png)
 
@@ -41,17 +52,13 @@ Specifications for Model v3 are:
 
 - **Feature Engineering (Images)**
   All images are cropped to squares with the same dimension. Random augmentation with the following adjustments (using TensorFlow's image library `tf.image`) are applied at runtime prior to entering the model for training or prediction.
-
-- **Feature Engineering (MetaData)**
+- **Feature Engineering (Metadata)**
   - All data are transformed by one-hot. All missing values are given a value of -1. There are a total of 18 inputs after the one-hot transformation.
   - The strategy is based on the assumption that missing data are random by nature (i.e. no strong correlation to an example's class). By consistently assigning an unique value to missing data, the neural network should be able to learn the insignificance of the variable.
-  
+- **Convolutional Neural Network**
+  The architecture of CNN stays exactly the same as Model v2. EfficientNet B0 is chosen in Model v3 simply for its efficiency for training.
 - **Neural Netowrk for Metadata**
   Both hidden layers (highlighted in blue) consists of 64 neurons with relu activation and batch normalization. The dropout rate is set to 0.4. The specifications are chosen purely by experiment.
-  
-- **Convolutional Neural Network** 
-  The architecture of CNN stays exactly the same as Model v2. EfficientNet B0 is chosen in Model v3 simply for its efficiency for training.
-
 - **Dense Layer After Concatenation**
   The dense layer consists of 512 neurons with relu activation and batch normalization. The number of neurons is roughly half of the features after the concatenation.
 
@@ -70,10 +77,10 @@ Model v1 produces poor results. AUC is close to 50 and the model is unable to id
 ### Model v2  
 Model v2 achieves an **AUC of 89.05** but there is sign of underfitting. Both training and validation data are believed to have room for improvement with more epochs of training. 
 
-The one setup that produces the best is summarized below:
-- Model: **EfficientNet B7** 
+The setup that produces the best result is summarized below:
+- Model: EfficientNet B7 
 - Transferred Learning: ImageNet
-- Loss Function: **Focal Loss**
+- Loss Function: Focal Loss
 - Epochs: 8
 - Batch Size: 64
 - Image Size: 256x256
