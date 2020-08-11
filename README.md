@@ -41,7 +41,7 @@ An awesome baby starts with an awesome name! *AwesomeBabyNames* is a python term
 <a name="others"></a>
 ## Other Projects
 
-### [Hello Baby Clara!](./op_hello_baby_clara)  
+### [Hello Baby Clara!](./sp_hello_baby_clara)  
 **Tech Stack:** PHP, JavaScript, jQuery, HTML5, CSS  
 *Hello Baby Clara!* is a photo diary web application built using PHP and jQuery. It is a highly visual and interactive experience designed to be enjoyed by both farther (me) and daughter (Clara).
 
