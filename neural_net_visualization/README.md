@@ -22,13 +22,13 @@ Clusters start to form with just one epoch of training on Efficient-B0. The sepa
 
 In addition, images close to each other at the end of the first epoch of training strongly resemble to each other visually. Two randomly selected regions are plotted to demonstrate the observation.
 
-Example 1:
+**Region 1:**
 
 ![results_1](./img/results_1.png)
 
 ![results_1](./img/results_2.png)
 
-Example 2:
+**Region 2:**
 
 ![results_3](./img/results_3.png)
 
@@ -36,11 +36,11 @@ Example 2:
 
 However, by the end of the 10th epoch, examples close to each other **no longer look similar** even when they are correctly classified by EfficientNet-B0. Why? My hypothesis is that with 10 epochs of training, EfficientNet-B0 is now picking up subtitle details that can no longer be understood by my untrained eyes. 
 
+Wow! EfficientNet-B0 is on its way to become an expert on diagnosing Melanoma!
+
 ![results_5](./img/results_5.png)
 
 ![results_6](./img/results_6.png)
-
-Wow! EfficientNet-B0 is on its way to become an expert on diagnosing Melanoma!
 
 ## Repository 
 
