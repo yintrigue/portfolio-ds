@@ -21,7 +21,7 @@ The project explores ways to visualize the learning progress of EfficientNet B0 
 
 <a name="python_dev"></a>
 ## Python Development  
-### [AweseomBabyNames](./py_awesome_baby_names)  
+### [AweseomeBabyNames](./py_awesome_baby_names)  
 **Tech Stack**: MVC, SQLite, Python  
 An awesome baby starts with an awesome name! AwesomeBabyName is a python terminal app that helps you come up with a great name for your baby by visualizing **100+ years of census data** collected by the US government.
 
