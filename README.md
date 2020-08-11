@@ -28,21 +28,16 @@ The project explores ways to visualize the learning progress of EfficientNet B0 
 <a name="python_dev"></a>
 
 ## Python Development  
-### [Death-Zone Mountaineering](./himalayan_db)
-
-**Tech Stack:** Plotly, Seaborn, PyWaffle, GeoPy, Pandas, NumPy, Python
-
+### [Death-Zone Mountaineering](./himalayan_db)  
+**Tech Stack:** Plotly, Seaborn, PyWaffle, GeoPy, Pandas, NumPy, Python  
 Death-Zone Mountaineering is an analytics research the explores the expeditions to the 16 eight-thousander peaks with altitudes above 8,000m in the Himalayas mountain range. The research is primarily based on the *Himalayan Database*, covering all expeditions from 1905 through Spring 2019.
 
 ### [AweseomBabyNames](./awesome_baby_names)  
-**Tech Stack**: MVC, SQLite, Python
-
+**Tech Stack**: MVC, SQLite, Python  
 An awesome baby starts with an awesome name! AwesomeBabyName is a python terminal app that helps you come up with a great name for your baby by visualizing **100+ years of census data** collected by the US government.
 
-### [Snaky](./snaky)
-
-**Tech Stack:** PyGame, Python
-
+### [Snaky](./snaky)  
+**Tech Stack:** PyGame, Python  
 Snaky is a PyGame implementation of the classic game, Snake, but with twists specifically designed for training in neural network. 
 
 <a name="statistical_analysis"></a>
