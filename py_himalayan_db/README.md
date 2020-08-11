@@ -27,6 +27,8 @@ A total of five datasets are included in the Himalayan Database:
 A copy of the exported raw data and documentation is included in the repository at `./data`.
 
 ## Select Findings
+Select findings from the analysis are presented in this section. Please refer to the PDF at [`./docs/research_report_eight-thousanders.pdf`](./docs/research_report_eight-thousanders.pdf) for the full write-up.  
+
 ### First Ascents
 
 All eight-thousander peaks opened to public with permits have been climbed over the past 70 years. In particular, Mount Everest was first ascended by Edmund Hillary and Tenzing Norgay on May 29, 1953, which was considered one of the greatest accomplishments in mountaineering given the lack of modern climbing equipment and logistics operations available at the time. 
