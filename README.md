@@ -42,7 +42,7 @@ Death-Zone Mountaineering is an analytics research the explores the expeditions 
 
 An awesome baby starts with an awesome name! AwesomeBabyName is a python terminal app that helps you come up with a great name for your baby by visualizing **100+ years of census data** collected by the US government.
 
-### [Snaky](.snaky/)
+### [Snaky](./snaky)
 
 **Tech Stack:** PyGame, Python
 
