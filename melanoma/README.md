@@ -1,4 +1,4 @@
-# Melanoma Classification  
+# Classifying Melanoma
 **Tech Stack**: TensorFlow, Keras, Scikit-learn, TPU, GCS, Python  
 **Algorithms**: Neural Network, EfficientNet, Focal Loss, SVM, Logistic Regression, PCA  
 
