@@ -7,7 +7,7 @@ I love data and I love photography. This is a GitHub portfolio of my select data
 Table of Contents:  
 - [Machine Learning](#machine_learning)
 - [Python Development](#python_dev)
-- [Statistical Analytics](#statistical_analysis)
+- [Statistical Analysis](#statistical_analysis)
 - [Other Projects](#others)
 
 <a name="machine_learning"></a>
