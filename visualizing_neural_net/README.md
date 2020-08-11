@@ -1,12 +1,10 @@
-# Neural Net Visualization  
+# Visualizing EfficientNet-B0 
 **v1.0.1**
 
 **Tech Stack**: CNN, PCA, EfficientNet, Focal Loss, Keras, TensorFlow
 
 ## Description
 The project explores ways to visualize the learning progress of EfficientNet-B0, a convolutional neural network published by Google in 2019. The training dataset consists of a total of **33,126 images**, of which there are only **584 positive examples**. More information about the dataset can be found on the  [homepage](https://www.kaggle.com/c/siim-isic-melanoma-classification/overview) of Kaggle's competition, *SIIM-ISIC Melanoma Classification*.
-
-
 
 ## Methodology
 
