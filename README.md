@@ -22,6 +22,7 @@ I love data and I love photography. This is a GitHub portfolio of my select data
 ### [Visualizing EfficientNet-B0](./visualizing_neural_net)  
 **Tech Stack:** TensorFlow, Keras, TPU, GCS, Python  
 **Algorithms:** PCA, Convolutional Neural Network, EfficientNet-B0, Focal Loss  
+
 The project explores ways to visualize the learning progress of EfficientNet B0 (a convolutional neural network introduced by Google) by extracting its embedding and projecting the extracted features onto a 2D plane using PCA .
 
 <a name="python_dev"></a>
