@@ -114,8 +114,8 @@ Ensemble that combines multiple models could help improve the performance in bot
 
 ## Repository 
 
-- `model_nn_v3_efn_meta.ipynb` contains all source codes and the final report write-up.
-- `./melanoma_ppt.pdf` is a presentation that briefly discusses the various techniques used to build Model v3.
+- [`./model_nn_v3_efn_meta.ipynb`](./model_nn_v3_efn_meta.ipynb) contains all source codes and the final report write-up.
+- [`./melanoma_ppt.pdf`](./melanoma_ppt.pdf) is a presentation that briefly discusses the various techniques used to build Model v3.
 - `./archived_models` contains the notebooks for Model v1 and v2 with minimal write-up.
 - `./_saves` contains the npy outputs and weights from the final model. 
 - `./_img` contains the images used for the writeup and readme markdown.  
