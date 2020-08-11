@@ -11,7 +11,7 @@
 
 ## Data
 
-The research is primarily based on the [Himalayan Database](https://www.himalayandatabase.com/), which can be best described by the creator’s own words:
+The research is primarily based on the [Himalayan Database](https://www.himalayandatabase.com/) covering **100+ years of expeditions from 1905 to 2019**. The datase is best described by the creator’s own words:
 
 > The Himalayan Database is a compilation of records for all expeditions [from 1905 through Spring 2019] that have climbed in the Nepal Himalaya. The database is based on the expedition archives of Elizabeth Hawley, a longtime journalist based in Kathmandu, and it is supplemented by information gathered from books, alpine journals and correspondence with Himalayan climbers.
 
