@@ -1,6 +1,6 @@
 # Melanoma Classification  
-**Tech Stack**: TensorFlow, Keras, Scikit-learn, TPU, GCS, Python
-**Algorithms**:  Neural Network, Support Vector Machine, Logistic Regression, PCA
+**Tech Stack**: TensorFlow, Keras, Scikit-learn, TPU, GCS, Python  
+**Algorithms**: Neural Network, EfficientNet, Focal Loss, SVM, Logistic Regression, PCA  
 
 ## Description
 The project is an attempt to compete in the [Kaggle competition](https://www.kaggle.com/c/siim-isic-melanoma-classification) using machine learning techniques to identify melanoma in images of skin lesions. 
