@@ -58,8 +58,8 @@ Snaky is a PyGame implementation of the classic game, Snake, but with twists spe
 
 ## Other Projects
 
-### [Hello Baby Clara!](./hello_baby_clara)
-**Tech Stack:** PHP, JavaScript, jQuery, HTML5, CSS
+### [Hello Baby Clara!](./hello_baby_clara)  
+**Tech Stack:** PHP, JavaScript, jQuery, HTML5, CSS  
 *Hello Baby Clara!* is a photo diary web application built using PHP and jQuery. It is a highly visual and interactive experience designed to be enjoyed by both the farther (me) and daughter (Clara).
 
 ### [Yintegral.com](https://yintegral.com/)
