@@ -11,13 +11,13 @@ I love data and I love design. This is a GitHub portfolio of my select data scie
 **Tech Stack**: TensorFlow, Keras, Scikit-learn, TPU, GCS, Python  
 **Algorithms**: Neural Network, EfficientNet, Focal Loss, SVM, Logistic Regression, PCA  
 
-*SIIM-ISIC Melanoma Classification* is an annual Kaggle competition on identifying the deadly skin cancer, Melanoma, based on images of skin lesions and patient metadata. The training dataset consists of a total of **33,126 images (40+ GB)**, of which only **584 positive examples** are included. Three neural network models and two baseline models (Logistic Regression and SVM) were built with an exploratory study on visualizing the learning process of EfficientNet B0.
+*SIIM-ISIC Melanoma Classification* is an annual Kaggle competition on identifying the deadly skin cancer, Melanoma, based on images of skin lesions and patient metadata. The training dataset consists of a total of **33,126 images (40+ GB)**, of which only **584 positive examples** are included. Three **neural networks** and two baseline models (**Logistic Regression** and **SVM**) were built. An exploratory study using **PCA** on visualizing the learning process of EfficientNet B0 is also performed.
 
 ### [Visualizing EfficientNet-B0](./ml_visualizing_neural_net)  
 **Tech Stack:** TensorFlow, Keras, TPU, GCS, Python  
 **Algorithms:** PCA, Convolutional Neural Network, EfficientNet-B0, Focal Loss  
 
-The project explores ways to visualize the learning progress of EfficientNet B0 (a convolutional neural network introduced by Google in 2019) by extracting its embedding and projecting the extracted features onto a 2D plane using PCA.
+The project explores ways to visualize the learning progress of **EfficientNet B0** (a convolutional neural network introduced by Google in 2019) by extracting its embedding and projecting the extracted features onto a 2D plane using **PCA**.
 
 <a name="python_dev"></a>
 ## Python Development  
@@ -27,7 +27,7 @@ An awesome baby starts with an awesome name! *AwesomeBabyNames* is a python term
 
 ### [Death-Zone Mountaineering](./py_himalayan_db)  
 **Tech Stack:** Plotly, Seaborn, PyWaffle, GeoPy, Pandas, NumPy, Python  
-*Death-Zone Mountaineering* is an analytics research the explores the expeditions to the 16 eight-thousander peaks with altitudes above 8,000m in the Himalayas mountain range. The research is primarily based on the *Himalayan Database*, covering all expeditions from 1905 through Spring 2019.
+*Death-Zone Mountaineering* is an analysis on expeditions to the 16 eight-thousander peaks (i.e. peaks with altitudes above 8,000m) in the Himalayas mountain range. The research is primarily based on the *Himalayan Database*, covering **over 100 years of expeditions** from 1905 through Spring 2019.
 
 ### [Snaky](./py_snaky)  
 **Tech Stack:** PyGame, Python  
