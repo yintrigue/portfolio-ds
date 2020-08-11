@@ -1,6 +1,7 @@
 # Data Science Portfolio
 Last Update: 08/10/2020  
 Author: Tim Chen  
+  
 I love data and I love photography. This is a GitHub portfolio of my select data science projects. Please visit [Yintrigue.com](https://yintrigue.com/) for my works on photography.
 
 ## Table of Contents
