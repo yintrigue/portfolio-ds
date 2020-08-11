@@ -4,7 +4,7 @@
   
 I love data and I love photography. This is a GitHub portfolio of my select data science projects. Please visit [Yintrigue.com](https://yintrigue.com/) for my works on photography.
 
-Table of Contents:  
+Index:  
 - [Machine Learning](#machine_learning)
 - [Python Development](#python_dev)
 - [Statistical Analysis](#statistical_analysis)
