@@ -1,4 +1,4 @@
-# Ying's DS Portfolio
+# Data Science Portfolio by Ying Chen
 
 I love data and I love photography. This is a GitHub portfolio of my select data science projects. Please visit [Yintrigue.com](https://yintrigue.com/) for my works on photography.
 
