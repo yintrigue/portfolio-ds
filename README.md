@@ -16,6 +16,7 @@ I love data and I love photography. This is a GitHub portfolio of my select data
 ### [Classifying Melanoma](./melanoma)  
 **Tech Stack**: TensorFlow, Keras, Scikit-learn, TPU, GCS, Python  
 **Algorithms**: Neural Network, EfficientNet, Focal Loss, SVM, Logistic Regression, PCA  
+
 *SIIM-ISIC Melanoma Classification* is an annual Kaggle competition on identifying the deadly skin cancer, Melanoma, based on images of skin lesions and patient metadata. The dataset consists of a total of **33,126** full-color, high-resolution images but with only **584** positive examples. Three neural network models and two baseline models (Logistic Regression and SVM) were built with an exploratory study on visualizing the learning process of EfficientNet B0.
 
 ### [Visualizing EfficientNet-B0](./visualizing_neural_net)  
