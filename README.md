@@ -62,6 +62,6 @@ Snaky is a PyGame implementation of the classic game, Snake, but with twists spe
 
 *Hello Baby Clara!* is a photo diary web application built using PHP and jQuery. It is a highly visual and interactive experience designed to be enjoyed by both the farther (me) and daughter (Clara).
 
-### <a href="https://yintegral.com/" target="_blank">Yintegral.com</a>
+### [Yintegral.com](https://yintegral.com/)
 
 Before data science I was a software engineer at WPP leading the development of various interactive experiences online (e.g. e-commerce, games, data visualization, etc.) for clients such as Nike and EA Game. [Yintegral.com](https://yintegral.com/) is a portfolio of select web development projects that I have worked on.
