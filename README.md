@@ -1,5 +1,5 @@
 # Data Science Portfolio
-**Author:** Ying Chen  
+**Author:** Tim Chen  
 **Update:** Aug. 2020  
 
 I love data and I love design. This is a GitHub portfolio of my select data science projects.
