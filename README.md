@@ -26,7 +26,7 @@ The project explores ways to visualize the learning progress of **EfficientNet B
 An awesome baby starts with an awesome name! *AwesomeBabyNames* is a Python app that helps you come up with a great name for your baby by visualizing **100+ years of census data** collected by the US government.
 
 ### [Death-Zone Mountaineering](./py_himalayan_db)  
-**Tech Stack:** Plotly, Seaborn, PyWaffle, GeoPy, Pandas, NumPy, Python  
+**Tech Stack:** Plotly, Seaborn, GeoPy, Pandas, NumPy, Python  
 *Death-Zone Mountaineering* is an analysis on expeditions to the 16 eight-thousander peaks (i.e. peaks with altitudes above 8,000m) in the Himalayas mountain range. The research is primarily based on the *Himalayan Database*, covering **over 100 years of expeditions** from 1905 through Spring 2019.
 
 ### [Snaky](./py_snaky)  
