@@ -1,5 +1,5 @@
 # Death-Zone Mountaineering  
-**Tech Stack:** Plotly, Seaborn, PyWaffle, GeoPy, Pandas, NumPy  
+**Tech Stack:** Plotly, Seaborn, GeoPy, Pandas, NumPy  
 **Analysis Write-up:** [`./docs/research_report_eight-thousanders.pdf`](./docs/research_report_eight-thousanders.pdf)
 
 ## Description
