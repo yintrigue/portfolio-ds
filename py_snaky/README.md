@@ -7,9 +7,8 @@ Snaky is a PyGame implementation of the classic game, Snake. The goal is not to 
 - Dimension and resolution of the game board are adjustable, which enables experiments in neural network
 - Customizable sprites & OOP for ease of future extension
 
-Here is a simplified UML with select key properties and methods:
-
-<img src="./img/uml.png" width="450"/>
+Here is a simplified UML with select key properties and methods:  
+<img src="./img/uml.png" width="700"/>
 
 ## Screenshots
 ![](./img/screenshot_01.png)
