@@ -8,7 +8,7 @@ Snaky is a PyGame implementation of the classic game, Snake. The goal is not to 
 - Customizable sprites & OOP for ease of future extension
 
 Here is a simplified UML with select key properties and methods:  
-<img src="./img/uml.png" width="600"/>
+<img src="./img/uml.png" width="700"/>
 
 ## Screenshots
 ![](./img/screenshot_01.png)
