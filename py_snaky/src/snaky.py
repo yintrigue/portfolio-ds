@@ -1,5 +1,6 @@
 import pygame
 import random
+import numpy as np
 import pandas as pd
 from collections import defaultdict
 from sprites import SnakeSprite
@@ -27,10 +28,10 @@ class Snaky:
         self.__board = None # pygame.Surface
         self.__font_url = font_url
         self.__font = None # pygame.font
+        self.__enable_ending = True # set true to show the ending screen at the end of the game
         self.__sprite = SnakeSprite(snake_sprite_sheet_url,
                                     apple_sprite_url,
                                     self.__BLOCK_DIM)
-        self.__demo_fps = 10
         self.__clock = pygame.time.Clock()
 
         # initialize snake position and legnth
@@ -38,8 +39,10 @@ class Snaky:
         self.__apple = None # tuple, position of the apple
         self.reset()
 
-        # moves that will be automatically played at the beginning of the game
-        self.__moves = []
+        # replay properties
+        self.__replay_moves = []
+        self.__replay_apples = []
+        self.__replay_fps = 10
 
         # game states
         self.__score = 0
@@ -81,6 +84,10 @@ class Snaky:
         return self.__snake[0]
 
     @property
+    def apple_pos(self) -> tuple:
+        return self.__apple
+
+    @property
     def snake_len(self) -> int:
         return len(self.__snake)
 
@@ -89,35 +96,55 @@ class Snaky:
         return self.__snake
 
     @snake.setter
-    def snake(self, snake: list) -> None:
-        if len(snake) >= 3:
-            self.__snake = snake
+    def snake(self, snake_list: list) -> None:
+        if len(snake_list) < 3:
+            return
 
-            # update snake's head direction
-            is_heading_up = self.__snake[0][1] - self.__snake[1][1]
-            is_heading_right = self.__snake[0][0] - self.__snake[1][0]
-            if is_heading_up != 0:
-                if is_heading_up < 0:
-                    self.__snake_direction = 0
-                else:
-                    self.__snake_direction = 2
+        self.__snake = snake_list
+
+        # update snake's head direction
+        is_heading_up = self.__snake[0][1] - self.__snake[1][1]
+        is_heading_right = self.__snake[0][0] - self.__snake[1][0]
+        if is_heading_up != 0:
+            if is_heading_up < 0:
+                self.__snake_direction = 0
             else:
-                if is_heading_right > 0:
-                    self.__snake_direction = 1
-                else:
-                    self.__snake_direction = 3
+                self.__snake_direction = 2
+        else:
+            if is_heading_right > 0:
+                self.__snake_direction = 1
+            else:
+                self.__snake_direction = 3
 
-    def set_demo_fps(self, frame_rate:int) -> None:
-        self.__demo_fps = frame_rate
+    def enable_ending(self, ending: bool) -> None:
+        self.__enable_ending = ending
 
-    def set_moves(self, moves: list = []) -> None:
-        self.__moves = moves
+    def replay(self,
+               game_id: int = 0,
+               fps:int = 2,
+               ending: bool = False,
+               csv:str = 'snaky.csv',
+               print_data: bool = False,
+               delay: int = 1000) -> None:
+        """Reply the game store in csv.
+        """
+        df = pd.read_csv(csv, dtype={'vision': np.object,
+                                     'vision_new': np.object})
+        df = df.loc[df.game_id == game_id, :]
+        if print_data:
+            print(df)
 
-    def play(self, snake: list = []) -> None:
+        self.__replay_moves = df['move'].to_list()
+        self.__replay_apples = df['apple_pos_new'].to_list()
+        self.__replay_fps = fps
+        self.enable_ending(ending)
+
+        self.play(delay=delay)
+
+    def play(self, snake: list = [], delay: int = 0) -> None:
         """Start the pygame loop and render the default snake.
         """
         self.snake = snake
-
         pygame.init()
         pygame.display.set_caption("SNAKY")
 
@@ -133,22 +160,29 @@ class Snaky:
         # render the initial state
         self.__board.fill(self.__BOARD_COLOR)
         self.__update_snake() # render the first snake
-        self.__update_apple(True)
+        if len(self.__replay_apples) > 0:
+            self._update_apple(True, eval(self.__replay_apples[0]))
+        else:
+            self._update_apple(True)
         self.__update_display()
+
+        # delay the reply at the beginning; this gives some time for the pygame
+        # window to get ready
+        pygame.time.delay(delay)
 
         # start the game loop
         running = True
         while running:
             # start listening to user events only if the "pre-moves" have been played
-            if len(self.__moves) == 0:
+            if len(self.__replay_moves) == 0:
                 # start listening to pygame events
                 running = self.__pygame_events_handler()
                 # revert to the default frame rate once the "real" game startes
                 self.__clock.tick(self.__FRAME_RATE)
             else:
-                # "pre-moves"
-                self.key_press(self.__moves.pop())
-                self.__clock.tick(self.__demo_fps)
+                # replay
+                self.key_press(self.__replay_moves.pop(0), self.__replay_apples.pop(0))
+                self.__clock.tick(self.__replay_fps)
         self.quit()
 
     def reset(self) -> None:
@@ -156,7 +190,7 @@ class Snaky:
         """
         bc = self.__BOARD_DIM // 2 # default to board center
         self.__snake = [(bc, bc), (bc, bc+1), (bc, bc+2)]
-        self.__update_apple(True)
+        self._update_apple(True)
         self.__snake_direction = 0
 
         self.__update_display()
@@ -166,24 +200,28 @@ class Snaky:
         """
         pygame.quit()
 
-    def key_press(self, input_:int) -> bool:
+    def key_press(self, move: int, apple_pos: tuple = None) -> bool:
         """Simulate user key press events.
         Direction encode:
             0
           3   1
             2
         """
-        if input_ not in [0, 1, 2, 3]:
+        if move not in [0, 1, 2, 3]:
             return False
 
-        if input_ == 0:
-            new_event = pygame.event.Event(pygame.USEREVENT, key=pygame.K_UP)
-        elif input_ == 1:
-            new_event = pygame.event.Event(pygame.USEREVENT, key=pygame.K_RIGHT)
-        elif input_ == 2:
-            new_event = pygame.event.Event(pygame.USEREVENT, key=pygame.K_DOWN)
+        if move == 0:
+            new_event = pygame.event.Event(
+                            pygame.USEREVENT, key=pygame.K_UP, apple=apple_pos)
+        elif move == 1:
+            new_event = pygame.event.Event(
+                            pygame.USEREVENT, key=pygame.K_RIGHT, apple=apple_pos)
+        elif move == 2:
+            new_event = pygame.event.Event(
+                            pygame.USEREVENT, key=pygame.K_DOWN, apple=apple_pos)
         else:
-            new_event = pygame.event.Event(pygame.USEREVENT, key=pygame.K_LEFT)
+            new_event = pygame.event.Event(
+                            pygame.USEREVENT, key=pygame.K_LEFT, apple=apple_pos)
 
         pygame.event.post(new_event)
         self.__pygame_events_handler()
@@ -198,6 +236,11 @@ class Snaky:
                 return False
             else:
                 key = self.__onkeydown(e)
+                if e.type == pygame.USEREVENT:
+                    apple_pos = eval(e.apple)
+                else:
+                    apple_pos = None
+
                 if key in [0, 1, 2, 3]:
                     result = self._move_snake(key)
 
@@ -206,13 +249,17 @@ class Snaky:
                     # 2 - Self
                     # 3 - Wall
                     if result == 2 or result == 3: # moved, collided, dead
-                        self.__board.fill(self.__BOARD_COLOR)
-                        self.__show_ending('Game Over')
-                        self.__update_display()
+                        if self.__enable_ending:
+                            self.__board.fill(self.__BOARD_COLOR)
+                            self.__show_ending('Game Over')
+                            self.__update_display()
                     else: # moved, survived, might have an apple
                         self.__board.fill(self.__BOARD_COLOR)
                         self.__update_snake()
-                        self.__update_apple(result == 1)
+                        if apple_pos is not None:
+                            self._update_apple(True, apple_pos)
+                        else:
+                            self._update_apple(result == 1)
                         self.__update_display()
 
                 elif key == pygame.K_q:
@@ -321,26 +368,32 @@ class Snaky:
                        (self.__BOARD_DIM * self.__BLOCK_DIM // 2) - 1)
         self.__board.blit(surf, rect)
 
-    def __update_apple(self, new_apple=False) -> None:
+    def _update_apple(self, new_apple=False, pos: tuple = None) -> tuple:
         """Add an apple to the game board.
         """
         if new_apple:
-            # generate a list of empty blocks
-            empty_blocks = [(i, j)
-                            for i in range(self.__BOARD_DIM)
-                            for j in range(self.__BOARD_DIM)
-                            if (i, j) not in self.__snake]
+            if pos is not None:
+                self.__apple = pos
+            else:
+                # generate a list of empty blocks
+                empty_blocks = [(i, j)
+                                for i in range(self.__BOARD_DIM)
+                                for j in range(self.__BOARD_DIM)
+                                if (i, j) not in self.__snake]
 
-            if len(empty_blocks) == 0:
-                # no more empty block, mission complete!
-                return
+                if len(empty_blocks) == 0:
+                    # no more empty block, mission complete!
+                    return None
 
-            i = random.randrange(0, len(empty_blocks))
-            self.__apple = empty_blocks[i]
+                i = random.randrange(0, len(empty_blocks))
+                self.__apple = empty_blocks[i]
 
+        # add apple to blit if pygame is initiated
         if pygame.get_init():
             self.__board.blit(self.__sprite.apple, (self.__apple[0]*self.__BLOCK_DIM,
                                                     self.__apple[1]*self.__BLOCK_DIM))
+        return self.__apple
+
     def __update_snake(self) -> None:
         """Update the rendering of snake on the game board according to the positions
         of head, bodies, and tail specified by self.__snake.
@@ -384,8 +437,12 @@ class Snaky:
             # hit apple
             return 1
         elif pos in self.__snake:
-            # hit self
-            return 2
+            if self.__snake.index(pos) < len(self.__snake)-1:
+                # hit self
+                return 2
+            else:
+                # hit tail; snake is fine
+                return 0
         elif (pos[0] < 0 or
               pos[1] < 0 or
               pos[0] >= self.__BOARD_DIM or
@@ -418,14 +475,15 @@ class Snaky:
         elif d == 3:
             x -= 1
 
-        # collision dectation
+        # update direction & # collision detection
+        self.__snake_direction = d
         hit = self.__collision_test((x, y))
-        if hit == 0 or hit == 1: # apple or no collision
-            self.__snake_direction = d # update direction
-            self.__snake = [(x, y)] + self.__snake # add new head
 
-            # remove old tail only if no apple
+        # update snake only if the snake hits an apple or no collision
+        if hit == 0 or hit == 1:
+            self.__snake = [(x, y)] + self.__snake # add new head
             if hit == 0:
+                # remove old tail only if not an apple
                 self.__snake.pop()
 
         return hit
@@ -481,17 +539,6 @@ class SnakySimulator(Snaky):
                          apple_sprite_url,
                          font_url)
 
-    def replay(self, game_id: int = 0, csv:str = 'snaky.csv', fps:int = 2) -> None:
-        """Reply the game store in csv.
-        """
-        df = pd.read_csv(csv)
-        df = df.loc[df.game_id == game_id, :]
-        moves = df['move'].to_list()
-
-        super().set_demo_fps(fps)
-        super().set_moves(moves)
-        super().play()
-
     def simulate(self,
                  num_game: int = 100,
                  snake: list = [],
@@ -518,15 +565,17 @@ class SnakySimulator(Snaky):
             'snake_length': [], # int, direction encode
             'head_direction': [], # int
             'head_pos': [], # tuple
+            'apple_pos': [], # tuple
 
             'move': [], # int, direction encode
             'vision_new': [], # int, direction encode
             'snake_length_new': [], # int
             'head_direction_new': [], # int, direction encode
             'head_pos_new': [], # tuple
+            'apple_pos_new': [], # tuple
 
             'hit': [], # hit encode
-            'life': [] # 0: dead, 1: dead
+            'life': [] # __onkeydown0: dead, 1: dead
         }
 
         for i in range(num_game):
@@ -538,7 +587,8 @@ class SnakySimulator(Snaky):
                 examples['vision'].append(''.join([str(d) for d in super().vision]))
                 examples['snake_length'].append(super().snake_len)
                 examples['head_direction'].append(super().head_direction)
-                examples['head_pos'].append((super().head_pos[0], super().head_pos[1]))
+                examples['head_pos'].append(super().head_pos)
+                examples['apple_pos'].append(super().apple_pos)
 
                 # move snake & get result
                 move = random.randrange(0, 4)
@@ -546,13 +596,16 @@ class SnakySimulator(Snaky):
                 if hit == 2 or hit == 3:
                     life = 0
                 else:
+                    if hit == 1:
+                        super()._update_apple(True)
                     life = 1
 
                 examples['move'].append(move)
                 examples['vision_new'].append(''.join([str(d) for d in super().vision]))
                 examples['snake_length_new'].append(super().snake_len)
                 examples['head_direction_new'].append(super().head_direction)
-                examples['head_pos_new'].append((super().head_pos[0], super().head_pos[1]))
+                examples['head_pos_new'].append(super().head_pos)
+                examples['apple_pos_new'].append(super().apple_pos)
 
                 examples['hit'].append(hit)
                 examples['life'].append(life)
