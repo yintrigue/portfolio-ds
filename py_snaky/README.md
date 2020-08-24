@@ -12,7 +12,7 @@ Key features include:
 - Fully customizable sprites & OOP for ease of extension
 
 Here is a simplified UML that shows select key properties and methods:  
-<img src="./img/uml.png" width="800"/>
+<img src="./img/uml.png" width="850"/>
 
 ## Screenshots
 <img src="./img/skin_02/screenshot_01.png" width="700"/>
