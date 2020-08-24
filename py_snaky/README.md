@@ -1,24 +1,30 @@
 # Snaky  
-**Tech Stack:** PyGame, Python
+**Tech Stack:** PyGame, Keras, TensorFlow, Scikit-learn, Python
 
 ## Description
-Snaky is a PyGame implementation of the classic game, Snake. The goal is not to develop a fully playable game, but rather an implementation specifically for training in neural network. Key features include:
-- Option to save and replay history stored in CSV
-- Dimension and resolution of the game board are adjustable, which enables experiments in neural network
-- Customizable sprites & OOP for ease of future extension
+Snaky is a PyGame implementation of the classic game, Snake. The goal is not to develop the full game but an implementation specifically for machine learning. A detailed description on the ML aspects of the project can be found under the ML section of the portfolio.
 
-Here is a simplified UML with select key properties and methods:  
+Key features include:
+
+- Play manually or auto play using a brain (logistic regression & neural net)
+- Option to save and replay game play
+- Adjustable resolution and frame rate
+- Fully customizable sprites & OOP for ease of extension
+
+Here is a simplified UML that shows select key properties and methods:  
 <img src="./img/uml.png" width="700"/>
 
 ## Screenshots
-![](./img/screenshot_01.png)
-![](./img/screenshot_02.png)
-![](./img/screenshot_03.png)
+![](./img/skin_02/screenshot_01.png)
+![](./img/skin_02/screenshot_02.png)
+![](./img/skin_02/screenshot_03.png)
 
 ## Repository 
 
-- `demo.ipynb` is a simple demo on how to run the game.
-- `./src` stores the game's source codes in two different modules.
-- `./assets` stores the sprites and font used for the game.
-- `./img` stores the images used for the readme markdown.  
+- `demo.ipynb` is a simple demo of the game.
+- `train.csv` is the play history data generated for ML training.
+- `brain.h5` is the model for the snake's brain (i.e. saved model weights from Keras).
+- `./src` includes all source codes.
+- `./assets` includes sprites and font used for the game.
+- `./img` includes images used for the readme markdown.  
 

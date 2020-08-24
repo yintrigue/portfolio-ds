@@ -1,2 +1,0 @@
-# pygame v2.0.0.dev6 or above is required for Python 3.8.0 or above. Otherwise, pygame v2 is sufficient.
-pygame=2.0.0.dev6
