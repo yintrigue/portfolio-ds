@@ -19,6 +19,10 @@ I love data and I love design. This is a GitHub portfolio of my select data scie
 
 The project explores ways to visualize the learning progress of **EfficientNet B0** (a convolutional neural network introduced by Google in 2019) by extracting its embedding and projecting the extracted features onto a 2D plane using **PCA**.
 
+### [Snaky](./py_snaky)  
+**Tech Stack:** PyGame, Python  
+*Snaky* is a PyGame implementation of the classic game, Snake, but with twists specifically designed for training in neural network. 
+
 <a name="python_dev"></a>
 ## Python Development  
 ### [AwesomeBabyNames](./py_awesome_baby_names)  
@@ -28,10 +32,6 @@ An awesome baby starts with an awesome name! *AwesomeBabyNames* is a Python app 
 ### [Death-Zone Mountaineering](./py_himalayan_db)  
 **Tech Stack:** Plotly, Seaborn, GeoPy, Pandas, NumPy, Python  
 *Death-Zone Mountaineering* is an analysis on expeditions to the 16 eight-thousander peaks (i.e. peaks with altitudes above 8,000m) in the Himalayas mountain range. The research is primarily based on the *Himalayan Database*, covering **over 100 years of expeditions** from 1905 through Spring 2019.
-
-### [Snaky](./py_snaky)  
-**Tech Stack:** PyGame, Python  
-*Snaky* is a PyGame implementation of the classic game, Snake, but with twists specifically designed for training in neural network. 
 
 <a name="statistical_analysis"></a>
 ## Statistical Analysis
