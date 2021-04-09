@@ -123,9 +123,9 @@ Ensemble that combines multiple models could help improve the performance in bot
 
 ## PCA Analysis
 
-As an extension to the modeling, the learning progress of EfficientNet B0 is plotted by reducing the neural net’s embedding dimension using PCA. A more detailed description of the analysis can be found [here] (https://github.com/yintrigue/portfolio-ds/tree/master/ml_visualizing_neural_net).
+As an extension to the modeling, the learning progress of EfficientNet B0 is plotted by reducing the neural net’s embedding dimension using PCA. A more detailed description of the analysis can be in the repo [here](https://github.com/yintrigue/portfolio-ds/tree/master/ml_visualizing_neural_net).
  
-<img src="./img/efficientnet_b0_learning.gif" width="700"/>
+<img src="./_img/efficientnet_b0_learning.gif" width="700"/>
 
 ## Repository 
 
