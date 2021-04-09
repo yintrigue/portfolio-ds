@@ -10,7 +10,7 @@ The project explores ways to visualize the learning progress of EfficientNet-B0,
 
 Embeddings from EfficientNet-B0 are extracted and projected onto a 2D plane using PCA prior to entering the dense layer with sigmoid activation. The PCA-reduced 2D plane is then plotted and images close to each other (by Euclidean Distance) within the same region are rendered for examination. 
 
-<img src="./img/pca.jpeg" width="700"/>
+<img src="./img/pca.jpg" />
 
 ## Results
 
