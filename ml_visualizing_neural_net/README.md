@@ -11,13 +11,13 @@ The project explores ways to visualize the learning progress of EfficientNet-B0,
 
 Embeddings from EfficientNet-B0 are extracted and projected onto a 2D plane using PCA prior to entering the dense layer with sigmoid activation. The PCA-reduced 2D plane is then plotted and images close to each other (by Euclidean Distance) within the same region are rendered for examination. 
 
-![alt text](https://yintrigue.com/ds_port/melanoma/_img/pca.jpg)
+<img src="./img/pca.jpg" width="700"/>
 
 ## Results
 
 Clusters start to form with just one epoch of training on Efficient-B0. The separation between the Benign and Melanoma examples starts roughly from the 6th epoch.
 
-<img src="./img/efficientnet_b0_learning.gif"/>
+<img src="./img/efficientnet_b0_learning.gif" width="700"/>
 
 In addition, images close to each other at the end of the first epoch of training strongly resemble to each other visually. Two randomly selected regions are plotted to demonstrate the observation.
 
