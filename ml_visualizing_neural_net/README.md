@@ -1,5 +1,4 @@
-# Visualizing EfficientNet-B0 
-**v1.0.1**
+# Visualizing EfficientNet-B0
 
 **Algorithms:** PCA, Convolutional Neural Network, EfficientNet-B0, Focal Loss
 **Tech Stack:** TensorFlow, Keras, TPU, GCS, Python  
