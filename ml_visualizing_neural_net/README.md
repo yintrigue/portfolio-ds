@@ -16,7 +16,7 @@ Embeddings from EfficientNet-B0 are extracted and projected onto a 2D plane usin
 
 Clusters start to form with just one epoch of training on Efficient-B0. The separation between the Benign and Melanoma examples starts roughly from the 6th epoch.
 
-<img src="./img/efficientnet_b0_learning.gif" width="700"/>
+<img src="./img/efficientnet_b0_learning.gif" width="800"/>
 
 In addition, images close to each other at the end of the first epoch of training strongly resemble to each other visually. Two randomly selected regions are plotted to demonstrate the observation.
 
