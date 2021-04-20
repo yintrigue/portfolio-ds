@@ -23,18 +23,24 @@ Note: *Hello Baby Clara!* is built from the ground up using jQuery and a number 
 *Hello Baby Clara* is an online photo diary documenting a baby girl's growth!  
 ![](./img/screenshot_02.jpg) 
 <br />
+<br />
 Diary can be entered for each photo and shared on social network.
 ![](./img/screenshot_03.jpg) 
+<br />
 <br />
 User login is supported for viewing private photos and diaries.
 ![](./img/screenshot_06.jpg) 
 <br />
+<br />
 Layout is fully responsive and can be zoomed in/out for a personalized viewing experience.  
 ![](./img/screenshot_04.jpg) 
 <br />
+<br />
 This is a full-page rendering with the default zoom.  
 ![](./img/screenshot_01.jpg) 
-<br />A fun, colorful experience to be enjoyed by both farther and daugther!
+<br />
+<br />
+A fun, colorful experience to be enjoyed by both farther and daugther!
 ![](./img/screenshot_05.jpg) 
 
 ## Repository 
