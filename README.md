@@ -21,7 +21,7 @@ The project explores ways to visualize the learning progress of **EfficientNet B
 
 ### [Snaky](./py_snaky)  
 **Tech Stack:** PyGame, Python  
-*Snaky* is a PyGame implementation of the classic game, Snake, but with twists specifically designed for training in neural network. 
+*Snaky* is a PyGame implementation of the classic game, Snake, but the snake plays the game by itself with a brain made of a neural network. 
 
 <a name="python_dev"></a>
 ## Python Development  
