@@ -47,6 +47,6 @@ An awesome baby starts with an awesome name! *AwesomeBabyNames* is a Python app 
 
 ### [Yintegral.com](https://yintegral.com/)  
 
-Before data science I was a software engineer at WPP leading the development of various interactive experiences for clients including Nike and EA Game  (e.g. e-commerce, games, data visualization, etc.). [Yintegral.com](https://yintegral.com/) is a portfolio of select professional and personal projects that I have worked on prior to data science.
+Before data science I was a software engineer at WPP leading the development of various online interactive experiences for clients including Nike and EA Game  (e.g. e-commerce, games, data visualization, etc.). [Yintegral.com](https://yintegral.com/) is a portfolio of select professional and personal projects that I have worked on prior to data science.
 
  Bonus: Please visit [Yintrigue.com](https://yintrigue.com/) for my works on photography! 😃
