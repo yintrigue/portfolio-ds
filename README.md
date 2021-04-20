@@ -31,7 +31,7 @@ An awesome baby starts with an awesome name! *AwesomeBabyNames* is a Python app 
 
 ### [Visualizing Death-Zone Mountaineering](./py_himalayan_db)  
 **Tech Stack:** Plotly, Seaborn, GeoPy, Pandas, NumPy, Python  
-*Death-Zone Mountaineering* is an analysis on expeditions to the 16 eight-thousander peaks (i.e. peaks with altitudes above 8,000m) in the Himalayas mountain range. The data visualization project is primarily based on the *Himalayan Database*, covering **over 100 years of expeditions** from 1905 through Spring 2019.![image](https://user-images.githubusercontent.com/57857777/115339501-be315f00-a159-11eb-9c2e-e4491cd2b38e.png)
+*Death-Zone Mountaineering* is an analysis on expeditions to the 16 eight-thousander peaks (i.e. peaks with altitudes above 8,000m) in the Himalayas mountain range. The data visualization project is primarily based on the *Himalayan Database*, covering **over 100 years of expeditions** from 1905 through Spring 2019.![image]
 
 <a name="statistical_analysis"></a>
 ## Statistical Analysis
