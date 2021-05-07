@@ -3,16 +3,16 @@
 **Tech Stack**: TensorFlow, Keras, Scikit-learn, TPU, GCS, Python  
 
 ## Summary
-The project is an attempt to compete in the [Kaggle competition](https://www.kaggle.com/c/siim-isic-melanoma-classification) using machine learning techniques to identify melanoma in images of skin lesions. The overall workflow is iterative in nature with trials and errors:
+The project is an attempt to compete in the [Kaggle competition](https://www.kaggle.com/c/siim-isic-melanoma-classification) using machine learning techniques to identify melanoma in images of skin lesions. The overall workflow is iterative in nature with trials and errors: 
 
 ![alt text](https://www.dropbox.com/s/8uxprd2q297sqpp/workflow.png?raw=1)
 
 Note that the deployment in this study involves a simple submission to Kaggle's leaderboard submission with the required formats. Over the course of the study, a total of three models using neural network and two baseline models are built:
 
 - **Neural Networks**
-  - v1: CNN, 3-Layer
-  - v2 (Best Model): EfficientNet with Focal Loss & Data Augmentation
-  - v3: Concatenated Neural Nets, EfficientNet (for Images) + Neural Network (for Patient Metadata)
+  - **v1**: CNN, 3-Layer
+  - **v2 (Best Model)**: EfficientNet with Focal Loss & Data Augmentation
+  - **v3**: Concatenated Neural Nets, EfficientNet (for Images) + Neural Network (for Patient Metadata)
 - **Baseline Models**
   - Logistic Regression
   - Support Vector Machine
