@@ -1,21 +1,20 @@
-# Data Science Portfolio
-**Author:** Tim Chen  
-**Update:** Aug. 2020  
-
-I love data and I love design. This is a GitHub portfolio of my select data science projects.
+Tim Chen
+Data Scientist & Product Manager  
+Last Update: 05.05.2021  
 
 <a name="machine_learning"></a>
+
 ## Machine Learning
 
 ### [Classifying Melanoma](./ml_melanoma)  
+**Models**: Neural Network, EfficientNet, Logistic Regression, SVM, PCA, Custom Loss Function
 **Tech Stack**: TensorFlow, Keras, Scikit-learn, TPU, GCS, Python  
-**Algorithms**: Neural Network, EfficientNet, Focal Loss, SVM, Logistic Regression, PCA  
 
 *SIIM-ISIC Melanoma Classification* is an annual Kaggle competition on identifying the deadly skin cancer, Melanoma, based on images of skin lesions and patient metadata. The training dataset consists of a total of **33,126 images (40+ GB)**, of which only **584 positive examples** are included. Three **neural networks** and two baseline models (**Logistic Regression** and **SVM**) were built. An exploratory study using **PCA** on visualizing the learning process of EfficientNet B0 is also performed.
 
-### [Visualizing EfficientNet-B0](./ml_visualizing_neural_net)  
+### [Visualizing EfficientNet](./ml_visualizing_neural_net)  
+**Models:** EfficientNet-B0, PCA, Custom Loss Function
 **Tech Stack:** TensorFlow, Keras, TPU, GCS, Python  
-**Algorithms:** PCA, Convolutional Neural Network, EfficientNet-B0, Focal Loss  
 
 The project explores ways to visualize the learning progress of **EfficientNet B0** (a convolutional neural network introduced by Google in 2019) by extracting its embedding and projecting the extracted features onto a 2D plane using **PCA**.
 

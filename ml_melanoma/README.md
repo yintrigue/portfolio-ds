@@ -1,56 +1,74 @@
 # Classifying Melanoma
+**Models**: Neural Network, EfficientNet, [Focal Loss](https://arxiv.org/abs/1708.02002), SVM, Logistic Regression, PCA  
 **Tech Stack**: TensorFlow, Keras, Scikit-learn, TPU, GCS, Python  
-**Algorithms**: Neural Network, EfficientNet, Focal Loss, SVM, Logistic Regression, PCA  
 
 ## Summary
-The project is an attempt to compete in the [Kaggle competition](https://www.kaggle.com/c/siim-isic-melanoma-classification) using machine learning techniques to identify melanoma in images of skin lesions. The overall workflow is iterative with trials and errors:
+The project is an attempt to compete in the [Kaggle competition](https://www.kaggle.com/c/siim-isic-melanoma-classification) using machine learning techniques to identify melanoma in images of skin lesions. The overall workflow is iterative in nature with trials and errors:
 
-![alt text](https://yintrigue.com/ds_port/melanoma/_img/wf.jpg)
+![alt text](https://www.dropbox.com/s/8uxprd2q297sqpp/workflow.png?raw=1)
 
-A total of three neural networks and two baseline models are built:
+Note that the deployment in this study involves a simple submission to Kaggle's leaderboard submission with the required formats. Over the course of the study, a total of three models using neural network and two baseline models are built:
 
 - **Neural Networks**
-  - v1. CNN Barebone, 3-Layer
-  - v2. CNN Advanced, EfficientNet + Focal Loss
-  - v3. CNN (for Image) + Neural Network (for Metadata)
+  - v1: CNN, 3-Layer
+  - v2 (Best Model): EfficientNet with Focal Loss & Data Augmentation
+  - v3: Concatenated Neural Nets, EfficientNet (for Images) + Neural Network (for Patient Metadata)
 - **Baseline Models**
   - Logistic Regression
   - Support Vector Machine
 
-Lastly, an EDA (documented in a different [repository](https://github.com/yintrigue/portfolio-ds/tree/master/neural_net_visualization).) that explores ways to visualize EfficientNet B0 learns is performed. 
+Lastly, an [additional exploratory study](https://github.com/yintrigue/portfolio-ds/tree/master/neural_net_visualization) that visualizes the learning progress of EfficientNet using PCA to reduce the embedding's dimension is conducted. 
 
-## Data
+## Datasets
 
-The training dataset consists of a total of **33,126 images (40+ GB)** and multiple metadata (including age, gender, and anatomy site), of which there are only **584 positive examples**. Three major challenges are presented by the dataset:
+Two datasets are used for the classification: a **CSV (~2MB)** that contains textual patient metadata, and an **image pool (40GB+)** that consists of 33,126 skin lesion photos, of which there are **only 584 positive examples**. Both datasets can be downloaded on Kaggle's competition page, [SIIM-ISIC Melanoma Classificatio](https://www.kaggle.com/c/siim-isic-melanoma-classification/data). A number of major challenges are presented by the two datasets:
 
-- Extreme class imbalance
-- Missing meta entries
+- Extreme class imbalance, with only 1.76% of the examples being positive
+- Raw data come with a large size (40GB+) in two distinct structures: images and text-based metadata
 - Image inconsistency (e.g. hair, crop, zoom, aspect ratio, unexpected objects, etc. ), as demonstrated by the sample below.
 
 ![sample](./_img/sample.png)
 
-A more detailed description on the issues and relative measures to address them in the project are described in the notebook, [`model_nn_v3_efn_meta.ipynb`](./model_nn_v3_efn_meta.ipynb). 
+A detailed description on the issues and resolutions can be found in the notebook, [model_nn_v3_efn_meta.ipynb](./mdoels/model_nn_v3_efn_meta.ipynb). 
 
-## Models
+## Evaluation Metrics
+
+The primary metric for the study is, **ROC AUC**, which is the official leaderboard metric for the Kaggle competition. It is also a common measurement for clinical research due to the advantage that the classification threshold can be adjusted accordingly given the specific trials being conducted. However, as noted, the extreme imbalance in our dataset (with only 1.76% of the examples being positive) could lead to an overly optimistic ROC AUC. ROC AUC also does not reflect the performance on false positive classification, which is crucial in practice considering how deadly the consequence of a wrongly diagnosed cancer could be. 
+
+As such, the secondary metrics for our study are **precision** and **recall**. Given that both false positive (wrongly diagnosed cancer) and false negative (undiagnosed cancer) melanoma can be harmful and even deadly, we prefer observing precision and recall individually instead of using an aggregated metric such as F1 or PR AUC.
+
+## Baseline Models
+
+Two models, Logistic Regression (LR) and SVM, are built as baselines. While both LR and SVM achieve 97%+ accuracies with minimal effort on fine-tuning, the two models perform extremely poor on recalls and precision. In particular, LR achieves a mere 0.52 ROC AUC, and SVM's precision and recall are low at 0.07 and 0.05 respectively. This discrepancy between accuracy and AUC/precision/recall is due to the the imbalance between positive and negative examples in the dataset. With only 584 out of 33,126 examples being positive, a 98.23% accuracy can be easily achieved by predicting all patient cases to be positive.
+
+## CNN Specifications
 
 **Model v1** is a simple CNN with two hidden layers and dropouts. Minimal feature engineering and model fine-tuning was performed. The goal is to see how well a basic CNN can handle the Melanoma dataset. 
 
-**Model v2** is built on EfficientNet with a number of key improvements:
+**Model v2** (best model) is built on EfficientNet with a number of key improvements:
 
-- Model is built for training on **TPU**.
-- **EfficientNet** B0 to B7 with transferred learning are experimented for fine-tuning the performance.
-- **Focal Loss** is applied to address the issue of class imbalance in the dataset.
-- A stronger **feature engineering** (including cropping, compression, and duplicate removal) is performed based on **EDA**.
-- **K-Fold CV** is applied to test out different models and hyperparameters. 
-- Two additional **baseline models** (Logistic Regression and SVM) are built as comparisons.  
+- Data
+  - Improved **feature engineering** (including cropping, compression, and duplicate removal) is performed based on **EDA**.
+  - Data augmentation is implemented to reduce overfitting.
+- Model
+  - Two additional **baseline models** (Logistic Regression and SVM) are built as comparisons.  
+  - **EfficientNet** with transferred learning is implemented instead of a simple 3-layer neural net.
+- Training
+  - **EfficientNet** B0 to B7 with transferred learning and various hyperparameters are experimented using **5-fold CV** for fine-tuning the performance.
+  - **Focal Loss** (a custom loss function [published by Facebook](https://arxiv.org/abs/1708.02002) for binary classification) is applied to address the issue of class imbalance in the dataset.
+  - Model is built and trained on **TPU** to improve training efficiency.
 
-![alt text](https://yintrigue.com/ds_port/melanoma/_img/mv2.png?refresh=1)
+![alt text](https://www.dropbox.com/s/jo9cn4x0j5vpmm6/model_v2.png?raw=1)
 
-**Model v3** combines the outputs from Model v2 (i.e. EfficientNet) with a second neural network specifically for metadata to produce the final predictions. 
+In addition, Model v2 makes the final prediction using **bagging** by averaging the 50 probabilities (10 augmented variations x 5 models) for each example in the test dataset. In practice, an architecture as such can be relatively inefficient in prediction time comparing to as each prediction requires 50 probabilities to be computed. However, we argue that performance (i.e. precision & recall) should be prioritized in this case because an undetected or wrongly detected cancer can be deadly.
 
-![alt text](https://yintrigue.com/ds_port/melanoma/_img/mv3.png)
+![alt text](https://www.dropbox.com/s/5q8x6s4wgenx3xx/bagging.png?raw=1)
 
-Specifications for Model v3 are:
+**Model v3** combines the output embeddings from Model v2 with a second neural network specifically for metadata to produce the final predictions. 
+
+![alt text](https://www.dropbox.com/s/gyumr9udue51pfn/concate.png?raw=1)
+
+Specifications for **Model v3** are:
 
 - **Feature Engineering (Images)**
   All images are cropped to squares with the same dimension. Random augmentation with the following adjustments (using TensorFlow's image library `tf.image`) are applied at runtime prior to entering the model for training or prediction.
@@ -61,76 +79,65 @@ Specifications for Model v3 are:
   The architecture of CNN stays exactly the same as Model v2. EfficientNet B0 is chosen in Model v3 simply for its efficiency for training.
 - **Neural Netowrk for Metadata**
   Both hidden layers (highlighted in blue) consists of 64 neurons with relu activation and batch normalization. The dropout rate is set to 0.4. The specifications are chosen purely by experiment.
-- **Dense Layer After Concatenation**
+- **Concatenation**
   The dense layer consists of 512 neurons with relu activation and batch normalization. The number of neurons is roughly half of the features after the concatenation.
 
-In addition, Model v3 makes the final prediction by averaging the 50 probabilities (10 augmented variations x 5-folds) for each example in the test dataset.
-
-![alt text](https://yintrigue.com/ds_port/melanoma/_img/mv3_prediction.png)
-
 ## Results
-### Baseline
-Two baseline models, Logistic Regression (LR) and Support Vector Machine (SVM), are constructed. While both models achieve 97%+ accuracies with minimal effort of performance optimization, recall that a naive algorithm such as predicting all examples to be negative would easily achieve the same performance due to the imbalance in the dataset. The primary performance metric, AUC (Area Under Curve), also suffers in the baseline models. LR, for example, achieves a mere 0.52 AUC, essentially no better than the performance of a coin toss.
 
-### Model v1
+**Model v1** produces poor results. With 20 epochs of training, ROC AUC is still close to 0.50 with limited number of positive examples being identified.
 
-Model v1 produces poor results. AUC is close to 50 and the model is unable to identify any positive examples.
+**Model v2** (our best model) achieves an AUC of 89.05 on the test set with 20 epochs of training. Given the close performance between training and validation, we believe that there is room for improvement on performance with more epochs of training. Unfortunately, our training is limited to 20 epochs for the time being with the resources available. The specs that produce the best result for Model v2 is summarized below:
 
-### Model v2  
-Model v2 achieves an **AUC of 89.05** but there is sign of underfitting. Both training and validation data are believed to have room for improvement with more epochs of training. 
-
-The setup that produces the best result is summarized below:
 - Model: EfficientNet B7 
 - Transferred Learning: ImageNet
 - Loss Function: Focal Loss
-- Epochs: 8
+- Epochs: 20 (Best Model at 16th Epoch)
 - Batch Size: 64
 - Image Size: 256x256
 - Random Image Augmentation: True
 
-Note that the final model re-trained using the full 33,126 training examples prior to predicting the test data for submission to Kaggle. While re-training the model on the full dataset without validation can be uncommon in practice, it can be justified by the extreme rare positive examples in the dataset. The model benefits from learning the full 584 positive examples. A better approach, however, is to re-train the same best model using 5-folds, and use all 5 models for the final prediction. This method is adopted in Model v3.
+Note that the final model used to predict the test set (i.e. predictions for the leaderboard submission) was trained using full 33,126 training examples without a validation set. While re-training the model on the full dataset without validation can be uncommon in practice, it can be justified by the extreme rare positive examples in the dataset. The model benefits from learning the full 584 positive examples. A better approach, however, is to re-train the same best model using 5-folds, and use all 5 models for the final prediction. This method is adopted in Model v3.
 
-The best model specified above achieves the following results:
-- Kaggle Leaderboard Rank: 1,498 (out of 2,600+ entries)
-- **AUC: 89.05**
-- Sensitivity: 38.02 (estimated)
+The best model specified above achieves the following performance results:
 
-The result is considered reasonable given that the #1 ranking model from the 2019 competition achieves an AUC of ~0.95. I suspect that performance improvement beyond this point is only possible through ensemble.
+|           | Train | Valid | Test |
+| --------- | :---: | :---: | :--: |
+| AUC       | 0.87  | 0.85  | 0.89 |
+| Recall    | 0.53  | 0.51  |  -   |
+| Precision | 0.62  | 0.63  |  -   |
 
-### Model v3
-Model v3 suffers from severe overfitting, so much so that the model is able to achieve a perfect AUC score despite the extreme poor results from the validation dataset. Potential fixes to improve the performance are discussed in the "Potential Improvements" section that follows.
+**Model v3** suffers from severe overfitting with only 10 epochs of training (best model at 5th epoch), so much so that the model is able to achieve a nearly perfect AUC score despite the extremely poor results on the validation dataset. We suspect that there might be a data leakage associated with the metadata in the training set although great care has been taken care of to avoid leakage.   
 
-Epoch 5:
+|           | Train | Valid | Test |
+| --------- | :---: | :---: | :--: |
+| AUC       | 0.96  | 0.71  | 0.72 |
+| Recall    | 0.93  | 0.15  |  -   |
+| Precision | 0.83  | 0.36  |  -   |
 
-|            | Training | Validation |
-| ---------- | -------- | ---------- |
-| **AUC**    | 1.00     | 0.71       |
-| **Recall** | 100%     | 0.15%      |
+**Future Works**: Model v2 and v3 suffer from different issues and require different treatments. Model v2 (underfitting) would benefit from additional training time while Model v3 (overfitting) requires investigation on data leakage and could benefit from a reduced complexity/scale of neural network and/or stronger regularization. Ensemble that combines multiple models could help improve the performance in both cases. Other potential improvements include:      
 
-
-## Potential Improvements
-Model v2 and v3 suffer from different issues and require different treatments. Model v2 (underfitting) would benefit from additional training time (i.e. more epochs). Model v3 (overfitting), on the other hand, requires treatments such as a reduced complexity/scale of CNN as well as a stronger regularization. 
-
-Ensemble that combines multiple models could help improve the performance in both cases. Other potential improvements include:      
 - Additional Feature Engineering
-    - Higher image resolution
     - Hair simulation (EDA shows that lesions are frequently covered by body hair)
     - Microscope vignette simulation (EDA shows that multiple images come with strong vignetting and/or round-shape cropping)
-- Hyperparameters Fine-tuning
-    - Gradient clipping
+    - Taining with higher image resolutions
+    - Experiment with different metadata after resolving leakage
+- Additional Hyperparameters Fine-tuning
+    - Random/grid search
     - Learning rate decay
-    - Grid search
 
-## PCA Analysis
+## Additional Study: Visualizing EfficientNet
 
-As an extension to the modeling, the learning progress of EfficientNet B0 is plotted by reducing the neural net’s embedding dimension using PCA. A more detailed description of the analysis can be in the repo [here](https://github.com/yintrigue/portfolio-ds/tree/master/ml_visualizing_neural_net).
- 
-<img src="./_img/efficientnet_b0_learning.gif" width="700"/>
+As an extension to the modeling, the learning progress of EfficientNet B0 is visualized by reducing the neural net’s embedding dimension using PCA. A more detailed description of the analysis can be in the repo [here](https://github.com/yintrigue/portfolio-ds/tree/master/ml_visualizing_neural_net).  
+
+![alt text](https://www.dropbox.com/s/m86wwr5a57gw1u4/pca.png?raw=1)
+
+![Visualizing EfficientNet](./_img/efficientnet_b0_learning.gif)
 
 ## Repository 
 
+- [`./models/`](./modes/) contains all source codes for the three models.
+- [`./models/model_nn_v3_efn_meta.ipynb`](./models/model_nn_v3_efn_meta.ipynb) is the notebook with the final writeup and complete source codes for Model v3. 
 - [`./model_nn_v3_efn_meta.ipynb`](./model_nn_v3_efn_meta.ipynb) contains all source codes and the final report write-up.
-- [`./melanoma_ppt.pdf`](./melanoma_ppt.pdf) is a presentation that briefly discusses the various techniques used to build Model v3.
-- `./archived_models` contains the notebooks for Model v1 and v2 with minimal write-up.
-- `./_saves` contains the npy outputs and weights from the final model. 
+- [`./ppt/melanoma_ppt.pdf`](./ppt/melanoma_ppt.pdf) is a presentation that discusses the technical aspects and performance results of the study.
+- `./saves/` contains the saved models and performance evaluation results from the final model. 
 - `./_img` contains the images used for the writeup and readme markdown.  
