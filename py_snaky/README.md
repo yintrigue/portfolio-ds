@@ -53,9 +53,8 @@ The snake in Model 3 is given the ability to see if its next move would get clos
 ![demo_01](./mov/demo_02.gif)
 
 Now to solve the problem of the snake forming closed loop as it grows long, my immediate intuition is to add a new vision capability: the ability for the snake to see if its chosen next move would form a closed loop. However, it turns out that the geometric closed loop detection is not as straightforward as I think it would be. So the new plan for the next phase of the development (whenever I have time, of course) is to explore **deep Q reinforcement learning** which would allow me to optimize the snake's learning against the longterm rewards instead of just the survival in the very next step using the Bellman Equation:  
-$$
-Q(s, a)=r(s, a)+\gamma \max _{a} Q\left(s^{\prime}, a\right)
-$$
+
+<img src='./img/deep_q.jpg' width="300"/>
 
 ## Gameplay Screenshots
 
