@@ -30,6 +30,10 @@ To run AwesomeBabyNames*, simply run:
 
 Still don't have an idea for the baby's name? Here's a fun one for you to start with: Enter "Alice" and observe how people actually use the name for both baby girls and boys!
 
+<img src='./img/analysis_alice_time.jpg' width='770'/>
+
+<img src='./img/analysis_alice.jpg' width='700'/>
+
 ## Repository
 
 - `requirements.txt` contains a list of the required third-party packages.
