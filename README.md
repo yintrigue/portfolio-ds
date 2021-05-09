@@ -1,4 +1,4 @@
-Tim Chen
+Tim Chen  
 Data Scientist & Product Manager  
 Last Update: 05.05.2021  
 
@@ -7,22 +7,24 @@ Last Update: 05.05.2021
 ## Machine Learning
 
 ### [Classifying Melanoma](./ml_melanoma)  
-**Models**: Neural Network, EfficientNet, Logistic Regression, SVM, PCA, Custom Loss Function
+**Models**: Neural Network, EfficientNet, Logistic Regression, SVM, PCA, Focal Loss
 **Tech Stack**: TensorFlow, Keras, Scikit-learn, TPU, GCS, Python  
 
-*SIIM-ISIC Melanoma Classification* is an annual Kaggle competition on identifying the deadly skin cancer, Melanoma, based on images of skin lesions and patient metadata. The training dataset consists of a total of **33,126 images (40+ GB)**, of which only **584 positive examples** are included. Three **neural networks** and two baseline models (**Logistic Regression** and **SVM**) were built. An exploratory study using **PCA** on visualizing the learning process of EfficientNet B0 is also performed.
+*SIIM-ISIC Melanoma Classification* is an annual Kaggle competition on identifying the deadly skin cancer, Melanoma, based on patient metadata and images of skin lesions. Two datasets are used for the classification: a **CSV (~2MB)** that contains textual patient metadata, and an **image pool (40GB+)** that consists of 33,126 skin lesion photos, of which there are **only 584 positive examples**. A total of three **neural networks** and two baseline models (**Logistic Regression** and **SVM**) are built for the classification.
 
 ### [Visualizing EfficientNet](./ml_visualizing_neural_net)  
-**Models:** EfficientNet-B0, PCA, Custom Loss Function
-**Tech Stack:** TensorFlow, Keras, TPU, GCS, Python  
+**Models:** EfficientNet-B0, PCA, Focal Loss  
+**Tech Stack:** TensorFlow, Keras, TPU, GCS, Python   
 
-The project explores ways to visualize the learning progress of **EfficientNet B0** (a convolutional neural network introduced by Google in 2019) by extracting its embedding and projecting the extracted features onto a 2D plane using **PCA**.
+The study explores ways to visualize the learning progress of **EfficientNet** (a convolutional neural network published by Google in 2019) by extracting embeddings and projecting the extracted features onto a 2D plane using **PCA**.
 
-### [Snaky](./py_snaky)  
-**Tech Stack:** PyGame, Python  
-*Snaky* is a PyGame implementation of the classic game, Snake, but the snake plays the game by itself with a brain made of a neural network. 
+### [Neural Snaky](./py_snaky) 
+**Model**: Neural Network, Logistics  
+**Tech Stack:** PyGame, TensorFlow, Scikit-learn, Python  
+*Snaky* is a PyGame implementation of the classic game, Snake. There is a twist: the snake plays the game by itself with a brain made of a neural network! 
 
 <a name="python_dev"></a>
+
 ## Python Development  
 ### [AwesomeBabyNames](./py_awesome_baby_names)  
 **Tech Stack**: MVC, SQLite, Python  
