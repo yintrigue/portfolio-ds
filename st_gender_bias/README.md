@@ -1,8 +1,8 @@
 # Gender Bias in Auto Repair Pricing
-**Keywords**: Randomized Field Experiment, 2x2 Factorial Design, Blocking, Power Analysis, OLS, ANOVA, R
+**Keywords**: Randomized Field Experiment, 2x2 Factorial Design, Blocking, Power Analysis, OLS, ANOVA, R  
 **Tech Stack**: R  
 
-*Gender Bias in Auto Repair Pricing* is an end-to-end research project that includes a **randomized field experiment**. Multiple academic researches on similar topics have been conducted. One study that closely relates to our research is [Repairing the Damage: The Effect of Price Knowledge and Gender on Auto Repair Price Quotes](https://www.nber.org/system/files/working_papers/w19154/w19154.pdf), a 2013 field experiment by Busse, Israeli, and Zettelmeyer that examined whether perceptions about women’s knowledge of market prices drives gender discrimination. They found that when customers signalled unfamiliarity with market rates, **women were quoted $23 more**, on average, than men. Interestingly, they also found that shops were **more likely to provide a discount when asked by a female** **caller** (versus a male caller).
+*Gender Bias in Auto Repair Pricing* is an end-to-end research project that includes a **randomized field experiment**. Multiple other academic researches on similar topics have been conducted. One study that closely relates to our research is [Repairing the Damage: The Effect of Price Knowledge and Gender on Auto Repair Price Quotes](https://www.nber.org/system/files/working_papers/w19154/w19154.pdf), a 2013 field experiment by Busse, Israeli, and Zettelmeyer that examined whether perceptions about women’s knowledge of market prices drives gender discrimination. They found that when customers signalled unfamiliarity with market rates, **women were quoted $23 more**, on average, than men. Interestingly, they also found that shops were **more likely to provide a discount when asked by a female** **caller** (versus a male caller).
 
 ## Research Question
 
@@ -50,7 +50,7 @@ In addition, we build in our **mediation analysis** into the experiment design a
 
 We sped a considerable amount of our time collecting data and resolving the various unexpected issues calling the shops. For example, all teams experience relatively low "success" rates at ~50% due to attrition (e.g. shops that answer our calls but refuse/fail to provide a quote) and "non-starters" (e.g. shops that fail to receive treatment by not answering our calls). **Attrition** is fully disclosed with detailed breakdowns in the paper and addressed in modeling using **extreme bounds analysis**. "**Non-starters**," on the other hand, are excluded from modeling but an analysis on their distribution is included in the paper to evaluate the potential **risk of bias**. 
 
-![Data Collection](https://www.dropbox.com/s/hff77bevpvudulu/data.jpg?raw=1)
+![Data Collection](https://www.dropbox.com/s/6yd7cj6ra6whiyk/data.png?raw=1)
 
 ## Modeling & Interpretation
 ### Summary of Findings

@@ -19,7 +19,7 @@ Last Update: 05.05.2021
 The study explores ways to visualize the learning progress of **EfficientNet** (a convolutional neural network published by Google in 2019) by extracting embeddings and projecting the extracted features onto a 2D plane using **PCA**.
 
 ### [Neural Snaky](./py_snaky) 
-**Model**: Neural Network, Logistics  
+**Models**: Neural Network, Logistics  
 **Tech Stack:** PyGame, TensorFlow, Scikit-learn, Python  
 *Snaky* is a PyGame implementation of the classic game, Snake. There is a twist: the snake plays the game by itself with a brain made of a neural network! 
 
@@ -37,9 +37,13 @@ An awesome baby starts with an awesome name! *AwesomeBabyNames* is a Python app 
 <a name="statistical_analysis"></a>
 ## Statistical Analysis
 
-  Coming soon...
+###[Field Experiment: Gender Bias in Auto Repair Pricing](./st_gender_bias)  
+**Keywords**: Randomized Field Experiment, 2x2 Factorial Design, Blocking, Power Analysis, OLS, ANOVA  
+**Tech Stack**: R  
+*Gender Bias in Auto Repair Pricing* is a statistical research project with **an end-to-end** **randomized field experiment** that includes experiment design, data collection, and model building. Multiple other academic researches on similar topics have been conducted and are discussed in the paper.  
 
 <a name="others"></a>
+
 ## Other Works
 
 ### [Yintegral.com](https://yintegral.com/)  
