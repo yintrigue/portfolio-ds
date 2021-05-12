@@ -1,0 +1,32 @@
+---
+title: "Data Extract Demo"
+author: "Tim Chen"
+date: "4/8/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(data.table)
+library(googlesheets4)
+```
+
+```{r load_data}
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+source("./functions.R")
+load('./../raw_data.rdata')
+data = parse_comment(data)
+```
+
+```{r load_treament_control}
+treatment = get_quote_records(data)[treat==1,]
+control = get_quote_records(data)[treat==0,]
+treatment
+control
+```
+
+```{r load_attrition}
+treatment_attrition = get_attrition(data)[treat==1,]
+control_attrition = get_attrition(data)[treat==0,]
+treatment_attrition
+control_attrition
+```

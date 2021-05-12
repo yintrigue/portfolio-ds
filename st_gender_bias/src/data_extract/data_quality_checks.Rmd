@@ -1,0 +1,91 @@
+---
+title: "Data Quality Checks"
+output: pdf_document
+---
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(testthat)
+```
+
+```{r, load_data}
+load('../raw_data.rdata')
+#data
+```
+
+```{r, check data consistency}
+## Data Consistency Checks
+# checking for inconsistent/missing data
+# Total records with notes mentioned under the "notes" column
+data[!is.na(notes), .N]
+
+total_shops <- data[, .N]
+inconsistent_data <- filter(data, quote_range_low < 0 | 
+                              quote_range_high < 0 | quote_point < 0)[, .N]
+
+shops_called <- data[!is.na(call_attempts),]
+shops_mismatched_price_quotes <- filter(shops_called, 
+                                 (is.na(quote_range_low) & !is.na(quote_range_high)) |
+                                 (!is.na(quote_range_low) & is.na(quote_range_high))) 
+shops_not_called <- data[is.na(call_attempts), ]
+shops_not_called_but_have_price <- filter(shops_not_called, 
+          (!is.na(quote_point) | !is.na(quote_range_low) | !is.na(quote_range_high)))
+
+test_that("Check if any negative values for price quotes", {
+  expect_equal(inconsistent_data, 0)  
+})
+
+test_that("Total shops called and not_called should equal to the total initial dataset", {
+  expect_equal(shops_not_called[, .N] + shops_called[, .N], total_shops)  
+})
+
+test_that("No shops with no_call_attempts should have price quotes", {
+  expect_equal(shops_not_called_but_have_price[, .N], 0)  
+})
+
+test_that("Mismatched price quotes. Should have both high and low quotes", {
+  expect_equal(shops_mismatched_price_quotes[, .N], 0)  
+})
+
+rm(inconsistent_data, shops_mismatched_price_quotes, 
+   shops_not_called, shops_not_called_but_have_price)
+```
+
+```{r, check for missing required columns}
+
+# Check for enrolled shops with NO quote that are missing a reason
+cat("ENROLLED SHOPS WITH NO QUOTE \n")
+no_quote_and_reason_missing <- data[contacted==1 & is.na(outcome) & is.na(no_quote_reason), .N]
+cat("\tMissing reason: ", no_quote_and_reason_missing, "\n")
+
+# Check for enrolled shops with a quote that are missing required columns
+cols <- c("call_attempts", "day", "time", "female_rep", "esl_rep", "script_budget_upcharge", "script_knowledge", "quote_breakdown")
+
+cat("\nENROLLED SHOPS WITH QUOTE \n")
+for (col in cols) {
+  count <- data[contacted==1 & !is.na(outcome) & is.na(get(col)), .N]
+cat("\tMissing", col, ":", count, "\n")
+}
+
+no_reason <- data[contacted==1 & is.na(outcome) & is.na(no_quote_reason)]
+no_reason
+
+no_upcharge <- data[contacted==1 & !is.na(outcome) & is.na(script_budget_upcharge)]
+no_upcharge
+
+no_knowledge <- data[contacted==1 & !is.na(outcome) & is.na(script_knowledge)]
+no_knowledge
+
+no_breakdown <- data[contacted==1 & !is.na(outcome) & is.na(quote_breakdown)]
+no_breakdown
+```
+
+```{r, additional checks for wrong or vague information}
+
+# check enrolled subjects with outcomes and missing quote reason
+data[!is.na(no_quote_reason) & !is.na(outcome)]
+
+# check enrolled subjects missing an outcome with reason "other"
+other_problems <- data[is.na(outcome) & contacted == 1 & no_quote_reason == "Other" & analyzed_comment != "failed_callback" & analyzed_comment != "returned_call_with_quote_without_quote"]
+#other_problems
+#write.csv(other_problems, file = "other_problems.csv")
+```

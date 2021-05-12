@@ -1,0 +1,111 @@
+---
+title: "Secondary Outcomes Plots"
+output: pdf_document
+---
+
+```{r load_data}
+load('../raw_data.rdata')
+modeling_data
+```
+
+```{r, secondary outcome plots}
+
+library(gridExtra)
+library(ggpubr)
+
+# get text versions of variables for plotting
+modeling_data[ , treat_text := ifelse(treat == 1, "Treatment", "Control")]
+modeling_data[ , script_knowledge_text := ifelse(script_knowledge == 1, "Yes", "No")]
+modeling_data[ , quote_breakdown_text := ifelse(quote_breakdown == 1, "Yes", "No")]
+modeling_data[ , range_provided_text := ifelse(range_provided == 1, "Yes", "No")]
+
+# create dataset with quotes and attrition
+quote_attrition <- data[exclude == 0]
+
+# get text version of attrition for plotting
+quote_attrition[ , treat_text := ifelse(treat == 1, "Treatment", "Control")]
+quote_attrition[ , attrition_text := ifelse(attrition == 1, "Yes", "No")]
+
+# create knowledge plot
+knowledge_plot <- modeling_data %>%
+  mutate(treat_text = factor(treat_text)) %>%
+  group_by(treat_text, script_knowledge_text) %>%
+  count() %>%
+  group_by(treat_text) %>%
+  mutate(percentage = n/sum(n)) %>%
+  ggplot(aes(x = script_knowledge_text, y = percentage, fill = treat_text)) +
+  geom_bar(position = 'dodge', stat = 'identity') +
+  #geom_text(aes(label = scales::percent(percentage, accuracy = 1), position = position_dodge2(width = 0.9), preserve = 'single')) +
+  theme_minimal() + 
+  theme(plot.title = element_text(hjust = 0.5, size=22), 
+        plot.subtitle = element_text(hjust = 0.5)) +
+  labs(title="Knowledge Secondary Outcome", subtitle="Used Script Knowledge Section") +
+  xlab(" ") +
+  ylab("") +
+  theme(legend.title=element_blank()) +
+  scale_fill_manual(values=c("turquoise3","red3")) + 
+  theme(axis.title.y = element_text(size = 10)) +
+  theme(legend.position="bottom") +
+  scale_y_continuous(labels = scales::percent, limits = c(0.0, 1.0)) + 
+  geom_text(x="No", y=0.81, label="81% (87)", hjust=1.75, vjust = -0.2, size=3) +
+  geom_text(x="No", y=0.71, label="71% (71)", hjust=-1, vjust = -0.2, size=3) +
+  geom_text(x="Yes", y=0.2, label="19% (20)", hjust=1.75, vjust = 0.5, size=3) +
+  geom_text(x="Yes", y=0.29, label="29% (29)", hjust=-1, vjust = -0.2, size=3)
+
+ggsave("../05_figures/plot_knowledge_secondary_outcome.png")
+
+# create breakdown plot
+breakdown_plot <- modeling_data %>%
+  mutate(treat_text = factor(treat_text)) %>%
+  group_by(treat_text, quote_breakdown_text) %>%
+  count() %>%
+  group_by(treat_text) %>%
+  mutate(percentage = n/sum(n)) %>%
+  ggplot(aes(x = quote_breakdown_text, y = percentage, fill = treat_text)) +
+  geom_bar(position = 'dodge', stat = 'identity') +
+  theme_minimal() + 
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ggtitle("Quote Breakdown Provided") +
+  xlab(" ") +
+  ylab("") +
+  theme(legend.title=element_blank()) +
+  scale_fill_manual(values=c("turquoise3","red3")) + 
+  theme(axis.title.y = element_text(size = 10)) +
+  theme(legend.position="none") +
+  scale_y_continuous(labels = scales::percent, limits = c(0.0, 1.0)) +
+  geom_text(x="No", y=.81, label="81% (87)", hjust=1.1, vjust = -0.2, size=3) +
+  geom_text(x="No", y=.79, label="79% (79)", hjust=-0.1, vjust = -0.2, size=3) +
+  geom_text(x="Yes", y=.19, label="19% (20)", hjust=1.1, vjust = -0.2, size=3) +
+  geom_text(x="Yes", y=.21, label="21% (21)", hjust=-0.1, vjust = -0.2, size=3)
+
+# create attrition plot
+attrition_plot <- quote_attrition %>%
+  mutate(treat_text = factor(treat_text)) %>%
+  group_by(treat_text, attrition_text) %>%
+  count() %>%
+  group_by(treat_text) %>%
+  mutate(percentage = n/sum(n)) %>%
+  ggplot(aes(x = attrition_text, y = percentage, fill = treat_text)) +
+  geom_bar(position = 'dodge', stat = 'identity') +
+  theme_minimal() + 
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ggtitle("Attrition") +
+  xlab(" ") +
+  ylab("") +
+  theme(legend.title=element_blank()) +
+  scale_fill_manual(values=c("turquoise3","red3")) + 
+  theme(axis.title.y = element_text(size = 10)) +
+  theme(legend.position="none") +
+  scale_y_continuous(labels = scales::percent, limits = c(0.0, 1.0)) +
+  geom_text(x="No", y=0.79, label="79% (107)", hjust=1.1, vjust = -0.2, size=3) +
+  geom_text(x="No", y=0.81, label="81% (100)", hjust=-0.1, vjust = -0.2, size=3) +
+  geom_text(x="Yes", y=0.21, label="21% (28)", hjust=1.1, vjust = -0.2, size=3) +
+  geom_text(x="Yes", y=0.19, label="19% (23)", hjust=-0.1, vjust = -0.2, size=3)
+
+
+# save grid plot
+plot_respect_secondary_outcomes <- ggarrange(breakdown_plot, attrition_plot, ncol = 2, nrow = 1, common.legend = TRUE, legend="bottom")
+plot_respect_secondary_outcomes <- annotate_figure(plot_respect_secondary_outcomes, top = text_grob("Respect", size = 20))
+plot_respect_secondary_outcomes
+ggsave(file="../05_figures/plot_respect_secondary_outcomes.png", plot_respect_secondary_outcomes) 
+```

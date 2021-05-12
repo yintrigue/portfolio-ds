@@ -1,0 +1,34 @@
+---
+title: "Plot Day/Time by Caller"
+output: pdf_document 
+---
+
+```{r load_data}
+load('../../data/data_experiment.rdata')
+```
+
+```{r visualizing day-time by caller}
+daytime_callerid_plot_dt <- data[!is.na(outcome), .(total_calls_made = .N), by = .(treat, day, caller_id, time)]
+daytime_callerid_plot_dt$treat = as.factor(daytime_callerid_plot_dt$treat)
+daytime_callerid_plot_dt$caller_id = as.factor(daytime_callerid_plot_dt$caller_id)
+daytime_callerid_plot_dt$time = as.factor(daytime_callerid_plot_dt$time)
+daytime_callerid_plot_dt = daytime_callerid_plot_dt[, treat := recode(treat, 
+                                                                      "1" = "Treatment: Female", 
+                                                                      "0" = "Control: Male")]
+
+p = ggplot(daytime_callerid_plot_dt ,aes(y=day, x=caller_id, color=treat, size=total_calls_made))
+p + geom_point() + 
+    scale_color_manual(values=c("grey70", "grey30")) + 
+    xlab("Caller ID") + 
+    ylab("Week Day") + 
+    theme(legend.title=element_blank())
+# ggsave("../05_figures/day_vs_callerid_treatcontrol.png")
+
+p = ggplot(daytime_callerid_plot_dt ,aes(y=time, x=caller_id, color=treat, size=total_calls_made))
+p + geom_point() + 
+    scale_color_manual(values=c("grey70", "grey30")) + 
+    xlab("Caller ID") + 
+    ylab("Day Time") + 
+    theme(legend.title=element_blank())
+# ggsave("../05_figures/time_vs_callerid_treatcontrol.png")
+```

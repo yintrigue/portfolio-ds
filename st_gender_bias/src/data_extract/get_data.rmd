@@ -1,0 +1,172 @@
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+# install.packages("googlesheets4")
+# install.packages("testthat")
+# install.packages("cobalt")
+# install.packages("MatchIt")
+```
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(data.table)
+library(stargazer)
+library(googlesheets4)
+library(sandwich)
+library(lmtest)
+library(ggplot2) 
+library(dplyr)
+library(testthat)
+library(cobalt)
+library(MatchIt)
+require(gridExtra)
+```
+
+# Import data  
+Collect data observations from individual Google Sheets within the team's shared drive:  
+```{r,  message=FALSE, warning=FALSE, echo=FALSE}
+# get headers
+googlelink <- "https://docs.google.com/spreadsheets/d/"
+template_link <- paste0(googlelink, 
+        "140ZNDM85g3AMugyb-OxnX9Tt1wf-g3mR6Jo5ZvQSTP0/edit#gid=1562913357")
+data <- read_sheet(template_link, 
+        sheet = 'female')
+
+# links to each team's sheet file
+teams = c(paste0(googlelink, 
+                 "1H_8_uNtcyLmYfg54TcM64Bs8_qj4Cwd3X2YfdreNRss/edit#gid=1162580088"),
+          paste0(googlelink, 
+                 "11-cFRpcdTyqouomV5j_uVKi9GQyvA8bGHX9cjHm2P7o/edit#gid=1885686268"),
+          paste0(googlelink, 
+                 "12MMpX0lWgHALECGU5n7DItY0E2rcvV3jmPbI2U7cTPw/edit#gid=1001181115"),
+          paste0(googlelink, 
+                 "1NUEtE9yXVzikmXzmlwD0wwxdPbMBrEGtHlizUVJ3vOU/edit#gid=1562913357"))
+
+# iterate through each team's sheet and add data to dataset
+for (team in teams){
+  data <- rbind(data, read_sheet(team, sheet = 'female'))
+  data <- rbind(data, read_sheet(team, sheet =   'male'))
+}
+
+# drop header
+data <- data[-c(1), ]
+
+# convert to data.table
+data <- data.table(data)
+```
+
+# Clean Data
+## Review and analyze the 'Notes' column
+```{r, cleanup the notes column}
+comments <- read_sheet(paste0(googlelink, 
+                  "1-M5Dj5wLSIrmJWtIxzmeEqnf1bySTMGqPIXF_jdgTP8/edit#gid=714751732"))
+comments <- unique(comments)
+
+# convert to data.table
+comments <- data.table(comments)
+
+# create analyzed_comment feature from notes columns
+data <- data[comments, analyzed_comment := analyzed_comment, on = c(notes = "notes")]
+```
+
+## Encode additional variables from the data
+```{r, create additional features}
+# range_indicator (was a range provided?)
+data <- data[ , range_provided := ifelse( !is.na(quote_range_low) & !is.na(quote_range_high), 1 , 0)]
+
+# contacted = rows where call_attempts is not NULL 
+data <- data[ , contacted := 
+                ifelse( !is.na(call_attempts) , 1 , 0)]
+
+# create outcome variable - use the mean of range if quote point is NA
+data <- data[ , outcome := ifelse( is.na(quote_point), 
+                                   (quote_range_low+quote_range_high)/2 , quote_point)]
+
+# change yes/no to 1 / 0 - esl_rep and female_rep
+binary_variables = c( "esl_rep", "female_rep", 
+                      "script_budget_upcharge", "script_knowledge", "quote_breakdown")
+for (col in binary_variables) set(data, j = col, value = +(data[[col]] == "Yes"))
+```
+
+## Create additional indicator variables
+### Breakout `analyzed_comment`
+```{r, create indicator variables from analyzed_comment}
+# did shop return phone call (with or without quote)
+data <- data[ , returned_call := 
+                ifelse( analyzed_comment %in% c('returned_call_with_quote', 'returned_call_without_quote'), 1, 0)]
+
+# indicator for failed_callback
+data <- data[ , failed_callback := 
+                ifelse( analyzed_comment == 'failed_callback', 1, 0)]
+
+# indicator for does_not_perform_service
+data <- data[ , does_not_perform_service := 
+                ifelse( analyzed_comment == 'does_not_perform_service', 1, 0)]
+
+# indicator for onsite_additional_info
+data <- data[ , onsite_additional_info := 
+                ifelse( analyzed_comment == 
+                          'requires_physical_presence_or_additional_information', 1, 0)]
+```
+
+### Breakout `caller_id`-related indicator variables
+```{r, create indicator variables from caller_id}
+# indicator for female_caller
+data <- data[ , female_caller := 
+                ifelse( caller_id %in% c(1,4,5,7), 1, 0)]
+
+# indicator for esl_caller
+data <- data[ , esl_caller := 
+                ifelse( caller_id %in% c(2,3,4,5,6), 1, 0)]
+```
+
+### Identify Non-Compliance and Attrition
+```{r, create indicator variables for non-compliance and attrition}
+
+# Add single no quote column where other == analyzed comment
+data[ , no_quote_reason_other_cats := ifelse(no_quote_reason == "Other", analyzed_comment, no_quote_reason)]
+
+# Make single no quote column values pretty
+data[ , no_quote_reason_other_cats := recode(no_quote_reason_other_cats, "unable_to_provide_quote" = "Unable to provide quote", "failed_callback" = "Failed callback", "shop_no_longer_operating" = "Out of business", "no_phone_contact" = "No contact (after 2 tries)")]
+
+# Add attrition indicator
+data[contacted == 1, attrition := ifelse(no_quote_reason_other_cats %in% 
+                     c("Refused to provide quote", 
+                       "Unable to provide quote", 
+                       "Failed callback"), 1, 0)]
+
+# Add exclude indicator 
+data[contacted == 1 , exclude := ifelse(no_quote_reason_other_cats %in% c("No contact (after 2 tries)", 
+                                                            "Does not provide this service", 
+                                                            "Out of business"), 1, 0)]
+```
+
+### Identify Affinity
+```{r, create indicator variables for affinity}
+# indicator for esl or gender affinity
+data <- data[, esl_affinity := 
+                ifelse( esl_caller == esl_rep, 1, 0) ]
+data <- data[, gender_affinity := 
+                ifelse( female_caller == female_rep, 1, 0) ]
+
+# indicator for esl AND gender affinity
+data <- data[, gender_esl_affinity := 
+                ifelse( female_caller == female_rep & esl_caller == esl_rep, 1, 0) ]
+```
+
+## Remove Unneccessary Columns
+```{r, drop unneccessary columns}
+drop_cols <- c("name","address", "phone_number")
+data <- data[, !c("name","address", "phone_number")]
+```
+
+```{r}
+attrition_data <- data[attrition == 1]
+exclude_data <- data[exclude==1]
+modeling_data <- data[contacted == 1 & !is.na(outcome)]
+save(data,modeling_data,attrition_data, exclude_data, file = "../raw_data.rdata")
+```
+
+```{r}
+# data[enrolled_subject == 1 & treat == 1 & !is.na(outcome)]
+# data[enrolled_subject == 1 & treat == 0 & !is.na(outcome)]
+data[attrition == 1]
+data[, unique(analyzed_comment)]
+```

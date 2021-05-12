@@ -1,0 +1,137 @@
+---
+title: "Pilot Power Analysis"
+author: Tim Chen
+date: "3/11/2021"
+---
+
+```{r setup, warning=FALSE}
+library(data.table)
+library(sandwich)
+library(lmtest)
+library(pwr)
+library(knitr)
+library(stargazer)
+
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+d_pilot <- data.table::fread('./../data/data_pilot.csv')
+```
+
+```{r data_prep}
+# build IDs & rename columns
+d_pilot[, `Shop ID` := 1:nrow(d_pilot)]
+d_pilot <- d_pilot[, c('Shop ID',
+                       'Caller ID',
+                       'Total Price Quote (enter -1 if no quote is provided)',
+                       'Price Quote - Low Bound',
+                       'Price Quote - High Bound',
+                       'Price Quote - Radiator',
+                       'Price Quote - Labor', 
+                       'Price Quote - Others')]
+setnames(d_pilot, names(d_pilot), c('shop_id', 
+                                    'caller_id', 
+                                    'q_total', 
+                                    'q_low', 
+                                    'q_high', 
+                                    'q_radiator',
+                                    'q_labor',
+                                    'q_other'))
+
+# build experiment data.table d
+d_pilot[, treatment := ifelse(caller_id == 'Sophia', 1, 0)]
+d_pilot[, q_range_avg := (q_low + q_high) / 2]
+d_pilot[, quote_mean := ifelse(is.na(q_total), q_range_avg, q_total)]
+d_pilot[, quote_high := ifelse(is.na(q_total), q_high, q_total)]
+d_pilot[, quote_low := ifelse(is.na(q_total), q_low, q_total)]
+
+# kepp only the required columns
+d_mean <- d_pilot[, c('shop_id', 'treatment', 'quote_mean')]
+d_high <- d_pilot[, c('shop_id', 'treatment', 'quote_high')]
+d_low <- d_pilot[, c('shop_id', 'treatment', 'quote_low')]
+
+# remove na rows
+d_mean <- na.omit(d_mean)
+d_high <- na.omit(d_high)
+d_low <- na.omit(d_low)
+```
+
+  
+```{r success_rate}
+d_q_estimate <- d_pilot[is.na(q_total) & is.na(q_low) & is.na(q_high), .N]
+success_rate <- 1 - d_q_estimate / nrow(d_pilot)
+success_rate
+```
+
+```{r power_analysis_mean}
+power_analysis <- function(d, quote_col_name='quote_mean', n=NULL) {
+    power       <- 0.8
+    sig_level   <- 0.05
+    
+    # calculate cohen.d
+    m_null      <- 0
+    m_alt       <- d[, .(mean=mean(get(quote_col_name))), by='treatment'][, diff(mean)]
+    sd_null     <- d[treatment==0, sd(get(quote_col_name))] 
+    sd_alt      <- d[treatment==1, sd(get(quote_col_name))] 
+    if (is.null(n)) {
+        cohen.d     <- (m_alt - m_null) / sqrt((sd_null^2 + sd_alt^2) / 2) 
+    } else {
+        cohen.d <- NULL
+    }
+    
+    # power analysis
+    pwr <- pwr.t.test(
+                n = n,
+                d = cohen.d,
+                sig.level = sig_level,
+                power = power,
+                type = "two.sample",
+                alternative = "two.sided")
+    
+    # recover effect size
+    if (is.null(cohen.d)) {
+        es <- pwr$d * sqrt((sd_null^2 + sd_alt^2) / 2)
+        return(list(pwr, es))
+    } else {
+        return(pwr)
+    }
+}
+
+cat('POWER ANALYSIS - MEAN QUOTE\n')
+cat('ATE:', d_mean[, .(mean=mean(quote_mean)), by='treatment'][, diff(mean)],'\n')
+power_analysis(d_mean, 'quote_mean')
+```
+
+```{r power_analysis_high}
+cat('POWER ANALYSIS - HIGH QUOTE\n')
+cat('ATE:', d_high[, .(mean=mean(quote_high)), by='treatment'][, diff(mean)],'\n')
+power_analysis(d_high, 'quote_high')
+```
+
+```{r power_analysis_low}
+cat('POWER ANALYSIS - LOW QUOTE\n')
+cat('ATE:', d_low[, .(mean=mean(quote_low)), by='treatment'][, diff(mean)],'\n')
+power_analysis(d_low, 'quote_low')
+```
+
+```{r power_analysis_sample_size}
+# calculate power
+effect_sizes <- c()
+sample_sizes <- c()
+for (n in 10:500) {
+    pwr <- power_analysis(d_mean, 'quote_mean', n)
+    effect_sizes <- c(effect_sizes, pwr[2])
+    sample_sizes <- c(sample_sizes, n)
+}
+
+# pwr default to sample size per group
+sample_sizes = sample_sizes * 2 
+
+# plot results
+plot(sample_sizes, 
+     effect_sizes,
+     xlim = c(0,1000),
+     main='Power Analysis: Sample Size vs. Effect Size',
+     xlab='Total Sample Size',
+     ylab='Effect Size ($)')
+abline(v=200, col="grey", lty=2)
+abline(v=400, col="grey", lty=2)
+```

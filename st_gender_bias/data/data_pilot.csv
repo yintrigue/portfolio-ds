@@ -1,0 +1,21 @@
+Shop ID,Shop Name,Shop Phone Number,Shop Postcode,Franchise shop?,Caller ID,Call Day,Call Time,Call answered?,Shop Representative Male?,Total Price Quote (enter -1 if no quote is provided),Unable to give a quote?,    Reason for No Quote,Price range given?,     Price Quote - Low Bound,     Price Quote - High Bound,Price breakdown?,     Price Quote - Radiator,     Price Quote - Labor,     Price Quote - Others,Other Notes
+,Burien Japanese Auto Service,(206) 926-8917,"14025-B 1st Ave S Burien, WA 98168",,Chris,Wednesday,12:00:00 PM,Yes,Male,675,,,,,,,,,,"Does NOT include hose, but suggests getting them done"
+,No 1 Japanese Auto Repair,(206) 782-0711,"10218 Greenwood Ave N Seattle, WA 98133",,Chris,Friday,2:00:00 PM,No,,,,,,,,,,,,"XXX Called three times, no answer (voicemail not left)"
+,Auburn City Imports Honda & Acura Auto Repair,(253) 939-0437,"1148 E Main St Auburn, WA 98002",,Chris,Tuesday,2:00:00 PM,Yes,Male,725,,,,,,,,,,"Parts, labor, coolant; asked to make an appointment"
+,Villa Transmissions & Auto,(253) 584-1668,"9810 59th Ave SW Lakewood, WA 98499",,Chris,Monday,9:00:00 AM,Yes,Male,,No,Shop is closed,,,,,,,,Shop is closed
+,Lake City Autoworks,(206) 364-7180,"2825 NE 120th St Seattle, WA 98125",,Chris,Tuesday,2:00:00 PM,Yes,Male,785,,,,,,,,,,"Asked if vehivle was 5 spd or Auto, I answered Auto; asked if I was certain it was leaking fluid; didn't provide a breakdown for the price (did say 785 was for parts and labor), but did suggest that adding coolant and other hoses and servicing would likely increase the price"
+,Browns Automotive Machines,(360) 651-8031,"9113 State Ave Ste C Marysville, WA 98270",No,Sophia,Tuesday,12:00:00 PM,Yes,Female,,Yes,Shop does not provide this service,,,,,,,,Does not accept blocked calls; does not provide this service
+,Bill Harris Used Cars,(509) 697-7006,"608 S 1st St Selah, WA 98942",No,Sophia,Tuesday,12:00:00 PM,Yes,Male,500,,,,,,,,,,"Call was answered by a female, but I was transferred to a male mechanic for the price quote"
+,Tener’s Auto Clinic,(425) 252-8090,"2118 Everett Ave Everett, WA 98201",No,Sophia,Tuesday,12:00:00 PM,Yes,Male,600,,,,,,Yes,210,330,60,Mechanic answered; asked 2 door or 4 door (said 4); suggested also doing hoses for $25-$50 more
+,Ben’s Automotive,(360) 352-9414,"1041 S Bay Rd NE Olympia, WA 98506",No,Sophia,Tuesday,4:00:00 PM,Yes,Male,625,,,,,,,,,,
+,Loyal Automotive,(206) 453-5466,"7724 24th Ave NW Seattle, WA 98117",Yes,Sophia,Wednesday,11:00:00 AM,Yes,Male,1063,,,,,,,,,,Got voicemail at 4:30pm Tues. Reached someone Wed at 11am. Asked gas or hybrid. Quote includes hoses ($40 each) and tax. Said repair is labor intensive and would take 3.5 hrs.
+,Les Schwab Tire Center,(509) 735-0321,99336,,Tim,Wednesday,10:00:00 AM,Yes,Male,,Yes,We don't do radiator.,,,,,,,,
+,Baker’s Auto Repair,(509) 576-9149,98901,,Tim,Wednesday,10:00:00 AM,Yes,Female,,Yes,Need to do more research.,,,,,,,,Sounds very thorough.
+,Carefree RV & Auto Repair,(509) 396-7435,99336,,Tim,Wednesday,10:00:00 AM,No,,,,,,,,,,,,
+,Precision Tune Auto Care,(253) 581-2443,98498,,Tim,Wednesday,10:00:00 AM,Yes,Female,,,,Yes,600,1000,,,,,Need to take a look.
+,Seattle Automotive,(206) 535-6690,98109,,Tim,Wednesday,10:00:00 AM,No,,,,,,,,,,,,Number is not working...
+,JC Auto repair,(425) 438-8883,98204,No,Vaibhav,Monday,1:00:00 PM,Yes,Male,,No,,Yes,600,658,Yes,285,280,32,
+,Plateau Motors,(425) 898-9900,98074,No,Vaibhav,Monday,1:00:00 PM,Yes,Male,,No,,Yes,300,600,No,,,,
+,East Hill Auto Service,(253) 850-1100,98030,No,Vaibhav,Monday,1:00:00 PM,Yes,Male,,No,,Yes,600,700,Yes,350,330,,
+,Model Garage & Automotive,(425) 451-2286,98024,No,Vaibhav,Monday,1:00:00 PM,Yes,Male,736,No,,Yes,,,Yes,,,,
+,Al’s Automotive Service,(253) 584-9520,98499,,,,,,,,,,,,,,,,,

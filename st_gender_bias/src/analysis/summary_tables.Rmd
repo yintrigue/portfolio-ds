@@ -1,0 +1,201 @@
+---
+title: "Summary Tables"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+#install.packages("tidyverse")
+#install.packages("ellipsis")
+#webshot::install_phantomjs()
+#install.packages(c("psych"))
+#install.packages("ggpubr")
+
+library("ggpubr")
+library(data.table)
+library(googlesheets4)
+library(dplyr)
+library(gtsummary)
+library(psych)
+library(ggplot2)
+```
+
+```{r load_data}
+load('../raw_data.rdata')
+data
+```
+
+```{r, table block counts counts}
+table_block_counts <- data[ , c("county", "chain")] %>%
+  tbl_cross(percent = "column", label = county ~ "County") %>%
+  modify_spanning_header(c("stat_1", "stat_2") ~ "**Chain Shop**") %>%
+  modify_header(label ~ "", stat_1 = "**No**", stat_2 = "**Yes**") %>%
+  as_gt() %>%
+  gt::gtsave(filename = "../05_figures/table_block_counts.png")
+  
+```
+
+```{r, table block randomization check}
+
+table_block_randomization <- data[ , c("chain", "county", "treat")] %>%
+  tbl_summary(by=treat) %>%
+  bold_labels() %>%
+  modify_header(label ~ "", stat_1 = "**Control**", stat_2 = "**Treatment**") %>%
+  add_overall %>%
+  as_gt() %>%
+  gt::gtsave(filename = "../05_figures/table_block_randomization.png")
+
+#chain_county <- data[ , c("chain", "county", "treat")]
+#chain_county[ , .(total_in_block = sum(.N)), keyby=.(chain, county, treat)]
+```
+
+
+```{r, get text variables for tables}
+
+# Add outcome text indicator 
+data[ , outcome_indicator_text := ifelse(!is.na(outcome), "Yes", "No")]
+
+# Add esl caller text indicator
+data[ , esl_caller_text := ifelse(esl_caller == 1, "Yes", "No")]
+
+# Add ESL affinity text indicator
+data[ , esl_affinity_text := ifelse(esl_affinity == 1, "Yes", "No")]
+
+# Add gender affinity text indicator
+data[ , gender_affinity_text := ifelse(gender_affinity == 1, "Yes", "No")]
+
+# Add ESL/Gender text indicator
+data[ , gender_esl_affinity_text := ifelse(gender_esl_affinity == 1, "Yes", "No")]
+
+```
+
+```{r, table quote obtained}
+
+# Add outcome text indicator 
+data[ , outcome_indicator_text := ifelse(!is.na(outcome), "Yes", "No")]
+
+# Make summary table for contacted by quote/no quote
+table_quote_obtained <- data[contacted == 1, 
+                             c("outcome_indicator_text", "treat")] %>%
+  tbl_summary(by=treat, type = outcome_indicator_text ~ "categorical", label = outcome_indicator_text ~ "Quote Obtained", percent = "column") %>%
+  bold_labels() %>%
+  modify_header(label ~ "", stat_1 = "**Control**", stat_2 = "**Treatment**") %>%
+  add_overall
+table_quote_obtained
+#as_gt() %>%
+#gt::gtsave(filename = "../05_figures/table_quote_obtained.png")
+
+```
+
+```{r, table treatment conditions}
+
+# Make summary table for treatment conditions 
+table_treatment_conditions <- data[contacted == 1 & !is.na(outcome), 
+                                    c("esl_caller_text", "treat")] %>%
+  tbl_summary(by=treat, type = esl_caller_text ~ "categorical", label = esl_caller_text ~ "ESL Caller", percent = "column") %>%
+  bold_labels() %>%
+  modify_header(label ~ "", stat_1 = "**Control**", stat_2 = "**Treatment**") %>%
+  add_overall %>%
+  as_gt() %>%
+  gt::gtsave(filename = "../05_figures/table_treatment_conditions.png")
+
+```
+
+```{r, table affinity}
+
+# Make summary table for affinity
+table_affinity <- data[contacted == 1 & !is.na(outcome), 
+                                    c("gender_affinity_text", "esl_affinity_text", "gender_esl_affinity_text", "treat")] %>%
+  tbl_summary(by=treat, type = c(gender_affinity_text, esl_affinity_text, gender_esl_affinity_text) ~ "categorical", label = list(vars(gender_affinity_text) ~ "Gender Affinity", vars(esl_affinity_text) ~ "ESL Affinity", vars(gender_esl_affinity_text) ~ "Gender/ESL Affinity"), percent = "column") %>%
+  bold_labels() %>%
+  modify_header(label ~ "", stat_1 = "**Control**", stat_2 = "**Treatment**") %>%
+  add_overall %>%
+  as_gt() %>%
+  gt::gtsave(filename = "../05_figures/table_affinity.png")
+
+```
+
+```{r, table attrition reason}
+
+# Make summary table for attrition reason
+table_attrition_reason <- data[is.na(outcome) & contacted == 1 & attrition == 1, c("no_quote_reason_other_cats", "treat")] %>%
+  tbl_summary(by=treat, label = no_quote_reason_other_cats ~ "Reason") %>%
+  modify_header(label ~ "**No Quote Attrition**", stat_1 = "**Control**", stat_2 = "**Treatment**") %>%
+  add_overall() %>%
+  as_gt() %>%
+  gt::gtsave(filename = "../05_figures/table_attrition_reason.png")
+```
+
+```{r, table exclude reason}
+
+# Make summary table for exclude reason
+table_exclude_reason <- data[is.na(outcome) & contacted == 1 & exclude == 1, c("no_quote_reason_other_cats", "treat")] %>%
+  tbl_summary(by=treat, label = no_quote_reason_other_cats ~ "Reason") %>%
+  modify_header(label ~ "**No Quote Exclude**", stat_1 = "**Control**", stat_2 = "**Treatment**") %>%
+  add_overall() %>%
+  as_gt() %>%
+  gt::gtsave(filename = "../05_figures/table_exclusion_reason.png")
+
+```
+
+```{r, table attrition balance check}
+
+# Make summary table for county/chain for quote vs. attrition
+table_attrition_balance_check <- data[contacted == 1 & exclude == 0, c("chain", "county", "attrition")] %>%
+  tbl_summary(by=attrition) %>%
+  modify_header(stat_1 = "**Quote Obtained**", stat_2 = "**Attrition**") %>%
+  bold_labels() %>%
+  as_gt() %>%
+  gt::gtsave(filename = "../05_figures/table_attrition_balance_check.png")
+
+#type = c(chain) ~ "continuous"
+#statistic = list(all_continuous() ~ "{mean} ({sd})")
+
+```
+
+```{r, tables non-price outcome feasibility}
+
+# Make summary table for breakdown
+table_breakdown_feasibility <- data[!is.na(outcome), 
+                                    c("quote_breakdown", "treat")] %>%
+  tbl_summary(by=treat, type = quote_breakdown ~ "categorical", label = quote_breakdown ~ "Provided Price Breakdown", percent = "column") %>%
+  bold_labels() %>%
+  modify_header(label ~ "", stat_1 = "**Control**", stat_2 = "**Treatment**") %>%
+  add_overall%>%
+  as_gt() %>%
+  gt::gtsave(filename = "../05_figures/table_breakdown_feasibility.png")
+
+# Make summary table for price range
+table_range_feasibility <- data[!is.na(outcome), 
+                                    c("range_provided", "treat")] %>%
+  tbl_summary(by=treat, type = range_provided ~ "categorical", label = range_provided ~ "Provided Price Range", percent = "column") %>%
+  bold_labels() %>%
+  modify_header(label ~ "", stat_1 = "**Control**", stat_2 = "**Treatment**") %>%
+  add_overall%>%
+  as_gt() %>%
+  gt::gtsave(filename = "../05_figures/table_range_feasibility.png")
+
+# Make summary table for knowledge
+table_knowledge_feasibility <- data[!is.na(outcome), 
+                                    c("script_knowledge", "treat")] %>%
+  tbl_summary(by=treat, type = script_knowledge ~ "categorical", label = script_knowledge ~ "Used Script Knowledge Section", percent = "column") %>%
+  bold_labels() %>%
+  modify_header(label ~ "", stat_1 = "**Control**", stat_2 = "**Treatment**") %>%
+  add_overall%>%
+  as_gt() %>%
+  gt::gtsave(filename = "../05_figures/table_knowledge_feasibility.png")
+
+# Make summary table for attrition
+table_attrition_feasibility <- data[exclude == 0, 
+                                    c("attrition", "treat")] %>%
+  tbl_summary(by=treat, type = attrition ~ "categorical", label = attrition ~ "Attrition", percent = "column") %>%
+  bold_labels() %>%
+  modify_header(label ~ "", stat_1 = "**Control**", stat_2 = "**Treatment**") %>%
+  add_overall%>%
+  as_gt() %>%
+  gt::gtsave(filename = "../05_figures/table_attrition_feasibility.png")
+
+```
+
+
+
+

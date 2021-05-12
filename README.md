@@ -23,9 +23,9 @@ The study explores ways to visualize the learning progress of **EfficientNet** (
 **Tech Stack:** PyGame, TensorFlow, Scikit-learn, Python  
 *Snaky* is a PyGame implementation of the classic game, Snake. There is a twist: the snake plays the game by itself with a brain made of a neural network! 
 
-<a name="python_dev"></a>
+<a name="data_exploration"></a>
 
-## Python Development  
+## Data Exploration  
 ### [AwesomeBabyNames](./py_awesome_baby_names)  
 **Tech Stack**: MVC, SQLite, Python  
 An awesome baby starts with an awesome name! *AwesomeBabyNames* is a Python app that helps you come up with a great name for your baby by visualizing **100+ years of census data** collected by the US government.
@@ -40,14 +40,18 @@ An awesome baby starts with an awesome name! *AwesomeBabyNames* is a Python app 
   Coming soon...
 
 <a name="others"></a>
-## Other Projects
-
-### [Hello Baby Clara!](./sp_hello_baby_clara)  
-**Tech Stack:** PHP, JavaScript, jQuery, HTML5, CSS  
-*Hello Baby Clara!* is a photo diary web application built using PHP and jQuery. It is a highly visual and interactive experience designed to be enjoyed by both farther (me) and daughter (Clara).
+## Other Works
 
 ### [Yintegral.com](https://yintegral.com/)  
 
-Before data science I was a software engineer at WPP leading the development of various online interactive experiences for clients including Nike and EA Game  (e.g. e-commerce, games, data visualization, etc.). [Yintegral.com](https://yintegral.com/) is a portfolio of select professional and personal projects that I have worked on prior to data science.
+Before data science I was a software engineer at a WPP agency leading the development of online interactive experiences for clients including Nike and EA Game  (e.g. e-commerce, games, data visualization, web development, etc.). [Yintegral.com](https://yintegral.com/) is a portfolio of select professional and personal projects that I have worked on prior to data science.  
 
- Bonus: Please visit [Yintrigue.com](https://yintrigue.com/) for my works on photography! 😃
+### [Hello Baby Clara!](./sp_hello_baby_clara)  
+
+**Tech Stack:** PHP, JavaScript, jQuery, HTML/CSS  
+*Hello Baby Clara!* is a photo diary web application built using PHP and jQuery. It is a highly visual and interactive experience designed to be enjoyed by both farther (me) and daughter (Clara).  
+
+### [Yintrigue.com](https://yintrigue.com/)  
+
+**Tech Stack:** Nikon  
+I am a semi-professional photographer at my own free time and love traveling around the world to explore the beauty of nature. [Yintrigue.com](https://yintrigue.com) is my photography portfolio that I built to showcase my 15+ years of works. 😃

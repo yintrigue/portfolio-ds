@@ -2,7 +2,6 @@
 **Models**: Neural Network, EfficientNet, [Focal Loss](https://arxiv.org/abs/1708.02002), SVM, Logistic Regression, PCA  
 **Tech Stack**: TensorFlow, Keras, Scikit-learn, TPU, GCS, Python  
 
-## Summary
 The project is an attempt to compete in the [Kaggle competition](https://www.kaggle.com/c/siim-isic-melanoma-classification) using machine learning techniques to identify melanoma in images of skin lesions. The overall workflow is iterative in nature with trials and errors: 
 
 ![alt text](https://www.dropbox.com/s/8uxprd2q297sqpp/workflow.png?raw=1)

@@ -1,0 +1,39 @@
+---
+title: "Model Comparisons"
+output: pdf_document
+---
+
+```{r, setup, include=FALSE}
+library(data.table)
+```
+
+```{r, load_data}
+
+load('../raw_data.rdata')
+#modeling_data
+```
+
+```{r, model}
+# base
+model_base <- lm(outcome ~ treat, data=modeling_data)
+# gender
+model_g <- lm(outcome ~ treat + as.factor(county) + chain, data=modeling_data)
+# gender + esl
+model_gr <- lm(outcome ~ treat + esl_caller + treat:esl_caller + as.factor(county) + chain, data=modeling_data)
+# gender + esl + affinity
+model_gr_af <- lm(outcome ~ treat + esl_caller + gender_affinity + esl_affinity + treat:esl_caller + treat:gender_affinity + treat:esl_affinity + as.factor(county) + chain, data=modeling_data)
+```
+
+```{r, model comparisons}
+
+# compare base model to gender model
+anova(model_base, model_g)
+
+# compare gender model with gender + esl model
+anova(model_g, model_gr)
+
+# compare gender + esl model with gender + esl + affinity model
+anova(model_gr, model_gr_af)
+
+```
+

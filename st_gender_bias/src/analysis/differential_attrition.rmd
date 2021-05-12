@@ -1,0 +1,90 @@
+
+```{r setup, include=FALSE}
+library(data.table)
+library(sandwich)
+library(lmtest)
+library(stargazer)
+library(ggplot2)
+library(patchwork)
+library(foreign)
+
+# load data & get records with quotes
+#setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+source("./functions.R")
+load('./../raw_data.rdata')
+
+# get quotes
+quote_dt <- modeling_data
+
+# get attrition
+data_parsed_dt <- parse_comment(data)
+attrit_dt <- get_attrition(data_parsed_dt)
+quote_plus_attrit_dt <- rbind(get_quote_records(data_parsed_dt), attrit_dt)
+```
+
+```{r, echo=FALSE}
+# utility functions
+get_robust_se <- function(mod){
+  # ACCEPTS linear model
+  # appends robust error
+  # RETURNS linear model
+  
+  mod$vcovHC_ <- vcovHC(mod)
+  return(sqrt(diag(mod$vcovHC_)))
+  
+  #return (mod)
+}
+```
+
+
+```{r feature_engineering, echo=FALSE}
+# morning_call
+quote_dt[, morning_call := ifelse(time <=12, 1, 0)]
+
+# price_range
+quote_dt[, price_range := ifelse(is.na(quote_range_low), 0, 1)]
+
+# update the attrition as raw data has the wrong label
+quote_plus_attrit_dt[, attrition := 0]
+quote_plus_attrit_dt[
+            (no_quote_reason == 'refused_to_provide_quote') |
+            (no_quote_reason == 'failed_callback') |
+            (no_quote_reason == 'unable_to_provide_quote'), attrition := 1]
+```
+
+```{r model, echo=FALSE}
+# gender
+model_g <- lm(outcome ~ treat + as.factor(county) + chain, data=quote_dt)
+# gender + race
+model_gr <- lm(outcome ~ treat + esl_caller + treat:esl_caller + as.factor(county) + chain, data=quote_dt)
+# gender + race + affinity
+model_gr_af <- lm(outcome ~ treat + esl_caller + treat:esl_caller + gender_affinity + esl_affinity + as.factor(county) + chain, data=quote_dt)
+
+# print stargazer
+model_list = list(
+    model_g,
+    model_gr,
+    model_gr_af
+)
+se_list = list(
+    coeftest(model_g, vcov=vcovHC(model_g, type="HC"))[ , "Std. Error"],
+    coeftest(model_gr, vcov=vcovHC(model_gr, type="HC"))[ , "Std. Error"],
+    coeftest(model_gr_af, vcov=vcovHC(model_gr_af, type="HC"))[ , "Std. Error"]
+)
+#stargazer(model_list, se=se_list, align=TRUE, type='text')
+```
+
+
+```{r, echo=FALSE}
+
+treat_attrition   <- data[ attrition == 1 & treat == 1, .N] / quote_dt[treat == 1, .N]
+control_attrition <- data[ attrition == 1 & treat == 0, .N] / quote_dt[treat == 0, .N]
+
+differential_attrition <- abs(control_attrition-treat_attrition)*100
+
+data[!is.na(outcome) | attrition == 1, .(treat, attrition)][, t.test(attrition ~ treat)]
+
+```
+
+
+

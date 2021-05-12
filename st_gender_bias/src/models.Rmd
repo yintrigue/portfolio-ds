@@ -1,0 +1,163 @@
+---
+author: Tim Chen
+date: "4/9/2021"
+---
+
+```{r setup, include=FALSE}
+library(data.table)
+library(sandwich)
+library(lmtest)
+library(stargazer)
+library(ggplot2)
+library(patchwork)
+library(foreign)
+
+# load data & get records with quotes
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+source("./analysis/functions.R")
+load('./../data/collected/data_experiment.rdata')
+
+# get quotes
+quote_dt <- modeling_data
+
+# get attrition
+attrit_dt <- attrition_data
+quote_plus_attrit_dt <- rbind(modeling_data, attrition_data)
+```
+
+```{r feature_engineering}
+# morning_call
+quote_dt[, morning_call := ifelse(time <=12, 1, 0)]
+
+# price_range
+quote_dt[, price_range := ifelse(is.na(quote_range_low), 0, 1)]
+
+# rename outcome column
+quote_dt[, price_quote := outcome]
+```
+
+```{r ref_dt_columns}
+sort(colnames(quote_dt))
+```
+
+```{r model_primary}
+# simple no fix effect
+model_s <- lm(price_quote ~ treat, data=quote_dt)
+# gender
+model_g <- lm(price_quote ~ treat + as.factor(county) + chain, data=quote_dt)
+# gender + esl
+model_gr <- lm(price_quote ~ treat + esl_caller + treat:esl_caller + as.factor(county) + chain, data=quote_dt)
+# gender + esl + affinity
+model_gr_af <- lm(price_quote ~ treat + esl_caller + gender_affinity + esl_affinity + 
+                                treat:esl_caller + treat:esl_affinity + treat:gender_affinity + 
+                                as.factor(county) + chain, data=quote_dt)
+
+# print stargazer
+model_list = list(
+    model_s,
+    model_g,
+    model_gr,
+    model_gr_af
+)
+se_list = list(
+    coeftest(model_s, vcov=vcovHC(model_s, type="HC"))[ , "Std. Error"],
+    coeftest(model_g, vcov=vcovHC(model_g, type="HC"))[ , "Std. Error"],
+    coeftest(model_gr, vcov=vcovHC(model_gr, type="HC"))[ , "Std. Error"],
+    coeftest(model_gr_af, vcov=vcovHC(model_gr_af, type="HC"))[ , "Std. Error"]
+)
+stargazer(model_list, 
+          se=se_list, 
+          align=TRUE, 
+          type='text',
+          no.space=TRUE,
+          omit=c('county', 'chain'),
+          add.lines = list(c("Fixed effects?", 'No', 'Yes', 'Yes', 'Yes')),
+          covariate.labels = c(
+                            'Female Caller', 
+                            'ESL Caller',
+                            'Gender Affinity',
+                            'ESL Affinity',
+                            'Female Caller:ESL Caller',
+                            'Female Caller:ESL Affinity',
+                            'Female Caller:Gender Affinity',
+                            'Intercept'
+                               ))
+```
+
+```{r model_alternative}
+model_alt_knowledge   = lm(script_knowledge ~ treat + as.factor(county) + chain, data=quote_dt)
+model_alt_attrit      = lm(attrition ~ treat + as.factor(county) + chain, data=quote_plus_attrit_dt)
+model_alt_breakdown   = lm(quote_breakdown ~ treat + as.factor(county) + chain, data=quote_dt)
+
+# print stargazer
+model_list = list(
+    model_alt_knowledge,
+    model_alt_attrit,
+    model_alt_breakdown
+)
+se_list = list(
+    coeftest(model_alt_knowledge, vcov=vcovHC(model_alt_knowledge, type="HC"))[ , "Std. Error"],
+    coeftest(model_alt_attrit, vcov=vcovHC(model_alt_attrit, type="HC"))[ , "Std. Error"],
+    coeftest(model_alt_breakdown, vcov=vcovHC(model_alt_breakdown, type="HC"))[ , "Std. Error"]
+)
+stargazer(model_list, 
+          se=se_list, 
+          align=TRUE, 
+          no.space=TRUE,
+          type='text', 
+          omit=c('county', 'chain'),
+          add.lines = list(c("Fixed effects?", 'Yes', 'Yes', 'Yes')),
+          covariate.labels = c(
+                            'Felmale Caller', 
+                            'Intercept'
+                               ))
+```
+
+```{r model_fun}
+model_fun_day = lm(price_quote ~ as.factor(day) + as.factor(county) + as.factor(chain), data=quote_dt)
+model_fun_caller = lm(price_quote ~ as.factor(caller_id) + as.factor(county) + as.factor(chain), data=quote_dt)
+model_fun_county = lm(price_quote ~ as.factor(county) + as.factor(chain), data=quote_dt)
+
+# print stargazer
+model_list = list(
+    model_fun_day,
+    model_fun_caller,
+    model_fun_county
+)
+se_list = list(
+    coeftest(model_fun_day, vcov=vcovHC(model_fun_day, type="HC"))[ , "Std. Error"],
+    coeftest(model_fun_caller, vcov=vcovHC(model_fun_caller, type="HC"))[ , "Std. Error"],
+    coeftest(model_fun_county, vcov=vcovHC(model_fun_county, type="HC"))[ , "Std. Error"]
+)
+stargazer(model_list[c(1,2,3)], 
+          se=se_list[c(1,2,3)], 
+          align=TRUE, 
+          no.space=TRUE,
+          type='text',
+          order=c(1,4,5,3,2),
+          covariate.labels = c(
+                            'Monday',
+                            'Tuesday',
+                            'Wednesday',
+                            'Thursday',
+                            'Saturday',
+                            'Caller 2',
+                            'Caller 3',
+                            'Caller 4',
+                            'Caller 5',
+                            'Caller 6',
+                            'Caller 7',
+                            'Caller 8',
+                            'Clark County',
+                            'Franklin County',
+                            'King County',
+                            'Pierce County',
+                            'Snohomish County',
+                            'Spokane County',
+                            'Thurston County',
+                            'Whatcom County',
+                            'Yakima County',
+                            'Chain',
+                            'Intercept'
+                               ))
+```

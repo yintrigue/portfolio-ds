@@ -1,0 +1,39 @@
+---
+title: "Treatment Correlation Tests"
+output: pdf_document
+---
+
+```{r load_data}
+load('../raw_data.rdata')
+data
+```
+
+```{r, treatment correlation tests}
+
+# treatment and shop ESL
+cat("Treatment and shop ESL\n")
+#treat_esl <- data[contacted == 1 & !is.na(outcome), table(esl_rep, treat)]
+#phi(treat_esl)
+#data[contacted == 1 & !is.na(outcome), cor(esl_rep, treat, method = "pearson")]
+data[contacted == 1 & !is.na(outcome), chisq.test(table(esl_rep, treat))]
+
+# treatment and shop gender
+cat("\nTreatment and shop gender\n")
+#treat_gender <- data[contacted == 1 & !is.na(outcome), table(female_rep, treat)]
+#phi(treat_gender)
+#data[contacted == 1 & !is.na(outcome), cor(female_rep, treat, method = "pearson")]
+data[contacted == 1 & !is.na(outcome), chisq.test(table(female_rep, treat))]
+
+# treatment and caller
+cat("\nTreatment and caller\n")
+data[contacted == 1 & !is.na(outcome), chisq.test(table(caller_id, treat))]
+
+# treatment and day
+cat("\nTreatment and day\n")
+data[contacted == 1 & !is.na(outcome), chisq.test(table(day, treat))]
+
+# treatment and time
+cat("\nTreatment and time\n")
+data[contacted == 1 & !is.na(outcome), chisq.test(table(time, treat))]
+
+```

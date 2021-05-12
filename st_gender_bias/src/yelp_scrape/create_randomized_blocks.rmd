@@ -1,0 +1,95 @@
+```{r load packages, warning=FALSE, echo = FALSE}
+library(data.table)
+library(sandwich)
+library(lmtest)
+library(knitr)
+library(stargazer)
+library(xlsx)
+```
+
+```{r, echo=FALSE, message=FALSE, results='hide', warning=FALSE}
+d <- read.csv('https://raw.githubusercontent.com/sophiaayele/w241_final_project/master/02_source_data/combined_cleaned.csv?token=APHWHQNE2DWSQNEM2QVP25TAO6S7I', 
+              header = TRUE, stringsAsFactors=FALSE, encoding="UTF-8")
+
+setnames(d, 'X.U.FEFF.name', 'name')
+setDT(d)
+
+# apply caller_id at first col, assign 0 for now
+d <- cbind(caller_id = rep(0,nrow(d)), d)
+
+# apply unique id at first col
+d <- cbind(id = seq(1,nrow(d)), d)
+```
+
+```{r, echo=FALSE, message=FALSE, results='hide', warning=FALSE}
+# show data grouped/ counted by county
+d[, .(total_in_county = sum(.N)), keyby=.(county)]
+```
+
+
+```{r, block randomization function, echo=FALSE, message=FALSE, results='hide', warning=FALSE}
+block_rando <- function(data_set, block_variates){
+  # generate assignments to treatment
+  group = data_set[,.SD[sample(.N/2)],by=block_variates][, id]
+  
+  # in order to prevent the condition in which a block_size %% 2 != 0
+  # randomly generate order of assignment
+  assignment = sample(c(0,1), 2)
+  
+  data_set[, treat := ifelse(id %in% group, assignment[1], assignment[2])]
+}
+
+```
+
+```{r, block on county and chain}
+block_x_chain_county <- d
+block_rando(block_x_chain_county, c('chain','county'))
+block_x_chain_county[, .(total_in_block = sum(.N)), keyby=.(county,chain, treat)]
+block_x_chain_county[, sum(.N), keyby=.(treat)]
+```
+
+```{r}
+head(block_x_chain_county)
+```
+
+```{r, echo=FALSE, message=FALSE, results='hide', warning=FALSE}
+# Shuffle row indices: rows
+treatment_rows <- block_x_chain_county[treat==1]
+shuffled_treatment_rows <- sample(nrow(treatment_rows))
+
+control_rows <-   block_x_chain_county[treat==0]
+shuffled_control_rows <- sample(nrow(control_rows))
+
+# Randomly order data
+treatment_group <- treatment_rows[shuffled_treatment_rows, ]
+control_group <-     control_rows[shuffled_control_rows, ]
+```
+
+```{r, assign caller ids, echo=FALSE, message=FALSE, results='hide', warning=FALSE}
+# 1, 3, 5, 7 = female  | 2, 4, 6, 8 = male 
+treatment_group[ , caller_id := rep(c(1, 3, 5, 7), length.out = .N)]
+control_group[ , caller_id := rep(c(2, 4, 6, 8), length.out = .N)]
+```
+
+
+```{r, create excel file, eval=FALSE, echo=FALSE, message=FALSE, results='hide', warning=FALSE}
+# write the overall
+write.xlsx(block_x_chain_county, file = "block_x_chain_county.xlsx",
+        sheetName = "Master", append = FALSE)
+
+callers <- c(1,3,5,7)
+for (caller in callers)
+{
+  # filename = team_letter_.xlsx
+  filename = paste("team_", LETTERS[match(caller, callers)], ".xlsx", sep = "")
+  
+  # Write block_x_county summary
+  write.xlsx(treatment_group[caller_id == caller, ], file = filename,
+        sheetName = "female", append = FALSE)
+  
+  # write block_x_county actual
+  write.xlsx(control_group[caller_id == (caller+1), ], file = filename, 
+             sheetName="male", append=TRUE)
+}
+```
+

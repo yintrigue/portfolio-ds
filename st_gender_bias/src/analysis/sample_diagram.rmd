@@ -1,0 +1,180 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+```{r get data numbers}
+library(data.table)
+library(DiagrammeR)
+library(DiagrammeRsvg)
+library(magrittr)
+library(rsvg)
+
+load('../../data/data_experiment.rdata')
+
+z <- nrow(data)
+treat_group <- data[treat == 1, .N]
+control_group <- data[treat == 0, .N]
+
+data[attrition==1,.N, by=.(treat,no_quote_reason, analyzed_comment)]
+
+# Called with Quote
+data[!is.na(outcome), .N, by = treat]
+  a <- data[!is.na(outcome) & treat==1, .N]
+  b <- data[!is.na(outcome) & treat==0, .N]
+
+# Called without Quote
+data[call_attempts > 0 & is.na(outcome), .N, by = treat]
+  c1 <- data[call_attempts > 0 & is.na(outcome) & treat==1, .N]
+  d <- data[call_attempts > 0 & is.na(outcome) & treat==0, .N]
+
+# Did not call
+data[is.na(call_attempts) & is.na(outcome), .N, by = treat]
+  e <- data[is.na(call_attempts) & is.na(outcome) & treat==1, .N]
+  f <- data[is.na(call_attempts) & is.na(outcome) & treat==0, .N]
+
+# no_contact_after_2_tries
+data[no_quote_reason == 'No contact (after 2 tries)', .N, by = treat]
+  g <- data[no_quote_reason == 'No contact (after 2 tries)' & treat==1, .N]
+  h <- data[no_quote_reason == 'No contact (after 2 tries)' & treat==0, .N]
+
+
+# does_not_provide_this_service
+data[no_quote_reason ==  "Does not provide this service" , .N, by = treat]
+  i <- data[no_quote_reason ==  "Does not provide this service" & treat==1, .N]
+  j <- data[no_quote_reason ==  "Does not provide this service" & treat==0, .N]
+  
+# refused_to_provide_quote
+data[no_quote_reason ==  "Refused to provide quote" , .N, by = treat]
+  k <- data[no_quote_reason ==  "Refused to provide quote" & treat==1, .N]
+  l <- data[no_quote_reason ==  "Refused to provide quote" & treat==0, .N]
+
+# failed_callback
+data[no_quote_reason ==  "Other" & failed_callback == 1, .N, by = treat]
+  m <- data[no_quote_reason ==  "Other" & failed_callback == 1 & treat==1, .N]
+  n <- data[no_quote_reason ==  "Other" & failed_callback == 1 & treat==0, .N]
+  
+# unable_to_provide_quote
+data[analyzed_comment == "unable_to_provide_quote", .N, by = treat]
+  o <- data[analyzed_comment == "unable_to_provide_quote" & treat==1, .N]
+  p <- data[analyzed_comment == "unable_to_provide_quote" & treat==0, .N]
+
+```
+
+
+```{r}
+graph <-("
+    digraph graph2 {
+    
+    graph [layout = dot, rankdir = LR]
+    
+    # node definitions with substituted label text
+    node [shape = rectangle, width = 4, fillcolor = Biege]
+    z [label = '@@1']
+    x [label = '@@2']
+    y [label = '@@3']
+    
+    c [label = '@@6']
+    d [label = '@@7']
+    
+    node [shape = rectangle, width = 4, fillcolor = Green]
+    
+    a [label = '@@4']
+    b [label = '@@5']
+    
+    node [shape = rectangle, width = 4, fillcolor = Red]
+    k [label = '@@14']
+    l [label = '@@15']
+    m [label = '@@16']
+    n [label = '@@17']
+    o [label = '@@18']
+    p [label = '@@19']
+    
+    node [shape = rectangle, width = 4, fillcolor = Grey]
+    e [label = '@@8']
+    f [label = '@@9']
+    
+    g [label = '@@10']
+    h [label = '@@11']
+    i [label = '@@12']
+    j [label = '@@13']
+    
+    
+    z -> x -> a   
+    z -> y -> b 
+    
+    x -> c -> g 
+    y -> d -> h
+            
+         c -> i
+         d -> j
+                    
+         c -> k
+         d -> l
+                    
+         c -> m
+         d -> n
+         
+         c -> o
+         d -> p
+         
+    x -> e
+    y -> f
+            
+    }
+    
+    paste0('Shops Included (n = ', z, ')')
+    paste0('Assigned to Treatment (n = ', treat_group, ')')
+    paste0('Assigned to Control (n = ', control_group, ')')
+    paste0('Called with Quote (n = ', a, ')')
+    paste0('Called with Quote (n = ', b, ')')
+    paste0('Called without Quote (n = ', c1, ')')
+    paste0('Called without Quote (n = ', d, ')')
+    paste0('Did not call (n = ', e, ')')
+    paste0('Did not call (n = ', f, ')')
+    paste0('no_contact_after_2_tries (n = ', g, ')')
+    paste0('no_contact_after_2_tries (n = ', h, ')')
+    paste0('does_not_provide_this_service (n = ', i, ')')
+    paste0('does_not_provide_this_service (n = ', j, ')')
+    paste0('refused_to_provide_quote (n = ', k, ')')
+    paste0('refused_to_provide_quote (n = ', l, ')')
+    paste0('failed_callback (n = ', m, ')')
+    paste0('failed_callback (n = ', n, ')')
+    paste0('Unable to provide Quote (n = ', o, ')')
+    paste0('Unable to provide Quote (n = ', p, ')')
+")
+
+grViz(graph) %>% export_svg %>% charToRaw %>% rsvg_png("../simple_flow_diagram.png")
+```
+
+```{r}
+library(dplyr)
+library(plyr)
+library(ggplot2)
+
+df <- modeling_data[,c("treat", "outcome")]
+df <- df[, sex := recode(treat, "1" = "Treatment: Female", "0" = "Control: Male")]
+
+mu <- ddply(df, "sex", summarise, grp.mean=mean(outcome))
+{
+    # change density plot line colors by groups
+    ggplot(df, aes(x=outcome, color=sex)) + geom_density()
+    # add mean lines
+    p<-ggplot(df, aes(x=outcome, linetype=sex, color=sex)) +
+      xlab("Price Quote") + ylab("Frequency") +
+      geom_density() +
+      geom_vline(data=mu, aes(xintercept=grp.mean, color=sex),
+                 linetype=c("solid","dashed")) +
+      geom_text(mapping = aes(x = grp.mean,
+                              y = 0.004,
+                              label = round(grp.mean, digits = 2),
+                              hjust = c(-0.2, 1.2),
+                              vjust = 0),
+                data = mu, show.legend = FALSE) +
+                scale_colour_manual(values = c("grey20","grey60")) +
+                theme_minimal() + 
+                theme(legend.title=element_blank())
+    p
+}
+```
+

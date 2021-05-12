@@ -1,0 +1,81 @@
+---
+title: "Covariate Balance Check"
+output: pdf_document
+---
+
+```{r}
+library(MatchIt)
+library(cobalt)
+```
+
+
+```{r}
+load('./../../data/data_experiment.rdata')
+```
+
+```{r, covariate balance check}
+shops_called <- data[!is.na(call_attempts),]
+# one-hot encode time col 
+time_breakout_data <- fastDummies::dummy_cols(shops_called, select_columns = "time")
+m1.out<-matchit(treat ~ county + chain + esl_caller + day  + 
+                        time_9 + 
+                        time_10 +  
+                        time_11 + 
+                        time_12 + 
+                        time_13 + 
+                        time_14 + 
+                        time_15 + 
+                        time_16 + 
+                        female_rep + esl_rep + 
+                        gender_affinity +  esl_affinity, 
+                        data = time_breakout_data[!is.na(outcome)], 
+                        method = "nearest", caliper=0.1)
+
+new.names <- c(distance = "Distance",
+               county_benton = "Benton County",
+               county_clark = "Clark County",
+               county_franklin = "Franklin County",
+               county_king = "King County",
+               county_snohomish = "Snohomish County",
+               county_spokane = "Spokane County",
+               county_thurston = "Thurston County",
+               county_whatcom = "Whatcom County",
+               county_yakima = "Yakima County",
+               county_pierce = "Pierce County",
+               chain = "Chain (Y/N)",
+               esl_caller = "Caller ESL (Y/N)",
+               day_Friday = "Called on Friday",
+               day_Thursday = "Called on Thursday",
+               day_Monday = "Called on Monday",
+               day_Tuesday = "Called on Tuesday",
+               day_Wednesday = "Called on Wednesday",
+               day_Saturday = "Called on Saturday",
+               time_8 = "Called at 0800",
+               time_9 = "Called at 0900",
+               time_10 = "Called at 1000",
+               time_11 = "Called at 1100",
+               time_12 = "Called at 1200",
+               time_13 = "Called at 1300",
+               time_14 = "Called at 1400",
+               time_15 = "Called at 1500",
+               time_16 = "Called at 1600",
+               female_rep = "Shop Representative Female (Y/N)",
+               esl_rep = "Shop Representative ESL (Y/N)",
+               gender_affinity = "Caller and Representative Same-Gender (Y/N)",
+               gender_esl = "Caller and Representative Same-ESL status (Y/N)",
+               esl_affinity = "Caller and Representative Same-ESL status (Y/N)"
+)
+
+love.plot(m1.out, binary = "std", thresholds = c(m = .1), var.names = new.names, abs = T ) + 
+          scale_color_manual(values=c("black", "white")) +
+          scale_size_manual(values = c(3, 0.0001)) +
+          geom_rect(aes(xmin=-Inf,xmax=Inf,ymin=-Inf, ymax=4.5),alpha=0.01,fill="grey85") + 
+          geom_rect(aes(xmin=-Inf,xmax=Inf,ymin=4.5, ymax=18.5),alpha=0.01,fill="grey30") +
+          geom_rect(aes(xmin=-Inf,xmax=Inf,ymin=18.5, ymax=30.5),alpha=0.01,fill="grey1") +
+          xlab("Absolute Standardized Mean Differences") +
+          theme(legend.position="none")
+          
+#ggsave("../05_figures/plot_covariate_balance.png")
+
+```
+

@@ -1,0 +1,64 @@
+---
+title: "Observations Flow Diagram Analysis"
+author: "Tim Chen"
+date: "4/2/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(data.table)
+library(googlesheets4)
+```
+
+```{r load_data}
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+source("./functions.R")
+load('./../raw_data.rdata')
+data = parse_comment(raw_data)
+data
+```
+
+
+```{r flow_chart_analysis}
+cat('ALL DATA\n')
+cat(paste0('n_total: ', data[, .N], '\n'))
+cat(paste0('n_treatment: ', data[treat==1, .N], '\n'))
+cat(paste0('n_control: ', data[treat==0, .N], '\n'))
+print_flow_chart_stats(data)
+
+cat('\nTREATMENT\n')
+print_flow_chart_stats(data[treat==1,])
+
+cat('\nCONTROL\n')
+print_flow_chart_stats(data[treat!=1,])
+```
+
+```{r no_quote_reason_analysis}
+treat_nr = get_called_no_quote_records(data[treat==1,])
+control_nr = get_called_no_quote_records(data[treat==0,])
+
+treat_nr[order(no_quote_reason), c('no_quote_reason')][, .N, by=c('no_quote_reason')]
+control_nr[order(no_quote_reason), c('no_quote_reason')][, .N, by=c('no_quote_reason')]
+```
+
+```{r no_quote_reason_other_analysis}
+treat_nr = get_called_no_quote_records(raw_data[treat==1,])
+control_nr = get_called_no_quote_records(raw_data[treat==0,])
+
+treat_nr = treat_nr[order(no_quote_reason, analyzed_comment), c('no_quote_reason', 'analyzed_comment')]
+treat_nr = treat_nr[, .N, by=c('no_quote_reason', 'analyzed_comment')]
+treat_nr = treat_nr[(no_quote_reason=='other') | is.na(no_quote_reason)]
+
+control_nr = control_nr[order(no_quote_reason, analyzed_comment), c('no_quote_reason', 'analyzed_comment')]
+control_nr = control_nr[, .N, by=c('no_quote_reason', 'analyzed_comment')]
+control_nr = control_nr[(no_quote_reason=='other') | is.na(no_quote_reason)]
+
+treat_nr
+control_nr
+```
+
+```{r county_analysis}
+data[, county, by=county][order(county), county]
+get_quote_records(data[treat==1,])[, county, by=county][order(county), county]
+get_quote_records(data[treat==0,])[, county, by=county][order(county), county]
+```

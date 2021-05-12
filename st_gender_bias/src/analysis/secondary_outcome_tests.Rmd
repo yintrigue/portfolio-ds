@@ -1,0 +1,17 @@
+---
+title: "Secondary Outcome T-tests"
+output: pdf_document
+---
+
+```{r load_data}
+load('../raw_data.rdata')
+data
+```
+
+```{r, secondary outcome t-tests}
+
+data[contacted == 1 & !is.na(outcome), t.test(script_knowledge, treat)]
+data[contacted == 1 & !is.na(outcome), t.test(quote_breakdown, treat)]
+data[contacted == 1 & !is.na(outcome), t.test(range_provided, treat)]
+
+```
