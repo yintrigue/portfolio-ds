@@ -1,6 +1,6 @@
 Tim Chen  
 Data Scientist & Product Manager  
-05.05.2021  
+Update: 05.05.2021  
 
 Jump To:  
 [Machine Learning](#machine_learning)  
