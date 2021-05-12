@@ -4,7 +4,7 @@
 **Tech Stack**: R  
 
 ## Research Question
-Over 720,000 hours of videos are uploaded to YouTube everyday in 2020. The project is a simple regression analysis from end to end in an attempt to explore the relationship between a video's quality and its popularity one YouTube. In particular, we ask the following question: **How does the quality of a video affect its number of views?**  
+Over 720,000 hours of videos are uploaded to YouTube everyday in 2020. The project is a regression analysis from end to end in an attempt to explore the relationship between a video's quality and its popularity one YouTube. In particular, we ask the question: **How does the quality of a video affect its number of views?**  
 
 Note that the regression analysis in this notebook does NOT attempt to establish a causal relationship of any kind due to the lack of a randomized experiment setup. The goal is to analyze the relationship between a video's quality and its popularity on YouTube with a focus is on performing an end-to-end regression analysis including an analysis on the **Gauss–Markov assumptions** and **omitted variable bias**.    
 
@@ -77,9 +77,6 @@ With the exception for a few outliers, the q-q plot shows a reasonable straight 
 
 ##Repository 
 
-- [`./paper_gender_bias.pdf`](./paper_gender_bias.pdf) is the paper writeup for the experiment.
-- [`./src/models.Rmd`](./src/models.Rmd) includes all the models built for the experiment. 
-- [`./src/power_analysis.Rmd`](./src/power_analysis.Rmd) includes all the power analysis conducted based on the pilot study.
-- `./src/` contains the source codes for the experiment (data parsing, feature engineering, model building, etc.)
-- `./data/` contains the data we scraped and collected for the experiment.
+- [`./regression_ytb_qlty_pop.ipynb`](./regression_ytb_qlty_pop.ipynb) is the notebook with source codes and writeup for the analysis.
+- [`./data_ytb.csv`](./data_ytb.csv) is the raw dataset used for the regression. 
 
