@@ -4,7 +4,7 @@ v0.8.3
 
 Before data science I was a software engineer (on a 200-people UX team in a WPP design agency) and an UX designer. To this date, I continue to enjoy working on web development projects at my own free time. *Hello, Baby Clara!* is an interactive web experience that I created to document my daughter's growth since 2017. The website is functional but currently in development with performance latency issues to be resolved:
 
-<a href="https://yintrigue.com/hellobabyclara/" target="_blank">Hello, Baby Clara!</a></a>
+https://yintrigue.com/hellobabyclara/
 
 *Hello, Baby Clara!* is a database-free SPA (single-page application) designed for storytelling using photos and text diaries. Key features include:
 
