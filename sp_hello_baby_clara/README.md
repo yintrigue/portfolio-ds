@@ -1,5 +1,5 @@
 # Hello, Baby Clara!  
-**Tech Stack:** PHP, JavaScript, jQuery, HTML5, CSS
+**Tech Stack:** PHP, JavaScript, jQuery, HTML5, CSS  
 v0.8.3
 
 Before data science I was a software engineer (on a 200-people UX team in a WPP design agency) and an UX designer. To this date, I continue to enjoy working on web development projects at my own free time. *Hello, Baby Clara!* is an interactive web experience that I created to document my daughter's growth since 2017. The website is functional but currently in development with performance latency issues to be resolved:
