@@ -1,7 +1,8 @@
 Tim Chen  
 Data Scientist & Product Manager  
-Update: 05.05.2021   
+05.05.2021  
 
+Jump To:  
 [Machine Learning](#machine_learning)  
 [Statistical Analysis](#statistical_analysis)  
 [Data Exploration](#data_exploration)  
