@@ -39,13 +39,13 @@ Multiple EDAs are performed prior to modeling. A rather surprising finding is th
 - "Popular" videos tend to continue attracting views until a certain upper limit is reached. The upper bound can be either a "manipulated threshold" set up by YouTube's video ranking algorithm or a result of natural life cycle for the video's popularity.
 - "Dead" videos, on the other hand, simply don't attract any significant amount of views no matter how long they live on YouTube.
 
-<img src="https://www.dropbox.com/s/54cciu27f68mhup/eda.png?raw=1" width="470" />
+<img src="https://www.dropbox.com/s/54cciu27f68mhup/eda.png?raw=1" width="480" />
 
 The final model with **robust errors** is summarized as below. A detailed interpretation is included in the Conclusion section in the [notebook](./regression_ytb_qlty_pop.ipynb). Overall, video quality is surprisingly **negatively correlated** with the number of views given our model's specifications: One unit of change in quality, or `[rate]`, would lead to a roughly **-0.156%** change in viewership. 
 
 One possible explanation is that the results are highly **skewed by outliers**: Roughly 15.46% of the videos come with a rating of zero because they have not received any user rating. An important question is why there is an overwhelmingly high number of videos that come with zero rating, and how these zero-rating videos behave comparing to the rest of the video pool on YouTube. The research of the issue could lead us to update our operational definition for the concept, "quality." For example, should we classify a video to be low-quality simply because it fails to show up due to **YouTube's recommendation algorithm**? Unfortunately the dataset given does not contain relevant variables required for the investigation.
 
-<img src="https://www.dropbox.com/s/nveyjd1acqr8iln/model.png?raw=1" width="470"/>
+<img src="https://www.dropbox.com/s/nveyjd1acqr8iln/model.png?raw=1" width="480"/>
 
 ## Gauss-Markov Assumptions
 
