@@ -7,7 +7,7 @@ Last Update: 05.05.2021
 ## Machine Learning
 
 ### [Classifying Melanoma](./ml_melanoma)  
-**Models**: Neural Network, EfficientNet, Logistic Regression, SVM, PCA, Focal Loss
+**Models**: Neural Network, EfficientNet, Logistic Regression, SVM, PCA, Focal Loss  
 **Tech Stack**: TensorFlow, Keras, Scikit-learn, TPU, GCS, Python  
 
 *SIIM-ISIC Melanoma Classification* is an annual Kaggle competition on identifying the deadly skin cancer, Melanoma, based on patient metadata and images of skin lesions. Two datasets are used for the classification: a **CSV (~2MB)** that contains textual patient metadata, and an **image pool (40GB+)** that consists of 33,126 skin lesion photos, of which there are **only 584 positive examples**. A total of three **neural networks** and two baseline models (**Logistic Regression** and **SVM**) are built for the classification.
@@ -21,41 +21,59 @@ The study explores ways to visualize the learning progress of **EfficientNet** (
 ### [Neural Snaky](./py_snaky) 
 **Models**: Neural Network, Logistics  
 **Tech Stack:** PyGame, TensorFlow, Scikit-learn, Python  
+
 *Snaky* is a PyGame implementation of the classic game, Snake. There is a twist: the snake plays the game by itself with a brain made of a neural network! 
+
+<a name="statistical_analysis"></a>
+
+## Statistical Analysis
+
+### [Field Experiment: Gender Bias in Auto Repair Pricing](./st_gender_bias)  
+
+**Keywords**: Randomized Field Experiment, 2x2 Factorial Design, Blocking, Power Analysis, OLS, ANOVA  
+**Tech Stack**: R  
+
+*Gender Bias in Auto Repair Pricing* is a statistical research project with **an end-to-end** **randomized field experiment** that includes experiment design, data collection, and model building. Multiple other academic researches on similar topics have been conducted and are discussed in the paper.   
+
+### [Quality on YouTube Video Popularity](./st_youtube)  
+
+**Keywords**: OLS, Gauss-Markov Assumptions, Omitted Variable Bias  
+**Tech Stack**: R
+
+The study includes an **end-to-end regression analysis**, including an analysis on the **Gauss–Markov assumptions** and **omitted variable bias**, in an attempt to explore the relationship between a video's quality and its popularity one YouTube. In particular, we ask the question: How does the quality of a video affect its number of views?   
 
 <a name="data_exploration"></a>
 
 ## Data Exploration  
+
 ### [AwesomeBabyNames](./py_awesome_baby_names)  
 **Tech Stack**: MVC, SQLite, Python  
+
 An awesome baby starts with an awesome name! *AwesomeBabyNames* is a Python app that helps you come up with a great name for your baby by visualizing **100+ years of census data** collected by the US government.
 
 ### [Visualizing Death-Zone Mountaineering](./py_himalayan_db)  
 **Tech Stack:** Plotly, Seaborn, GeoPy, Pandas, NumPy, Python  
-*Death-Zone Mountaineering* is an analysis on expeditions to the 16 eight-thousander peaks (i.e. peaks with altitudes above 8,000m) in the Himalayas mountain range. The data visualization project is primarily based on the *Himalayan Database*, covering **over 100 years of expeditions** from 1905 through Spring 2019.![image]
 
-<a name="statistical_analysis"></a>
-## Statistical Analysis
-
-### [Field Experiment: Gender Bias in Auto Repair Pricing](./st_gender_bias)  
-**Keywords**: Randomized Field Experiment, 2x2 Factorial Design, Blocking, Power Analysis, OLS, ANOVA  
-**Tech Stack**: R  
-*Gender Bias in Auto Repair Pricing* is a statistical research project with **an end-to-end** **randomized field experiment** that includes experiment design, data collection, and model building. Multiple other academic researches on similar topics have been conducted and are discussed in the paper.  
+*Death-Zone Mountaineering* is an analysis on expeditions to the 16 eight-thousander peaks (i.e. peaks with altitudes above 8,000m) in the Himalayas mountain range. The data visualization project is primarily based on the *Himalayan Database*, covering **over 100 years of expeditions** from 1905 through Spring 2019.  
 
 <a name="others"></a>
 
-## Other Works
+## UX & Photography
 
 ### [Yintegral.com](https://yintegral.com/)  
+**Keywords**: UX Design Portfolio  
+**Tech Stack:** Java, PHP, JavaScript, jQuery, HTML/CSS  
 
-Before data science I was a software engineer at a WPP agency leading the development of online interactive experiences for clients including Nike and EA Game  (e.g. e-commerce, games, data visualization, web development, etc.). [Yintegral.com](https://yintegral.com/) is a portfolio of select professional and personal projects that I have worked on prior to data science.  
+Before data science I was a lead software engineer in a WPP UX design agency, leading e-commerce and online interactive experience development for clients including Nike and EA Game (e.g. online stores, web analytics, data visualization, in-store kiosks, etc.). I had also been working on contracts as an UX designer at my own free time. [Yintegral.com](https://yintegral.com/) is a portfolio of select professional projects that I have worked on as a developer or UX designer prior to data science and product management.  
 
 ### [Hello Baby Clara!](./sp_hello_baby_clara)  
-
+**Keywords**: Web Application Development, Photography Portfolio  
 **Tech Stack:** PHP, JavaScript, jQuery, HTML/CSS  
-*Hello Baby Clara!* is a photo diary web application built using PHP and jQuery. It is a highly visual and interactive experience designed to be enjoyed by both farther (me) and daughter (Clara).  
+
+*Hello Baby Clara!* is a photo diary I built using PHP and jQuery. The frontend is highly interactive and comes with a layout that is customizable in realtime without page refresh. The backend allows me to upload photos and the metadata are automatically parsed for diary entries without using a database. It is an experience to be enjoyed by both the farther (me) and daughter (Clara)!   
 
 ### [Yintrigue.com](https://yintrigue.com/)  
-
+**Keywords**: Photography Portfolio  
 **Tech Stack:** Nikon  
-I am a semi-professional photographer at my own free time and love traveling around the world to explore the beauty of nature. [Yintrigue.com](https://yintrigue.com) is my photography portfolio that I built to showcase my 15+ years of works. 😃
+
+I am a photographer at my own free time and love traveling around the world to explore the beauty of nature. <a href="https://yintrigue.com" target="_blank">Yintrigue.com</a> is the photography portfolio that I built to showcase my 15+ years of works around the world. 😃

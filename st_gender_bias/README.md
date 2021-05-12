@@ -1,12 +1,12 @@
-# Gender Bias in Auto Repair Pricing
-**Keywords**: Randomized Field Experiment, 2x2 Factorial Design, Blocking, Power Analysis, OLS, ANOVA, R  
+# Gender Bias in Auto Repair Pricing  
+**Keywords**: Randomized Field Experiment, 2x2 Factorial Design, Blocking, Power Analysis, OLS, ANOVA  
 **Tech Stack**: R  
 
-*Gender Bias in Auto Repair Pricing* is an end-to-end research project that includes a **randomized field experiment**. Multiple other academic researches on similar topics have been conducted. One study that closely relates to our research is [Repairing the Damage: The Effect of Price Knowledge and Gender on Auto Repair Price Quotes](https://www.nber.org/system/files/working_papers/w19154/w19154.pdf), a 2013 field experiment by Busse, Israeli, and Zettelmeyer that examined whether perceptions about women’s knowledge of market prices drives gender discrimination. They found that when customers signalled unfamiliarity with market rates, **women were quoted $23 more**, on average, than men. Interestingly, they also found that shops were **more likely to provide a discount when asked by a female** **caller** (versus a male caller).
+*Gender Bias in Auto Repair Pricing* is an end-to-end research project ([paper can be found here](./paper_gender_bias.pdf)) that includes a **randomized field experiment**. Multiple other academic researches on similar topics have been conducted. One study that closely relates to our research is [Repairing the Damage: The Effect of Price Knowledge and Gender on Auto Repair Price Quotes](https://www.nber.org/system/files/working_papers/w19154/w19154.pdf), a 2013 field experiment by Busse, Israeli, and Zettelmeyer that examined whether perceptions about women’s knowledge of market prices drives gender discrimination. They found that when customers signalled unfamiliarity with market rates, **women were quoted $23 more**, on average, than men. Interestingly, they also found that shops were **more likely to provide a discount when asked by a female** **caller**.
 
 ## Research Question
 
-Our research question is: **Does a caller's gender influence auto repair price quotes?** We also examine the interaction between caller gender and English as a second language (ESL) status. To build an achievable scope, our experiment is limited to quotes on replacing the **radiator for a 2012 Toyota Camry LE**, and auto shops in the top 25 cities by population within the **Washington state**. The detailed phone script can be found in *Appendix A: Caller Script* in the [research paper](./paper_gender_bias.pdf).
+Our research question is: **Does a caller's gender influence auto repair price quotes?** We also examine the interaction between caller gender and English as a second language (ESL) status. To build an achievable scope, our experiment is limited to quotes on replacing the **radiator for a 2012 Toyota Camry LE**, and auto shops in the top 25 cities by population within the **Washington state**. The detailed phone script can be found in *Appendix A: Caller Script* in the [paper](./paper_gender_bias.pdf).
 
 ## Experiment Design
 
