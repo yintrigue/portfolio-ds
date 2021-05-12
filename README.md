@@ -1,6 +1,11 @@
 Tim Chen  
 Data Scientist & Product Manager  
-Last Update: 05.05.2021  
+Update: 05.05.2021   
+
+[Machine Learning](#machine_learning)  
+[Statistical Analysis](#statistical_analysis)  
+[Data Exploration](#data_exploration)  
+[Bonus: UX & Photography](#others)    
 
 <a name="machine_learning"></a>
 
@@ -58,7 +63,7 @@ An awesome baby starts with an awesome name! *AwesomeBabyNames* is a Python app 
 
 <a name="others"></a>
 
-## UX & Photography
+## Bonus: UX & Photography
 
 ### [Yintegral.com](https://yintegral.com/)  
 **Keywords**: UX Design Portfolio  
@@ -70,7 +75,7 @@ Before data science I was a lead software engineer in a WPP UX design agency, le
 **Keywords**: Web Application Development, Photography Portfolio  
 **Tech Stack:** PHP, JavaScript, jQuery, HTML/CSS  
 
-*Hello Baby Clara!* is a photo diary I built using PHP and jQuery. The frontend is highly interactive and comes with a layout that is customizable in realtime without page refresh. The backend allows me to upload photos and the metadata are automatically parsed for diary entries without using a database. It is an experience to be enjoyed by both the farther (me) and daughter (Clara)!   
+*Hello Baby Clara!* is a photo diary I built using PHP and jQuery. It is a database-free SPA (single-page application) that allows me to publish photos with metadata automatically parsed. The layout is customizable and the interactive experience is designed to be enjoyed by both the farther (me) and daughter (Clara) as they grow up together!   
 
 ### [Yintrigue.com](https://yintrigue.com/)  
 **Keywords**: Photography Portfolio  
