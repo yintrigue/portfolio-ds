@@ -37,7 +37,7 @@ An awesome baby starts with an awesome name! *AwesomeBabyNames* is a Python app 
 <a name="statistical_analysis"></a>
 ## Statistical Analysis
 
-###[Field Experiment: Gender Bias in Auto Repair Pricing](./st_gender_bias)  
+### [Field Experiment: Gender Bias in Auto Repair Pricing](./st_gender_bias)  
 **Keywords**: Randomized Field Experiment, 2x2 Factorial Design, Blocking, Power Analysis, OLS, ANOVA  
 **Tech Stack**: R  
 *Gender Bias in Auto Repair Pricing* is a statistical research project with **an end-to-end** **randomized field experiment** that includes experiment design, data collection, and model building. Multiple other academic researches on similar topics have been conducted and are discussed in the paper.  
