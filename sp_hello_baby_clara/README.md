@@ -1,14 +1,12 @@
-# Hello Baby Clara!  
-**v0.8.3**
-
+# Hello, Baby Clara!  
 **Tech Stack:** PHP, JavaScript, jQuery, HTML5, CSS
+v0.8.3
 
-## Description
-Before data science I was a software engineer. To this date, I continue to enjoy working on web development projects at my own free time. *Hello Baby Clara!* is an interactive web experience that I created to document my daughter's growth since 2017. The website is functional but currently in development with performance latency issues to be resolved:
+Before data science I was a software engineer (on a 200-people UX team in a WPP design agency) and an UX designer. To this date, I continue to enjoy working on web development projects at my own free time. *Hello, Baby Clara!* is an interactive web experience that I created to document my daughter's growth since 2017. The website is functional but currently in development with performance latency issues to be resolved:
 
-https://yintrigue.com/hellobabyclara/
+<a href="https://yintrigue.com/hellobabyclara/" target="_blank">Hello, Baby Clara!</a></a>
 
-*Hello Baby Clara!* is a single-page web application designed for storytelling using photos and text diaries. Key features include:
+*Hello, Baby Clara!* is a database-free SPA (single-page application) designed for storytelling using photos and text diaries. Key features include:
 
 - Layout is dynamically generated and fully responsive.
 - Layout can be zoomed in/out for an optimal browsing experience.
@@ -17,10 +15,10 @@ https://yintrigue.com/hellobabyclara/
 - User login is supported for viewing private photos and diaries.
 - Fun interactive experience with sound effects. This is a project to be enjoyed by both farther and daughter!
 
-Note: *Hello Baby Clara!* is built from the ground up using jQuery and a number of third-party libraries. The reason for not using Angular or React is to avoid design limitation imposed by the frameworks in addition to keeping things simple and flexible. 
+*Hello, Baby Clara!* is built from the ground up using jQuery. The reason for not using Angular or React is to keep things simple and flexible. People say that I am old-school, but I am just chasing simplicity! 😃  
 
 ## Screenshots
-*Hello Baby Clara* is an online photo diary documenting a baby girl's growth!  
+*Hello, Baby Clara* is an online photo diary documenting a baby girl's growth!  
 ![](./img/screenshot_02.jpg) 
 <br />
 <br />
@@ -47,5 +45,5 @@ A fun, colorful experience to be enjoyed by both farther and daugther!
 
 - `./src` contains all source codes and BLOB assets.
 - `./img` contains the images used for the readme markdown.  
-- A work-in-progress *Hello Baby Clara!* can be previewed at https://yintrigue.com/hellobabyclara/
+- A work-in-progress *Hello, Baby Clara!* can be previewed at https://yintrigue.com/hellobabyclara/
 

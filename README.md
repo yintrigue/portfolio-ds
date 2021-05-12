@@ -67,19 +67,20 @@ An awesome baby starts with an awesome name! *AwesomeBabyNames* is a Python app 
 ## Bonus: UX & Photography
 
 ### [Yintegral.com](https://yintegral.com/)  
-**Keywords**: UX Design Portfolio  
+**Keywords**: UX Portfolio  
 **Tech Stack:** Java, PHP, JavaScript, jQuery, HTML/CSS  
 
 Before data science I was a lead software engineer in a WPP UX design agency, leading e-commerce and online interactive experience development for clients including Nike and EA Game (e.g. online stores, web analytics, data visualization, in-store kiosks, etc.). I had also been working on contracts as an UX designer at my own free time. [Yintegral.com](https://yintegral.com/) is a portfolio of select professional projects that I have worked on as a developer or UX designer prior to data science and product management.  
 
-### [Hello Baby Clara!](./sp_hello_baby_clara)  
+### [Hello, Baby Clara!](./sp_hello_baby_clara)  
 **Keywords**: Web Application Development, Photography Portfolio  
 **Tech Stack:** PHP, JavaScript, jQuery, HTML/CSS  
 
-*Hello Baby Clara!* is a photo diary I built using PHP and jQuery. It is a database-free SPA (single-page application) that allows me to publish photos with metadata automatically parsed. The layout is customizable and the interactive experience is designed to be enjoyed by both the farther (me) and daughter (Clara) as they grow up together!   
+*Hello, Baby Clara!* is a photo diary I built using PHP and jQuery. It is a database-free SPA (single-page application) designed for storytelling. It allows me to publish photos with metadata automatically parsed, and the layout is fully customizable. The interactive experience is designed to be enjoyed by both the farther (me) and daughter (Clara) as they grow up together!   
 
 ### [Yintrigue.com](https://yintrigue.com/)  
 **Keywords**: Photography Portfolio  
 **Tech Stack:** Nikon  
 
 I am a photographer at my own free time and love traveling around the world to explore the beauty of nature. <a href="https://yintrigue.com" target="_blank">Yintrigue.com</a> is the photography portfolio that I built to showcase my 15+ years of works around the world. 😃
+
