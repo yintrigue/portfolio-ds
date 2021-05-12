@@ -76,7 +76,7 @@ Without controlling for the fixed effects (i.e. blocked on “county” and “s
 -  ESL callers also tend to receive a discount, but the effect is independent of the caller gender with no significant interaction.
 - The affinity factors, contrary to our expectation, do not result in further discounts for female callers. Male callers, on the other hand, do seem to receive some discounts as a result of affinity. The effect pf the two observations, however, can be explained by a behavior unrelated to our research question: Female shop representatives are in general more conservative in their estimates without seeing the actual vehicle.
 
-<img src="https://www.dropbox.com/s/5xb34j05n6hrzcz/models_primary.png?raw=1" width="900"/>
+![Primary Models](https://www.dropbox.com/s/5xb34j05n6hrzcz/models_primary.png?raw=1)
 
 ### Secondary Outcome Analysis
 
@@ -84,7 +84,7 @@ Without controlling for the fixed effects (i.e. blocked on “county” and “s
 
 Of the three models, we observe that **female callers were questioned 10% more frequently** about their knowledge about the radiator or car. The finding is rather unexpected because we expect the price to increase when the caller is stereotyped as “less knowledgeable,” but our primary models show that female callers in the experiment actually receive a discount. One possible explanation is that the auto shops we called are honest and refuse to take advantage of a less knowledgeable customer.
 
-<img src="https://www.dropbox.com/s/mqcdkjx2x80oleb/models_secondary.png?raw=1" width="650"/>
+<img src="https://www.dropbox.com/s/mqcdkjx2x80oleb/models_secondary.png?raw=1" width="700"/>
 
 ## Repository 
 
