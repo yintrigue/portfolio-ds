@@ -54,15 +54,15 @@ The four models presented above are an attempt to solve the first two challenges
 
 ## Results  
 
-The snake with a logistic brain (Model 1) is unable to properly learn the game with an extremely poor survival rate. in Model 1 and 2 are unable to "see" the apple. As a result, the models simply learn the best strategy to survive: running in a loop. 
+Model 1 and 2 are unable to "see" the apple. **Model 1** has an extremely poor survival rate. The snake with a logistic brain does not seem to be capable of learning the game. **Model 2**, on the other hand, learns the best strategy to survive by completely ignoring apples and running in a loop. 
 
 ![demo_01](./mov/demo_01.gif)
 
-The snake in Model 3 is given the ability to see if its next move would get closer to the apple. As a result, the snake now is able to not just survive but also play the game for "real" and score by eating apples. However, given its current vision, the snake is unable to see beyond its very first move. As a result, the snake constantly runs into a dead-end formed by the wall, the snake's body, or a combination of the two as the snake grows long after eating multiple apples.
+The snake in **Model** 3 is given the ability to see if its next move would get closer to the apple. As a result, the snake now is able to not just survive but also play the game for "real" and score by eating apples. However, given its current vision, the snake is unable to see beyond its very first move. As a result, the snake constantly runs into a dead-end formed by the wall, the snake's body, or a combination of the two as the snake grows long after eating multiple apples.
 
 ![demo_01](./mov/demo_02.gif)
 
-Now to solve the problem of the snake forming closed loop as it grows long, my immediate intuition is to add a new vision capability: the ability for the snake to see if its chosen next move would form a closed loop. However, it turns out that the geometric closed loop detection is not as straightforward as I think it would be. So the new plan for the next phase of the development (whenever I have time, of course) is to explore **deep Q reinforcement learning** which would allow me to optimize the snake's learning against the longterm rewards instead of just the survival in the very next step using the Bellman Equation:  
+Now to solve the problem of the snake forming closed loop as it grows long, my immediate intuition is to add a new vision capability (**Model 4**): the ability for the snake to see if its chosen next move would form a closed loop. However, it turns out that the geometric closed loop detection is not as straightforward as I think it would be. So the new plan for the next phase of the development (whenever I have time, of course) is to explore **deep Q reinforcement learning** which would allow me to optimize the snake's learning against the longterm rewards instead of just the survival in the very next step using the Bellman Equation:  
 
 <img src='./img/deep_q.jpg' width="300"/>
 
