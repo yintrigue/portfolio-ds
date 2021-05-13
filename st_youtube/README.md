@@ -1,4 +1,4 @@
-# Quality on YouTube Video Popularity  
+# Quality on Popularity for YouTube Videos  
 
 **Keywords**: OLS, Gauss-Markov Assumptions, Omitted Variable Bias  
 **Tech Stack**: R  

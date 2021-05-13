@@ -26,7 +26,7 @@ The study explores ways to visualize the learning progress of **EfficientNet** (
 
 ### [Neural Snaky](./py_snaky) 
 **Models**: Neural Network, Logistics  
-**Tech Stack:** PyGame, TensorFlow, Scikit-learn, Python  
+**Tech Stack:** TensorFlow, Scikit-learn, PyGame     
 
 *Snaky* is a PyGame implementation of the classic game, Snake. There is a twist: the snake plays the game by itself with a brain made of a neural network! 
 
@@ -41,7 +41,7 @@ The study explores ways to visualize the learning progress of **EfficientNet** (
 
 *Gender Bias in Auto Repair Pricing* is a statistical research project with **an end-to-end** **randomized field experiment** that includes experiment design, data collection, and model building. Multiple other academic researches on similar topics have been conducted and are discussed in the paper.   
 
-### [Quality on YouTube Video Popularity](./st_youtube)  
+### [Regression: Quality on Popularity for YouTube Videos](./st_youtube)  
 
 **Keywords**: OLS, Gauss-Markov Assumptions, Omitted Variable Bias  
 **Tech Stack**: R
