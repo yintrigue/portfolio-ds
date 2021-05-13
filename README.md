@@ -24,7 +24,7 @@ Jump To:
 
 The study explores ways to visualize the learning progress of **EfficientNet** (a convolutional neural network published by Google in 2019) by extracting embeddings and projecting the extracted features onto a 2D plane using **PCA**.
 
-### [Neural Snaky](./py_snaky) 
+### [Neural Snaky](./ml_snaky) 
 **Models**: Neural Network, Logistics  
 **Tech Stack:** TensorFlow, Scikit-learn, PyGame     
 
