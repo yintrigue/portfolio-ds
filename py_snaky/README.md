@@ -1,9 +1,9 @@
 # Neural Snaky  
 **Model**: Neural Network, Logistics  
-**Tech Stack:** PyGame, TensorFlow, Scikit-learn, Python   
+**Tech Stack:** TensorFlow, Scikit-learn, PyGame   
 
 ## Overview
-Neural Snaky is a PyGame implementation of the classic game, Snake. This is a personal weekend project that started as a simple game that I build for my 3 year old daughter. Then, I thought: Why don't I build a brain for the snake so that it can learns and plays the game by itself? The results is a Snake game with three modes:
+Neural Snaky is a PyGame implementation of the classic game, Snake. This is a fun personal weekend project that started as a simple game that I build for my 3 year old daughter. Then, I thought: Why don't I build a brain for the snake so that it can learns and plays the game by itself? The results is a Snake game with three modes:
 
 - "**Play**" mode is nothing but a simple replicate of the classic game, Snake. The game is built using PyGame and the sprites can be easily customized for future updates. One key difference from the traditional Snake game is that the snake moves one step at a time per arrow key press. The design decision is to because my goal is to build something fun for my 3 year old daughter and help her improve hand-eye coordination.
 - "**Autoplay**" gives the snake a brain to learn the game and play on its own.
@@ -35,7 +35,7 @@ The **label** to be predicted depends on  the chosen model and what the snake ca
 
 The snake determines its next step in the ascending order. That is: 2 is preferred over 1, and 1 is preferred over 0.
 
-## Models & Results
+## Models
 
 Four models are built as the "brains" that enable the snake to learn and play the game on its own:
 
@@ -44,7 +44,17 @@ Four models are built as the "brains" that enable the snake to learn and play th
 - **Model 3**: Neural Net + Vision on Obstacles & Apples
 - **Model 4**: Neural Net + Vision on Obstacles & Apples & Dead-ends
 
-The snake in Model 1 and 2 are unable to "see" the apple. As a result, the models simply learn the best strategy to survive: running in a loop. 
+All neural nets come with two hidden layers (8x4) and ReLU as the activation, followed by a Softmax layer for classification. The challenges of the game are threefold:
+
+- The model is required to make correct predictions "**continuously**." Any wrong prediction would result in the death of the snake. With a survival rate of 0.9, for example, the probability for the snake to live becomes 0.9^10=34.57% only after 10 moves.
+- The snake should not only survive but also **score high** (i.e. by eating as many apples as possible).
+- The model needs to learn the best strategy for the snake's **long-term survival**. 
+
+The four models presented above are an attempt to solve the first two challenges. The third challenge requires different types of modeling and training strategies such as **reinforcement learning**, as discussed at the end of the results section.
+
+## Results  
+
+The snake with a logistic brain (Model 1) is unable to properly learn the game with an extremely poor survival rate. in Model 1 and 2 are unable to "see" the apple. As a result, the models simply learn the best strategy to survive: running in a loop. 
 
 ![demo_01](./mov/demo_01.gif)
 
@@ -58,9 +68,9 @@ Now to solve the problem of the snake forming closed loop as it grows long, my i
 
 ## Gameplay Screenshots
 
-<img src="./img/skin_02/screenshot_01.png" width="600"/>
-<img src="./img/skin_02/screenshot_02.png" width="600"/>
-<img src="./img/skin_02/screenshot_03.png" width="600"/>
+<img src="./img/screenshot_01.png" width="600"/>
+<img src="./img/screenshot_02.png" width="600"/>
+<img src="./img/screenshot_03.png" width="600"/>
 
 ## Repository 
 

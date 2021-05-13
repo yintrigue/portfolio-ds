@@ -1073,7 +1073,7 @@ class SmartSnaky(Snaky):
               csv: str = 'train.csv',
               epoch: int = 1,
               batch_size: int = 32,
-              weights_save_path: str = './brain_models/lr.h5') -> None:
+              weights_save_path: str = './models/lr.h5') -> None:
         """Train the snake's brain model.
         Args:
             mdoe (str): "simple", "advanced", "expert"
@@ -1133,14 +1133,14 @@ class SmartSnaky(Snaky):
                                             input_dim=inputs.shape[1])
             tf.keras.utils.plot_model(
                             self.__brain_model,
-                            to_file='./brain_models/lr_architecture.png')
+                            to_file='./models/lr_architecture.png')
         elif brain_model == 'neural_net':
             self.__brain_model = self.__build_brain_neural_net(
                                             input_dim=inputs.shape[1],
                                             vision=vision)
             tf.keras.utils.plot_model(
                             self.__brain_model,
-                            to_file='./brain_models/nn_architecture.png')
+                            to_file='./models/nn_architecture.png')
         else:
             # model entered is invalid; do nothing
             return
@@ -1221,14 +1221,14 @@ class SmartSnaky(Snaky):
                                             input_dim=inputs.shape[1])
             tf.keras.utils.plot_model(
                             self.__brain_model,
-                            to_file='./brain_models/lr_architecture.png')
+                            to_file='./models/lr_architecture.png')
         elif brain_model == 'neural_net':
             self.__brain_model = self.__build_brain_neural_net(
                                             input_dim=inputs.shape[1],
                                             vision=vision)
             tf.keras.utils.plot_model(
                             self.__brain_model,
-                            to_file='./brain_models/nn_architecture.png')
+                            to_file='./models/nn_architecture.png')
         else:
             # model entered is invalid; do nothing
             return
@@ -1266,19 +1266,22 @@ class SmartSnaky(Snaky):
         model = Sequential()
         if vision == 'simple':
             model.add(InputLayer(input_shape=input_dim))
-            model.add(Dense(16, activation='relu'))
+            model.add(Dense(8, activation='relu'))
+            model.add(Dense(4, activation='relu'))
             model.add(Dense(1, activation='sigmoid'))
             model.compile(optimizer=Adam(learning_rate=LEARNING_RATE),
                           loss='binary_crossentropy')
         elif vision == 'advanced':
             model.add(InputLayer(input_shape=input_dim))
-            model.add(Dense(16, activation='relu'))
+            model.add(Dense(8, activation='relu'))
+            model.add(Dense(4, activation='relu'))
             model.add(Dense(3, activation='softmax'))
             model.compile(optimizer=Adam(learning_rate=LEARNING_RATE),
                           loss='categorical_crossentropy')
         elif vision == 'expert':
             model.add(InputLayer(input_shape=input_dim))
-            model.add(Dense(16, activation='relu'))
+            model.add(Dense(8, activation='relu'))
+            model.add(Dense(4, activation='relu'))
             model.add(Dense(5, activation='softmax'))
             model.compile(optimizer=Adam(learning_rate=LEARNING_RATE),
                           loss='categorical_crossentropy')

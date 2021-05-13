@@ -9,19 +9,19 @@ MODE = 'autoplay'
 # brains.enable_brain_v2: Neural Net + Simple Vision (i.e. able to see obstacles)
 # brains.enable_brain_v3: Neural Net + Advanced Vision (i.e. able to see obstacles + apples)
 # brains.enable_brain_v4: Neural Net + Expert Vision (i.e. able to see obstacles + apples + closed regions...)
-BRAIN_FUNC = brains.enable_brain_v3
-DO_TRAINING = False
+BRAIN_FUNC = brains.enable_brain_v1
+DO_TRAINING = True
 BUILD_TRAINING_DATA = False
 
 snake = SmartSnaky(
-            snake_sprite_sheet_url='assets/skin_grey/sprite.png',
-            apple_sprite_url='assets/skin_grey/apple.png',
-            font_url='assets/retro_computer.ttf',
+            snake_sprite_sheet_url='assets/skins/sgrey/sprite.png',
+            apple_sprite_url='assets/skins/sgrey/apple.png',
+            font_url='assets/fonts/retro_computer.ttf',
             board_color=(250, 250, 250))
 
 if MODE == 'replay':
     # replay a specific historical game
-    brains.replay(snake=snake, csv='autoplay.csv', game_id=0, show_ending=False)
+    brains.replay(snake=snake, csv='./data/autoplay.csv', game_id=0, show_ending=False)
 elif MODE == 'autoplay':
     # build brain & autoplay using the brain
     BRAIN_FUNC(
