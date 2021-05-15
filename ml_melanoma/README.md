@@ -26,7 +26,7 @@ Two datasets are used for the classification: a **CSV (~2MB)** that contains tex
 - Raw data come with a large size (40GB+) in two distinct structures: images and text-based metadata
 - Image inconsistency (e.g. hair, crop, zoom, aspect ratio, unexpected objects, etc. ), as demonstrated by the sample below.
 
-![sample](./_img/sample.png)
+![sample](./img/sample.png)
 
 A detailed description on the issues and resolutions can be found in the notebook, [model_nn_v3_efn_meta.ipynb](./mdoels/model_nn_v3_efn_meta.ipynb). 
 
@@ -130,7 +130,7 @@ As an extension to the modeling, the learning progress of EfficientNet B0 is vis
 
 ![alt text](https://www.dropbox.com/s/m86wwr5a57gw1u4/pca.png?raw=1)
 
-![Visualizing EfficientNet](./_img/efficientnet_b0_learning.gif)
+![Visualizing EfficientNet](./img/efficientnet_b0_learning.gif)
 
 ## Repository 
 

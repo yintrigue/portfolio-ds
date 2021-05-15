@@ -1,6 +1,6 @@
 # Visualizing Death-Zone Mountaineering  
 **Tech Stack:** Plotly, Seaborn, GeoPy, Pandas, NumPy  
-**Analysis Write-up:** [`./docs/research_report_eight-thousanders.pdf`](./docs/research_report_eight-thousanders.pdf)
+**Report:** [`./docs/research_report_eight-thousanders.pdf`](./docs/research_report_eight-thousanders.pdf)
 
 ## Description
 *Death-Zone Mountaineering* is an data visualization and analytics study that explore the expeditions to 16 eight-thousander peaks (i.e. peaks with altitudes above 8,000m where the amount of oxygen is insufficient to sustain human life for an extended time span) in the Himalayas mountain range. The three primary research questions are:

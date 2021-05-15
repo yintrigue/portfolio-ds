@@ -1,100 +1,82 @@
-# Visualizing Death-Zone Mountaineering  
-**Tech Stack:** Plotly, Seaborn, GeoPy, Pandas, NumPy  
-**Analysis Write-up:** [`./docs/research_report_eight-thousanders.pdf`](./docs/research_report_eight-thousanders.pdf)
+# NT5?! Training T5 to Perform Numerical Reasoning
 
-## Description
-*Death-Zone Mountaineering* is an data visualization and analytics study that explore the expeditions to 16 eight-thousander peaks (i.e. peaks with altitudes above 8,000m where the amount of oxygen is insufficient to sustain human life for an extended time span) in the Himalayas mountain range. The three primary research questions are:
+**Models**: T5, SentencePiece, Transformer, Attention, NLP
+**Tech Stack**: TensorFlow, HuggingFace, Scikit-learn, TPU, GCS, Python
 
-- Who are the people willing to risk their life venturing into the death zone?
-- How do mountaineers’ eight-thousander peak preferences change over time?
-- What makes climbing eight-thousanders risky?  
+*NT5?! Training T5 to Perform Numerical Reasoning* is a NLP research on NRoT (numerical reasoning over text) using T5. We are currently in the process of refining the research in response to feedback from ACL submission. **Current versions of the paper** can be reviewed using the links below:
 
-## Data
+ [ACL Submission](./paper/nt5_acl_short.pdf) | [ArXiv Submission ](https://arxiv.org/abs/2104.07307) | [Full Length Draft](./paper/nt5_draft_full_length.pdf)  
+Authors: Peng-Jian Yang<sup>a</sup>, Ying Ting Chen<sup>a</sup>, Yuechan Chen<sup>a</sup>
+Advisor: Daniel Cer<sup>a, b</sup> 
+<sup>a</sup>University of California Berkeley, <sup>b</sup>Google Research
 
-The research is primarily based on the [Himalayan Database](https://www.himalayandatabase.com/) covering **100+ years of expeditions from 1905 to 2019**. The datase is best described by the creator’s own words:
+## Abstract
 
-> The Himalayan Database is a compilation of records for all expeditions [from 1905 through Spring 2019] that have climbed in the Nepal Himalaya. The database is based on the expedition archives of Elizabeth Hawley, a longtime journalist based in Kathmandu, and it is supplemented by information gathered from books, alpine journals and correspondence with Himalayan climbers.
+Numerical reasoning over text (NRoT) presents unique challenges that are not well addressed by existing pre-training objectives in NLP. We explore five sequential training schedules that adapt a pre-trained T5 model for NRoT. Our final model adapted from T5 but further pre-trained on three datasets designed to strengthen skills necessary for NRoT and general reading comprehension before being fine-tuned on Discrete Reasoning over Text (DROP) dataset. We show that our training improves DROP’s adjusted F1 performance (a numeracy-focused score) from 45.90 to 70.83. Our model outperforms the best model in the original DROP paper (47.01), and closes in on GenBERT (72.4), a custom BERT-Base model with significantly more parameters.
 
-A total of five datasets are included in the Himalayan Database:
-| Dataset              | Description                                                  |
-| -------------------- | ------------------------------------------------------------ |
-| Peaks                | Data of all peaks in the Himalayas                           |
-| Expeditions          | Data of all expeditions between 1905 and 2019                |
-| Members              | Data of members of each expedition between 1905 and 2019     |
-| Expeditions Analysis | Calculated expedition analytics based on the Expeditions dataset |
-| References           | References used for constructing the Himalayan Database      |
+## NRoT Challenges   
 
-A copy of the exported raw data and documentation is included in the repository at `./data`.
+NRoT in NLP is unique in that answers require **numerical reasoning** in addition to the traditional NLP task, **reading comprehension (RC)**. Additionally, answers can demand the model to be both **generative** and **discriminative**, as demonstrated by the two examples extracted from DROP, our gold dataset:  
 
-## Select Findings
-Select findings from the analysis are presented in this section. Please refer to the PDF at [`./docs/research_report_eight-thousanders.pdf`](./docs/research_report_eight-thousanders.pdf) for the full write-up.  
+<p align="center"><img src="https://www.dropbox.com/s/abbjlaalmn00ozi/num_example.jpg?raw=1" width="800"/></p>
 
-### First Ascents
+The answer for the **first question** is an extraction from the passage, and requires the model to compute the probability distribution across all words in the passage. In particular, our chosen model requires the following **three NLP skills in sequence**:  
 
-All eight-thousander peaks opened to public with permits have been climbed over the past 70 years. In particular, Mount Everest was first ascended by Edmund Hillary and Tenzing Norgay on May 29, 1953, which was considered one of the greatest accomplishments in mountaineering given the lack of modern climbing equipment and logistics operations available at the time. 
+<p align="center"><img src="https://www.dropbox.com/s/lq5ldksof5x4vu5/nrot.jpg?raw=1" width="650"/></p>  
 
-<div align="center">
-Figure: First Ascent by Peak Timeline
-<img src="./img/first_asscends.png"/>
-</div>
+The answer for the **second question**, on the other hand, cannot be extracted from either the passage or question. We need a **generative language model** to generate the string, "4300000." 
 
-### Homes of the Daredevils
+<p align="center"><img src="https://www.dropbox.com/s/xg3bhfoffw95lh1/nrot2.jpg?raw=1" width="650"/></p>  
 
-Europe is the origin of mountaineering. Our research, however, shows that in addition to Europe, a large number of eight-thousander climbers come from developed countries including Japan, Korea, and the US, lilkely reflecting the high costs associated with the expeditions.
+Note that many NRoT models, including the current state of the art for solving DROP, **only** generates the mathematical equations required to calculate the final answer as the output. Our research aims to take it **one step further**: Our final model internalizes the equation, perform the calculation, and directly generate the final numerical answer, 4,300,000, as the output.  
 
-<div align="center">
-Figure: Eight-Thousander Climbers’ Home Countries (1905-2019)
-<img src="./img/climber_homes.png"/>
-</div>
+## Datasets
 
-### Rise of Girl Power
+A total of **6 datasets** are explored for training. The splits and sizes for each dataset are summarized by the diagram below. 
 
-Mountaineering has historically been dominated by men: Only 1 out of 10 climbers were female between 1905 and 2019. 
-<div align="center">
-Figure: Male vs. Female Climbers (1905-2019)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-<img src="./img/gender.png"/>
-</div>
-<br/>
-However, there has been a rapid growth of female climbers since 1980. In fact, the youngest climber to ascend Mount Everest is Malavath Pooma, a 13 year-old female climber!
-<div align="center">
-Figure: Number of Female Climbers by Year
-<img src="./img/girl_power.png"/>
-</div>
+<p align="center"><img src="https://www.dropbox.com/s/afms7jerr9ou0j7/datasets.jpg?raw=1" width="650" /></p>
 
-### Experience Matters
+- **DROP** (Discrete Reasoning Over Paragraphs), introduced by AllenNLP in 2019, includes 96k examples in a "Q&A with context" format similar to SQuAD. The benchmark includes four distinct types of questions, all of which require NRoT skills to solve. 
 
-One surprising finding is that even though CHOY is generally believed to be the easiest peak to ascend among the 16 peaks studied in the research, it actually comes with failure and death rates on par with Mount Everest. One explanation can be attributed to the lack of experience because CHOY is mostly climbed by relatively inexperienced climbers. The finding echoes the importance of skills and experience when climbing into the death zone.
+- **Synthetic Data** consists of two datasets: The Numeric dataset (NUM) with near 1M synthetically generated questions on seven types of numerical skills (e.g. addition, sorting, comparison, etc.). The Textual dataset (TXT) builds on NUM, and includes 2M+ synthetically generated examples in formats similar to DROP's Q&As. 
 
-<div align="center">
-Figure: Failure Rate vs. Death Rate (1905-2019)
-<img src="./img/choy.png"/>
-</div>
+- **SQuAD v1.1**, a benchmark dataset by Stanford with an emphasis on RC through Q&As, is included in training to strengthen the model's general RC capability. 
 
-### The Real Death Zone on Mount Everest
+- Unfortunately, we are unable to complete our multitask training with **C4EN** (used a part of T5's pre-training) due to limited resources, but we hypothesize that the inclusion of which would lead to an improved performance.  
 
-While the death rate peaks in the death zone on Mount Everest above 8,000 meters, there is an unexpected surge of death incidents between 5,000m and 6,000m. Further investigation reveals that Khumbu Icefall, one of the most deadly stages of the South Col route to Everest's summit, is located at 5,486 metres.
+## Evaluation
 
-<div align="center">
-Figure: Deathby Altitude Distributions (1905-2019)
-<img src="./img/real_death_zone.png"/>
-</div>
+We employ two evaluation metrics: **Exact-Match (EM)**, and an **adjusted F1** (macro-averaged, adjusted for numerical performance). EM uses that same criteria as SQuAD. The adjusted F1 has additional logic that invalidates all matching material within an answer when there is a numeric mismatch. In other words, the prediction receives an **F1 score of 0** if it gets the number wrong. In addition, F1 is computed using macro-averaging over individual answers. In the presence of **multiple ground truths**, both EM and F1 will take a max over all computed scores.  
 
-### Too Tired to Climb Down?
+## Model Selection 
 
-If you admire for those who venture into the death zone, you might be in awe of those who choose not to “walk” down from the summit. Will you be the next daredevil?
+At the time of research, BERT with self-attention is becoming increasingly popular across a wide variety of NLP tasks. However, inspired by **WT5** ([Sharan et al., 2020](https://arxiv.org/abs/2004.14546) ) and **GenBERT** ([Geva et al., 2020](https://arxiv.org/abs/2004.04487)), we choose **T5** as our model specifically for its following strengths:
 
-<div align="center">
-Figure: When Climbing Down Is Way Too Much Work... (1905-2019)
-<img src="./img/fly.png"/>
-</div>
+* **Multitasking, enabled by T5's Text-to-Text Framework** :
+  * T5 can concurrently train on multiple datasets with distinct label formats. 
+  * One single T5 model can be fine-tuned against multiple objectives and perform different types of predictions. This is a **strong contrast to BERT** and an important feature required by DROP, our gold dataset, as explained in the NRoT challenges section.      
+* **Strong RC from transfer learning**: 
+  * T5 is Google's attempt to take transfer learning to its limit across a wide verity of NLP tasks. It is pre-trained on Colossal Clean Crawled Corpus (C4).
+  * A short description of T5 can be found on the [Google AI Blog](https://tinyurl.com/yg6wsf38) and T5's [original paper](https://arxiv.org/abs/1910.10683). 
+
+- **Parsimonious architecture & training process**:
+  - T5 allows us to complete the entire training schedule using its **out-of-box architecture**. BERT, on the other hand, requires additional feedforward neural networks for fine-tuning. 
+  - T5's multitasking allows us to fine-tune **one single model** for all the different NLP tasks demanded by DROP. In contrast, BERT requires multiple different models to solve DROP.  
+  - We hypothesize that T5's pre-training and encoder-decoder architectures would lead to a performance comparable to BERT but with a much **smaller model scale**.
+
+## Training Methodology
+
+The parsimony of T5 allows us to **focus on refining our training methods** instead of the model architecture. Our training involves a series of experiments using both sequential and multitask trainings. The full schedule is summarized by the diagram below and a detailed description can be found in the paper.   
+
+<img src="https://www.dropbox.com/s/fikowspetvxui31/schedule.jpg?raw=1" width="800">
+
+## Results
+
+Our model using T5-Small (the smallest scale of T5) achieves an adjusted F1 performance of **70.83**. This is a considerable improvement over the performance achieved by the model proposed in the original DROP paper (47.01). Our model also closes in on GenBERT (72.4), a custom BERT-Base model pre-trained on our same synthetic data. In addition, our model is a lot more parsimonious: GenBERT's architecture includes 5 additional feedforward neural networks on top of the BERT-Base encoder and comes with **significantly more weights** (110 million from BERT-Base + additional weights from the 5 neural networks vs. 60 million from our T5-Small).    
 
 ## Repository 
-
-- Notebooks:
-  - `peaks.ipynb` includes the analysis of the 16 eight-thousander peaks in the in the Himalayas.
-  - `members.ipynb` includes the analysis of the eight-thousander climbers between 1905 and 2019
-  - `expeditions.ipynb` includes the analysis of the eight-thousander expeditions between 1905 and 2019
-- `./lib` includes additional Python modules used for the analysis.
-- `./data` includes the exported raw data and documentation from the Himalayan Database.
-- [`./docs/research_report_eight-thousanders.pdf`](./docs/research_report_eight-thousanders.pdf) is the final write-up for the research.  
-
+- `paper` includes our current versions of the research paper. We are currently in the process of refining the research in response to feedback from ACL submission.
+- `data` includes the datasets we used for training NT5.
+- `error_analysis` includes a sample of the reports used to evaluate NT5’s performance.
+- `models` includes a sample NT5 model.
+- `tfrec` includes the source codes used to generate the TFRecord files used for data streaming during training.
