@@ -1,7 +1,7 @@
 # Visualizing EfficientNet
 
 **Models:** EfficientNet-B0, PCA, [Focal Loss](https://arxiv.org/abs/1708.02002)
-**Tech Stack:** TensorFlow, Keras, TPU, GCS, Python  
+**Tech Stack:** TensorFlow, Keras, TPU, GCS  
 
 ## Description
 The study explores ways to visualize the learning progress of EfficientNet-B0, a convolutional neural network published by Google in 2019. The training dataset consists of a total of **33,126 images**, of which there are only **584 positive examples**. Note that the study is an extract of the project, [Classification Melanoma](https://github.com/yintrigue/portfolio-ds/blob/master/ml_melanoma). 

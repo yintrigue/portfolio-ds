@@ -1,7 +1,7 @@
 # NT5?! Training T5 to Perform Numerical Reasoning
 
-**Models**: T5, SentencePiece, Transformer, Attention, NLP  
-**Tech Stack**: TensorFlow, HuggingFace, Scikit-learn, TPU, GCS, Python  
+**Models**: T5, BERT, SentencePiece, Transformer  
+**Tech Stack**: TensorFlow, HuggingFace, Scikit-learn, TPU, GCS  
 
 *NT5?! Training T5 to Perform Numerical Reasoning* is a NLP research on NRoT (numerical reasoning over text) using T5. We are currently in the process of refining the research in response to feedback from the ACL submission. **Current versions of the paper** can be reviewed using the links below:
 

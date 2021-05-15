@@ -14,21 +14,21 @@ Jump To:
 
 ### [NT5?! Training T5 to Perform Numerical Reasoning](./ml_nt5)  
 
-**Models**: T5, SentencePiece, Transformer, Attention, NLP  
-**Tech Stack**: TensorFlow, HuggingFace, Scikit-learn, TPU, GCS, Python  
+**Models**: T5, BERT, SentencePiece, Transformer  
+**Tech Stack**: TensorFlow, HuggingFace, Scikit-learn, TPU, GCS      
 
 *NT5?! Training T5 to Perform Numerical Reasoning* is a NLP research on NRoT (numerical reasoning over text) using T5. We are currently in the process of refining the research in response to feedback from the ACL submission.   
 
 ### [Classifying Melanoma](./ml_melanoma)  
 
-**Models**: Neural Network, EfficientNet, Logistic Regression, SVM, PCA, Focal Loss  
-**Tech Stack**: TensorFlow, Keras, Scikit-learn, TPU, GCS, Python  
+**Models**: EfficientNet (CNN), Logistic Regression, SVM, PCA, Focal Loss  
+**Tech Stack**: TensorFlow, Keras, Scikit-learn, TPU, GCS    
 
 *SIIM-ISIC Melanoma Classification* is an annual Kaggle competition on identifying the deadly skin cancer, Melanoma, based on patient metadata and images of skin lesions. Two datasets are used for the classification: a **CSV (~2MB)** that contains textual patient metadata, and an **image pool (40GB+)** that consists of 33,126 skin lesion photos, of which there are **only 584 positive examples**. A total of three **neural networks** and two baseline models (**Logistic Regression** and **SVM**) are built for the classification.
 
 ### [Visualizing EfficientNet](./ml_visualizing_neural_net)  
 **Models:** EfficientNet-B0, PCA, Focal Loss  
-**Tech Stack:** TensorFlow, Keras, TPU, GCS, Python   
+**Tech Stack:** TensorFlow, Keras, TPU, GCS     
 
 The study explores ways to visualize the learning progress of **EfficientNet** (a convolutional neural network published by Google in 2019) by extracting embeddings and projecting the extracted features onto a 2D plane using **PCA**.
 
