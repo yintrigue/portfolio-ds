@@ -33,7 +33,7 @@ We assemble a team of **8 callers**, which allows us to randomize on two treatme
 | 7         | Female | ESL                    | C    |
 | 8         | Female | ESL                    | D    |
 
-###Measurement
+### Measurement
 
 Our primary outcome variable is the **price quote** received, which directly answers and measures our primary research hypotheses: 
 
