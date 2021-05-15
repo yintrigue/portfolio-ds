@@ -12,7 +12,15 @@ Jump To:
 
 ## Machine Learning
 
+### [NT5?! Training T5 to Perform Numerical Reasoning](./ml_nt5)  
+
+**Models**: T5, SentencePiece, Transformer, Attention, NLP  
+**Tech Stack**: TensorFlow, HuggingFace, Scikit-learn, TPU, GCS, Python  
+
+*NT5?! Training T5 to Perform Numerical Reasoning* is a NLP research on NRoT (numerical reasoning over text) using T5. We are currently in the process of refining the research in response to feedback from the ACL submission.   
+
 ### [Classifying Melanoma](./ml_melanoma)  
+
 **Models**: Neural Network, EfficientNet, Logistic Regression, SVM, PCA, Focal Loss  
 **Tech Stack**: TensorFlow, Keras, Scikit-learn, TPU, GCS, Python  
 
