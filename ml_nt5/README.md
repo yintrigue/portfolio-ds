@@ -68,7 +68,9 @@ At the time of research, BERT with self-attention is becoming increasingly popul
 
 The parsimony of T5 allows us to **focus on refining our training methods** instead of the model architecture. Our training involves a series of experiments using both sequential and multitask trainings. The full schedule is summarized by the diagram below and a detailed description can be found in the paper.   
 
-<center><img src="https://www.dropbox.com/s/fikowspetvxui31/schedule.jpg?raw=1" width="800"></center>
+<p align="center"><img src="https://www.dropbox.com/s/fikowspetvxui31/schedule.jpg?raw=1" width="800" /></p>
+
+
 
 ## Results
 
