@@ -6,7 +6,7 @@ Jump To:
 [Machine Learning](#machine_learning)  
 [Statistical Analysis](#statistical_analysis)  
 [Data Exploration](#data_exploration)  
-[Bonus: UX, Data Engineering, Photography](#others)    
+[Bonus: UX & Photography](#others)    
 
 <a name="machine_learning"></a>
 
@@ -18,15 +18,15 @@ Jump To:
 **Baseline Model**: BERT  
 **Tech Stack**: TensorFlow, HuggingFace, Scikit-learn, TPU, GCS      
 
-*NT5?! Training T5 to Perform Numerical Reasoning* is a NLP research on NRoT (numerical reasoning over text) using T5. We are currently in the process of refining the research in response to feedback from the ACL submission.   
+*NT5?! Training T5 to Perform Numerical Reasoning* is a NLP research on **NRoT** (numerical reasoning over text) using **T5**. A total of **6 datasets** including DROP, SQuAD, and 4+GB of synthetically generated data are used for training/testing T5-Small and T5-Base. We are currently in the process of refining the research in response to feedback from the ACL submission.    
 
-### [Predicting Airline Delays](./ml_airlines)  
+### [Predicting Flight Delays](./ml_flight_delays)  
 
 **Final Model**: Gradient Boosted Tree
-**Baseline Models**: XGBoost Tree, Random Forest, Logistic Regression, SVM Classifier,   
-**Tech Stack**: Sparks, Scikit-learn, Databricks, AWS         
+**Baseline Models**: XGBoost Tree, Random Forest, Logistic Regression, SVM   
+**Tech Stack**: PySpark, Scikit-learn, Databricks, AWS   
 
-*NT5?! Training T5 to Perform Numerical Reasoning* is a NLP research on NRoT (numerical reasoning over text) using T5. We are currently in the process of refining the research in response to feedback from the ACL submission.   
+Flight delays are costly — the delay cost per minute was estimated to be $74.24 for the airline in 2019. The study attempts to tackle the problem by building an end-to-end machine learning pipeline using **PySpark on Databricks** to predict flight delays. A total of **5 datasets**, including a 1GB+ flight records and 25GB+ weather information from 2015 to 2019, were used for training/testing the different models explored in the study.
 
 ### [Classifying Melanoma](./ml_melanoma)  
 
@@ -34,7 +34,7 @@ Jump To:
 **Baseline Models**: CNN, CNN + Feedforward NN (Concatenation), Logistic Regression, SVM, PCA, Focal Loss  
 **Tech Stack**: TensorFlow, Keras, Scikit-learn, TPU, GCS    
 
-*SIIM-ISIC Melanoma Classification* is an annual Kaggle competition on identifying the deadly skin cancer, Melanoma, based on patient metadata and images of skin lesions. Two datasets are used for the classification: a **CSV (~2MB)** that contains textual patient metadata, and an **image pool (40GB+)** that consists of 33,126 skin lesion photos, of which there are **only 584 positive examples**. A total of three **neural networks** and two baseline models (**Logistic Regression** and **SVM**) are built for the classification.
+*SIIM-ISIC Melanoma Classification* is an annual Kaggle competition on identifying the deadly skin cancer, Melanoma, based on patient metadata and images of skin lesions. The **two datasets** (textual patient metadata + 40GB image pool) include 33,126 records, of which **only 584 examples are positive (1.76%)**. Three neural networks and two baseline models, Logistic Regression and SVM, are built for the classification.
 
 ### [Visualizing EfficientNet](./ml_visualizing_neural_net)  
 **Models:** EfficientNet-B0, PCA, Focal Loss  
@@ -47,7 +47,7 @@ The study explores ways to visualize the learning progress of **EfficientNet** (
 **Baseline Model**: Logistics  
 **Tech Stack:** TensorFlow, Scikit-learn, PyGame     
 
-*Snaky* is a PyGame implementation of the classic game, Snake. There is a twist: the snake plays the game by itself with a brain made of a neural network! 
+*Snaky* is a PyGame implementation of the classic game, Snake. There is a twist: **the snake plays the game by itself** with a brain made of a neural network! 
 
 ### [Mini ML Projects @ Berkeley](./ml_berkeley) 
 
@@ -65,14 +65,14 @@ TODO
 **Keywords**: Randomized Field Experiment, 2x2 Factorial Design, Blocking, Power Analysis, OLS, ANOVA  
 **Tech Stack**: R  
 
-*Gender Bias in Auto Repair Pricing* is a statistical research project with **an end-to-end** **randomized field experiment** that includes experiment design, data collection, and model building. Multiple other academic researches on similar topics have been conducted and are discussed in the paper.   
+*Gender Bias in Auto Repair Pricing* is a statistical research with a **randomized field experiment** from end to end including the experiment design, pilot/power study, data collection/engineering, and model building/analysis. 
 
 ### [Regression: Quality on Popularity for YouTube Videos](./st_youtube)  
 
 **Keywords**: OLS, Gauss-Markov Assumptions, Omitted Variable Bias  
 **Tech Stack**: R
 
-The study includes an **end-to-end regression analysis**, including an analysis on the **Gauss–Markov assumptions** and **omitted variable bias**, in an attempt to explore the relationship between a video's quality and its popularity one YouTube. In particular, we ask the question: How does the quality of a video affect its number of views?   
+The study includes a **regression analysis**, including an examination of **Gauss–Markov assumptions** and **omitted variable bias**, in an attempt to explore the relationship between YouTube video's quality and viewership. In particular, we ask the question: How does the quality of a video affect its number of views?   
 
 <a name="data_exploration"></a>
 
@@ -94,23 +94,23 @@ An awesome baby starts with an awesome name! *AwesomeBabyNames* is a Python app 
 
 TODO 
 
-<a name="others"></a>
-
-## Bonus: UX, Data Engineering, Photography
-
-### [UX Portfolio: Yintegral.com](https://yintegral.com/)  
-
-**Keywords**: UX Portfolio  
-**Tech Stack:** Java, PHP, JavaScript, jQuery, HTML/CSS  
-
-[Yintegral.com](https://yintegral.com/) is a portfolio of my select UX projects. Before data science I was a dev lead in a WPP UX design agency, leading e-commerce and web development for clients including Nike and EA Game (e.g. online stores, web analytics, data visualization, in-store kiosks, etc.). I also worked as a contract UX designer at my own free time. 
-
 ### [Data Engineering: Streaming Data Pipeline](https://yintegral.com/)  
 
 **Keywords**: UX Portfolio  
 **Tech Stack:** Java, PHP, JavaScript, jQuery, HTML/CSS  
 
 TODO
+
+<a name="others"></a>
+
+## Bonus: UX & Photography
+
+### [UX: Yintegral.com](https://yintegral.com/)  
+
+**Keywords**: UX Portfolio  
+**Tech Stack:** Java, PHP, JavaScript, jQuery, HTML/CSS  
+
+[Yintegral.com](https://yintegral.com/) is a portfolio of my **select UX projects**. Before data science I was a dev lead in a WPP UX design agency, leading e-commerce and web development for clients including Nike and EA Game (e.g. online stores, web analytics, data visualization, in-store kiosks, etc.). I also worked as a contract UX designer at my own free time.  
 
 ### [Photography: Hello, Baby Clara!](./sp_hello_baby_clara)  
 
@@ -120,8 +120,8 @@ TODO
 *Hello, Baby Clara!* is a photo diary that I built to document my daughter's growing up. It is a database-free **SPA (single-page application)** designed for storytelling, and allows me to publish photos with metadata automatically parsed with a fully customizable layout. The experience is to be enjoyed by both the farther (me) and daughter (Clara)!   
 
 ### [Photography: Yintrigue.com](https://yintrigue.com/)  
-**Keywords**: Photography Portfolio  
+**Keyword**: Photography Portfolio  
 **Tech Stack:** Nikon  
 
-I am a photographer at my own free time and love traveling around the world to explore nature. <a href="https://yintrigue.com" target="_blank">Yintrigue.com</a> is the photography portfolio that I built to showcase my 15+ years of works around the world. 😃
+I am a photographer at my own free time and love traveling around the world to explore nature. <a href="https://yintrigue.com" target="_blank">Yintrigue.com</a> is the photography portfolio that I built to showcase my **15+ years of works** around the world. 😃
 

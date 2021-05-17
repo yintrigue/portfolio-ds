@@ -32,7 +32,7 @@ Note that many NRoT models, including the current state of the art for solving D
 
 ## Datasets
 
-A total of **6 datasets** are explored for training. The splits and sizes for each dataset are summarized by the diagram below. 
+A total of **6 datasets** are explored during training. The splits and sizes for each dataset are summarized by the diagram below. 
 
 <p align="center"><img src="https://www.dropbox.com/s/afms7jerr9ou0j7/datasets.jpg?raw=1" width="650" /></p>
 

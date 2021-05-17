@@ -20,7 +20,7 @@ Lastly, an [additional exploratory study](https://github.com/yintrigue/portfolio
 
 ## Datasets
 
-Two datasets are used for the classification: a **CSV (~2MB)** that contains textual patient metadata, and an **image pool (40GB+)** that consists of 33,126 skin lesion photos, of which there are **only 584 positive examples**. Both datasets can be downloaded on Kaggle's competition page, [SIIM-ISIC Melanoma Classificatio](https://www.kaggle.com/c/siim-isic-melanoma-classification/data). A number of major challenges are presented by the two datasets:
+Two datasets are used for the classification: a **CSV (~2MB)** that contains textual patient metadata, and an **image pool (40GB+)** that consists of 33,126 skin lesion photos, of which **only 584 examples are positive (1.76%)**. Both datasets can be downloaded on Kaggle's competition page, [SIIM-ISIC Melanoma Classification](https://www.kaggle.com/c/siim-isic-melanoma-classification/data). A number of major challenges are presented by the two datasets:
 
 - Extreme class imbalance, with only 1.76% of the examples being positive
 - Raw data come with a large size (40GB+) in two distinct structures: images and text-based metadata
