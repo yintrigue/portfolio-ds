@@ -1,6 +1,6 @@
 # Visualizing EfficientNet
 
-**Models:** EfficientNet-B0, PCA, [Focal Loss](https://arxiv.org/abs/1708.02002)
+**Models:** EfficientNet-B0, PCA, [Focal Loss](https://arxiv.org/abs/1708.02002)  
 **Tech Stack:** TensorFlow, Keras, TPU, GCS  
 
 ## Description
