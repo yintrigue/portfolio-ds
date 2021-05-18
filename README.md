@@ -22,11 +22,11 @@ Jump To:
 
 ### [Predicting Flight Delays](./ml_flight_delays)  
 
-**Final Model**: Gradient Boosted Tree
+**Final Model**: Gradient Boosted Tree, Distributed Computing
 **Baseline Models**: XGBoost Tree, Random Forest, Logistic Regression, SVM   
 **Tech Stack**: PySpark, Scikit-learn, Databricks, AWS   
 
-Flight delays are costly — the delay cost per minute was estimated to be $74.24 for the airline in 2019. The study attempts to tackle the problem by building an end-to-end machine learning pipeline using **PySpark on Databricks** to predict flight delays. A total of **5 datasets**, including a 1GB+ flight records and 25GB+ weather information from 2015 to 2019, were used for training/testing the different models explored in the study.
+Flight delays are costly — the delay cost per minute was estimated to be $74.24 for the airline in 2019. The study attempts to tackle the problem by building a **distributed machine learning pipeline** using PySpark to predict flight delays. A total of **5 datasets**, including 1GB+ of flight records and 25GB+ of global weather information from 2015 to 2019, are used. The datasets are **imbalanced**, with only 20% of the data being positive. The final model is trained on an AWS cluster with **five r4.xlarge nodes** through Databricks.
 
 ### [Classifying Melanoma](./ml_melanoma)  
 
