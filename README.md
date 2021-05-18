@@ -14,7 +14,7 @@ Jump To:
 
 ### [NT5?! Training T5 to Perform Numerical Reasoning](./ml_nt5)  
 
-**Final Model**: T5, SentencePiece
+**Final Model**: T5, SentencePiece  
 **Baseline Model**: BERT  
 **Tech Stack**: TensorFlow, HuggingFace, Scikit-learn, TPU, GCS      
 
@@ -22,7 +22,7 @@ Jump To:
 
 ### [Predicting Flight Delays](./ml_flight_delays)  
 
-**Final Model**: Gradient Boosted Tree, Distributed Computing
+**Final Model**: Gradient Boosted Tree, Distributed Computing  
 **Baseline Models**: XGBoost Tree, Random Forest, Logistic Regression, SVM   
 **Tech Stack**: PySpark, Scikit-learn, Databricks, AWS   
 
@@ -30,7 +30,7 @@ Flight delays are costly — the delay cost per minute was estimated to be $74.2
 
 ### [Classifying Melanoma](./ml_melanoma)  
 
-**Final Model**: EfficientNet-B07
+**Final Model**: EfficientNet-B07  
 **Baseline Models**: CNN, CNN + Feedforward NN (Concatenation), Logistic Regression, SVM, PCA, Focal Loss  
 **Tech Stack**: TensorFlow, Keras, Scikit-learn, TPU, GCS    
 
@@ -43,7 +43,7 @@ Flight delays are costly — the delay cost per minute was estimated to be $74.2
 The study explores ways to visualize the learning progress of **EfficientNet** (a convolutional neural network published by Google in 2019) by extracting embeddings and projecting the extracted features onto a 2D plane using **PCA**.
 
 ### [Neural Snaky](./ml_snaky) 
-**Final Model**: Neural Network
+**Final Model**: Neural Network  
 **Baseline Model**: Logistics  
 **Tech Stack:** TensorFlow, Scikit-learn, PyGame     
 
