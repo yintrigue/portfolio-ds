@@ -43,7 +43,6 @@ Wow! EfficientNet-B0 is on its way to become an expert on diagnosing Melanoma!
 
 ## Repository 
 
-- `nn_visualization.ipynb` is the notebook for the analysis.
-- `lib.py` is the Python module that contains all the classes and functions used for constructing the CNN model.
-- `./img` contains the images used for the readme markdown.  
+- [`./src/`](./src/) includes the notebook and source codes for the analysis.
+- `./img/` includes the images used for the readme markdown.  
 
