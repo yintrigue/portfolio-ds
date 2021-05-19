@@ -36,7 +36,6 @@ Through data we observe very distinct behaviors between Bay Wheels' subscriber a
 
 In addition, the locations where the two types of customers rent bikes are also very different. As shown by the Plotly map below, subscribers concentrate in the downtown area where non-subscribers are mostly renting on specific torts attractions such as the harbors. 
 
-
 <p align="center"><img src="https://www.dropbox.com/s/65hqu0jayjcw9r8/analysis_1.png?raw=1" width="900" /></p>
 
 Given the very different distinct behaviors, it makes little sense to try converting non-subscribers to subscribers. Most non-subscribers are tourists who rent bikes for fun while visiting the Bay Area. A better strategy is to build **referral programs** to encourage subscribers to attract subscribers, and non-subscribers to attract non-subscribers. **Local partnerships** such as promoting the fun Bay Wheels experience for tourists by partnering with hotels and shops in popular tourist attractions would also be an effective strategy. 
