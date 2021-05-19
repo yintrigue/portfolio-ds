@@ -1,4 +1,4 @@
-Tim Chen  
+**Tim Chen**  
 Data Scientist & Product Manager  
 Update: 05.05.2021  
 
