@@ -6,14 +6,25 @@
 
 Flight delays are costly — the delay cost per minute was estimated to be $74.24 for the airline in 2019. The study attempts to tackle the problem by building a **distributed machine learning pipeline** using PySpark to predict flight delays. The final model is trained on an AWS cluster with **five r4.xlarge nodes** through Databricks. 
 
+
+
+
+View notebooks on NBViewer/Colab:  
+| Notebook      |  |  |
+| :---------- | ----------- | ----------- |
+| fp_data_cleaning_join.ipynb &nbsp;&nbsp; | &nbsp;&nbsp; [nbviewer](https://nbviewer.jupyter.org/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_data_cleaning_join.ipynb) &nbsp;&nbsp; | &nbsp;&nbsp; [Colab](https://colab.research.google.com/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_data_cleaning_join.ipynb) &nbsp;&nbsp; |
+| fp_eda.ipynb &nbsp;&nbsp; | &nbsp;&nbsp; [nbviewer](https://nbviewer.jupyter.org/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_eda.ipynb) &nbsp;&nbsp; | &nbsp;&nbsp; [Colab](https://colab.research.google.com/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_eda.ipynb) &nbsp;&nbsp; |
+| fp_model_master.ipynb &nbsp;&nbsp; | &nbsp;&nbsp; [nbviewer](https://nbviewer.jupyter.org/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_model_master.ipynb) &nbsp;&nbsp; | &nbsp;&nbsp; [Colab](https://colab.research.google.com/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_model_master.ipynb) &nbsp;&nbsp; |
+| fp_toy_ex.ipynb &nbsp;&nbsp; | &nbsp;&nbsp; [nbviewer](https://nbviewer.jupyter.org/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_toy_ex.ipynb) &nbsp;&nbsp; | &nbsp;&nbsp; [Colab](https://colab.research.google.com/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_toy_ex.ipynb) &nbsp;&nbsp; |
+
 ## Notebooks & Training Pipeline
 
 The contents in README only briefly describe the high-level methodology. For a detailed writeup, please refer to the **five notebooks** below with complete source codes:
 
-- **Master** ([HTML](https://yintrigue.github.io/ml_flight_delays/src/html/fp_model_master.html), [IPYNB](./src/fp_model_master.ipynb)) includes the writeup and source does for the entire pipeline from end to end.
-- **EDA** ([HTML](https://yintrigue.github.io/ml_flight_delays/src/html/fp_eda.html), [IPYNB](./src/fp_eda.ipynb)) includes the 18 EDAs prior to data engineering and model building.
-- **Data Cleaning/Join** ([HTML](https://yintrigue.github.io/ml_flight_delays/src/html/fp_data_cleaning_join.html), [IPYNB](./src/fp_data_cleaning_join.ipynb)) includes the source codes and detailed description on how the 5 datasets are cleaned, verified, and joined.
-- **GBT Toy Example** ([HTML](https://yintrigue.github.io/ml_flight_delays/src/html/fp_toy_ex.html), [IPYNB](./src/fp_toy_ex.ipynb)) is an attempt to demonstrate the math behind Gradient Boosted Tree (GBT) using a simple NumPy example. 
+- [**Master Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_model_master.html) includes the writeup and source does for the entire pipeline from end to end.
+- [**EDA Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_eda.html) includes the 18 EDAs prior to data engineering and model building.
+- [**Data Cleaning/Join Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_data_cleaning_join.html) includes the source codes and detailed description on how the 5 datasets are cleaned, verified, and joined.
+- [**GBT Toy Example Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_toy_ex.html) is an attempt to demonstrate the math behind Gradient Boosted Tree (GBT) using a simple NumPy example. 
 
 The end-to-end training pipeline built for the study is summarized as follow:
 
@@ -67,7 +78,7 @@ Our training leverages a total of five datasets from multiple sources:
 
 ## Data Join
 
-The five datasets are joined after basic cleaning prior to feature engineering. Due to the sheer size of Airlines and Global Weather datasets, extra attention is paid to the **time/space complexity** for the join. Our workflow for the join is summarized below. The final join between the two largest datasets takes roughly 5 minutes and the overall storage space required reduces from 26GB+ to 3.46GB. A more detailed description for the flow is included later in the EDA notebook ([HTML](https://yintrigue.github.io/ml_flight_delays/src/html/fp_eda.html), [IPYNB](https://yintrigue.github.io/ml_flight_delays/src/fp_eda.ipynb)).
+The five datasets are joined after basic cleaning prior to feature engineering. Due to the sheer size of Airlines and Global Weather datasets, extra attention is paid to the **time/space complexity** for the join. Our workflow for the join is summarized below. The final join between the two largest datasets takes roughly 5 minutes and the overall storage space required reduces from 26GB+ to 3.46GB. A more detailed description for the flow is included later in the [EDA notebook](https://yintrigue.github.io/ml_flight_delays/src/html/fp_eda.html).
 
 ![Joining Airlines & Weather](https://www.dropbox.com/s/k4k15vzc33a030m/join.png?raw=1)
 
@@ -85,7 +96,7 @@ To prevent data leaks (i.e. using future data to predict past data), we employ t
 
 ## EDA
 
-The EDA notebook ([HTML](https://yintrigue.github.io/ml_flight_delays/src/html/fp_eda.html), [IPYNB](./src/fp_eda.ipynb)) includes **18 EDAs** that provide important inputs to our feature engineering/selection and model training/fine-tuning. Our EDAs are separated into four broad categories: Datasets, Airlines, Airports, and Weather. In particular, **two key lessons** have a significant impact on our feature engineering: 
+The [EDA notebook](https://yintrigue.github.io/ml_flight_delays/src/html/fp_eda.html) includes **18 EDAs** that provide important inputs to our feature engineering/selection and model training/fine-tuning. Our EDAs are separated into four broad categories: Datasets, Airlines, Airports, and Weather. In particular, **two key lessons** have a significant impact on our feature engineering: 
 
 - Delays propagate through time (e.g. if a flight departs late, it arrives late).
 
@@ -184,15 +195,15 @@ Our final model, optimized for F0.5, achieves an overall **PRAUC of 0.6918** and
 
 <p align="center"><img src="https://www.dropbox.com/s/s1k403po53yp32k/fm_confusion.png?dl=1" width="400"/></p>
 
-The error analysis and proposed future work streams are discussed in the Master notebook ([HTML](https://yintrigue.github.io/ml_flight_delays/src/html/fp_model_master.html), [IPYNB](./src/fp_model_master.ipynb)). One idea we would like to explore but are limited by the time and resources available is a **sequential training pipeline** illustrated as follows. The rationale behind the architecture is that our EDA shows that the four types of delays can exhibit very different behaviors: cancels, diverts, group-12 delays (delays longer than 3 hours), and normal delays (delays between 15 minutes and 3 hours). We hypothesize that a sequential pipeline as such would be **superior** to a single multinomial model because each label demands a complete different training methodology given their unique characteristics. 
+The error analysis and proposed future work streams are discussed in the [Master notebook](https://yintrigue.github.io/ml_flight_delays/src/html/fp_model_master.html). One idea we would like to explore but are limited by the time and resources available is a **sequential training pipeline** illustrated as follows. The rationale behind the architecture is that our EDA shows that the four types of delays can exhibit very different behaviors: cancels, diverts, group-12 delays (delays longer than 3 hours), and normal delays (delays between 15 minutes and 3 hours). We hypothesize that a sequential pipeline as such would be **superior** to a single multinomial model because each label demands a complete different training methodology given their unique characteristics. 
 
 <p align="center"><img src="https://www.dropbox.com/s/knrxsknu7c5rezy/serial.png?raw=1" width="600"/></p>
 
 ## Repository 
-- `./src` includes the notebook with all the source codes for modeling and training.
-  - **Master** ([HTML](https://yintrigue.github.io/ml_flight_delays/src/html/fp_model_master.html), [IPYNB](./src/fp_model_master.ipynb)) includes the writeup and source does for the entire pipeline from end to end.
-  - **EDA** ([HTML](https://yintrigue.github.io/ml_flight_delays/src/html/fp_eda.html), [IPYNB](./src/fp_eda.ipynb)) includes the 18 EDAs prior to data engineering and model building.
-  - **Data Cleaning/Join** ([HTML](https://yintrigue.github.io/ml_flight_delays/src/html/fp_data_cleaning_join.html), [IPYNB](./src/fp_data_cleaning_join.ipynb)) includes the source codes and detailed description on how the 5 datasets are cleaned, verified, and joined.
-  - **GBT Toy Example** ([HTML](https://yintrigue.github.io/ml_flight_delays/src/html/fp_toy_ex.html), [IPYNB](./src/fp_toy_ex.ipynb)) is an attempt to demonstrate the math behind Gradient Boosted Tree (GBT) using a simple NumPy example. 
+- `./src` includes all the notebooks with write-ups and source codes for modeling and training.
+  - [**Master Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_model_master.html) includes the writeup and source does for the entire pipeline from end to end.
+  - [**EDA Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_eda.html) includes the 18 EDAs prior to data engineering and model building.
+  - [**Data Cleaning/Join Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_data_cleaning_join.html) includes the source codes and detailed description on how the 5 datasets are cleaned, verified, and joined.
+  - [**GBT Toy Example Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_toy_ex.html) is an attempt to demonstrate the math behind Gradient Boosted Tree (GBT) using a simple NumPy example. 
 - [`./data`](./data) includes the datasets used for the training pipeline.
 
