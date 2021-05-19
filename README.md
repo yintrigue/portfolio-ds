@@ -59,7 +59,7 @@ The study explores ways to visualize the learning progress of **EfficientNet** (
 
 *Gender Bias in Auto Repair Pricing* is a statistical research with a **randomized field experiment** from end to end including the experiment design, pilot/power study, data collection/engineering, and model building/analysis. 
 
-### [Regression: Quality on Popularity for YouTube Videos](./st_youtube)  
+### [Regression: YouTube Videos, Quality vs. Popularity](./st_youtube)  
 
 **Keywords**: OLS, Gauss-Markov Assumptions, Omitted Variable Bias  
 **Tech Stack**: R

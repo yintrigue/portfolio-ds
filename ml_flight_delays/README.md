@@ -152,7 +152,7 @@ Our **model selection** is based on the following criteria:
 ## Fine-Tuning  
 The fine-tuning process consists of three sequential stages:
 
-<p align="center"><img src="https://www.dropbox.com/s/z7tmkf1relenwvs/finetune.png?dl=1" width="800"/></p>
+<p align="center"><img src="https://www.dropbox.com/s/z7tmkf1relenwvs/finetune.png?raw=1" width="800"/></p>
 
 - Fintuning GBT's **hyperparameters** using k-fold cross-validation. 
 - Fine-tuning the **number of years** of training data for the final model. We hypothesize that more years of training data do not necessarily translate to a better performance. The older the data are (e.g. 2015) the less relevant it becomes for predicting the current year (e.g. 2019).
@@ -178,11 +178,11 @@ Our fine-tuned hyperparameters for GBT are shown below:
 
 Our final model, optimized for F0.5, achieves an overall **PRAUC of 0.6918** and an **F0.5 score of 0.7020**. This is a significant improvement from the GBT baseline model with a PRAUC of 0.6294 and an F0.5 score of 0.4859. However, our performance on F0.5 and precision comes with a significant cost at the recall score, which is quite low at 0.3749. 
 
-<p align="center"><img src="https://www.dropbox.com/s/ezy0zf0fexzhddw/fm_metrics.png?dl=1" width="300"/></p>
+<p align="center"><img src="https://www.dropbox.com/s/ezy0zf0fexzhddw/fm_metrics.png?raw=1" width="300"/></p>
 
-<p align="center"><img src="https://www.dropbox.com/s/zba9ji0jc7x2myg/fm_curves.png?dl=1" width="700"/></p>
+<p align="center"><img src="https://www.dropbox.com/s/zba9ji0jc7x2myg/fm_curves.png?raw=1" width="700"/></p>
 
-<p align="center"><img src="https://www.dropbox.com/s/s1k403po53yp32k/fm_confusion.png?dl=1" width="400"/></p>
+<p align="center"><img src="https://www.dropbox.com/s/s1k403po53yp32k/fm_confusion.png?raw=1" width="400"/></p>
 
 The error analysis and proposed future work streams are discussed in the [Master notebook](https://yintrigue.github.io/ml_flight_delays/src/html/fp_model_master.html). One idea we would like to explore but are limited by the time and resources available is a **sequential training pipeline** illustrated as follows. The rationale behind the architecture is that our EDA shows that the four types of delays can exhibit very different behaviors: cancels, diverts, group-12 delays (delays longer than 3 hours), and normal delays (delays between 15 minutes and 3 hours). We hypothesize that a sequential pipeline as such would be **superior** to a single multinomial model because each label demands a complete different training methodology given their unique characteristics. 
 

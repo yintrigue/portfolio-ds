@@ -39,7 +39,7 @@ As such, the secondary metrics for our study are **precision** and **recall**. G
 
 ## Baseline Models
 
-Two models, Logistic Regression (LR) and SVM, are built as baselines. While both LR and SVM achieve 97%+ accuracies with minimal effort on fine-tuning, the two models perform extremely poor on recalls and precision. In particular, LR achieves a mere 0.52 ROC AUC, and SVM's precision and recall are low at 0.07 and 0.05 respectively. This discrepancy between accuracy and AUC/precision/recall is due to the the imbalance between positive and negative examples in the dataset. With only 584 out of 33,126 examples being positive, a 98.23% accuracy can be easily achieved by predicting all patient cases to be positive.
+Two models, **Logistic Regression (LR)** and **SVM**, are built as baselines. While both LR and SVM achieve 97%+ accuracies with minimal effort on fine-tuning, the two models perform extremely poor on recalls and precision. In particular, LR achieves a mere 0.52 ROC AUC, and SVM's precision and recall are low at 0.07 and 0.05 respectively. This discrepancy between accuracy and AUC/precision/recall is due to the the imbalance between positive and negative examples in the dataset. With only 584 out of 33,126 examples being positive, a 98.23% accuracy can be easily achieved by predicting all patient cases to be positive.
 
 ## CNN Specifications
 
@@ -58,15 +58,15 @@ Two models, Logistic Regression (LR) and SVM, are built as baselines. While both
   - **Focal Loss** (a custom loss function [published by Facebook](https://arxiv.org/abs/1708.02002) for binary classification) is applied to address the issue of class imbalance in the dataset.
   - Model is built and trained on **TPU** to improve training efficiency.
 
-![alt text](https://www.dropbox.com/s/jo9cn4x0j5vpmm6/model_v2.png?raw=1)
+<p align="center"><img src="https://www.dropbox.com/s/jo9cn4x0j5vpmm6/model_v2.png?raw=1" width="870"/></p>
 
 In addition, Model v2 makes the final prediction using **bagging** by averaging the 50 probabilities (10 augmented variations x 5 models) for each example in the test dataset. In practice, an architecture as such can be relatively inefficient in prediction time comparing to as each prediction requires 50 probabilities to be computed. However, we argue that performance (i.e. precision & recall) should be prioritized in this case because an undetected or wrongly detected cancer can be deadly.
 
-![alt text](https://www.dropbox.com/s/5q8x6s4wgenx3xx/bagging.png?raw=1)
+<p align="center"><img src="https://www.dropbox.com/s/5q8x6s4wgenx3xx/bagging.png?raw=1" width="880"/></p>
 
 **Model v3** combines the output embeddings from Model v2 with a second neural network specifically for metadata to produce the final predictions. 
 
-![alt text](https://www.dropbox.com/s/gyumr9udue51pfn/concate.png?raw=1)
+<p align="center"><img src="https://www.dropbox.com/s/gyumr9udue51pfn/concate.png?raw=1" width="850"/></p>
 
 Specifications for **Model v3** are:
 
@@ -82,7 +82,7 @@ Specifications for **Model v3** are:
 - **Concatenation**
   The dense layer consists of 512 neurons with relu activation and batch normalization. The number of neurons is roughly half of the features after the concatenation.
 
-## Results
+## Results Summary
 
 **Model v1** produces poor results. With 20 epochs of training, ROC AUC is still close to 0.50 with limited number of positive examples being identified.
 
@@ -129,14 +129,14 @@ The best model specified above achieves the following performance results:
 
 As an extension to the modeling, the learning progress of EfficientNet B0 is visualized by reducing the neural net’s embedding dimension using PCA. A more detailed description of the analysis can be in the repo [here](https://github.com/yintrigue/portfolio-ds/tree/master/ml_visualizing_neural_net).  
 
-![alt text](https://www.dropbox.com/s/m86wwr5a57gw1u4/pca.png?raw=1)
+<p align="center"><img src="https://www.dropbox.com/s/m86wwr5a57gw1u4/pca.png?raw=1" width="800"/></p>
 
 ![Visualizing EfficientNet](./img/efficientnet_b0_learning.gif)
 
 ## Repository 
 
-- [`./src/`](./src/) contains all source codes for the three models.
-- [`./src/model_nn_v3_efn_meta.ipynb`](./src/model_nn_v3_efn_meta.ipynb) is the notebook with the final writeup and complete source codes for Model v3. 
+- [`./src/`](./src/) contains the source codes for all models and EDAs.
+- `./src/model_nn_v3_efn_meta.ipynb` ([nbviewer](https://nbviewer.jupyter.org/github/yintrigue/portfolio-ds/blob/master/ml_melanoma/src/model_nn_v3_efn_meta.ipynb) ,  [Colab](https://colab.research.google.com/github/yintrigue/portfolio-ds/blob/master/ml_melanoma/src/model_nn_v3_efn_meta.ipynb)) is the notebook with the final writeup and complete source codes for Model v3 and EDAs. 
 - [`./ppt/melanoma_ppt.pdf`](./ppt/melanoma_ppt.pdf) is a presentation that discusses the technical aspects and performance results of the study.
 - `./saves/` contains the saved models and performance evaluation results from the final model. 
 - `./_img` contains the images used for the writeup and readme markdown.  
