@@ -66,7 +66,7 @@ In addition, Model v2 makes the final prediction using **bagging** by averaging 
 
 **Model v3** combines the output embeddings from Model v2 with a second neural network specifically for metadata to produce the final predictions. 
 
-<p align="center"><img src="https://www.dropbox.com/s/gyumr9udue51pfn/concate.png?raw=1" width="850"/></p>
+<p align="center"><img src="https://www.dropbox.com/s/gyumr9udue51pfn/concate.png?raw=1" width="880"/></p>
 
 Specifications for **Model v3** are:
 
