@@ -22,7 +22,7 @@ Clusters start to form with just one epoch of training on Efficient-B0. The sepa
 
 <img src="https://www.dropbox.com/s/9swl54rxptbh0qs/v_efficientnet_03.jpg?raw=1" width="650"/>
 
-In addition, images close to each other at the end of the first epoch of training strongly resemble to each other visually. Two randomly selected regions are plotted to demonstrate the observation.
+In addition, images close to each other at the end of the **first epoch** closely resemble to each other visually. Two randomly selected regions are plotted to demonstrate the observation.
 
 **REGION 1**:
 
@@ -34,7 +34,7 @@ In addition, images close to each other at the end of the first epoch of trainin
 <img src="./img/results_3.png" width="500"/>
 <img src="./img/results_4.png" width="700"/>
 
-However, by the end of the 10th epoch, examples close to each other **no longer look similar** even when they are correctly classified by EfficientNet-B0. Why? My hypothesis is that with 10 epochs of training, EfficientNet-B0 is now picking up subtitle details that can no longer be understood by my untrained eyes. 
+However, by the end of the **10th epoch**, examples close to each other **no longer look similar** even when they are correctly classified by EfficientNet-B0. Why? My hypothesis is that with 10 epochs of training, EfficientNet-B0 is now picking up subtle details that **untrained eyes can no longer understand**. 
 
 Wow! EfficientNet-B0 is on its way to become an expert on diagnosing Melanoma!
 
