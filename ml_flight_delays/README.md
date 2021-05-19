@@ -1,8 +1,8 @@
 # Predicting Flight Delays
 
-**Final Model**: Gradient Boosted Tree, Distributed Computing
+**Final Model**: Gradient Boosted Tree  
 **Baseline Models**: XGBoost Tree, Random Forest, Logistic Regression, SVM   
-**Tech Stack**: PySpark, Scikit-learn, Databricks, AWS   
+**Tech Stack**: PySpark, Scikit-learn, Databricks, AWS, Distributed Computing     
 
 Flight delays are costly — the delay cost per minute was estimated to be $74.24 for the airline in 2019. The study attempts to tackle the problem by building a **distributed machine learning pipeline** using PySpark to predict flight delays. The final model is trained on an AWS cluster with **five r4.xlarge nodes** through Databricks. 
 

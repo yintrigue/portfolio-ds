@@ -1,6 +1,7 @@
 # Neural Snaky  
-**Model**: Neural Network, Logistics  
-**Tech Stack:** TensorFlow, Scikit-learn, PyGame   
+**Final Model**: Neural Network  
+**Baseline Model**: Logistics  
+**Tech Stack:** TensorFlow, Scikit-learn, PyGame  
 
 ## Overview
 Neural Snaky is a PyGame implementation of the classic game, Snake. This is a fun **personal weekend project** that started as a simple game that I build for my 3 year old daughter. Then, I thought: Why don't I build a brain for the snake so that it can learns and plays the game by itself? The results is a Snake game with three modes:

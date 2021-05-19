@@ -14,17 +14,16 @@ Jump To:
 
 ### [NT5?! Training T5 to Perform Numerical Reasoning](./ml_nt5)  
 
-**Final Model**: T5, SentencePiece  
-**Baseline Model**: BERT  
+**Model**: T5, Sequential/Multitask Training, SentencePiece  
 **Tech Stack**: TensorFlow, HuggingFace, Scikit-learn, TPU, GCS      
 
 *NT5?! Training T5 to Perform Numerical Reasoning* is a NLP research on **NRoT** (numerical reasoning over text) using **T5**. A total of **6 datasets** including DROP, SQuAD, and 4+GB of synthetically generated data are used for training/testing T5-Small and T5-Base. We are currently in the process of refining the research in response to feedback from the ACL submission.    
 
 ### [Predicting Flight Delays](./ml_flight_delays)  
 
-**Final Model**: Gradient Boosted Tree, Distributed Computing  
+**Final Model**: Gradient Boosted Tree  
 **Baseline Models**: XGBoost Tree, Random Forest, Logistic Regression, SVM   
-**Tech Stack**: PySpark, Scikit-learn, Databricks, AWS   
+**Tech Stack**: PySpark, Scikit-learn, Databricks, AWS, Distributed Computing   
 
 Flight delays are costly — the delay cost per minute was estimated to be $74.24 for the airline in 2019. The study attempts to tackle the problem by building a **distributed machine learning pipeline** using PySpark to predict flight delays. A total of **5 datasets**, including 1GB+ of flight records and 25GB+ of global weather information from 2015 to 2019, are used. The datasets are **imbalanced**, with only 20% of the data being positive. The final model is trained on an AWS cluster with **five r4.xlarge nodes** through Databricks.
 
@@ -93,7 +92,7 @@ The goal of the study is to help Bay Wheels **increase its ridership** by develo
 
 ### [UX: Yintegral.com](https://yintegral.com/)  
 
-**Keywords**: UX Portfolio  
+**Keyword**: UX Portfolio  
 **Tech Stack:** Java, PHP, JavaScript, jQuery, HTML/CSS  
 
 [Yintegral.com](https://yintegral.com/) is a portfolio of my **select UX projects**. Before data science I was a dev lead in a WPP UX design agency, leading e-commerce and web development for clients including Nike and EA Game (e.g. online stores, web analytics, data visualization, in-store kiosks, etc.). I also worked as a contract UX designer at my own free time.  
