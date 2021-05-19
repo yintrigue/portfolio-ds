@@ -5,7 +5,7 @@ Update: 05.05.2021
 Jump To:  
 [Machine Learning](#machine_learning)  
 [Statistical Analysis](#statistical_analysis)  
-[Data Analytics](#data_analytics)  
+[Data Exploration](#data_exploration)  
 [Bonus: UX & Photography](#others)    
 
 <a name="machine_learning"></a>
@@ -66,9 +66,9 @@ The study explores ways to visualize the learning progress of **EfficientNet** (
 
 The study includes a mini **regression analysis**, including an examination of **Gauss–Markov assumptions** and **omitted variable bias**, in an attempt to explore the relationship between YouTube video's quality and viewership. In particular, we ask the question: How does the quality of a video affect its number of views?   
 
-<a name="data_analytics"></a>
+<a name="data_exploration"></a>
 
-## Data Analytics  
+## Data Exploration  
 
 ### [AwesomeBabyNames](./py_awesome_baby_names)  
 **Tech Stack**: MVC, SQLite, Python  
