@@ -52,9 +52,7 @@ We sped a considerable amount of our time collecting data and resolving the vari
 
 ![Data Collection](https://www.dropbox.com/s/6yd7cj6ra6whiyk/data.png?raw=1)
 
-## Modeling & Interpretation
-### Summary of Findings
-
+## Results Summary
 To avoid **multiple comparisons** (i.e. fishing for significance), we determine the model specifications before running the actual regressions with real data in R. Our model analysis consists of three parts: **Primary Outcome** (price quote), **Secondary Outcomes** (knowledge and respect), and Fun Models (which we build for findings unrelated to the research question).   
 
 Across the four primary and three secondary models, we conclude that:
@@ -64,7 +62,7 @@ Across the four primary and three secondary models, we conclude that:
 - **ESL callers tend to receive a discount**, but the effect is independent of caller gender with no significant interaction.
 - **Female callers were questioned 10% more frequently about their knowledge** about the radiator or car in general compared to male callers. 
 
-### Primary Outcome Analysis
+### Primary Outcomes
 
 Overall, **R<sup>2</sup> is low** across all four models, suggesting that there are other factors causing the price differences received by our callers. While the experiment setup allows us to focus on just the two randomized variables, caller gender and ESL status, it should be noted that gender and/or ESL only account for a small portion of the variances in pricing, even if they are detained statistically significant. The issue of **gender bias might not be relevant** if the focus is on why prices on auto repairs are different instead of gender inequality. 
 
@@ -78,7 +76,7 @@ Without controlling for the fixed effects (i.e. blocked on “county” and “s
 
 ![Primary Models](https://www.dropbox.com/s/5xb34j05n6hrzcz/models_primary.png?raw=1)
 
-### Secondary Outcome Analysis
+### Secondary Outcomes
 
 "Script Knowledge" measures the stereotype categorical bias that female customers are in general less knowledgeable about cars. The outcome variable is binary with 1 indicating that the caller was questioned about their knowledge according to the different scenarios detailed in Appendix A: Caller Script in the paper. "Attrition" and "Quote Breakdown," on the other hand, are proxies for the shop representative's respect towards the calling customers.
 
