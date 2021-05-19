@@ -82,12 +82,12 @@ Without controlling for the fixed effects (i.e. blocked on “county” and “s
 
 Of the three models, we observe that **female callers were questioned 10% more frequently** about their knowledge about the radiator or car. The finding is rather unexpected because we expect the price to increase when the caller is stereotyped as “less knowledgeable,” but our primary models show that female callers in the experiment actually receive a discount. One possible explanation is that the auto shops we called are honest and refuse to take advantage of a less knowledgeable customer.
 
-<p align="center"><img src="https://www.dropbox.com/s/mqcdkjx2x80oleb/models_secondary.png?raw=1" width="700"/></p>
+<p align="center"><img src="https://www.dropbox.com/s/mqcdkjx2x80oleb/models_secondary.png?raw=1" width="705"/></p>
 
 ## Repository 
 
 - [`./paper_gender_bias.pdf`](./paper_gender_bias.pdf) is the paper writeup for the experiment.
-- [`./src/models.Rmd`](./src/models.Rmd) includes the models built for the experiment. 
-- [`./src/power_analysis.Rmd`](./src/power_analysis.Rmd) includes the power analysis conducted based on the pilot study.
 - [`./src/`](./src) contains the source codes for the experiment (data parsing, feature engineering, model building, etc.)
+  - [`./src/models.Rmd`](./src/models.Rmd) includes the models built for the experiment. 
+  - [`./src/power_analysis.Rmd`](./src/power_analysis.Rmd) includes the power analysis conducted based on the pilot study.
 - `./data/` contains the data we scraped and collected for the experiment.
