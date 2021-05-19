@@ -1,4 +1,4 @@
-# Promoting Bay Wheels
+# Promoting Lyft Bay Wheels
 **Keywords**: SQL, BigQuery, Plotly, Python  
 
 [Bay Wheels](https://www.lyft.com/bikes/bay-wheels) is a bike rental service of Lyft in the San Francisco Bay Area. The goal of the study is to help the company **increase its commuter ridership** by developing **promotional strategies** based on data analytics. 
@@ -64,5 +64,5 @@ While these bikers are rather rare, we believe that **great brand stories** can 
 
 ## Repository 
 
-- promoting_bay_wheels.ipynb ([nbviewer](https://nbviewer.jupyter.org/github/yintrigue/portfolio-ds/blob/master/py_bay_wheels/promoting_bay_wheels.ipynb.ipynb), [ipynb](./promoting_bay_wheels.ipynb)) is the notebook with the writeup and source codes.
+- promoting_lyft_bay_wheels.ipynb ([nbviewer](https://nbviewer.jupyter.org/github/yintrigue/portfolio-ds/blob/master/py_lyft_bay_wheels/promoting_lyft_bay_wheels.ipynb.ipynb), [ipynb](./promoting_lyft_bay_wheels.ipynb)) is the notebook with the writeup and source codes.
 
