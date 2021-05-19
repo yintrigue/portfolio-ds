@@ -189,7 +189,7 @@ The error analysis and proposed future work streams are discussed in the [Master
 <p align="center"><img src="https://www.dropbox.com/s/knrxsknu7c5rezy/serial.png?raw=1" width="600"/></p>
 
 ## Repository 
-- `./src` includes all the notebooks with write-ups and source codes for modeling and training.
+- [`./src`](./src) includes all the notebooks with write-ups and source codes for modeling and training.
   - [**Master Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_model_master.html) includes the writeup and source does for the entire pipeline from end to end.
   - [**EDA Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_eda.html) includes the 18 EDAs prior to data engineering and model building.
   - [**Data Cleaning/Join Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_data_cleaning_join.html) includes the source codes and detailed description on how the 5 datasets are cleaned, verified, and joined.
