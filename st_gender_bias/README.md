@@ -87,7 +87,7 @@ Of the three models, we observe that **female callers were questioned 10% more f
 ## Repository 
 
 - [`./paper_gender_bias.pdf`](./paper_gender_bias.pdf) is the paper writeup for the experiment.
-- [`./src/models.Rmd`](./src/models.Rmd) includes all the models built for the experiment. 
-- [`./src/power_analysis.Rmd`](./src/power_analysis.Rmd) includes all the power analysis conducted based on the pilot study.
-- `./src/` contains the source codes for the experiment (data parsing, feature engineering, model building, etc.)
+- [`./src/models.Rmd`](./src/models.Rmd) includes the models built for the experiment. 
+- [`./src/power_analysis.Rmd`](./src/power_analysis.Rmd) includes the power analysis conducted based on the pilot study.
+- [`./src/`](./src) contains the source codes for the experiment (data parsing, feature engineering, model building, etc.)
 - `./data/` contains the data we scraped and collected for the experiment.
