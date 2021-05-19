@@ -15,7 +15,7 @@ The research is primarily based on the [Himalayan Database](https://www.himalaya
 
 > The Himalayan Database is a compilation of records for all expeditions [from 1905 through Spring 2019] that have climbed in the Nepal Himalaya. The database is based on the expedition archives of Elizabeth Hawley, a longtime journalist based in Kathmandu, and it is supplemented by information gathered from books, alpine journals and correspondence with Himalayan climbers.
 
-A total of five datasets are included in the Himalayan Database:
+A total of **five datasets (~87MB)** are included in the Himalayan Database:
 | Dataset              | Description                                                  |
 | -------------------- | ------------------------------------------------------------ |
 | Peaks                | Data of all peaks in the Himalayas                           |
