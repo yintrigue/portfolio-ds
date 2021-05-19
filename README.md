@@ -47,14 +47,7 @@ The study explores ways to visualize the learning progress of **EfficientNet** (
 **Baseline Model**: Logistics  
 **Tech Stack:** TensorFlow, Scikit-learn, PyGame     
 
-*Snaky* is a PyGame implementation of the classic game, Snake. There is a twist: **the snake plays the game by itself** with a brain made of a neural network! 
-
-### [Mini ML Projects @ Berkeley](./ml_berkeley) 
-
-**Models**: KNN, Naive Bayes, Logistics, PCA, K-Means Clustering  
-**Tech Stack:** TensorFlow, Scikit-learn, PyGame     
-
-TODO
+*Snaky* is a PyGame implementation of the classic game, Snake. There is a twist: **the snake plays the game by itself** with a brain made of a neural network!  
 
 <a name="statistical_analysis"></a>
 
@@ -88,18 +81,11 @@ An awesome baby starts with an awesome name! *AwesomeBabyNames* is a Python app 
 
 *Death-Zone Mountaineering* is an analysis on expeditions to the 16 eight-thousander peaks (i.e. peaks with altitudes above 8,000m) in the Himalayas mountain range. The data visualization project is primarily based on the *Himalayan Database*, covering **over 100 years of expeditions** from 1905 through Spring 2019.  
 
-### [SQL: Visualizing Bay Wheels](./py_lyft_bay_wheels)  
+### [SQL: Promoting Bay Wheels](./py_lyft_bay_wheels)  
 
-**Tech Stack:** SQL, BigQuery, Plotly, Pandas, NumPy, Python  
+**Tech Stack:** SQL, BigQuery, Plotly, Python   
 
-TODO 
-
-### [Data Engineering: Streaming Data Pipeline](https://yintegral.com/)  
-
-**Keywords**: UX Portfolio  
-**Tech Stack:** Java, PHP, JavaScript, jQuery, HTML/CSS  
-
-TODO
+The goal of the study is to help Bay Wheels **increase its ridership** by developing **promotional strategies** based on data analytics. The two datasets used for the analysis, Bikeshare Trips and Stations, are hosted on GCP through BigQuery. **SQL queries** are used extensively to extract insights from raw data.  
 
 <a name="others"></a>
 
@@ -112,16 +98,15 @@ TODO
 
 [Yintegral.com](https://yintegral.com/) is a portfolio of my **select UX projects**. Before data science I was a dev lead in a WPP UX design agency, leading e-commerce and web development for clients including Nike and EA Game (e.g. online stores, web analytics, data visualization, in-store kiosks, etc.). I also worked as a contract UX designer at my own free time.  
 
+### [Photography: Yintrigue.com](https://yintrigue.com/)  
+**Keyword**: Photography Portfolio  
+**Tech Stack:** Nikon  
+
+I am a photographer at my own free time and love traveling around the world to explore nature. <a href="https://yintrigue.com" target="_blank">Yintrigue.com</a> is the photography portfolio that I built to showcase my **15+ years of works** around the world. 
+
 ### [Photography: Hello, Baby Clara!](./sp_hello_baby_clara)  
 
 **Keywords**: Single-page Web App, Photography  
 **Tech Stack:** JavaScript, jQuery, PHP, HTML/CSS  
 
-*Hello, Baby Clara!* is a photo diary that I built to document my daughter's growing up. It is a database-free **SPA (single-page application)** designed for storytelling, and allows me to publish photos with metadata automatically parsed with a fully customizable layout. The experience is to be enjoyed by both the farther (me) and daughter (Clara)!   
-
-### [Photography: Yintrigue.com](https://yintrigue.com/)  
-**Keyword**: Photography Portfolio  
-**Tech Stack:** Nikon  
-
-I am a photographer at my own free time and love traveling around the world to explore nature. <a href="https://yintrigue.com" target="_blank">Yintrigue.com</a> is the photography portfolio that I built to showcase my **15+ years of works** around the world. 😃
-
+*Hello, Baby Clara!* is a photo diary that I built to document my daughter's growing up. It is a database-free **SPA (single-page application)** designed for storytelling, and allows me to publish photos with metadata automatically parsed with a fully customizable layout. The experience is to be enjoyed by both the farther (me) and daughter (Clara)! 😃
