@@ -1,5 +1,5 @@
 import sys
-sys.path.append('./src')
+sys.path.append('./lib')
 from snaky import Snaky, SmartSnaky
 import brains
 
