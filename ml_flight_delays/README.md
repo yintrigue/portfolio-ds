@@ -6,17 +6,6 @@
 
 Flight delays are costly — the delay cost per minute was estimated to be $74.24 for the airline in 2019. The study attempts to tackle the problem by building a **distributed machine learning pipeline** using PySpark to predict flight delays. The final model is trained on an AWS cluster with **five r4.xlarge nodes** through Databricks. 
 
-
-
-
-View notebooks on NBViewer/Colab:  
-| Notebook      |  |  |
-| :---------- | ----------- | ----------- |
-| fp_data_cleaning_join.ipynb &nbsp;&nbsp; | &nbsp;&nbsp; [nbviewer](https://nbviewer.jupyter.org/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_data_cleaning_join.ipynb) &nbsp;&nbsp; | &nbsp;&nbsp; [Colab](https://colab.research.google.com/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_data_cleaning_join.ipynb) &nbsp;&nbsp; |
-| fp_eda.ipynb &nbsp;&nbsp; | &nbsp;&nbsp; [nbviewer](https://nbviewer.jupyter.org/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_eda.ipynb) &nbsp;&nbsp; | &nbsp;&nbsp; [Colab](https://colab.research.google.com/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_eda.ipynb) &nbsp;&nbsp; |
-| fp_model_master.ipynb &nbsp;&nbsp; | &nbsp;&nbsp; [nbviewer](https://nbviewer.jupyter.org/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_model_master.ipynb) &nbsp;&nbsp; | &nbsp;&nbsp; [Colab](https://colab.research.google.com/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_model_master.ipynb) &nbsp;&nbsp; |
-| fp_toy_ex.ipynb &nbsp;&nbsp; | &nbsp;&nbsp; [nbviewer](https://nbviewer.jupyter.org/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_toy_ex.ipynb) &nbsp;&nbsp; | &nbsp;&nbsp; [Colab](https://colab.research.google.com/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_toy_ex.ipynb) &nbsp;&nbsp; |
-
 ## Notebooks & Training Pipeline
 
 The contents in README only briefly describe the high-level methodology. For a detailed writeup, please refer to the **five notebooks** below with complete source codes:
