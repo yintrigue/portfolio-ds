@@ -8,7 +8,7 @@ An awesome baby starts with an awesome name! Coming up with a great name for the
 
 *AwesomeBabyNames* is a Python terminal program built using a number of **design patterns** including Service Locator and MVC (Model-View-Controller). The code base for the **MVC framework** can be found in the  mvc module at `/src/abn/utils/mvc.py`. A simplified UML with select key classes, methods, and properties is shown below:
 
-<p align="center"><img src="./img/uml.png" width="750"/></p>
+<p align="center"><img src="./img/uml.png" width="800"/></p>
 
 ## Demo
 
