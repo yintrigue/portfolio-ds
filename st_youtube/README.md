@@ -6,7 +6,7 @@
 Note: The notebook can also be viewed on [nbviewer](https://nbviewer.jupyter.org/github/yintrigue/portfolio-ds/blob/master/st_youtube/regression_ytb_qlty_pop.ipynb) or [Colab](https://colab.research.google.com/github/yintrigue/portfolio-ds/blob/master/st_youtube/regression_ytb_qlty_pop.ipynb) if GitHub is unable to render it properly.  
 
 ## Research Question
-Over 720,000 hours of videos are uploaded to YouTube everyday in 2020. The project is a regression analysis from end to end in an attempt to explore the relationship between a video's quality and its popularity one YouTube. In particular, we ask the question: **How does the quality of a video affect its number of views?**  
+Over 720,000 hours of videos are uploaded to YouTube everyday in 2020. The project is a **mini regression analysis** from end to end in an attempt to explore the relationship between a video's quality and its popularity one YouTube. In particular, we ask the question: **How does the quality of a video affect its number of views?**  
 
 Note that the regression analysis in this notebook does NOT attempt to establish a causal relationship of any kind due to the lack of a randomized experiment setup. The goal is to analyze the relationship between a video's quality and its popularity on YouTube with a focus is on performing an end-to-end regression analysis including an analysis on the **Gauss–Markov assumptions** and **omitted variable bias**.    
 

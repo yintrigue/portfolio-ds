@@ -64,7 +64,7 @@ The study explores ways to visualize the learning progress of **EfficientNet** (
 **Keywords**: OLS, Gauss-Markov Assumptions, Omitted Variable Bias  
 **Tech Stack**: R
 
-The study includes a **regression analysis**, including an examination of **Gauss–Markov assumptions** and **omitted variable bias**, in an attempt to explore the relationship between YouTube video's quality and viewership. In particular, we ask the question: How does the quality of a video affect its number of views?   
+The study includes a mini **regression analysis**, including an examination of **Gauss–Markov assumptions** and **omitted variable bias**, in an attempt to explore the relationship between YouTube video's quality and viewership. In particular, we ask the question: How does the quality of a video affect its number of views?   
 
 <a name="data_exploration"></a>
 
