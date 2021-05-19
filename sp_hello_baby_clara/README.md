@@ -43,7 +43,7 @@ A fun, colorful experience to be enjoyed by both farther and daugther!
 
 ## Repository 
 
-- `./src` contains all source codes and BLOB assets.
+- `./src` contains all source codes and BLOB assets.  
 - `./img` contains the images used for the readme markdown.  
 - A work-in-progress *Hello, Baby Clara!* can be previewed at https://yintrigue.com/hellobabyclara/
 
