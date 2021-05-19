@@ -10,7 +10,7 @@ An awesome baby starts with an awesome name! Coming up with a great name for the
 
 Here's a simplified UML with select key classes, methods, and properties:
 
-<img src="./img/uml.png" width="750"/>
+<p align="center"><img src="./img/uml.png" width="750"/></p>
 
 ## Demo
 
@@ -22,7 +22,7 @@ To run AwesomeBabyNames*, simply run:
 >> python src/main.py
 ```
 
-![](./img/AwesomeBabyNames_demo_full_window.gif)
+![Demo](./img/AwesomeBabyNames_demo_full_window.gif)
 
 Still don't have an idea for the baby's name? Here's a fun one for you to start with: Enter "Alice" and observe how people actually use the name for both baby girls and boys!
 
