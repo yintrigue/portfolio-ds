@@ -83,6 +83,6 @@ Three potential omitted variables are identified: **Number of Subscribers**, **N
 
 ## Repository 
 - [`./src`](./src) includes the notebook for the regression.  
-- `./src/regression_ytb_qlty_pop.ipynb` ([nbviewer](https://nbviewer.jupyter.org/github/yintrigue/portfolio-ds/blob/master/st_youtube/src/regression_ytb_qlty_pop.ipynb.ipynb), [Colab](https://colab.research.google.com/github/yintrigue/portfolio-ds/blob/master/st_youtube/src/regression_ytb_qlty_pop.ipynb.ipynb)) is the notebook with the source codes and writeup for the regression analysis.
+- `./src/regression_ytb_qlty_pop.ipynb` ([nbviewer](https://nbviewer.jupyter.org/github/yintrigue/portfolio-ds/blob/master/st_youtube/src/regression_ytb_qlty_pop.ipynb.ipynb), [Colab](https://colab.research.google.com/github/yintrigue/portfolio-ds/blob/master/st_youtube/src/regression_ytb_qlty_pop.ipynb.ipynb)) includes the source codes and writeup for the regression analysis.
 - `./data` includes the raw dataset in CSV format. 
 
