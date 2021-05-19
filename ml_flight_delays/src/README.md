@@ -12,7 +12,7 @@ Please view the notebooks as the Databricks HTML exports, or using nbviewer/Cola
 - **Master Notebook** includes the writeup and codes for the pipeline from end to end.
 - **EDA Notebook** includes the 18 EDAs prior to data engineering and model building.
 - **Data Cleaning/Join Notebook** includes the writeup and codes for cleaning/joining the 5 datasets.
-- **GBT Toy Example Notebook** is an attempt to demonstrate the math behind Gradient Boosted Tree (GBT) using a simple NumPy example. 
+- **GBT Toy Example Notebook** demonstrates the math behind GBT using a simple NumPy example. 
 
 The end-to-end training pipeline built for the study is summarized as follow:
 
