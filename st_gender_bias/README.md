@@ -53,6 +53,8 @@ We sped a considerable amount of our time collecting data and resolving the vari
 ![Data Collection](https://www.dropbox.com/s/6yd7cj6ra6whiyk/data.png?raw=1)
 
 ## Results Summary
+Note: The section includes a brief summary of our findings. The full analysis can be found in the paper:  [paper_gender_bias.pdf](./paper_gender_bias.pdf)
+
 To avoid **multiple comparisons** (i.e. fishing for significance), we determine the model specifications before running the actual regressions with real data in R. Our model analysis consists of three parts: **Primary Outcome** (price quote), **Secondary Outcomes** (knowledge and respect), and Fun Models (which we build for findings unrelated to the research question).   
 
 Across the four primary and three secondary models, we conclude that:
