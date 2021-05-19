@@ -10,10 +10,10 @@ Flight delays are costly — the delay cost per minute was estimated to be $74.2
 
 The contents in README only briefly describe the high-level methodology. For a detailed writeup, please refer to the **five notebooks** below with complete source codes:
 
-- [**Master Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_model_master.html) includes the writeup and source does for the entire pipeline from end to end.
+- [**Master Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_model_master.html) includes the writeup and codes for the pipeline from end to end.
 - [**EDA Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_eda.html) includes the 18 EDAs prior to data engineering and model building.
-- [**Data Cleaning/Join Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_data_cleaning_join.html) includes the source codes and detailed description on how the 5 datasets are cleaned, verified, and joined.
-- [**GBT Toy Example Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_toy_ex.html) is an attempt to demonstrate the math behind Gradient Boosted Tree (GBT) using a simple NumPy example. 
+- [**Data Cleaning/Join Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_data_cleaning_join.html) includes the writeup and codes for cleaning/joining the 5 datasets.
+- [**GBT Toy Example Notebook**](https://yintrigue.github.io/ml_flight_delays/src/html/fp_toy_ex.html) demonstrates the math behind GBT using a simple NumPy example. 
 
 The end-to-end training pipeline built for the study is summarized as follow:
 

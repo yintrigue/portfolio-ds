@@ -9,9 +9,9 @@ Please view the notebooks as the Databricks HTML exports, or using nbviewer/Cola
 | fp_data_cleaning_join.ipynb &nbsp;&nbsp; | &nbsp;&nbsp; [Databricks](https://yintrigue.github.io/ml_flight_delays/src/html/fp_data_cleaning_join.html) &nbsp;&nbsp; | &nbsp;&nbsp; [nbviewer](https://nbviewer.jupyter.org/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_data_cleaning_join.ipynb) &nbsp;&nbsp; | &nbsp;&nbsp; [Colab](https://colab.research.google.com/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_data_cleaning_join.ipynb) &nbsp;&nbsp; |
 | fp_toy_ex.ipynb &nbsp;&nbsp; | &nbsp;&nbsp; [Databricks](https://yintrigue.github.io/ml_flight_delays/src/html/fp_toy_ex.html) &nbsp;&nbsp; | &nbsp;&nbsp; [nbviewer](https://nbviewer.jupyter.org/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_toy_ex.ipynb) &nbsp;&nbsp; | &nbsp;&nbsp; [Colab](https://colab.research.google.com/github/yintrigue/portfolio-ds/blob/master/ml_flight_delays/src/fp_toy_ex.ipynb) &nbsp;&nbsp; |
 
-- **Master Notebook** includes the writeup and source does for the entire pipeline from end to end.
+- **Master Notebook** includes the writeup and codes for the pipeline from end to end.
 - **EDA Notebook** includes the 18 EDAs prior to data engineering and model building.
-- **Data Cleaning/Join Notebook** includes the source codes and detailed description on how the 5 datasets are cleaned, verified, and joined.
+- **Data Cleaning/Join Notebook** includes the writeup and codes for cleaning/joining the 5 datasets.
 - **GBT Toy Example Notebook** is an attempt to demonstrate the math behind Gradient Boosted Tree (GBT) using a simple NumPy example. 
 
 The end-to-end training pipeline built for the study is summarized as follow:
