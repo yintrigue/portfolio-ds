@@ -103,7 +103,7 @@ The goal of the study is to help Bay Wheels **increase its ridership** by develo
 
 I am a photographer at my own free time and love traveling around the world to explore nature. <a href="https://yintrigue.com" target="_blank">Yintrigue.com</a> is the photography portfolio that I built to showcase my **15+ years of works** around the world. 
 
-### [Photography: Hello, Baby Clara!](./sp_hello_baby_clara)  
+### [Photo Diary: Hello, Baby Clara!](./sp_hello_baby_clara)  
 
 **Keywords**: Single-page Web App, Photography  
 **Tech Stack:** JavaScript, jQuery, PHP, HTML/CSS  
