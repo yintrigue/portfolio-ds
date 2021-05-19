@@ -81,7 +81,7 @@ An awesome baby starts with an awesome name! *AwesomeBabyNames* is a Python app 
 
 *Death-Zone Mountaineering* is an analysis on expeditions to the 16 eight-thousander peaks (i.e. peaks with altitudes above 8,000m) in the Himalayas mountain range. The data visualization project is primarily based on the *Himalayan Database*, covering **over 100 years of expeditions** from 1905 through Spring 2019.  
 
-### [SQL: Promoting Lyft Bay Wheels](./py_bay_wheels)  
+### [SQL: Promoting Lyft Bay Wheels](./py_lyft_bay_wheels)  
 
 **Tech Stack:** SQL, BigQuery, Plotly, Python   
 
