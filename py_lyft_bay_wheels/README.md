@@ -32,7 +32,7 @@ Given the definition of a commuter, the following three promotional strategies a
 
 Through data we observe very distinct behaviors between Bay Wheels' subscriber and non-subscribers. For example, we observe that the two types of customers have very different lengths of rental duration. Non-subscribers seem to be renting for leisure instead of commuting.
 
-<p align="center"><img src="https://www.dropbox.com/s/wuf8r4axh7ojuw5/analysis_2.png?dl=1" width=400" /></p>
+<p align="center"><img src="https://www.dropbox.com/s/wuf8r4axh7ojuw5/analysis_2.png?raw=1" width=400" /></p>
 
 In addition, the locations where the two types of customers rent bikes are also very different. As shown by the Plotly map below, subscribers concentrate in the downtown area where non-subscribers are mostly renting on specific torts attractions such as the harbors. 
 
@@ -45,11 +45,11 @@ Given the very different distinct behaviors, it makes little sense to try conver
 
 Data show that bike traffic is **highly seasonal** by routes, time of the day, and months. For example, the following three visuals built using by Plotly show the top 100 trips at different times of the day from 2013 to 2016.
 
-<p align="center"><img src="https://www.dropbox.com/s/urddk4gl61ey6bh/analysis_3.png?dl=1" width="900" /></p>
+<p align="center"><img src="https://www.dropbox.com/s/urddk4gl61ey6bh/analysis_3.png?raw=1" width="900" /></p>
 
-<p align="center"><img src="https://www.dropbox.com/s/xaums04bf1dy8zp/analysis_4.png?dl=1" width="900" /></p>
+<p align="center"><img src="https://www.dropbox.com/s/xaums04bf1dy8zp/analysis_4.png?raw=1" width="900" /></p>
 
-<p align="center"><img src="https://www.dropbox.com/s/0hj58c4lutg9m95/analysis_5.png?dl=1" width="900" /></p>
+<p align="center"><img src="https://www.dropbox.com/s/0hj58c4lutg9m95/analysis_5.png?raw=1" width="900" /></p>
 
 Given the seasonal nature of the commuter ridership, we recommend Bay Wheels to develop **custom subscription pricing models** that are route-specific, hour-specific, and even season-specific. For example, Bay Wheels can consider lower the subscription price with the restriction that the subscriber can only rent/return bikes at **certain stations**. A low-priced "**season pass**"  during the winter would also promote the Bay Wheels experience by taking advantage of unused inventory during low-season months. 
 
@@ -58,7 +58,7 @@ Given the seasonal nature of the commuter ridership, we recommend Bay Wheels to 
 While the **median rental hours** for subscribers and non-subscribers are short, at only **1.28 and 8.18 minutes** respectively, we observe  a small number of the bikers who actually use Bay Wheels bikes to travel across a long distance **between the three different regions** in the Bay Area: Palo Alto, Mountain View, Redwood City.  
 
 
-<p align="center"><img src="https://www.dropbox.com/s/j5jmsm9syth9aq3/analysis_6.png?dl=1" width="400" /></p>
+<p align="center"><img src="https://www.dropbox.com/s/j5jmsm9syth9aq3/analysis_6.png?raw=1" width="400" /></p>
 
 While these bikers are rather rare, we believe that **great brand stories** can be uncovered from these ridership. For example, are tourists (non-subscribers) having fun biking between areas? Or, are some commuters (subscribers) living a healthier lifestyle using Bay Wheels' bikes? These are Bay Wheels' great opportunity to promote the brand through real brand stories!  
 
