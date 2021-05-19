@@ -3,7 +3,7 @@
 **Tech Stack:** TensorFlow, Scikit-learn, PyGame   
 
 ## Overview
-Neural Snaky is a PyGame implementation of the classic game, Snake. This is a fun personal weekend project that started as a simple game that I build for my 3 year old daughter. Then, I thought: Why don't I build a brain for the snake so that it can learns and plays the game by itself? The results is a Snake game with three modes:
+Neural Snaky is a PyGame implementation of the classic game, Snake. This is a fun **personal weekend project** that started as a simple game that I build for my 3 year old daughter. Then, I thought: Why don't I build a brain for the snake so that it can learns and plays the game by itself? The results is a Snake game with three modes:
 
 - "**Play**" mode is nothing but a simple replicate of the classic game, Snake. The game is built using PyGame and the sprites can be easily customized for future updates. One key difference from the traditional Snake game is that the snake moves one step at a time per arrow key press. The design decision is to because my goal is to build something fun for my 3 year old daughter and help her improve hand-eye coordination.
 - "**Autoplay**" gives the snake a brain to learn the game and play on its own.
