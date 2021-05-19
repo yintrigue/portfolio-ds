@@ -30,7 +30,8 @@ Still don't have an idea for the baby's name? Here's a fun one for you to start 
 
 ## Repository
 
+- [`./src/`](./src) contains the source codes for *AwesomeBabyNames*.
+- [`./data/`](./data) contains the raw csv files from data.gov.
+- [`./doc/en/abn_doc.pdf`](./doc/en/abn_doc.pdf) is a simple technical report that documents the architecture of *AwesomeBabyNames*.
 - `requirements.txt` contains a list of the required third-party packages.  
-- `./data/` contains the raw csv files from data.gov.
-- `./ src/` contains the source codes for *AwesomeBabyNames*, including the program main,  `src/main.py`.
-- `./doc/en/abn_doc.pdf` is a simple technical report that documents the architecture of *AwesomeBabyNames*.
+
