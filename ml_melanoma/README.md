@@ -134,9 +134,10 @@ As an extension to the modeling, the learning progress of EfficientNet B0 is vis
 
 ## Repository 
 
-- [`./models/`](./modes/) contains all source codes for the three models.
-- [`./models/model_nn_v3_efn_meta.ipynb`](./models/model_nn_v3_efn_meta.ipynb) is the notebook with the final writeup and complete source codes for Model v3. 
-- [`./model_nn_v3_efn_meta.ipynb`](./model_nn_v3_efn_meta.ipynb) contains all source codes and the final report write-up.
-- [`./ppt/melanoma_ppt.pdf`](./ppt/melanoma_ppt.pdf) is a presentation that discusses the technical aspects and performance results of the study.
+- [`./src/`](./src/) contains all source codes for the three models.
+  - [`./models/model_nn_v3_efn_meta.ipynb`](./models/model_nn_v3_efn_meta.ipynb) is the notebook with the final writeup and complete source codes for Model v3. 
+  - [`./model_nn_v3_efn_meta.ipynb`](./model_nn_v3_efn_meta.ipynb) contains all source codes and the final report write-up.
+  - [`./ppt/melanoma_ppt.pdf`](./ppt/melanoma_ppt.pdf) is a presentation that discusses the technical aspects and performance results of the study.
 - `./saves/` contains the saved models and performance evaluation results from the final model. 
 - `./_img` contains the images used for the writeup and readme markdown.  
+
