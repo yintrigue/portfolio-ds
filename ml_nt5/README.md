@@ -10,9 +10,11 @@ Authors: Peng-Jian Yang<sup>a</sup>, Ying Ting Chen<sup>a</sup>, Yuechan Chen<su
 Advisor: Daniel Cer<sup>a, b</sup>   
 <sup>a</sup>University of California Berkeley, <sup>b</sup>Google Research  
 
+Note: All source codes and two fully trained NT5 models (**RC Experiment 1**, our best performing model, and **Validation Experiment 2**, our second best performing model) are included in the repository.  
+
 ## Abstract
 
-Numerical reasoning over text (NRoT) presents unique challenges that are not well addressed by existing pre-training objectives in NLP. We explore five sequential training schedules that adapt a pre-trained T5 model for NRoT. Our final model adapted from T5 but further pre-trained on three datasets designed to strengthen skills necessary for NRoT and general reading comprehension before being fine-tuned on Discrete Reasoning over Text (DROP) dataset. We show that our training improves DROP’s adjusted F1 performance (a numeracy-focused score) from 45.90 to 70.83. Our model outperforms the best model in the original DROP paper (47.01), and closes in on GenBERT (72.4), a custom BERT-Base model with significantly more parameters.
+Numerical reasoning over text (NRoT) presents unique challenges that are not well addressed by existing pre-training objectives in NLP. We explore five sequential training schedules that adapt a pre-trained T5 model for NRoT. Our final model adapted from T5 but further pre-trained on three datasets designed to strengthen skills necessary for NRoT and general reading comprehension before being fine-tuned on Discrete Reasoning over Text (DROP) dataset. We show that our training improves DROP’s adjusted F1 performance (a numeracy-focused score) **from 45.90 to 70.83**. Our model outperforms the best model in the original DROP paper (47.01), and closes in on GenBERT (72.4), a custom BERT-Base model with significantly more parameters.
 
 ## NRoT Challenges   
 
@@ -78,9 +80,9 @@ Our model using T5-Small (the smallest scale of T5) achieves an adjusted F1 perf
 
 ## Repository 
 - [`./paper`](./paper) includes our current versions of the research paper. We are currently in the process of refining the research in response to feedback from ACL submission.
-- [`./src`](./src) includes the notebook with all the source codes for modeling and training.
+- [`./src`](./src) includes the notebook with the source codes for modeling and training.
+- [`./models`](./models) includes two fully trained models in h5 format: our best (**RC Experiment 1**) and second best (**Validation Experiment 2**) performing models. 
+- [`./error_analysis`](./error_analysis) includes the evaluation reports for the two models included in `./models`.
 - `./data` includes the datasets we used for training NT5.
-- `./error_analysis` includes a sample of the reports used to evaluate NT5’s performance.
-- `./models` includes a sample NT5 model.
 - `./tfrec` includes the source codes used to generate the TFRecord files used for data streaming during training.
 
