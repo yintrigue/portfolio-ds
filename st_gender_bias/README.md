@@ -46,6 +46,17 @@ In addition, we build in our **mediation analysis** into the experiment design a
 - **Quote Breakdown**: Does the caller receive a detailed price breakdown?
 - **Attrition**: Does the auto shop refuse or fail to provide a quote?
 
+## Pilot Study & Power Analysis  
+Prior to data collection, a small pilot study is conducted using a random sample of **30 shops** from the full dataset. In addition to the power analysis, the pilot study helps **assess our research design**, including: viability of the scraped data, criteria to further refine the shop list, unexpected scenarios to expand the call script, and feedback to inform the data collection rubric.
+
+Built using our pilot data, the plot below shows the relationship between the sample size and effect size given a **power of 0.8** and **significance of 0.05**, and suggests that we would need an effective size of \$77.04 for a sample of 200 calls and \$54.34 for 400 calls.
+
+<p align="center"><img src="https://www.dropbox.com/s/nwbdh4815ja4r41/power.png?raw=1" width="600" /></p>
+
+We also observed a **high attrition** during the pilot study at **40%** (i.e. only 60% of our calls successfully obtain a quote). The high attrition is mainly due to shops not picking up the phone, failing to call back with a quote, or refusing to provide a quote over the phone (requiring the caller to bring in the vehicle). Given the observed 40% attrition rate, our goal of collecting at least 200 quotes (100 each for treatment and control) requires us to **contact a minimum of 334 shops**. Again, a sample size of 200 calls would require an effect size of $77.04. 
+
+However, note that as a result of the unexpected high attrition rate, our power analysis is performed based on an **insufficient sample size** collected in the pilot (i.e. smaller than 30). The results presented in this section should be interpreted with caution.
+
 ## Data Collection
 
 We sped a considerable amount of our time collecting data and resolving the various unexpected issues calling the shops. For example, all teams experience relatively low "success" rates at ~50% due to attrition (e.g. shops that answer our calls but refuse/fail to provide a quote) and "non-starters" (e.g. shops that fail to receive treatment by not answering our calls). **Attrition** is fully disclosed with detailed breakdowns in the paper and addressed in modeling using **extreme bounds analysis**. "**Non-starters**," on the other hand, are excluded from modeling but an analysis on their distribution is included in the paper to evaluate the potential **risk of bias**. 
@@ -53,6 +64,7 @@ We sped a considerable amount of our time collecting data and resolving the vari
 ![Data Collection](https://www.dropbox.com/s/6yd7cj6ra6whiyk/data.png?raw=1)
 
 ## Results Summary
+
 Note: The section includes a brief summary of our findings. The full analysis can be found in the paper:  [paper_gender_bias.pdf](./paper_gender_bias.pdf)
 
 To avoid **multiple comparisons** (i.e. fishing for significance), we determine the model specifications before running the actual regressions with real data in R. Our model analysis consists of three parts: **Primary Outcome** (price quote), **Secondary Outcomes** (knowledge and respect), and Fun Models (which we build for findings unrelated to the research question).   
@@ -64,7 +76,7 @@ Across the four primary and three secondary models, we conclude that:
 - **ESL callers tend to receive a discount**, but the effect is independent of caller gender with no significant interaction.
 - **Female callers were questioned 10% more frequently about their knowledge** about the radiator or car in general compared to male callers. 
 
-### Primary Outcomes
+### Primary Outcomes: Price Quotes
 
 Overall, **R<sup>2</sup> is low** across all four models, suggesting that there are other factors causing the price differences received by our callers. While the experiment setup allows us to focus on just the two randomized variables, caller gender and ESL status, it should be noted that gender and/or ESL only account for a small portion of the variances in pricing, even if they are detained statistically significant. The issue of **gender bias might not be relevant** if the focus is on why prices on auto repairs are different instead of gender inequality. 
 
@@ -78,7 +90,7 @@ Without controlling for the fixed effects (i.e. blocked on “county” and “s
 
 ![Primary Models](https://www.dropbox.com/s/5xb34j05n6hrzcz/models_primary.png?raw=1)
 
-### Secondary Outcomes
+### Secondary Outcomes: Knowledge & Respect 
 
 "Script Knowledge" measures the stereotype categorical bias that female customers are in general less knowledgeable about cars. The outcome variable is binary with 1 indicating that the caller was questioned about their knowledge according to the different scenarios detailed in Appendix A: Caller Script in the paper. "Attrition" and "Quote Breakdown," on the other hand, are proxies for the shop representative's respect towards the calling customers.
 

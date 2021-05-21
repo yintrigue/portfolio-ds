@@ -62,17 +62,22 @@ success_rate
 ```
 
 ```{r power_analysis_mean}
-power_analysis <- function(d, quote_col_name='quote_mean', n=NULL) {
-    power       <- 0.8
-    sig_level   <- 0.05
-    
-    # calculate cohen.d
-    m_null      <- 0
-    m_alt       <- d[, .(mean=mean(get(quote_col_name))), by='treatment'][, diff(mean)]
-    sd_null     <- d[treatment==0, sd(get(quote_col_name))] 
-    sd_alt      <- d[treatment==1, sd(get(quote_col_name))] 
+# Function to perform power analysis. Return one of the two values to achieve the 
+# given power and significance levels (default to 0.8 and 0.05 respectively):
+#   - if the sample size n is given, return the required effective size 
+#   - if n is not given, return the the required sample size n. 
+power_analysis <- function(d, 
+                           quote_col_name='quote_mean', 
+                           n=NULL, 
+                           power=0.8, 
+                           sig_level=0.05) {
+    m_null  <- 0
+    m_alt   <- d[, .(mean=mean(get(quote_col_name))), by='treatment'][, diff(mean)]
+    sd      <- d[, sd(get(quote_col_name))] 
+        
+    # calculate cohen.d, standardized effective size between null and alternative
     if (is.null(n)) {
-        cohen.d     <- (m_alt - m_null) / sqrt((sd_null^2 + sd_alt^2) / 2) 
+        cohen.d <- (m_alt - m_null) / sd
     } else {
         cohen.d <- NULL
     }
@@ -88,7 +93,7 @@ power_analysis <- function(d, quote_col_name='quote_mean', n=NULL) {
     
     # recover effect size
     if (is.null(cohen.d)) {
-        es <- pwr$d * sqrt((sd_null^2 + sd_alt^2) / 2)
+        es <- pwr$d * sd
         return(list(pwr, es))
     } else {
         return(pwr)
