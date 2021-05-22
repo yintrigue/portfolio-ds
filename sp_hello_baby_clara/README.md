@@ -13,7 +13,7 @@ https://yintrigue.com/hellobabyclara/
 - Photos and diaries are progressively loaded as the page is scrolled down, helping reduce bandwidth despite high-resolution photos.
 - No database is required. All contents are loaded/rendered based on directory structure and EXIF tags. The web app can be ported by a simple copy-and-paste.
 - User login is supported for viewing private photos and diaries.
-- Fun interactive experience with sound effects. This is a project to be enjoyed by both farther and daughter!
+- Fun interactive experience with sound effects. This is a project to be enjoyed by both the father and daughter!
 
 *Hello, Baby Clara!* is built from the ground up using jQuery. The reason for not using Angular or React is to keep things simple and flexible. People say that I am old-school, but I am just chasing simplicity! 😃  
 
@@ -38,7 +38,7 @@ This is a full-page rendering with the default zoom.
 ![](./img/screenshot_01.jpg) 
 <br />
 <br />
-A fun, colorful experience to be enjoyed by both farther and daugther!
+A fun, colorful experience to be enjoyed by both father and daughter!
 ![](./img/screenshot_05.jpg) 
 
 ## Repository 

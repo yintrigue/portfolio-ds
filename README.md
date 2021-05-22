@@ -108,4 +108,4 @@ I am a photographer at my own free time and love traveling around the world to e
 **Keywords**: Single-page Web App, Photography  
 **Tech Stack:** JavaScript, jQuery, PHP, HTML/CSS  
 
-*Hello, Baby Clara!* is a photo diary that I built to document my daughter's growing up. It is a database-free **SPA (single-page application)** designed for storytelling, and allows me to publish photos with metadata automatically parsed with a fully customizable layout. The experience is to be enjoyed by both the farther (me) and daughter (Clara)! 😃
+*Hello, Baby Clara!* is a photo diary that I built to document my daughter's growing up. It is a database-free **SPA (single-page application)** designed for storytelling, and allows me to publish photos with metadata automatically parsed with a fully customizable layout. The experience is to be enjoyed by both the father (me) and daughter (Clara)! 😃
