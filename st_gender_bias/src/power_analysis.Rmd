@@ -37,7 +37,7 @@ setnames(d_pilot, names(d_pilot), c('shop_id',
                                     'q_other'))
 
 # build experiment data.table d
-d_pilot[, treatment := ifelse(caller_id == 'Sophia', 1, 0)]
+d_pilot[, treatment := ifelse(caller_id %in% c('p3', 'p5', 'p7'), 1, 0)]
 d_pilot[, q_range_avg := (q_low + q_high) / 2]
 d_pilot[, quote_mean := ifelse(is.na(q_total), q_range_avg, q_total)]
 d_pilot[, quote_high := ifelse(is.na(q_total), q_high, q_total)]
@@ -73,7 +73,13 @@ power_analysis <- function(d,
                            sig_level=0.05) {
     m_null  <- 0
     m_alt   <- d[, .(mean=mean(get(quote_col_name))), by='treatment'][, diff(mean)]
-    sd      <- d[, sd(get(quote_col_name))] 
+    
+    # estimate sd of ATE using eq 3.6 from Geerber & Green, Field Experiments
+    N <- d[, .N]
+    m <- d[treatment==1, .N]
+    var_y0 <- var(d[treatment==0, 'quote_mean'])[1,1]
+    var_y1 <- var(d[treatment==1, 'quote_mean'])[1,1]
+    sd <- (var_y0 / (N - m) + var_y1 / m) ^ 0.5
         
     # calculate cohen.d, standardized effective size between null and alternative
     if (is.null(n)) {
