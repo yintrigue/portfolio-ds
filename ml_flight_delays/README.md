@@ -115,7 +115,7 @@ In addition, we use WOE and IV for **feature selection**. A feature with a highe
 
 <p align="center"><img src="https://www.dropbox.com/s/uswjx3u0oel5khj/woe.jpg?raw=1" width="300"/></p>
 
-<p align="center"><img src="https://www.dropbox.com/s/iwo5rrruqlfo7qs/woe2.jpg?dl=1" width="500"/></p>
+<p align="center"><img src="https://www.dropbox.com/s/iwo5rrruqlfo7qs/woe2.jpg?raw=1" width="500"/></p>
 
   
 
