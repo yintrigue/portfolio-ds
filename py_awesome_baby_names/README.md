@@ -1,4 +1,4 @@
-# AwesomeBabyNames
+# Awesome Baby Names
 
 **v1.0.3**
 
