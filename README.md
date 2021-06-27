@@ -70,7 +70,7 @@ The study includes a mini **regression analysis**, including an examination of *
 
 ## Data Exploration  
 
-### [AwesomeBabyNames](./py_awesome_baby_names)  
+### [Awesome Baby Names](./py_awesome_baby_names)  
 **Tech Stack**: MVC, SQLite, Python  
 
 An awesome baby starts with an awesome name! *AwesomeBabyNames* is a Python app that helps you come up with a great name for your baby by visualizing **100+ years of census data** collected by the US government.
